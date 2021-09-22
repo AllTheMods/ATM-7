@@ -1,0 +1,148 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/ATM/atm.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -114
+}
+
+customization {
+  identifier = %id=400322%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=604382%
+  orientation = mid-centered
+  x = 80
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=604382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -67
+}
+
+customization {
+  identifier = %id=400382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = -67
+}
+
+customization {
+  identifier = %id=502382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -43
+}
+
+customization {
+  identifier = %id=376382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -137
+}
+
+customization {
+  identifier = %id=400298%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -91
+}
+
+customization {
+  identifier = %id=400346%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=502346%
+  action = setbuttonlabel
+  value = Make a Server
+}
+
+customization {
+  identifier = %id=502346%
+  action = sethoverlabel
+  label = 
+}
+
+customization {
+  identifier = %id=502346%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = 2
+  width = 98
+  actionid = b01bbde7-2ee9-4d4d-ad5f-3d63a4020b551632350397573
+  action = addbutton
+  y = -91
+  label = Make a Server
+  value = https://www.akliz.net/allthemods
+  height = 20
+}
+
