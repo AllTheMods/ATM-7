@@ -23,10 +23,10 @@ mouseSensitivity:0.5
 fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
-gamma:1.0
+gamma:0.0
 renderDistance:10
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:3
 particles:0
 maxFps:260
 difficulty:2
@@ -63,7 +63,7 @@ tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:true
+skipMultiplayerWarning:false
 hideMatchedNames:true
 joinedFirstServer:false
 hideBundleTutorial:false
