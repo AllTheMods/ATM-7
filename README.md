@@ -1,5 +1,3 @@
-# [![ATM6](https://cdn.discordapp.com/attachments/668300600995348490/871544534780215377/atm7_banner.png)](https://discord.gg/K5FBPYa)
-
 All The Mods 7
 ======
 This is the official repository and issue-tracker for All The Mods 7 1.18
