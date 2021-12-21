@@ -1,0 +1,23 @@
+{
+  "name": "creative",
+  "disable": false,
+  "tier": -1,
+  "color": "cf1ae9",
+  "armorPoints": 10000,
+  "enchantability": 0,
+  "craftingMaterial": "null",
+  "creative": true,
+  "rarity": 3,
+  "capacity": 0,
+  "usage": 0,
+  "speedVertical": 2.0,
+  "accelVertical": 0.4,
+  "speedSideways": 0.45,
+  "speedHoverDescend": 1.0,
+  "speedHover": 0.0,
+  "sprintSpeedMulti": 3.5,
+  "sprintSpeedMultiVertical": 1.5,
+  "sprintFuelMulti": 0.0,
+  "toughness": 0.0,
+  "knockbackResistance": 0.0
+}
