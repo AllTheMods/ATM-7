@@ -1,0 +1,123 @@
+To refresh this file, delete it and run /reload command again! Last updated: Dec 28, 2021, 10:46:24 AM
+
+#forge:molten_silicon
+- #beyond_earth:molten_silicon
+
+#minecraft:water
+- minecraft:water
+- minecraft:flowing_water
+- hexerei:blood_flowing
+- hexerei:blood_fluid
+- hexerei:tallow_flowing
+- hexerei:tallow_fluid
+- beyond_earth:fuel
+- beyond_earth:flowing_fuel
+- beyond_earth:oil
+- beyond_earth:flowing_oil
+- mahoutsukai:murky_still
+- mahoutsukai:murky_flow
+- create:flowing_honey
+- create:honey
+- create:flowing_chocolate
+- create:chocolate
+- securitycraft:fake_water
+- securitycraft:flowing_fake_water
+
+#forge:biodiesel
+- immersiveengineering:biodiesel
+
+#forge:milk
+- minecraft:milk?
+- minecraft:flowing_milk?
+
+#forge:herbicide
+- immersiveengineering:herbicide
+
+#forge:molten_desh
+- #beyond_earth:molten_desh
+
+#forge:plantoil
+- immersiveengineering:plantoil
+
+#minecraft:lava
+- minecraft:lava
+- minecraft:flowing_lava
+- hexerei:quicksilver_flowing
+- hexerei:quicksilver_fluid
+- allthemodium:soul_lava
+- allthemodium:flowing_soul_lava
+- securitycraft:fake_lava
+- securitycraft:flowing_fake_lava
+
+#forge:ethanol
+- immersiveengineering:ethanol
+
+#forge:soul_lava
+- allthemodium:soul_lava
+- allthemodium:flowing_soul_lava
+
+#forge:chocolate
+- create:flowing_chocolate
+- create:chocolate
+
+#forge:redstone_acid
+- immersiveengineering:redstone_acid
+
+#forge:superheated_sodium
+- biggerreactors:superheated_sodium
+
+#forge:concrete
+- immersiveengineering:concrete
+
+#beyond_earth:oil
+- beyond_earth:oil
+- beyond_earth:flowing_oil
+
+#forge:potion
+- immersiveengineering:potion
+
+#beyond_earth:molten_desh
+- beyond_earth:molten_desh?
+- beyond_earth:flowing_molten_desh?
+
+#tconstruct:metal_like
+- #forge:molten_desh
+- #forge:molten_silicon
+
+#forge:steam
+- biggerreactors:steam
+
+#forge:experience
+- sophisticatedbackpacks:xp_still
+
+#forge:tea
+- create:flowing_tea
+- create:tea
+
+#beyond_earth:molten_silicon
+- beyond_earth:molten_silicon?
+- beyond_earth:flowing_molten_silicon?
+
+#ae2:blacklisted/annihilation_plane
+
+#beyond_earth:vehicle_fuel
+- beyond_earth:fuel
+- beyond_earth:flowing_fuel
+- thermal:refined_fuel?
+- vehicle:fuelium?
+- car:bio_diesel?
+- immersivepetroleum:diesel?
+- immersiveengineering:biodiesel?
+- industrialforegoing:biofuel?
+
+#immersiveengineering:drill_fuel
+- #forge:biodiesel
+
+#forge:honey
+- productivebees:honey
+- productivebees:flowing_honey
+- create:flowing_honey
+- create:honey
+
+#forge:creosote
+- immersiveengineering:creosote
