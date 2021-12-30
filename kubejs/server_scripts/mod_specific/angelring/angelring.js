@@ -11,7 +11,7 @@ onEvent('recipes', event => {
     V: '#forge:storage_blocks/vibranium',
     U: '#forge:storage_blocks/unobtainium',
     A: '#forge:storage_blocks/allthemodium',
-    E: 'minecraft:elytra'
+    E: '#forge:elytra'
   })
  event.shaped('angelring:itemring', [
     'CAC',
