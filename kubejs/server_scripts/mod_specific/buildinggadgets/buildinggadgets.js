@@ -1,11 +1,9 @@
-onEvent('recipes', event => {
- event.remove({id: 'buildinggadgets:gadget_exchanging'})
- event.shaped('buildinggadgets:gadget_exchanging', ['iri', 'dld', 'iai'], {
-    i: '#forge:ingots/iron',
-    r: '#forge:dusts/redstone',
-    l: '#forge:gems/lapis',
-    d: '#forge:gems/diamond',
-    a: '#forge:nuggets/allthemodium'
+onEvent('recipes', e => {
+  modifyShaped(e, 'buildinggadgets:gadget_exchanging', 1, ['IRI', 'DLD', 'IAI'], {
+    I: '#forge:ingots/iron',
+    R: '#forge:dusts/redstone',
+    L: '#forge:gems/lapis',
+    D: '#forge:gems/diamond',
+    A: '#forge:nuggets/allthemodium'
   })
 })
-
