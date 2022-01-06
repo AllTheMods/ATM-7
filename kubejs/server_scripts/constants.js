@@ -55,3 +55,20 @@ let woodcutting = (e, entries) => {
     }).id(`kubejs:woodcutting/${output.replace(':', '/')}`)
   })
 }
+
+let maInfusion = (e, output, middle, item1, item2, item3, item4, item5, item6, item7, item8) => {
+  e.recipes.mysticalagriculture.infusion({
+    input: { item: middle },
+    ingredients: [
+      { item: item1 },
+      { item: item2 },
+      { item: item3 },
+      { item: item4 },
+      { item: item5 },
+      { item: item6 },
+      { item: item7 },
+      { item: item8 }
+    ],
+    result: { item: output }
+  }).id(`kubejs:mainfusion/${output.replace(':', '/')}`)
+}

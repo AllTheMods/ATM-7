@@ -26,4 +26,6 @@ onEvent('recipes', e => {
       e.remove({ input: `mysticalagriculture:${name}_${type}` })
     })
   })
+  e.remove({ id: 'mysticalagriculture:augment/flight' })
+  maInfusion(e, 'mysticalagriculture:flight_augment', 'mysticalagriculture:unattuned_augment', 'allthetweaks:nether_star_block', 'allthemodium:unobtainium_block', 'allthetweaks:nether_star_block', 'allthemodium:unobtainium_block', 'allthetweaks:nether_star_block', 'allthemodium:unobtainium_block', 'allthetweaks:nether_star_block', 'allthemodium:unobtainium_block',)
 })
