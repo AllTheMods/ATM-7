@@ -7,3 +7,6 @@ onEvent('tags.items', e => {
     e.add('misctags:farmland/tier2', ['mysticalagriculture:prudentium_farmland', '#misctags:farmland/tier3'])
     e.add('misctags:farmland/tier1', ['mysticalagriculture:inferium_farmland', '#misctags:farmland/tier2'])
 })
+onEvent('tags.blocks', e => {
+  e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
+})
