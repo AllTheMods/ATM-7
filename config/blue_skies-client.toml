@@ -19,7 +19,7 @@
 		#
 		# If set to true, inventory tabs appear on the bottom left corner instead of the bottom right.
 		# Default: false
-		left_align = false
+		left_align = true
 
 	["Inventory Tabs".Buttons]
 		#
