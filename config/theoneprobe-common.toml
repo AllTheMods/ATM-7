@@ -9,7 +9,7 @@ extendedInMain = false
 #If true there will be a bauble version of the probe if baubles is present
 supportBaubles = true
 #If true there will be a readme note for first-time players
-spawnNote = false
+spawnNote = true
 #If true show the color of the collar of a wolf
 showCollarColor = true
 #How to display RF: 0 = do not show, 1 = show in a bar, 2 = show as text
@@ -53,5 +53,5 @@ dontSendNBT = []
 #A list of <tag>=<name> containing all tooltype tags with their associated name to display
 tooltypeTags = ["minecraft:mineable/axe=Axe", "minecraft:mineable/pickaxe=Pickaxe", "minecraft:mineable/shovel=Shovel", "minecraft:mineable/hoe=Hoe"]
 #A list of <tag>=<name> containing all harvestability tags with their associated name to display
-harvestabilityTags = ["forge:needs_wood_tool=Wood", "forge:needs_gold_tool=Gold", "minecraft:needs_stone_tool=Stone", "minecraft:needs_iron_tool=Iron", "minecraft:needs_diamond_tool=Diamond", "forge:needs_netherite_tool=Netherite"]
+harvestabilityTags = ["forge:needs_wood_tool=Wood", "forge:needs_gold_tool=Gold", "minecraft:needs_stone_tool=Stone", "minecraft:needs_iron_tool=Iron", "minecraft:needs_diamond_tool=Diamond", "forge:needs_netherite_tool=Netherite", "forge:needs_allthemodium_tool=Allthemodium", "forge:needs_vibranium_tool=Vibranium", "forge:needs_unobtainium_tool=Unobtainium"]
 
