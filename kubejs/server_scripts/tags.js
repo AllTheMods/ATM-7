@@ -6,6 +6,8 @@ onEvent('tags.items', e => {
     e.add('misctags:farmland/tier3', ['mysticalagriculture:tertium_farmland', '#misctags:farmland/tier4'])
     e.add('misctags:farmland/tier2', ['mysticalagriculture:prudentium_farmland', '#misctags:farmland/tier3'])
     e.add('misctags:farmland/tier1', ['mysticalagriculture:inferium_farmland', '#misctags:farmland/tier2'])
+	e.add('misctags:immersive_engineering_hammer', 'immersiveengineering:hammer')
+	e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
 })
 onEvent('tags.blocks', e => {
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
