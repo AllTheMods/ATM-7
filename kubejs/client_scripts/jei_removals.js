@@ -24,6 +24,7 @@ onEvent('jei.hide.items', e => {
     /extrastorage:disk_.+/,
     /extrastorage:block_.+/,
     /extrastorage:storagepart_.+/,
+	'beyond_earth:iron_plate'
   ])
 
   //#region hideMetal
