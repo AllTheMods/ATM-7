@@ -78,7 +78,7 @@ onEvent('recipes', e => {
   // #endregion Metal Unification
   // #region Plate Unification
   function plateCasting(material, coolingTime, result) {
-    let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+    let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc', 'iron', 'zinc']
     let fluid = alltheores.includes(material) ? { tag: `forge:molten_${material}`, amount: 144 } : { name: `tconstruct:molten_${material}`, amount: 144 }
 
     e.custom({
@@ -138,18 +138,21 @@ onEvent('recipes', e => {
       result = result ? result : `alltheores:${material}_plate`
 
       e.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` });
-      e.shapeless(result, [`#forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
+      e.shapeless(result, [`4x #forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
 
       e.remove({ id: `create:pressing/${material}_ingot` })
       e.remove({ id: `createaddition:pressing/${material}_ingot` })
       e.recipes.create.pressing(result, `#forge:ingots/${material}`).id(`kubejs:pressing/${material}_ingot`)
 
       e.remove({ id: `immersiveengineering:metalpress/plate_${material}` })
+
     })
   }
 
   plateProcessing([
     ['aluminum', 47],
+	['zinc', 47],
+	['iron', 47],
     ['steel', 50],
     ['uranium', 50],
     ['iron', 60],
@@ -167,11 +170,12 @@ onEvent('recipes', e => {
     ['lumium', null],
     ['enderium', null],
     ['brass', 57, 'create:brass_sheet'],
-    ['zinc', 57, 'createaddition:zinc_sheet'],
+    ['zinc', 57,],
   ])
   // #endregion Plate Unification
   e.replaceInput('ae2:certus_quartz_dust', '#forge:dusts/certus_quartz')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
   e.replaceInput('immersiveengineering:coal_coke', '#forge:coal_coke')
   e.replaceOutput('ae2:nether_quartz_dust', 'thermal:quartz_dust')
+  e.remove({id: 'beyond_earth:iron_plate'})
 })
