@@ -137,8 +137,6 @@ onEvent('recipes', e => {
 
       result = result ? result : `alltheores:${material}_plate`
 
-      e.shapeless(result, [`2x #forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
-
       e.remove({ id: `create:pressing/${material}_ingot` })
       e.remove({ id: `createaddition:pressing/${material}_ingot` })
       e.recipes.create.pressing(result, `#forge:ingots/${material}`).id(`kubejs:pressing/${material}_ingot`)
