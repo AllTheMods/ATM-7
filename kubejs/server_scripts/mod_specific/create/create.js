@@ -1,0 +1,15 @@
+onEvent('recipes', e => {
+  //crushing
+  e.recipes.createCrushing('3x alltheores:silver_dust', '#forge:ores/silver')
+  e.recipes.createCrushing('3x alltheores:lead_dust', '#forge:ores/lead')
+  e.recipes.createCrushing('3x alltheores:tin_dust', '#forge:ores/tin')
+  e.recipes.createCrushing('3x alltheores:uranium_dust', '#forge:ores/uranium')
+  e.recipes.createCrushing('3x alltheores:zinc_dust', '#forge:ores/zinc')
+  e.recipes.createCrushing('3x alltheores:aluminum_dust', '#forge:ores/aluminum')
+  e.recipes.createCrushing('3x alltheores:nickel_dust', '#forge:ores/nickel')
+  e.recipes.createCrushing('3x alltheores:osmium_dust', '#forge:ores/osmium')
+  e.recipes.createCrushing('3x alltheores:platinum_dust', '#forge:ores/platinum')
+  e.recipes.createCrushing('1x allthemodium:allthemodium_dust', '#forge:ores/allthemodium')
+  e.recipes.createCrushing('1x allthemodium:vibranium_dust', '#forge:ores/vibranium')
+  e.recipes.createCrushing('1x allthemodium:unobtainium_dust', '#forge:ores/unobtainium')
+})
