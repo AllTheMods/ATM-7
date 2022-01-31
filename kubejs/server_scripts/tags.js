@@ -14,3 +14,6 @@ onEvent('tags.items', e => {
 onEvent('tags.blocks', e => {
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
 })
+onEvent('tags.entity_types', e => {
+  e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic',])
+})
