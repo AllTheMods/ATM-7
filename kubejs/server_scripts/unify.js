@@ -64,6 +64,7 @@ onEvent('recipes', e => {
   unifyMetal('electrum', 'alltheores:electrum_ingot', 'alltheores:electrum_dust', 'alltheores:electrum_block', 'alltheores:electrum_nugget')
   unifyMetal('lumium', 'alltheores:lumium_ingot', 'alltheores:lumium_dust', 'alltheores:lumium_block', 'alltheores:lumium_nugget')
   unifyMetal('enderium', 'alltheores:enderium_ingot', 'alltheores:enderium_dust', 'alltheores:enderium_block', 'alltheores:enderium_nugget')
+  unifyMetal('brass', 'alltheores:brass_ingot', 'alltheores:brass_dust', 'alltheores:brass_block', 'alltheores:brass_nugget')
 
   //Mekanism
   unifyMetal('osmium', 'alltheores:osmium_ingot', 'alltheores:osmium_dust', 'alltheores:osmium_block', 'alltheores:osmium_nugget')
@@ -166,7 +167,7 @@ onEvent('recipes', e => {
     ['signalum', null],
     ['lumium', null],
     ['enderium', null],
-    ['brass', 57, 'create:brass_sheet'],
+    ['brass', 57,],
     ['zinc', 57,],
   ])
   // #endregion Plate Unification
