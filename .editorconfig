@@ -13,3 +13,6 @@ indent_size = 2
 [*.toml]
 indent_style = tab
 tab_width = 4
+
+[*.cfg]
+end_of_line = crlf
