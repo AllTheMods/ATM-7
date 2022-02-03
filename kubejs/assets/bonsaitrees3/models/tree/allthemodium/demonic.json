@@ -1,0 +1,96 @@
+{
+    "type": "bonsaitrees3:sapling/allthemodium/demonic",
+    "version": 3,
+    "ref": {
+      "a": {"block":"allthemodium:demonic_leaves","properties":{"distance":"1","persistent":"false"}},
+      "b": {"block":"allthemodium:demonic_leaves","properties":{"distance":"4","persistent":"false"}},
+      "c": {"block":"allthemodium:demonic_leaves","properties":{"distance":"2","persistent":"false"}},
+      "d": {"block":"allthemodium:demonic_leaves","properties":{"distance":"3","persistent":"false"}},
+      "e": {"block":"allthemodium:demonic_leaves","properties":{"distance":"5","persistent":"false"}},
+      "f": {"block":"allthemodium:demonic_log","properties":{"axis":"y"}},
+      "g": {"block":"allthemodium:demonic_log","properties":{"axis":"z"}},
+      "h": {"block":"allthemodium:demonic_leaves","properties":{"distance":"6","persistent":"false"}},
+      "i": {"block":"allthemodium:demonic_log","properties":{"axis":"x"}}
+    },
+    "shape": [
+      [
+        "        ",
+        "        ",
+        " hee    ",
+        " ebbbeh ",
+        " bdddbe ",
+        "    ddb ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ],
+      [
+        "        ",
+        "  eeeh  ",
+        "hebbbe  ",
+        "ebdddbeh",
+        "bdcccdbe",
+        "  aaccdb",
+        "     a  ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ],
+      [
+        "    e   ",
+        " ebbbeh ",
+        "ebdddbe ",
+        "bdcccdbe",
+        "dcaaacdb",
+        " agiaacd",
+        "    aia ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ],
+      [
+        "   ebe  ",
+        "  ebdbe ",
+        "hebdcdb ",
+        "ebdcacdb",
+        "bdcafacd",
+        "  aafacd",
+        "    fa  ",
+        "    f   ",
+        "    f   ",
+        "    f   ",
+        "    f   "
+      ],
+      [
+        "    e   ",
+        "  hebeh ",
+        " hebdbe ",
+        " ebdcdb ",
+        " bdcacd ",
+        "    acd ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ],
+      [
+        "        ",
+        "   heh  ",
+        "   ebe  ",
+        "   bdb  ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ]
+    ]
+  }
+  

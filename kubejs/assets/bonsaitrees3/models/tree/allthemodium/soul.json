@@ -1,0 +1,116 @@
+{
+    "type": "bonsaitrees3:sapling/allthemodium/soul",
+    "version": 3,
+    "ref": {
+      "a": {"block":"allthemodium:soul_log","properties":{"axis":"z"}},
+      "b": {"block":"allthemodium:soul_leaves","properties":{"distance":"2","persistent":"false"}},
+      "c": {"block":"allthemodium:soul_leaves","properties":{"distance":"6","persistent":"false"}},
+      "d": {"block":"allthemodium:soul_leaves","properties":{"distance":"1","persistent":"false"}},
+      "e": {"block":"allthemodium:soul_leaves","properties":{"distance":"3","persistent":"false"}},
+      "f": {"block":"allthemodium:soul_log","properties":{"axis":"y"}},
+      "g": {"block":"allthemodium:soul_leaves","properties":{"distance":"5","persistent":"false"}},
+      "h": {"block":"allthemodium:soul_leaves","properties":{"distance":"4","persistent":"false"}},
+      "i": {"block":"allthemodium:soul_log","properties":{"axis":"x"}}
+    },
+    "shape": [
+      [
+        "       ",
+        "       ",
+        "       ",
+        " cgg   ",
+        " ghh   ",
+        " hee   ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "   cgc ",
+        "  gghg ",
+        "cghheh ",
+        "gheeb  ",
+        "hebbb  ",
+        "  d    ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "    g  ",
+        "  gghgc",
+        " ghhehg",
+        "gheebeh",
+        "hebbd  ",
+        "ebddd  ",
+        " dai   ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "   ghg ",
+        "  ghehg",
+        "cghebeh",
+        "ghebdbe",
+        "hebdfd ",
+        "ebdaf  ",
+        "  d f  ",
+        "    f  ",
+        "    f  ",
+        "    f  ",
+        "    f  ",
+        "    f  "
+      ],
+      [
+        "    g  ",
+        " ghghgc",
+        "ghehehg",
+        "hebebeh",
+        "ebdbd  ",
+        " dad   ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "  gcgc ",
+        "cghghg ",
+        "gheheh ",
+        "hebeb  ",
+        "  d    ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "       ",
+        "       ",
+        " cgc   ",
+        " ghg   ",
+        " heh   ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ]
+    ]
+  }
+  

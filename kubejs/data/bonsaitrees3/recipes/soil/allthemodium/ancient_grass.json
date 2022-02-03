@@ -1,0 +1,14 @@
+{
+    "type": "bonsaitrees3:soil",
+    "mod": "allthemodium", 
+    "tickModifier": 1.0,
+    "soil": {
+      "item": "allthemodium:ancient_grass"
+    },
+    "compatibleSoilTags": [
+      "ancient_grass" 
+    ],
+    "display": {
+      "block": "allthemodium:ancient_grass"
+    }
+  }

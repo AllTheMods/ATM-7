@@ -1,0 +1,14 @@
+{
+    "type": "bonsaitrees3:soil",
+    "mod": "allthemodium", 
+    "tickModifier": 1.1,
+    "soil": {
+      "item": "allthemodium:ancient_dirt"
+    },
+    "compatibleSoilTags": [
+      "ancient_dirt" 
+    ],
+    "display": {
+      "block": "allthemodium:ancient_dirt"
+    }
+  }
