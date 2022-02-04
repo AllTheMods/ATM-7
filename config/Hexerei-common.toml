@@ -1,0 +1,13 @@
+
+["Sage Bundle Settings"]
+	#Duration of how long each bundle will last while burning
+	sage_bundle_duration_in_seconds = 3600
+
+["Herb Jar Settings"]
+	#Disabling allows jars to hold any item
+	jars_only_hold_herbs = true
+
+["Sage Burning Plate Settings"]
+	#Range of the Sage Burning Plate
+	spawn_disable_range = 0
+
