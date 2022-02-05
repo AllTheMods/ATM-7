@@ -1,0 +1,42 @@
+{
+    "type": "bonsaitrees3:sapling",
+    "mod": "allthemodium",
+    "sapling": {
+        "item": "allthemodium:ancient_sapling"
+    },
+    "drops": [
+        {
+            "rolls": 1,
+            "chance": 0.05,
+            "result": {
+                "item": "allthemodium:ancient_sapling"
+            }
+        },
+        {
+            "rolls": 1,
+            "chance": 0.75,
+            "result": {
+                "item": "allthemodium:ancient_log_0"
+            }
+        },
+        {
+            "rolls": 3,
+            "chance": 0.2,
+            "result": {
+                "item": "minecraft:stick"
+            }
+        },
+        {
+            "rolls": 2,
+            "chance": 0.15,
+            "result": {
+                "item": "allthemodium:ancient_leaves"
+            },
+            "requiresSilkTouch": true
+        }
+    ],
+    "compatibleSoilTags": [
+        "ancient_dirt",
+        "ancient_grass"
+    ]
+}

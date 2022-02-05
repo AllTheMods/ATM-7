@@ -1,0 +1,33 @@
+
+["Beyond Earth Config"]
+	#Enable or Disable Alien to Spawn
+	"Alien Spawn" = true
+	#Enable or Disable Alien Zombie to Spawn
+	"Alien Zombie Spawn" = true
+	#Enable or Disable Star Crawler to Spawn
+	"Star Crawler Spawn" = true
+	#Enable or Disable Pygro to Spawn
+	"Pygro Spawn" = true
+	#Enable or Disable Pygro Brute to Spawn
+	"Pygro Brute Spawn" = true
+	#Enable or Disable Mogler to Spawn
+	"Mogler Spawn" = true
+	#Enable or Disable Martian Raptor to Spawn
+	"Martian Raptor Spawn" = true
+	#Enable or Disable Oil Well Structure to Spawn
+	"Oil Well Structure" = true
+	#Enable or Disable Meteor Structure to Spawn
+	"Meteor Structure" = false
+	#Enable or Disable Alien Village Structure to Spawn
+	"Alien Village Structure" = true
+	#Enable or Disable Venus Bullet Structure to Spawn
+	"Venus Bullet Structure" = true
+	#Enable or Disable Venus Tower Structure to Spawn
+	"Venus Tower Structure" = true
+	#Enable or Disable Crimson Village Structure to Spawn
+	"Crimson Village Structure" = true
+	#Enable or Disable Player Oxygen System
+	"Player Oxygen System" = true
+	#Enable or Disable Entity Oxygen System
+	"Entity Oxygen System" = true
+
