@@ -48,7 +48,6 @@ onEvent('recipes', e => {
 
   //Multiple Mods
   unifyMetal('aluminum', 'alltheores:aluminum_ingot', 'alltheores:aluminum_dust', 'alltheores:aluminum_block', 'alltheores:aluminum_nugget')
-  unifyMetal('copper', 'alltheores:copper_dust', 'alltheores:copper_nugget')
   unifyMetal('lead', 'alltheores:lead_ingot', 'alltheores:lead_dust', 'alltheores:lead_block', 'alltheores:lead_nugget')
   unifyMetal('nickel', 'alltheores:nickel_ingot', 'alltheores:nickel_dust', 'alltheores:nickel_block', 'alltheores:nickel_nugget')
   unifyMetal('platinum', 'alltheores:platinum_ingot', 'alltheores:platinum_dust', 'alltheores:platinum_block', 'alltheores:platinum_nugget')
@@ -70,7 +69,7 @@ onEvent('recipes', e => {
   // #region Plate Unification
   function plateCasting(material, coolingTime, result) {
     let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc', 'brass', 'bronze', 'gold', 'iron']
-    let fluid = alltheores.includes(material) ? { tag: `forge:molten_${material}`, amount: 144 } : { name: `tconstruct:molten_${material}`, amount: 144 }
+    let fluid = alltheores.includes(material) ? { tag: `forge:molten_${material}`, amount: 90 } : { name: `tconstruct:molten_${material}`, amount: 90 }
 
     e.custom({
       type: 'tconstruct:casting_table',
@@ -184,7 +183,7 @@ onEvent('recipes', e => {
     e.custom({
       type: 'tconstruct:melting',
       ingredient: { item: `create:crushed_${material}_ore` },
-      result: { fluid: `${molten_namespace}:molten_${material}`, amount: 144 },
+      result: { fluid: `${molten_namespace}:molten_${material}`, amount: 90 },
       temperature: temperature,
       time: time * 29.4
     }).id(`kubejs:melting/crushed_ore/${material}`)
@@ -204,14 +203,14 @@ onEvent('recipes', e => {
     let meltingTypes = ['block', 'can', 'coin', 'dust', 'gear', 'ingot', 'nugget', 'ore', 'plates', 'rod', 'sheetmetal']
     let meltingTypeValues = {
       storage_blocks: { amount: 1296, multiplier: 88.125 },
-      dusts: { amount: 144, multiplier: 21.75 },
+      dusts: { amount: 90, multiplier: 21.75 },
       gears: { amount: 576, multiplier: 58.8 },
-      ingots: { amount: 144, multiplier: 29.4 },
+      ingots: { amount: 90, multiplier: 29.4 },
       nuggets: { amount: 16, multiplier: 10.0 },
       ores: { amount: 288, multiplier: 44.1 },
-      plates: { amount: 144, multiplier: 29.4 },
+      plates: { amount: 90, multiplier: 29.4 },
       rods: { amount: 72, multiplier: 5.88 },
-      sheetmetals: { amount: 144, multiplier: 29.4 }
+      sheetmetals: { amount: 90, multiplier: 29.4 }
     }
     let meltingParts = ['broad_axe_head', 'broad_blade', 'hammer_head', 'large_plate', 'pickaxe_head', 'repair_kit', 'small_axe_head', 'small_blade', 'tool_binding', 'tool_handle', 'tough_handle']
 
@@ -250,7 +249,7 @@ onEvent('recipes', e => {
       e.custom({
         type: 'tconstruct:casting_table',
         cast: { tag: 'tconstruct:casts/multi_use/ingot' },
-        fluid: { tag: `tconstruct:molten_${input}`, amount: 144 },
+        fluid: { tag: `tconstruct:molten_${input}`, amount: 90 },
         result: { item: `${outputItem}` },
         cooling_time: 57
       }).id(`kubejs:smeltery/casting/metal/${input}/ingot_gold_cast`)
@@ -258,7 +257,7 @@ onEvent('recipes', e => {
         type: 'tconstruct:casting_table',
         cast: { tag: 'tconstruct:casts/single_use/ingot' },
         cast_consumed: true,
-        fluid: { tag: `tconstruct:molten_${input}`, amount: 144 },
+        fluid: { tag: `tconstruct:molten_${input}`, amount: 90 },
         result: { item: `${outputItem}` },
         cooling_time: 57
       }).id(`kubejs:smeltery/casting/metal/${input}/ingot_sand_cast`)
@@ -367,51 +366,51 @@ onEvent('recipes', e => {
   tinkerAlloys([
     [
       'brass', 288, 605, [
-        { tag: 'forge:molten_copper', amount: 144 },
-        { tag: 'forge:molten_zinc', amount: 144 }
+        { tag: 'forge:molten_copper', amount: 90 },
+        { tag: 'forge:molten_zinc', amount: 90 }
       ]
     ],
     [
       'bronze', 576, 700, [
         { tag: 'forge:molten_copper', amount: 432 },
-        { tag: 'forge:molten_tin', amount: 144 }
+        { tag: 'forge:molten_tin', amount: 90 }
       ]
     ],
     [
       'constantan', 288, 920, [
-        { tag: 'forge:molten_copper', amount: 144 },
-        { tag: 'forge:molten_nickel', amount: 144 }
+        { tag: 'forge:molten_copper', amount: 90 },
+        { tag: 'forge:molten_nickel', amount: 90 }
       ]
     ],
     [
       'electrum', 288, 760, [
-        { tag: 'tconstruct:molten_gold', amount: 144 },
-        { tag: 'forge:molten_silver', amount: 144 }
+        { tag: 'tconstruct:molten_gold', amount: 90 },
+        { tag: 'forge:molten_silver', amount: 90 }
       ]
     ],
     [
       'hepatizon', 288, 1400, [
         { tag: 'forge:molten_copper', amount: 288 },
-        { tag: 'tconstruct:molten_cobalt', amount: 144 },
+        { tag: 'tconstruct:molten_cobalt', amount: 90 },
         { tag: 'tconstruct:molten_obsidian', amount: 1000 }
       ]
     ],
     [
       'invar', 432, 900, [
         { tag: 'tconstruct:molten_iron', amount: 288 },
-        { tag: 'forge:molten_nickel', amount: 144 }
+        { tag: 'forge:molten_nickel', amount: 90 }
       ]
     ],
     [
       'pewter', 288, 400, [
-        { tag: 'tconstruct:molten_iron', amount: 144 },
-        { tag: 'forge:molten_lead', amount: 144 }
+        { tag: 'tconstruct:molten_iron', amount: 90 },
+        { tag: 'forge:molten_lead', amount: 90 }
       ]
     ],
     [
       'rose_gold', 576, 550, [
         { tag: 'forge:molten_copper', amount: 432 },
-        { tag: 'tconstruct:molten_gold', amount: 144 }
+        { tag: 'tconstruct:molten_gold', amount: 90 }
       ]
     ],
     [
