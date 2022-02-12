@@ -1,0 +1,27 @@
+{
+	"type": "tconstruct:sky_slime",
+	"name": "entity.tconstruct.sky_slime",
+	"name_color": "0x80d4d2",
+	"gui_scale": 2,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 160,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "",
+	"fabricator_drops": [
+		{
+			"item": "tconstruct:sky_slime_ball",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:sky_slime",
+			"count": 4
+		}
+	]
+}
