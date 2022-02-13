@@ -1,0 +1,27 @@
+{
+	"type": "tconstruct:ender_slime",
+	"name": "entity.tconstruct.ender_slime",
+	"name_color": "0xBD57F4",
+	"gui_scale": 2,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 160,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:end_prediction"
+	},
+	"trivia": "",
+	"fabricator_drops": [
+		{
+			"item": "tconstruct:ender_slime_ball",
+			"count": 16
+		},
+		{
+			"item": "tconstruct:ender_slime",
+			"count": 4
+		}
+	]
+}
