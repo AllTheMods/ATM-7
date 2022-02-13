@@ -1,0 +1,35 @@
+#Enable fortune upgrades? (Can still be inserted into upgrade slots, but effects are disabled.)
+enableFortuneUpgrade = true
+#Enable efficiency upgrades? (Can still be inserted into upgrade slots, but effects are disabled.)
+enableEfficiencyUpgrade = true
+#Enable hopping upgrade? (Can still be inserted into upgrade slots, but effects are disabled.)
+enableHoppingUpgrade = true
+#Enable auto cutting upgrades? (Can still be inserted into upgrade slots, but effects are disabled.)
+enableAutoCuttingUpgrade = true
+#Auto-cutting does damage to the used axe upgrade
+autoCuttingDamagesItems = true
+#How likely is it that the axe upgrade takes damage for each tree it cuts?
+#Range: 0.0 ~ 1.0
+autoCuttingDamageChance = 1.0
+#Show chance for drops in JEI
+showChanceInJEI = true
+#Summarize enchantment levels instead of using the highest level? (I.e. is '4 x Fortune III = Fortune XII'?)
+sumEnchantmentLevels = true
+#Drops: How many extra rolls per fortune enchantment level?
+#Range: 0 ~ 64
+extraRollsPerFortuneLevel = 1
+#Drops: What is the bonus chance to get a successful drop per fortune enchantment level?
+#Range: 0.0 ~ 1.0
+extraChancePerFortuneLevel = 0.05
+#Allow usage of bone meal on bonsai pots to boost their growth?
+allowBonemeal = true
+#How likely is it for bonemeal to succeed in boosting growth?
+#Range: 0.0 ~ 1.0
+bonemealSuccessChance = 0.45
+#How many ticks to wait before trying to insert items into the inventory below after failure?
+#Range: 20 ~ 1200
+hoppingCooldown = 60
+#How many ticks to wait before trying to cut the tree automatically after failing to do so?
+#Range: 20 ~ 1200
+cuttingCooldown = 60
+
