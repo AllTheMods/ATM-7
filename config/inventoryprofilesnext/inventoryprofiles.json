@@ -1,0 +1,15 @@
+{
+    "ModSettings": {
+        "enable_updates_check": false,
+        "first_run": false
+    },
+    "AutoRefillSettings": {
+        "tool_damage_threshold": 2,
+        "visual_durability_notification": false,
+        "audio_durability_notification": false,
+        "visual_replace_success_notification": false,
+        "audio_replace_success_notification": false,
+        "visual_replace_failed_notification": false,
+        "audio_replace_failed_notification": false
+    }
+}
