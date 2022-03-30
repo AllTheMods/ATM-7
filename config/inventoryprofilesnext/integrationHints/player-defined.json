@@ -1,9 +1,14 @@
 {
-    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
-        "buttonHints": {
-            "SORT": {
-                "horizontalOffset": -1
-            }
-        }
-    }
+  "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": {
+    "ignore": true
+  },
+  "lain.mods.cos.impl.inventory.ContainerCosArmor": {
+    "ignore": true
+  },
+  "top.theillusivec4.curios.client.gui.CuriosScreen": {
+    "ignore": true
+  },
+  "top.theillusivec4.curios.common.inventory.container.CuriosContainer": {
+    "ignore": true
+  }
 }
