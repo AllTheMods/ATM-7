@@ -120,12 +120,6 @@
     'extrastorage:iron_crafter'
   ])
   
-   e.remove({id: 'rsinfinitybooster:infinity_card'})
-   e.shaped('rsinfinitybooster:infinity_card', ['EBE', 'BUB', 'NNN'], {
-    U: '#forge:ingots/unobtainium',
-    B: 'refinedstorage:range_upgrade',
-    E: 'alltheores:enderium_plate',
-	N: 'minecraft:netherite_ingot'
+
 })
- })
  
