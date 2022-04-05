@@ -42,6 +42,10 @@ onEvent('recipes', e => {
         chance: 0.50,
         output: Ingredient.of(furnaceOutput)
       })
+
+      e.remove({id: `immersiveengineering:crafting/hammercrushing_${input}`});
+      e.shapeless(crusherOutput, [inputIngredient, '#alltheores:ore_hammers'])
+        .id(`kubejs:hammercrushing/${input}_ore`)
     }
 
     if (type === 'raw_block') {
@@ -152,7 +156,6 @@ onEvent('recipes', e => {
     'vibranium',
     'unobtainium',
   ].forEach(ore => {
-    e.remove({id: `immersiveengineering:crafting/hammercrushing_${ore}`});
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
   });
