@@ -112,6 +112,12 @@ onEvent('recipes', e => {
       inputCount = 4;
     }
 
+    if (type === 'plate') {
+      e.remove({id: `immersiveengineering:crafting/plate_${input}_hammering`});
+      e.shapeless(output, [`2x #forge:ingots/${input}`, '#misctags:immersive_engineering_hammer'])
+        .id(`kubejs:crafting/plate_${input}_hammering`);
+    }
+
     e.remove({id: `immersiveengineering:metalpress/${type}_${input}`})
     e.custom({
       "type": "immersiveengineering:metal_press",
@@ -146,9 +152,14 @@ onEvent('recipes', e => {
     'vibranium',
     'unobtainium',
   ].forEach(ore => {
+    e.remove({id: `immersiveengineering:crafting/hammercrushing_${ore}`});
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
   });
+
+  atoAlloys.forEach(alloy => {
+    ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type))
+  })
 
   atoMetals.forEach(metal => {
     e.smelting(`alltheores:${metal}_ingot`, `alltheores:${metal}_nether_ore`);

@@ -9,6 +9,9 @@ onEvent('tags.items', e => {
   e.add('misctags:immersive_engineering_hammer', 'immersiveengineering:hammer')
   e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
 
+  e.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore'])
+  e.add('forge:ores/gold', ['byg:blue_nether_gold_ore', 'byg:brimstone_nether_gold_ore'])
+
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
 })
 onEvent('tags.blocks', e => {
