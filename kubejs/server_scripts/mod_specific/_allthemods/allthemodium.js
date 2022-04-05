@@ -41,7 +41,6 @@ onEvent('recipes', e => {
   upgrade('gems/diamond', 'minecraft:iron', 'minecraft:diamond')
   upgrade('ingots/allthemodium', 'minecraft:netherite', 'allthemodium:allthemodium')
 
-  e.smelting('alltheores:platinum_ingot', 'create:crushed_platinum_ore').xp(1).id('kubejs:smelting/create_platinum')
   e.smelting('allthemodium:vibranium_allthemodium_alloy_ingot', 'allthemodium:vibranium_allthemodium_alloy_dust').xp(.5).id('kubejs:smelting/vibranium_allthemodium_alloy_dust')
   e.smelting('allthemodium:unobtainium_allthemodium_alloy_ingot', 'allthemodium:unobtainium_allthemodium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_allthemodium_alloy_dust')
   e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')

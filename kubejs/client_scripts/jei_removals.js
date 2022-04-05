@@ -2,6 +2,7 @@ onEvent('jei.hide.items', e => {
   //#region consts
   let refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
   let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
+  let maDisabledSeeds = ['apatite', 'rubber', 'ruby', 'sapphire', 'basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium']
   let typeFirst = ['mekanism', 'immersiveengineering']
   let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
@@ -20,11 +21,17 @@ onEvent('jei.hide.items', e => {
   }
   //#endregion
 
+  colors.forEach(color => {
+    refined.forEach(machine => e.hide([`refinedstorage:${color}_${machine}`]))
+  })
+
   e.hide([
     /extrastorage:disk_.+/,
     /extrastorage:block_.+/,
     /extrastorage:storagepart_.+/,
-	'beyond_earth:iron_plate'
+	  'beyond_earth:iron_plate',
+    'occultism:silver_ore',
+    'occultism:silver_ore_deepslate',
   ])
 
   //#region hideMetal
@@ -67,7 +74,7 @@ onEvent('jei.hide.items', e => {
   hideStuff('solarflux', 'sp', [6, 7, 8])
   hideStuff('quark', 'crate', ['apple', 'carrot', 'beetroot', 'potato'])
   hideStuff('quark', 'block', ['bamboo', 'charcoal', 'sugar_cane'])
-  hideStuff('mysticalagriculture', 'seeds', ['apatite', 'rubber', 'ruby', 'sapphire', 'basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
-  hideStuff('mysticalagriculture', 'essence', ['apatite', 'rubber', 'ruby', 'sapphire', 'basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
+  hideStuff('mysticalagriculture', 'seeds', maDisabledSeeds)
+  hideStuff('mysticalagriculture', 'essence', maDisabledSeeds)
   //#endregion
 })
