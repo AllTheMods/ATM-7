@@ -1,6 +1,6 @@
 onEvent('recipes', event => {
- event.remove({id: 'explorerscompass:explorers_compass'})
- event.shaped('explorerscompass:explorerscompass', [
+ event.remove({id: 'structures_compass:structures_compass'})
+ event.shaped('structures_compass:structures_compass', [
     'NAN',
     'ACA',
     'NAN'

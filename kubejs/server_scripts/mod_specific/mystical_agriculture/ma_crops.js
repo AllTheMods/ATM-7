@@ -1,13 +1,32 @@
 onEvent('recipes', e => {
+  function cloche(output, amount, seed, soil, render, time) {
+    e.custom({
+        type: "immersiveengineering:cloche",
+        results: [
+          {
+            item: output,
+            count: amount
+          }
+        ],
+        input: Ingredient.of(seed),
+        soil: Ingredient.of(soil),
+        time: time,
+        render: {
+          type: "crop",
+          block: render
+        }
+      }).id(`kubejs:cloche/${seed.replace(':', '/')}`)
+  }
+
   //#region FUNCTIONS
   function tier(types, time, soil, rCount) {
     types.forEach(type => {
-      e.recipes.immersiveengineering.cloche(Item.of(`mysticalagriculture:${type}_essence`, rCount), `mysticalagriculture:${type}_seeds`, soil, `mysticalagriculture:${type}_crop`).time(time).id(`kubejs:immersiveengineering/cloche/${type}`)
+      cloche(`mysticalagriculture:${type}_essence`, rCount, `mysticalagriculture:${type}_seeds`, soil, `mysticalagriculture:${type}_crop`, time);
     })
   }
 
-  function regular(results, seed, crop) {
-    e.recipes.immersiveengineering.cloche(results, Item.of(seed), 'minecraft:dirt', crop).time(600).id(`kubejs:immersiveengineering/cloche/${seed.replace(':', '/')}`)
+  function regular(output, amount, seed, crop) {
+    cloche(output, amount, seed, 'minecraft:dirt', crop, 600);
   }
 
   //#endregion
@@ -90,11 +109,9 @@ onEvent('recipes', e => {
     'uranium',
   ], 4000, '#misctags:farmland/tier5', 2)
   //Tier 6 Crops
-  tier([
-    'dragon_egg',
-    'nether_star',
-  ], 4750, '#misctags:farmland/tier6', 2)
+  tier(['nether_star'], 4750, 'mysticalagradditions:nether_star_crux', 2)
+  tier(['dragon_egg'], 4750, 'mysticalagradditions:dragon_egg_crux', 2)
 
   //Regular crops
-  regular(Item.of('silentgear:flax_fiber', 2), 'silentgear:flax_seeds', 'silentgear:flax_plant')
+  regular('silentgear:flax_fiber', 2, 'silentgear:flax_seeds', 'silentgear:flax_plant');
 })
