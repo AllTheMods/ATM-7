@@ -303,4 +303,8 @@ onEvent('recipes', e => {
 
   ieUnifyPress('compressed_iron', 'gear');
   e.remove({id: 'immersiveengineering:crusher/nether_gold'});
+  e.remove({output: 'immersiveengineering:stick_iron'});
+  e.remove({output: 'immersiveengineering:stick_steel'});
+  e.remove({output: 'immersiveengineering:stick_aluminum'});
+  e.remove({output: 'silentgear:iron_rod'});
 })
