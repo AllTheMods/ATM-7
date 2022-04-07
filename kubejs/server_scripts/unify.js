@@ -230,25 +230,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:metalpress/${type}_${input}`)
   }
 
-  [
-    'aluminum',
-    'osmium',
-    'platinum',
-    'zinc',
-    'iron',
-    'uranium',
-    'iron',
-    'gold',
-    'copper',
-    'tin',
-    'lead',
-    'silver',
-    'nickel',
-    'zinc',
-    'allthemodium',
-    'vibranium',
-    'unobtainium',
-  ].forEach(ore => {
+  atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
@@ -303,4 +285,8 @@ onEvent('recipes', e => {
 
   ieUnifyPress('compressed_iron', 'gear');
   e.remove({id: 'immersiveengineering:crusher/nether_gold'});
+  e.remove({output: 'immersiveengineering:stick_iron'});
+  e.remove({output: 'immersiveengineering:stick_steel'});
+  e.remove({output: 'immersiveengineering:stick_aluminum'});
+  e.remove({output: 'silentgear:iron_rod'});
 })

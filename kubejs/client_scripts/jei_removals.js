@@ -32,6 +32,12 @@ onEvent('jei.hide.items', e => {
 	  'beyond_earth:iron_plate',
     'occultism:silver_ore',
     'occultism:silver_ore_deepslate',
+    'immersiveengineering:stick_iron',
+    'immersiveengineering:stick_steel',
+    'immersiveengineering:stick_aluminum',
+    'silentgear:iron_rod',
+    'moreminecarts:chunkrodite',
+    'moreminecarts:chunkrodite_block',
   ])
 
   //#region hideMetal
