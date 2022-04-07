@@ -68,7 +68,7 @@ onEvent('jei.hide.items', e => {
   hideStuff('mekanism', 'dirty_dust', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('mekanism', 'clump', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('appliedenergistics2', 'dust', ['nether_quartz', 'ender', 'iron', 'gold'])
-  hideStuff('create', 'sheet', ['iron', 'golden', 'copper'])
+  hideStuff('create', 'sheet', ['iron', 'golden', 'copper', 'brass'])
   hideStuff('iceandfire', 'ore', ['silver', 'copper'])
   hideStuff('tmechworks', 'ore', ['aluminum', 'copper'])
   hideStuff('solarflux', 'sp', [6, 7, 8])

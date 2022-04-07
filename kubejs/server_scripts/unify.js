@@ -16,6 +16,99 @@ onEvent('recipes', e => {
     compressed_iron: 'pneumaticcraft',
   }
 
+  // unify ores for Create crushing wheel
+  function createUnifyOres(metal, type) {
+    let time = 250;
+    let input = '';
+    let outputs = [];
+
+    if (type === 'ore') {
+      time = 350;
+      input = `#forge:ores/${metal}`;
+      let out = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
+      outputs.push({
+        item: out
+      });
+      outputs.push({
+        item: out,
+        chance: 0.33
+      });
+      outputs.push({
+        item: "create:experience_nugget",
+        chance: 0.75
+      });
+
+      e.remove({id: `create:crushing/${metal}_ore`});
+      e.remove({id: `create:crushing/nether_${metal}_ore`});
+      e.remove({id: `create:crushing/deepslate_${metal}_ore`});
+    }
+
+    if (type === 'raw_block') {
+      input = `#forge:storage_blocks/raw_${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`,
+        count: 18,
+      });
+      outputs.push({
+        item: "create:experience_nugget",
+        chance: 0.75,
+        count: 9,
+      });
+
+      e.remove({id: `create:crushing/raw_${metal}_block`});
+    }
+
+    if (type === 'raw_ore') {
+      input = `#forge:raw_ores/${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`,
+        count: 2
+      });
+
+      e.remove({id: `create:crushing/raw_${metal}`});
+    }
+
+    if (type === 'ingot') {
+      input = `#forge:ingots/${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`
+      });
+    }
+
+    if (type === 'dust') {
+      return;
+    }
+
+    e.custom({
+      "type": "create:crushing",
+      "ingredients": [
+        Ingredient.of(input)
+      ],
+      "results": outputs,
+      "processingTime": time
+    }).id(`kubejs:crushing/${type}_${metal}`)
+  }
+
+  // unify plates for Create press
+  function createPressing(metal) {
+    let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_plate`
+
+    e.remove({id: `create:pressing/${metal}_ingot`});
+    e.custom({
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "tag": `forge:ingots/${metal}`
+        }
+      ],
+      "results": [
+        {
+          "item": output
+        }
+      ]
+    }).id(`kubejs:pressing/${metal}_ingot`)
+  }
+
   function ieUnifyOres(input, type) {
     let furnaceTime = 100;
     let furnaceEnergy = 51200;
@@ -157,11 +250,14 @@ onEvent('recipes', e => {
     'unobtainium',
   ].forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
+    createPressing(ore)
   });
 
   atoAlloys.forEach(alloy => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type))
+    createPressing(alloy)
   })
 
   atoMetals.forEach(metal => {
