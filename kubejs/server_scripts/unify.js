@@ -230,25 +230,7 @@ onEvent('recipes', e => {
     }).id(`kubejs:metalpress/${type}_${input}`)
   }
 
-  [
-    'aluminum',
-    'osmium',
-    'platinum',
-    'zinc',
-    'iron',
-    'uranium',
-    'iron',
-    'gold',
-    'copper',
-    'tin',
-    'lead',
-    'silver',
-    'nickel',
-    'zinc',
-    'allthemodium',
-    'vibranium',
-    'unobtainium',
-  ].forEach(ore => {
+  atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
