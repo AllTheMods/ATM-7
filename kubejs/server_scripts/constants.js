@@ -5,6 +5,10 @@ let vanillaMetals = ['iron', 'gold', 'copper']
 let atoMetals = ['aluminum', 'osmium', 'platinum', 'zinc', 'uranium', 'tin', 'lead', 'silver', 'nickel', 'zinc']
 let atoAlloys = ['steel', 'invar', 'electrum', 'bronze', 'enderium', 'lumium', 'signalum', 'constantan', 'brass']
 let atmMetals = ['allthemodium', 'vibranium', 'unobtainium']
+let immersiveMetals = ['aluminum', 'lead', 'nickel', 'silver', 'uranium']
+let immersiveAlloys = ['steel', 'electrum', 'constantan']
+let mekanismMetals = ['osmium', 'lead', 'tin', 'uranium']
+let mekanismAlloys = ['steel', 'refined_obsidian', 'refined_glowstone', 'bronze']
 
 let draconicFusion = (e, output, craftingTier, energy, middleItem, ingredientList) => {
   //crafting tier: 1.draconium, 2.wyvern, 3.draconic, 4.chaotic
