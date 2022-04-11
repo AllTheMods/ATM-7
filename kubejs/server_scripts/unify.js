@@ -305,6 +305,7 @@ onEvent('recipes', e => {
       `mekanism:processing/${metal}/raw/from_raw_block`,
       `mekanism:processing/${metal}/storage_blocks/from_ingots`,
       `mekanism:processing/${metal}/ingot/from_block`,
+      `mekanism:processing/${metal}/nugget/from_ingot`,
     ])
     e.remove({output: `mekanism:ingot_${metal}`})
   });
@@ -331,6 +332,7 @@ onEvent('recipes', e => {
   immersiveMetals.concat(immersiveAlloys).forEach(metal => {
     e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_storage_${metal}`})
     e.remove({id: `immersiveengineering:crafting/storage_${metal}_to_ingot_${metal}`})
+    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_nugget_${metal}`})
     e.remove({output: `immersiveengineering:ingot_${metal}`})
   });
 
@@ -378,6 +380,7 @@ onEvent('recipes', e => {
     e.shapeless(`allthemodium:raw_${metal}_block`, `9x #forge:raw_ores/${metal}`);
     e.shapeless(`9x allthemodium:raw_${metal}`, `#forge:storage_blocks/raw_${metal}`);
     e.remove({id: `allthemodium:main/${metal}_ingot_from_${metal}_block`});
+    e.remove({id: `allthemodium:main/${metal}_nugget_from_${metal}_ingot`});
     e.remove({id: `allthemodium:main/${metal}_block`});
   })
 
@@ -385,11 +388,16 @@ onEvent('recipes', e => {
     'immersiveengineering:crusher/nether_gold',
     'immersiveengineering:crafting/nugget_steel_to_ingot_steel',
     'immersiveengineering:crafting/ingot_steel_to_storage_steel',
+    'immersiveengineering:crafting/nugget_copper_to_copper_ingot',
+    'immersiveengineering:crafting/copper_ingot_to_nugget_copper',
     'biggerreactors:crafting/uranium_block',
     'biggerreactors:crafting/uranium_ingot',
     'biggerreactors:smelting/uranium_ingot',
     'occultism:crafting/silver_block',
     'occultism:crafting/silver_nugget',
+    `mekanism:processing/steel/ingot_to_dust`,
+    'create:crafting/materials/copper_ingot',
+    'create:crafting/materials/copper_nugget',
     'create:crafting/blasting/zinc_ingot_from_ore',
     'create:crafting/smelting/zinc_ingot_from_ore',
     'create:crafting/materials/zinc_block_from_compacting',
