@@ -29,7 +29,7 @@
 
 	[Peripherals.Chunky_Turtle]
 		#Enable the Chunky Turtle or not.
-		enableChunkyTurtle = true
+		enableChunkyTurtle = false
 		#Time in seconds, while loaded chunk can be consider as valid without touch
 		#Range: > 60
 		chunkLoadValidTime = 600
@@ -124,5 +124,16 @@
 		#Range: 0.1 ~ 1.7976931348623157E308
 		scanEntitiesExtraBlockCost = 0.17
 		#Range: > 1000
-		chatMessageCooldown = 100
+		chatMessageCooldown = 1000
+
+	[Peripherals.RS_Bridge]
+		#Enable the Rs Bridge or not.
+		enableRsBridge = true
+		#Power consumption per tick.
+		#Range: > 0
+		rsPowerConsumption = 10
+
+	[Peripherals.Compass_Turtle]
+		#Enable the compass turtle or not.
+		enableCompassTurtle = true
 

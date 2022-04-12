@@ -29,7 +29,13 @@ onEvent('recipes', e => {
     cloche(output, amount, seed, 'minecraft:dirt', crop, 600);
   }
 
+  function essenceCircle(result, essenceType) {
+    e.shaped(result, ['aaa', 'a a', 'aaa'], { a: `mysticalagriculture:${essenceType}_essence` }).id(`kubejs:mysticalagriculture/${essenceType}_essence_crafting`)
+  }
+
   //#endregion
+
+  essenceCircle('4x alltheores:osmium_ingot', 'osmium');
 
   //#region CROPS
   //Tier 1 Crops

@@ -32,6 +32,12 @@ onEvent('jei.hide.items', e => {
 	  'beyond_earth:iron_plate',
     'occultism:silver_ore',
     'occultism:silver_ore_deepslate',
+    'immersiveengineering:stick_iron',
+    'immersiveengineering:stick_steel',
+    'immersiveengineering:stick_aluminum',
+    'silentgear:iron_rod',
+    'moreminecarts:chunkrodite',
+    'moreminecarts:chunkrodite_block',
   ])
 
   //#region hideMetal
@@ -68,7 +74,7 @@ onEvent('jei.hide.items', e => {
   hideStuff('mekanism', 'dirty_dust', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('mekanism', 'clump', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('appliedenergistics2', 'dust', ['nether_quartz', 'ender', 'iron', 'gold'])
-  hideStuff('create', 'sheet', ['iron', 'golden', 'copper'])
+  hideStuff('create', 'sheet', ['iron', 'golden', 'copper', 'brass'])
   hideStuff('iceandfire', 'ore', ['silver', 'copper'])
   hideStuff('tmechworks', 'ore', ['aluminum', 'copper'])
   hideStuff('solarflux', 'sp', [6, 7, 8])

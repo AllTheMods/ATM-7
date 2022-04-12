@@ -15,6 +15,146 @@ onEvent('recipes', e => {
     unobtainium: 'allthemodium',
     compressed_iron: 'pneumaticcraft',
   }
+  function mekUnifyOres(metal, type) {
+    let input = '';
+    let output = '';
+    let outputCount = 1;
+
+    if (type === 'ingot') {
+      input = `#forge:ingots/${metal}`;
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      e.remove({id: `mekanism:processing/${metal}/dust/from_ingot`})
+
+      e.custom({
+        "type": "mekanism:crushing",
+        "input": {
+          "ingredient": Ingredient.of(input)
+        },
+        "output": Ingredient.of(output)
+      }).id(`kubejs:mekanism/crushing/${type}_${metal}`)
+      return;
+    }
+
+    if (type === 'ore') {
+      input = `#forge:ores/${metal}`;
+      output = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
+
+      e.remove({id: `mekanism:processing/${metal}/dust/from_ore`})
+      e.remove({id: `alltheores:mek_processing/${metal}/dust/from_ore`})
+    }
+
+    if (type === 'raw_ore') {
+      input = `#forge:raw_ores/${metal}`;
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      outputCount = 2;
+
+      e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`})
+    }
+
+    e.custom({
+      "type": "mekanism:enriching",
+      "input": {
+        "ingredient": Ingredient.of(input)
+      },
+      "output": {
+        "item": output,
+        "count": outputCount,
+      }
+    }).id(`kubejs:mekanism/enriching/${type}_${metal}`)
+  }
+
+  // unify ores for Create crushing wheel
+  function createUnifyOres(metal, type) {
+    let time = 250;
+    let input = '';
+    let outputs = [];
+
+    if (type === 'ore') {
+      time = 350;
+      input = `#forge:ores/${metal}`;
+      let out = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
+      outputs.push({
+        item: out
+      });
+      outputs.push({
+        item: out,
+        chance: 0.33
+      });
+      outputs.push({
+        item: "create:experience_nugget",
+        chance: 0.75
+      });
+
+      e.remove({id: `create:crushing/${metal}_ore`});
+      e.remove({id: `create:crushing/nether_${metal}_ore`});
+      e.remove({id: `create:crushing/deepslate_${metal}_ore`});
+    }
+
+    if (type === 'raw_block') {
+      input = `#forge:storage_blocks/raw_${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`,
+        count: 18,
+      });
+      outputs.push({
+        item: "create:experience_nugget",
+        chance: 0.75,
+        count: 9,
+      });
+
+      e.remove({id: `create:crushing/raw_${metal}_block`});
+    }
+
+    if (type === 'raw_ore') {
+      input = `#forge:raw_ores/${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`,
+        count: 2
+      });
+
+      e.remove({id: `create:crushing/raw_${metal}`});
+    }
+
+    if (type === 'ingot') {
+      input = `#forge:ingots/${metal}`;
+      outputs.push({
+        item: `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`
+      });
+    }
+
+    if (type === 'dust') {
+      return;
+    }
+
+    e.custom({
+      "type": "create:crushing",
+      "ingredients": [
+        Ingredient.of(input)
+      ],
+      "results": outputs,
+      "processingTime": time
+    }).id(`kubejs:crushing/${type}_${metal}`)
+  }
+
+  // unify plates for Create press
+  function createPressing(metal) {
+    let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_plate`
+
+    e.remove({id: `create:pressing/${metal}_ingot`});
+    e.custom({
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "tag": `forge:ingots/${metal}`
+        }
+      ],
+      "results": [
+        {
+          "item": output
+        }
+      ]
+    }).id(`kubejs:pressing/${metal}_ingot`)
+  }
 
   function ieUnifyOres(input, type) {
     let furnaceTime = 100;
@@ -137,31 +277,18 @@ onEvent('recipes', e => {
     }).id(`kubejs:metalpress/${type}_${input}`)
   }
 
-  [
-    'aluminum',
-    'osmium',
-    'platinum',
-    'zinc',
-    'iron',
-    'uranium',
-    'iron',
-    'gold',
-    'copper',
-    'tin',
-    'lead',
-    'silver',
-    'nickel',
-    'zinc',
-    'allthemodium',
-    'vibranium',
-    'unobtainium',
-  ].forEach(ore => {
+  atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
-    ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type))
+    ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
+    ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
+    createPressing(ore)
   });
 
   atoAlloys.forEach(alloy => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type))
+    mekUnifyOres(alloy, 'ingot')
+    createPressing(alloy)
   })
 
   atoMetals.forEach(metal => {
@@ -170,7 +297,44 @@ onEvent('recipes', e => {
 
     e.blasting(`alltheores:${metal}_ingot`, `alltheores:${metal}_nether_ore`);
     e.blasting(`alltheores:${metal}_ingot`, `alltheores:${metal}_end_ore`);
-  })
+  });
+
+  mekanismMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `mekanism:processing/${metal}/raw_storage_blocks/from_raw`,
+      `mekanism:processing/${metal}/raw/from_raw_block`,
+      `mekanism:processing/${metal}/storage_blocks/from_ingots`,
+      `mekanism:processing/${metal}/ingot/from_block`,
+      `mekanism:processing/${metal}/nugget/from_ingot`,
+    ])
+    e.remove({output: `mekanism:ingot_${metal}`})
+  });
+
+  // Mek alloys overlapping with ATO
+  ['steel', 'bronze'].forEach(metal => {
+    removeRecipeByID(e, [
+      `mekanism:nuggets/${metal}`,
+      `mekanism:storage_blocks/${metal}`,
+      `mekanism:processing/${metal}/ingot/from_nuggets`,
+      `mekanism:processing/${metal}/ingot/from_block`,
+      `mekanism:processing/${metal}/ingot/from_dust_smelting`,
+      `mekanism:processing/${metal}/ingot/from_dust_blasting`,
+      `mekanismtools:${metal}/nugget_from_smelting`,
+      `mekanismtools:${metal}/nugget_from_blasting`,
+    ])
+  });
+
+  immersiveMetals.forEach(metal => {
+    e.remove({id: `immersiveengineering:crafting/raw_${metal}_to_raw_block_${metal}`})
+    e.remove({id: `immersiveengineering:crafting/raw_block_${metal}_to_raw_${metal}`})
+  });
+
+  immersiveMetals.concat(immersiveAlloys).forEach(metal => {
+    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_storage_${metal}`})
+    e.remove({id: `immersiveengineering:crafting/storage_${metal}_to_ingot_${metal}`})
+    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_nugget_${metal}`})
+    e.remove({output: `immersiveengineering:ingot_${metal}`})
+  });
 
   e.custom({
     "type": "immersiveengineering:crusher",
@@ -206,5 +370,51 @@ onEvent('recipes', e => {
   }).id(`kubejs:crusher/ore_xpetrified`);
 
   ieUnifyPress('compressed_iron', 'gear');
-  e.remove({id: 'immersiveengineering:crusher/nether_gold'});
+
+  // temporary for missing recipes
+  e.shapeless('alltheores:brass_ingot', '9x #forge:nuggets/brass');
+  e.shapeless('9x alltheores:brass_nugget', '#forge:ingots/brass');
+
+  // temporary for missing recipes
+  atmMetals.forEach(metal => {
+    e.shapeless(`allthemodium:raw_${metal}_block`, `9x #forge:raw_ores/${metal}`);
+    e.shapeless(`9x allthemodium:raw_${metal}`, `#forge:storage_blocks/raw_${metal}`);
+    e.remove({id: `allthemodium:main/${metal}_ingot_from_${metal}_block`});
+    e.remove({id: `allthemodium:main/${metal}_nugget_from_${metal}_ingot`});
+    e.remove({id: `allthemodium:main/${metal}_block`});
+  })
+
+  removeRecipeByID(e, [
+    'immersiveengineering:crusher/nether_gold',
+    'immersiveengineering:crafting/nugget_steel_to_ingot_steel',
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel',
+    'immersiveengineering:crafting/nugget_copper_to_copper_ingot',
+    'immersiveengineering:crafting/copper_ingot_to_nugget_copper',
+    'biggerreactors:crafting/uranium_block',
+    'biggerreactors:crafting/uranium_ingot',
+    'biggerreactors:smelting/uranium_ingot',
+    'occultism:crafting/silver_block',
+    'occultism:crafting/silver_nugget',
+    `mekanism:processing/steel/ingot_to_dust`,
+    'create:crafting/materials/copper_ingot',
+    'create:crafting/materials/copper_nugget',
+    'create:crafting/blasting/zinc_ingot_from_ore',
+    'create:crafting/smelting/zinc_ingot_from_ore',
+    'create:crafting/materials/zinc_block_from_compacting',
+    'create:crafting/materials/zinc_ingot_from_compacting',
+    'create:crafting/materials/zinc_ingot_from_decompacting',
+    'create:crafting/materials/zinc_nugget_from_decompacting',
+    'create:crafting/materials/brass_block_from_compacting',
+    'create:crafting/materials/brass_ingot_from_compacting',
+    'create:crafting/materials/brass_ingot_from_decompacting',
+    'create:crafting/materials/brass_nugget_from_decompacting',
+  ]);
+
+  removeRecipeByOutput(e, [
+    'immersiveengineering:stick_iron',
+    'immersiveengineering:stick_steel',
+    'immersiveengineering:stick_aluminum',
+    'silentgear:iron_rod',
+    'occultism:silver_ingot',
+  ]);
 })
