@@ -19,6 +19,11 @@ onEvent('tags.items', e => {
   e.add('forge:raw_ores/azure_silver', 'silentgear:raw_azure_silver');
   e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
 
+  // fix raw block crafting for other mods
+  e.add('forge:raw_ores/zinc', 'create:raw_zinc')
+  mekanismMetals.forEach(metal => e.add(`forge:raw_ores/${metal}`, `mekanism:raw_${metal}`))
+  immersiveMetals.forEach(metal => e.add(`forge:raw_ores/${metal}`, `immersiveengineering:raw_${metal}`))
+
   atmMetals.forEach(metal => e.add(`forge:storage_blocks/raw_${metal}`, `allthemodium:raw_${metal}_block`));
   e.add('forge:rods/metal', atoMetals.concat(vanillaMetals, atoAlloys).map(metal => `alltheores:${metal}_rod`));
   e.add('forge:rods/metal', atmMetals.map(metal => `allthemodium:${metal}_rod`));
