@@ -12,6 +12,13 @@ onEvent('tags.items', e => {
   e.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore'])
   e.add('forge:ores/gold', ['byg:blue_nether_gold_ore', 'byg:brimstone_nether_gold_ore'])
 
+  e.add('forge:storage_blocks/raw_crimson_iron', 'silentgear:raw_crimson_iron_block');
+  e.add('forge:raw_ores/crimson_iron', 'silentgear:raw_crimson_iron');
+  e.add('forge:dusts/crimson_iron', 'silentgear:crimson_iron_dust');
+  e.add('forge:storage_blocks/raw_azure_silver', 'silentgear:raw_azure_silver_block');
+  e.add('forge:raw_ores/azure_silver', 'silentgear:raw_azure_silver');
+  e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
+
   atmMetals.forEach(metal => e.add(`forge:storage_blocks/raw_${metal}`, `allthemodium:raw_${metal}_block`));
   e.add('forge:rods/metal', atoMetals.concat(vanillaMetals, atoAlloys).map(metal => `alltheores:${metal}_rod`));
   e.add('forge:rods/metal', atmMetals.map(metal => `allthemodium:${metal}_rod`));

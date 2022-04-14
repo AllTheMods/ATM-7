@@ -7,6 +7,9 @@ onEvent('recipes', e => {
     allthemodium: 'allthemodium',
     vibranium: 'allthemodium',
     unobtainium: 'allthemodium',
+    crimson_iron: 'silentgear',
+    azure_silver: 'silentgear',
+    iesnium: 'occultism',
   }
 
   let craftOverride = {
@@ -14,6 +17,9 @@ onEvent('recipes', e => {
     vibranium: 'allthemodium',
     unobtainium: 'allthemodium',
     compressed_iron: 'pneumaticcraft',
+    crimson_iron: 'silentgear',
+    azure_silver: 'silentgear',
+    iesnium: 'occultism',
   }
   function mekUnifyOres(metal, type) {
     let input = '';
@@ -336,6 +342,12 @@ onEvent('recipes', e => {
     e.remove({output: `immersiveengineering:ingot_${metal}`})
   });
 
+  ['crimson_iron', 'azure_silver', 'iesnium'].forEach(ore => {
+    ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
+  })
+
   e.custom({
     "type": "immersiveengineering:crusher",
     "secondaries": [],
@@ -371,18 +383,15 @@ onEvent('recipes', e => {
 
   ieUnifyPress('compressed_iron', 'gear');
 
-  // temporary for missing recipes
-  e.shapeless('alltheores:brass_ingot', '9x #forge:nuggets/brass');
-  e.shapeless('9x alltheores:brass_nugget', '#forge:ingots/brass');
+  // temporary fix to allow using any steel dust
+  e.smelting('alltheores:steel_ingot', '#forge:dusts/steel');
+  e.remove({id: 'alltheores:steel_ingot_from_dust'})
+  e.blasting('alltheores:steel_ingot', '#forge:dusts/steel');
+  e.remove({id: 'alltheores:steel_ingot_from_dust_blasting'})
 
   // temporary for missing recipes
-  atmMetals.forEach(metal => {
-    e.shapeless(`allthemodium:raw_${metal}_block`, `9x #forge:raw_ores/${metal}`);
-    e.shapeless(`9x allthemodium:raw_${metal}`, `#forge:storage_blocks/raw_${metal}`);
-    e.remove({id: `allthemodium:main/${metal}_ingot_from_${metal}_block`});
-    e.remove({id: `allthemodium:main/${metal}_nugget_from_${metal}_ingot`});
-    e.remove({id: `allthemodium:main/${metal}_block`});
-  })
+  e.shapeless('allthemodium:unobtainium_ingot', '9x #forge:nuggets/unobtainium');
+  e.remove({id: 'allthemodium:main/unobtainium_nugget_from_unobtainium_ingot'})
 
   removeRecipeByID(e, [
     'immersiveengineering:crusher/nether_gold',
@@ -400,6 +409,8 @@ onEvent('recipes', e => {
     'create:crafting/materials/copper_nugget',
     'create:crafting/blasting/zinc_ingot_from_ore',
     'create:crafting/smelting/zinc_ingot_from_ore',
+    'create:crafting/materials/raw_zinc',
+    'create:crafting/materials/raw_zinc_block',
     'create:crafting/materials/zinc_block_from_compacting',
     'create:crafting/materials/zinc_ingot_from_compacting',
     'create:crafting/materials/zinc_ingot_from_decompacting',
