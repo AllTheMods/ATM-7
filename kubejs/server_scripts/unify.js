@@ -419,6 +419,9 @@ onEvent('recipes', e => {
     'create:crafting/materials/brass_ingot_from_compacting',
     'create:crafting/materials/brass_ingot_from_decompacting',
     'create:crafting/materials/brass_nugget_from_decompacting',
+    'allthemodium:mek_processing/allthemodium/ingot/from_dust_smelting',
+    'allthemodium:mek_processing/vibranium/ingot/from_dust_smelting',
+    'allthemodium:mek_processing/unobtainium/ingot/from_dust_smelting',
   ]);
 
   removeRecipeByOutput(e, [
