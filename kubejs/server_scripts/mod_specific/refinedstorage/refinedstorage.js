@@ -15,7 +15,7 @@
   
   //Cable Tiers
   function caTier(tier, corners, processor, cables) {
-    utils.listOf(['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']).forEach(caType => {
+    Utils.listOf(['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']).forEach(caType => {
       e.shaped(`cabletiers:${tier}_${caType}`, [`a a`, `bcb`, `a a`], {
         a: corners,
         b: processor,
@@ -25,6 +25,10 @@
   }
 
   e.remove({ mod: 'cabletiers' })
+  
+  caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
+  caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
+  caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
   
   //Creative Crafter
   e.shaped(`creativecrafter:creative_crafter`, [`BUB`, `PCP`, `BUB`], {
