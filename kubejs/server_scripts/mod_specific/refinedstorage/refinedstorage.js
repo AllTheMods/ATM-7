@@ -5,6 +5,43 @@
     C: '#refinedstorage:crafter'
   })
   
+  //Universal Grid
+  e.shaped('universalgrid:creative_wireless_universal_grid', ['ABA', 'CBD', 'ABA'], {
+	A: 'minecraft:netherite_ingot',
+	B: 'refinedstorage:quartz_enriched_iron',
+	C: 'refinedstorageaddons:creative_wireless_crafting_grid',
+	D: 'universalgrid:wireless_universal_grid'
+  }).id('kubejs:universalgrid/creative_wireless_universal_grid')
+  
+  //Cable Tiers
+  function caTier(tier, corners, processor, cables) {
+    utils.listOf(['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']).forEach(caType => {
+      e.shaped(`cabletiers:${tier}_${caType}`, [`a a`, `bcb`, `a a`], {
+        a: corners,
+        b: processor,
+        c: `${(caType == 'requester' && tier == 'elite') ? 'rsrequestify:' : cables}${caType}`
+      })
+    })
+  }
+
+  e.remove({ mod: 'cabletiers' })
+  
+  //Creative Crafter
+  e.shaped(`creativecrafter:creative_crafter`, [`BUB`, `PCP`, `BUB`], {
+    B: `#forge:storage_blocks/netherite`,
+    P: `extradisks:withering_processor`,
+    C: `extrastorage:netherite_crafter`,
+    U: `#forge:ingots/unobtainium`
+  }).id(`kubejs:creativecrafter/creative_crafter`)
+  
+  //Creative Wireless Transmitter
+  e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', ['ITI', 'ICI', 'IDI'], {
+    I: 'allthemodium:unobtainium_ingot',
+    D: 'rsinfinitybooster:dimension_card',
+    C: 'refinedstorage:machine_casing',
+    T: 'refinedstorage:wireless_transmitter'
+  }).id('kubejs:creativewirelesstransmitter/creative_wireless_transmitter')
+  
   //gold-netherite crafter temp till mod updates with proper tags
   modifyShaped(e, 'extrastorage:gold_crafter', 1, ['BSB', 'PCP', 'B B'], {
     S: '#forge:chests',
@@ -117,6 +154,8 @@
     'extradisks:part/infinite_fluid_storage_part',
     'extradisks:part/infinite_storage_part',
     /^extrastorage:(?:part|disk|storage_block)\/.+/,
+	'creativecrafter:creative_crafter',
+    'creativewirelesstransmitter:creative_wireless_transmitter',
     'extrastorage:iron_crafter'
   ])
   e.remove({id: 'rsinfinitybooster:infinity_card'})
