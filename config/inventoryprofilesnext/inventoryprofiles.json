@@ -3,6 +3,10 @@
         "enable_updates_check": false,
         "first_run": false
     },
+    "GuiSettings": {
+        "enable_profiles_ui": false,
+        "continuous_crafting_saved_value": false
+    },
     "AutoRefillSettings": {
         "tool_damage_threshold": 2,
         "visual_durability_notification": false,
