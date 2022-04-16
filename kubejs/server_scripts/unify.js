@@ -119,6 +119,7 @@ onEvent('recipes', e => {
       });
 
       e.remove({id: `create:crushing/raw_${metal}`});
+      e.remove({id: `create:crushing/raw_${metal}_ore`});
     }
 
     if (type === 'ingot') {
