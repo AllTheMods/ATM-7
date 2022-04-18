@@ -119,6 +119,7 @@ onEvent('recipes', e => {
       });
 
       e.remove({id: `create:crushing/raw_${metal}`});
+      e.remove({id: `create:crushing/raw_${metal}_ore`});
     }
 
     if (type === 'ingot') {
@@ -283,10 +284,40 @@ onEvent('recipes', e => {
     }).id(`kubejs:metalpress/${type}_${input}`)
   }
 
+  function occultismUnifyCrusher(input, type) {
+    let outputCount = 2;
+    let ignoreMultiplyer = false;
+    let time = 200;
+
+    if (type === 'ingot') {
+      outputCount = 1;
+      ignoreMultiplyer = true;
+      e.remove({ id: `occultism:crushing/${input}_dust_from_ingot` });
+    }
+
+    if (type === 'ore') {
+      time = 300;
+      e.remove({ id: `occultism:crushing/${input}_dust` });
+    }
+
+    if (type === 'raw_ore') {
+      e.remove({ id: `occultism:crushing/${input}_dust_from_raw` });
+    }
+
+    e.custom({
+      "type": "occultism:crushing",
+      "ingredient": Ingredient.of(`#forge:${type}s/${input}`),
+      "result": Item.of(`${craftOverride[input] ?? 'alltheores'}:${input}_dust`, outputCount),
+      "crushing_time": time,
+      "ignore_crushing_multiplier": ignoreMultiplyer
+    }).id(`kubejs:occultcrushing/${input}_dust_from_${type}`);
+  }
+
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
   });
@@ -345,7 +376,8 @@ onEvent('recipes', e => {
   ['crimson_iron', 'azure_silver', 'iesnium'].forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
-    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));    
+    ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
   })
 
   e.custom({
