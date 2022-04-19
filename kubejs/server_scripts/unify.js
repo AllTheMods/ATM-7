@@ -337,7 +337,7 @@ onEvent('recipes', e => {
     createPressing(alloy)
   })
 
-  vanillaMetals.concat(mekanismAlloys,mekanismMetals).forEach(ore => {
+  vanillaMetals.concat(mekanismMetals).forEach(ore => {
     ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
   });
 
