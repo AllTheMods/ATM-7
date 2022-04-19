@@ -23,6 +23,7 @@ onEvent('recipes', e => {
   }
   function mekUnifyOres(metal, type) {
     let input = '';
+    let inputCount = 1;
     let output = '';
     let outputCount = 1;
 
@@ -42,31 +43,43 @@ onEvent('recipes', e => {
     }
 
     if (type === 'ore') {
+      if (e.remove({id: `mekanism:processing/${metal}/dust/from_ore`}) == 0) {
+        return;
+      }
       input = `#forge:ores/${metal}`;
-      output = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
-
-      e.remove({id: `mekanism:processing/${metal}/dust/from_ore`})
-      e.remove({id: `alltheores:mek_processing/${metal}/dust/from_ore`})
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      outputCount = 2;
     }
 
     if (type === 'raw_ore') {
+      if (e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`}) == 0) {
+        return;
+      }
       input = `#forge:raw_ores/${metal}`;
+      inputCount = 3;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
-      outputCount = 2;
+      outputCount = 4;
+    }
 
-      e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`})
+    if (type === 'dirty_dust') {
+      if (e.remove({id: `mekanism:processing/${metal}/dust/from_dirty_dust`}) == 0) {
+        return;
+      }
+      input = `#mekanism:dirty_dusts/${metal}`;
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
     }
 
     e.custom({
       "type": "mekanism:enriching",
       "input": {
+        "amount": inputCount,
         "ingredient": Ingredient.of(input)
       },
       "output": {
         "item": output,
         "count": outputCount,
       }
-    }).id(`kubejs:mekanism/enriching/${type}_${metal}`)
+    }).id(`kubejs:mekanism/enriching/${metal}/dust/from_${type}`)
   }
 
   // unify ores for Create crushing wheel
@@ -316,7 +329,7 @@ onEvent('recipes', e => {
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
-    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
