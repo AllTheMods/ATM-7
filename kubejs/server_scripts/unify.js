@@ -43,30 +43,27 @@ onEvent('recipes', e => {
     }
 
     if (type === 'ore') {
-      if (e.remove({id: `mekanism:processing/${metal}/dust/from_ore`}) == 0) {
-        return;
-      }
       input = `#forge:ores/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
       outputCount = 2;
+      
+      e.remove({id: `mekanism:processing/${metal}/dust/from_ore`})
     }
 
     if (type === 'raw_ore') {
-      if (e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`}) == 0) {
-        return;
-      }
       input = `#forge:raw_ores/${metal}`;
       inputCount = 3;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
       outputCount = 4;
+
+      e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`})
     }
 
     if (type === 'dirty_dust') {
-      if (e.remove({id: `mekanism:processing/${metal}/dust/from_dirty_dust`}) == 0) {
-        return;
-      }
       input = `#mekanism:dirty_dusts/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      
+      e.remove({id: `mekanism:processing/${metal}/dust/from_dirty_dust`})
     }
 
     e.custom({
@@ -329,7 +326,6 @@ onEvent('recipes', e => {
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
-    ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
@@ -340,6 +336,10 @@ onEvent('recipes', e => {
     mekUnifyOres(alloy, 'ingot')
     createPressing(alloy)
   })
+
+  vanillaMetals.concat(mekanismAlloys,mekanismMetals).forEach(ore => {
+    ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
+  });
 
   atoMetals.forEach(metal => {
     e.smelting(`alltheores:${metal}_ingot`, `alltheores:${metal}_nether_ore`);
