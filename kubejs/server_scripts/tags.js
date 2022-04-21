@@ -1,6 +1,6 @@
 //priority: 1000
 onEvent('tags.blocks', e => {
-  e.add('allthemodium:other_te_whitelist', ['mekanism:teleporter', 'waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone', 'waystones:warp_plates', '#waystones:sharestones'])
+  e.add('allthemodium:other_te_whitelist', ['mekanism:teleporter', 'waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone', '#waystones:sharestones'])
   })
 
 onEvent('tags.items', e => {
