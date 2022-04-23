@@ -323,12 +323,26 @@ onEvent('recipes', e => {
     }).id(`kubejs:occultcrushing/${input}_dust_from_${type}`);
   }
 
+  function blastingUnifyOres(ore) {
+    //find all dust to ingot recipes, remove, and replace with a single one
+    e.remove({type:"minecraft:blasting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_dust/`})
+    e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:blasting/${ore}_ingot_from_dust`)
+    e.remove({type:"minecraft:smelting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_dust/`})
+    e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:smelting/${ore}_ingot_from_dust`)
+    //find all ore to ingot recipes, remove, and replace with a single one
+    e.remove({type:"minecraft:blasting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_ore/`})
+    e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:blasting/${ore}_ingot_from_ore`)
+    e.remove({type:"minecraft:smelting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_ore/`})
+    e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:smelting/${ore}_ingot_from_ore`)
+  }
+
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
+    blastingUnifyOres(ore)
   });
 
   atoAlloys.forEach(alloy => {
@@ -339,14 +353,6 @@ onEvent('recipes', e => {
 
   vanillaMetals.concat(mekanismMetals).forEach(ore => {
     ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
-  });
-
-  atoMetals.forEach(metal => {
-    e.smelting(`alltheores:${metal}_ingot`, `alltheores:${metal}_nether_ore`);
-    e.smelting(`alltheores:${metal}_ingot`, `alltheores:${metal}_end_ore`);
-
-    e.blasting(`alltheores:${metal}_ingot`, `alltheores:${metal}_nether_ore`);
-    e.blasting(`alltheores:${metal}_ingot`, `alltheores:${metal}_end_ore`);
   });
 
   mekanismMetals.forEach(metal => {
