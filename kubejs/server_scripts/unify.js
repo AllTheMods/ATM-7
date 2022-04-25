@@ -393,11 +393,16 @@ onEvent('recipes', e => {
   });
 
   ['crimson_iron', 'azure_silver', 'iesnium'].forEach(ore => {
-    ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
-    ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));    
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
-  })
+  });
+
+  ['crimson_iron', 'azure_silver'].forEach(ore => {
+    ieUnifyOres(ore, 'raw_block');
+    createUnifyOres(ore, 'raw_block');
+  });
 
   e.custom({
     "type": "immersiveengineering:crusher",
