@@ -15,6 +15,7 @@ onEvent('tags.items', e => {
 
   e.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore'])
   e.add('forge:ores/gold', ['byg:blue_nether_gold_ore', 'byg:brimstone_nether_gold_ore'])
+  e.add('forge:ores/inferium',['mysticalagradditions:nether_inferium_ore','mysticalagradditions:end_inferium_ore'])
 
   e.add('forge:storage_blocks/raw_crimson_iron', 'silentgear:raw_crimson_iron_block');
   e.add('forge:raw_ores/crimson_iron', 'silentgear:raw_crimson_iron');
