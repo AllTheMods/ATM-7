@@ -15,7 +15,17 @@
         "buttonHints": {
             "PROFILE_SELECTOR": {
                 "bottom": 29
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 10,
+                "top": -5
             }
         }
+    },
+    "mekanism.common.registration.impl.ContainerTypeDeferredRegister$ContainerBuilder$1": {
+        "ignore": true
+    },
+    "mekanism.common.inventory.container.tile.MekanismTileContainer": {
+        "ignore": true
     }
 }
