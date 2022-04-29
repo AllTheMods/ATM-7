@@ -73,6 +73,8 @@ onEvent('recipes', e => {
     'amethyst',
     'silicon',
     'sulfur',
+    'mystical_flower',
+    'limestone',
   ], 1750, '#misctags:farmland/tier2', 2)
   //Tier 3 Crops
   tier([
@@ -104,6 +106,8 @@ onEvent('recipes', e => {
     'lapis_lazuli',
     'nickel',
     'osmium',
+    'uranium',
+    'fluorite',
   ], 3250, '#misctags:farmland/tier4', 2)
   //Tier 5 Crops
   tier([
@@ -112,7 +116,6 @@ onEvent('recipes', e => {
     'netherite',
     'wither_skeleton',
     'platinum',
-    'uranium',
   ], 4000, '#misctags:farmland/tier5', 2)
   //Tier 6 Crops
   tier(['nether_star'], 4750, 'mysticalagradditions:nether_star_crux', 2)
