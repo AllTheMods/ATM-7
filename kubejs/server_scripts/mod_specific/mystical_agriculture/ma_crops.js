@@ -36,6 +36,11 @@ onEvent('recipes', e => {
   //#endregion
 
   essenceCircle('4x alltheores:osmium_ingot', 'osmium');
+  essenceCircle('allthemodium:allthemodium_nugget', 'allthemodium')
+  essenceCircle('allthemodium:vibranium_nugget', 'vibranium')
+  essenceCircle('allthemodium:unobtainium_nugget', 'unobtainium')
+  essenceCircle('6x silentgear:azure_silver_ingot', 'azure_silver')
+  essenceCircle('6x silentgear:crimson_iron_ingot', 'crimson_iron')
 
   //#region CROPS
   //Tier 1 Crops
@@ -94,6 +99,8 @@ onEvent('recipes', e => {
     'tin',
     'zinc',
     'zombie',
+    'crimson_iron',
+    'azure_silver'
   ], 2500, '#misctags:farmland/tier3', 2)
   //Tier 4 Crops
   tier([
@@ -120,6 +127,12 @@ onEvent('recipes', e => {
   //Tier 6 Crops
   tier(['nether_star'], 4750, 'mysticalagradditions:nether_star_crux', 2)
   tier(['dragon_egg'], 4750, 'mysticalagradditions:dragon_egg_crux', 2)
+  //Magical Tier
+  tier([
+    'allthemodium',
+    'vibranium',
+    'unobtainium'
+  ], 5500, 'kubejs:magical_soil', 2)
 
   //Regular crops
   regular('silentgear:flax_fiber', 2, 'silentgear:flax_seeds', 'silentgear:flax_plant');
