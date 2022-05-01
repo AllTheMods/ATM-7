@@ -343,6 +343,8 @@ onEvent('recipes', e => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
     blastingUnifyOres(ore)
+    // remove combiner recipes
+    e.remove({type:"mekanism:combining", id:`/${ore}\/ore/`})
   });
 
   atoAlloys.forEach(alloy => {
@@ -478,6 +480,8 @@ onEvent('recipes', e => {
     'allthemodium:mek_processing/allthemodium/ingot/from_dust_smelting',
     'allthemodium:mek_processing/vibranium/ingot/from_dust_smelting',
     'allthemodium:mek_processing/unobtainium/ingot/from_dust_smelting',
+    'mekanism:compat/byg/combining/brimstone_gold_ore_from_raw',
+    'mekanism:compat/byg/combining/blue_gold_ore_from_raw'
   ]);
 
   removeRecipeByOutput(e, [
