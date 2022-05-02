@@ -1,0 +1,28 @@
+#Affects how common artifacts are (does not affect mimics)
+#When this is 1, the default artifact spawn rates will be used
+#Values higher that 1 will decrease spawn rates while values lower than 1 will increase spawn rates
+#Doubling this value will (roughly) halve the chance a container contains an artifact
+#Setting this to 10000 will completely prevent artifacts from spawning
+#When set to 0, every container that can contain artifacts will contain an artifact
+#Range: 0.0 ~ 10000.0
+artifact_rarity = 1.0
+
+[campsite]
+	#List of biome IDs in which campsites are not allowed to generate
+	#End and nether biomes are excluded by default
+	#To blacklist all biomes from a single mod, use "modid:*"
+	biome_blacklist = ["minecraft:void", "undergarden:*", "the_bumblezone:*", "twilightforest:*", "mahoutsukai:*"]
+	#Rarity of campsites generating in the world
+	#The chance a campsite generates in a specific chunk is 1/rarity
+	#With a rarity of 1, a campsite will attempt to generate in every chunk
+	#With a rarity of 10000, no campsites will generate
+	#Not every attempt at generating a campsite succeeds, this also depends on the density and shape of caves
+	#Range: 1 ~ 10000
+	rarity = 5
+	#Probability that a campsite has a mimic instead of a chest
+	#Range: 0.0 ~ 1.0
+	mimic_chance = 0.3
+	#Whether to use wooden chests from other mods when generating campsites
+	#(keeping this enabled may make it easier to distinguish them from mimics)
+	use_modded_chests = true
+

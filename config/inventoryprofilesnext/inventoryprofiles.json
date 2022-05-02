@@ -15,5 +15,12 @@
         "audio_replace_success_notification": false,
         "visual_replace_failed_notification": false,
         "audio_replace_failed_notification": false
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "BUTTON_3"
+            }
+        }
     }
 }

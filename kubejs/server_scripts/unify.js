@@ -343,6 +343,8 @@ onEvent('recipes', e => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     createPressing(ore)
     blastingUnifyOres(ore)
+    // remove combiner recipes
+    e.remove({type:"mekanism:combining", id:`/${ore}\/ore/`})
   });
 
   atoAlloys.forEach(alloy => {
@@ -478,6 +480,8 @@ onEvent('recipes', e => {
     'allthemodium:mek_processing/allthemodium/ingot/from_dust_smelting',
     'allthemodium:mek_processing/vibranium/ingot/from_dust_smelting',
     'allthemodium:mek_processing/unobtainium/ingot/from_dust_smelting',
+    'mekanism:compat/byg/combining/brimstone_gold_ore_from_raw',
+    'mekanism:compat/byg/combining/blue_gold_ore_from_raw'
   ]);
 
   removeRecipeByOutput(e, [
@@ -487,4 +491,39 @@ onEvent('recipes', e => {
     'silentgear:iron_rod',
     'occultism:silver_ingot',
   ]);
+
+  // honeycomb unify ores/alloys
+  vanillaMetals.concat(atoMetals, atoAlloys).forEach(ore => {
+    let comb = (ore === 'uranium') ? 'radioactive' : ore;
+    e.remove({ id: `/honeycomb_${comb}/` });
+    e.custom({
+        "type": "productivebees:centrifuge",
+        "ingredient": {
+            "type": "forge:nbt",
+            "item": "productivebees:configurable_honeycomb",
+            "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
+        },
+        "outputs": [
+            { item: { item: `${craftOverride[ore] ?? 'alltheores'}:${ore}_dust` }, chance: 40 },
+            { item: { item: "productivebees:wax" } },
+            { fluid: { fluid: "productivebees:honey" }, amount: 50 }
+        ]
+    }).id(`kubejs:centrifuge/honeycomb_${comb}`);
+    e.custom({
+        "type": "create:mixing",
+        "ingredients": [{
+            "type": "forge:nbt",
+            "item": "productivebees:configurable_honeycomb",
+            "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
+        }],
+        "results": [
+            { item: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, chance: 0.4 },
+            { item: "productivebees:wax" },
+            { fluid: "productivebees:honey", amount: 50 }
+        ],
+        "heatRequirement": "heated"
+    }).id(`kubejs:mixing/honeycomb_${comb}`)
+  });
+  e.remove({ id: `/honeycomb_aluminium/` });
+  e.remove({ id: `/honeycomb_brazen/` });
 })
