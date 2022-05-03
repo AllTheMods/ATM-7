@@ -1,0 +1,6 @@
+#General Config. This config is synced from server to client.
+[general]
+	#Disable to make the anchor upgrade not do anything.
+	allowChunkloading = false
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box. For example: ["mekanism"]
+	cardboardModBlacklist = ["refinedstorage","extradisks","extrastorage"]

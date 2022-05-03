@@ -1,0 +1,38 @@
+#allows the user to right click harvest crops
+rightClickHarvest = false
+
+#Croptopia tree generation
+[worldGeneration]
+
+	#Settings for minecraft:flower_forest
+	[worldGeneration."minecraft:flower_forest"]
+		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+
+	#Settings for minecraft:dark_forest
+	[worldGeneration."minecraft:dark_forest"]
+		trees = ["pecan_tree_configured", "walnut_tree_configured", "almond_tree_configured", "cashew_tree_configured"]
+
+	#Settings for minecraft:forest
+	[worldGeneration."minecraft:forest"]
+		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+
+	#Settings for minecraft:sparse_jungle
+	[worldGeneration."minecraft:sparse_jungle"]
+		trees = ["date_tree_configured", "dragon_fruit_tree_configured", "fig_tree_configured", "cinnamon_tree_configured", "kumquat_tree_configured", "banana_tree_configured", "mango_tree_configured", "coconut_tree_configured", "nutmeg_tree_configured", "grapefruit_tree_configured"]
+
+	#Settings for minecraft:windswept_forest
+	[worldGeneration."minecraft:windswept_forest"]
+		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+
+	#Settings for minecraft:jungle
+	[worldGeneration."minecraft:jungle"]
+		trees = ["date_tree_configured", "dragon_fruit_tree_configured", "fig_tree_configured", "cinnamon_tree_configured", "kumquat_tree_configured", "banana_tree_configured", "mango_tree_configured", "coconut_tree_configured", "nutmeg_tree_configured", "grapefruit_tree_configured"]
+
+	#Settings for minecraft:sunflower_plains
+	[worldGeneration."minecraft:sunflower_plains"]
+		trees = ["orange_tree_configured", "apple_tree_configured", "peach_tree_configured"]
+
+	#Settings for minecraft:plains
+	[worldGeneration."minecraft:plains"]
+		trees = ["orange_tree_configured", "apple_tree_configured", "peach_tree_configured"]
+
