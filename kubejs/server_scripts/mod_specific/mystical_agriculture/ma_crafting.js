@@ -1,8 +1,8 @@
 onEvent('recipes', e => {
   maDisabledSeeds.forEach(name => {
     ['seeds', 'essence'].forEach(type => {
-      e.remove({ output: `mysticalagriculture:${name}_${type}` })
-      e.remove({ input: `mysticalagriculture:${name}_${type}` })
+      e.remove({ output: `mysticalagriculture:${name}_${type}` , id: '/mysticalagriculture/'})
+      e.remove({ input: `mysticalagriculture:${name}_${type}` , id: '/mysticalagriculture/'})
     });
   });
 
