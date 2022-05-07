@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:overgrown_netherrack"
+  },
+  "compatibleSoilTags": [
+    "overgrown_netherrack"
+  ],
+  "display": {
+    "block": "byg:overgrown_netherrack"
+  }
+}

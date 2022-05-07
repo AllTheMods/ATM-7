@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:bulbis_phycelium"
+  },
+  "compatibleSoilTags": [
+    "bulbis_phycelium"
+  ],
+  "display": {
+    "block": "byg:bulbis_phycelium"
+  }
+}
