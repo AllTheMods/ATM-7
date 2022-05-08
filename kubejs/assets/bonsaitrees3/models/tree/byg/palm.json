@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/palm_sapling",
+  "type": "bonsaitrees3:sapling/byg/palm_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:palm_log","properties":{"axis":"y"}},

@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/jacaranda_sapling",
+  "type": "bonsaitrees3:sapling/byg/jacaranda_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:flowering_jacaranda_leaves","properties":{"distance":"2","persistent":"false"}},

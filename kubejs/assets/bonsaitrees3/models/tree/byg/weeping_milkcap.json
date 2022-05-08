@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/weeping_milkcap",
+  "type": "bonsaitrees3:sapling/byg/weeping_milkcap",
   "version": 3,
   "ref": {
     "a": {"block":"byg:weeping_milkcap_mushroom_block","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},

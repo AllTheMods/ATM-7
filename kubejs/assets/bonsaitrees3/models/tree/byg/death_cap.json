@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/death_cap",
+  "type": "bonsaitrees3:sapling/byg/death_cap",
   "version": 3,
   "ref": {
     "a": {"block":"minecraft:mushroom_stem","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},

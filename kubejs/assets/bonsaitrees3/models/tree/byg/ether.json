@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/ether_sapling",
+  "type": "bonsaitrees3:sapling/byg/ether_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:ether_leaves","properties":{"distance":"4","persistent":"false"}},

@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/fungal_imparius",
+  "type": "bonsaitrees3:sapling/byg/fungal_imparius",
   "version": 3,
   "ref": {
     "a": {"block":"byg:fungal_imparius_stem","properties":{"axis":"y"}},

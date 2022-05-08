@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/aspen_sapling",
+  "type": "bonsaitrees3:sapling/byg/aspen_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:aspen_leaves","properties":{"distance":"1","persistent":"false"}},

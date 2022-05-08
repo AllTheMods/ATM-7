@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/lament_sapling",
+  "type": "bonsaitrees3:sapling/byg/lament_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:lament_leaves","properties":{"distance":"2","persistent":"false"}},

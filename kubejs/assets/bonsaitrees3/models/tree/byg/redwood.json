@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/redwood_sapling",
+  "type": "bonsaitrees3:sapling/byg/redwood_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:redwood_log","properties":{"axis":"y"}},

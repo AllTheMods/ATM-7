@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/cypress_sapling",
+  "type": "bonsaitrees3:sapling/byg/cypress_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:cypress_log","properties":{"axis":"y"}},

@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/naturesaura/ancient_sapling",
+  "type": "bonsaitrees3:sapling/naturesaura/ancient_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"naturesaura:ancient_leaves","properties":{"distance":"2","persistent":"false"}},

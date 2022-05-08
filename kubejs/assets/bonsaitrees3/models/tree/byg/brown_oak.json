@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/brown_oak_sapling",
+  "type": "bonsaitrees3:sapling/byg/brown_oak_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:brown_oak_leaves","properties":{"distance":"2","persistent":"false"}},

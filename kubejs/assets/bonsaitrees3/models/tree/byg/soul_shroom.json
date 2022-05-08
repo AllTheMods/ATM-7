@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/soul_shroom",
+  "type": "bonsaitrees3:sapling/byg/soul_shroom",
   "version": 3,
   "ref": {
     "a": {"block":"byg:soul_shroom_block","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},

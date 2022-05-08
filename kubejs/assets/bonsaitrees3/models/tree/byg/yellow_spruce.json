@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/yellow_spruce_sapling",
+  "type": "bonsaitrees3:sapling/byg/yellow_spruce_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:yellow_spruce_leaves","properties":{"distance":"2","persistent":"false"}},

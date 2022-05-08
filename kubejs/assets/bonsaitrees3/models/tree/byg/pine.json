@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/pine_sapling",
+  "type": "bonsaitrees3:sapling/byg/pine_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:pine_log","properties":{"axis":"y"}},

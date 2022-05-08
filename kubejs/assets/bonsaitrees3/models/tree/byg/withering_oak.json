@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/withering_oak_sapling",
+  "type": "bonsaitrees3:sapling/byg/withering_oak_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:withering_oak_log","properties":{"axis":"y"}},

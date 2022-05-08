@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/purple_bulbis_anomaly",
+  "type": "bonsaitrees3:sapling/byg/purple_bulbis_anomaly",
   "version": 3,
   "ref": {
     "a": {"block":"byg:purple_shroomlight"},

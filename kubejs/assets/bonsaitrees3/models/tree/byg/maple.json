@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/maple_sapling",
+  "type": "bonsaitrees3:sapling/byg/maple_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:maple_leaves","properties":{"distance":"2","persistent":"false"}},

@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/imparius_mushroom",
+  "type": "bonsaitrees3:sapling/byg/imparius_mushroom",
   "version": 3,
   "ref": {
     "a": {"block":"byg:imparius_mushroom_block"},

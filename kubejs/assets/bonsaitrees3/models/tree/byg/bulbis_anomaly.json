@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/bulbis_anomaly",
+  "type": "bonsaitrees3:sapling/byg/bulbis_anomaly",
   "version": 3,
   "ref": {
     "a": {"block":"byg:bulbis_shell","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},

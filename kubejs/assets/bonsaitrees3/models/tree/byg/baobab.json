@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/baobab_sapling",
+  "type": "bonsaitrees3:sapling/byg/baobab_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:baobab_log","properties":{"axis":"y"}},

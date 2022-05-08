@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/forbidden_arcanus/cherrywood_sapling",
+  "type": "bonsaitrees3:sapling/forbidden_arcanus/cherrywood_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"3","persistent":"false"}},

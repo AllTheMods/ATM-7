@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/indigo_jacaranda_sapling",
+  "type": "bonsaitrees3:sapling/byg/indigo_jacaranda_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:jacaranda_log","properties":{"axis":"y"}},

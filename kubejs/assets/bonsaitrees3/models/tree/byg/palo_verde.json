@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/palo_verde_sapling",
+  "type": "bonsaitrees3:sapling/byg/palo_verde_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:palo_verde_leaves","properties":{"distance":"2","persistent":"false"}},

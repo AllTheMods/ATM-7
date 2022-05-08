@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/rainbow_eucalyptus_sapling",
+  "type": "bonsaitrees3:sapling/byg/rainbow_eucalyptus_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:rainbow_eucalyptus_leaves","properties":{"distance":"1","persistent":"false"}},

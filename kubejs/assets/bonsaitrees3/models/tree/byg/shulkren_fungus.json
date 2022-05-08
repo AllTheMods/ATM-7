@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/shulkren_fungus",
+  "type": "bonsaitrees3:sapling/byg/shulkren_fungus",
   "version": 3,
   "ref": {
     "a": {"block":"byg:shulkren_wart_block"},

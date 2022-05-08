@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/embur_wart",
+  "type": "bonsaitrees3:sapling/byg/embur_wart",
   "version": 3,
   "ref": {
     "a": {"block":"byg:embur_pedu","properties":{"axis":"y"}},

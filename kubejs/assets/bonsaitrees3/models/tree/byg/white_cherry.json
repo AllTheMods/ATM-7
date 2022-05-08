@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/white_cherry_sapling",
+  "type": "bonsaitrees3:sapling/byg/white_cherry_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:cherry_log","properties":{"axis":"y"}},

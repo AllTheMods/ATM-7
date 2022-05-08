@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/fir_sapling",
+  "type": "bonsaitrees3:sapling/byg/fir_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"byg:fir_log","properties":{"axis":"y"}},

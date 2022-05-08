@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/red_spruce_sapling",
+  "type": "bonsaitrees3:sapling/byg/red_spruce_sapling",
   "version": 3,
   "ref": {
     "a": {"block":"minecraft:spruce_log","properties":{"axis":"y"}},

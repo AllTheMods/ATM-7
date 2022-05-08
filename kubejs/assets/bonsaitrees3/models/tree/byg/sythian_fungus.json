@@ -1,5 +1,5 @@
 {
-  "type": "kubejs:bonsaitrees3/sapling/byg/sythian_fungus",
+  "type": "bonsaitrees3:sapling/byg/sythian_fungus",
   "version": 3,
   "ref": {
     "a": {"block":"byg:sythian_stem","properties":{"axis":"y"}},
