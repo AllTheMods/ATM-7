@@ -20,7 +20,7 @@ onEvent('block.right_click', event => {
             loot.forEach(item => {
                 Block.popResource(mcLevel, block.pos, item)
             })
-            if (seedYeeted) {
+            if (seedYeeted || block.hasTag('minecraft:leaves')) {
                 block.set(block.id, {age: '0'})
                 event.server.runCommandSilent(`playsound minecraft:block.crop.break block @a ${block.x} ${block.y} ${block.z}`)
             } else { //if no seed was dropped for some odd reason

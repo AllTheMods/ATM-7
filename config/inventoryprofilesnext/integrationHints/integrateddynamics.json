@@ -1,0 +1,41 @@
+{
+    "org.cyclops.integrateddynamics.inventory.container.ContainerPartReader": {
+        "ignore": true
+    },
+    "org.cyclops.integrateddynamics.inventory.container.ContainerPartPanelVariableDriven": {
+        "ignore": true
+    },
+    "org.cyclops.integrateddynamics.inventory.container.ContainerPartWriter": {
+        "ignore": true
+    },
+    "org.cyclops.integratedterminals.client.gui.container.ContainerScreenTerminalStorage": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 20
+            },
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 2,
+                "top": 21
+            },
+            "SORT": {
+                "horizontalOffset": -10,
+                "top": 5
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -10,
+                "top": 5
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -10,
+                "top": 5
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 11,
+                "top": -5
+            }
+        }
+    },
+    "org.cyclops.integratedcrafting.inventory.container.ContainerPartInterfaceCrafting": {
+        "ignore": true
+    }
+}
