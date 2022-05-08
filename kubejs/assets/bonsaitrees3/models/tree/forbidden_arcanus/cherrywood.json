@@ -1,0 +1,69 @@
+{
+  "type": "bonsaitrees3:sapling/forbidden_arcanus/cherrywood_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"3","persistent":"false"}},
+    "b": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"6","persistent":"false"}},
+    "c": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"2","persistent":"false"}},
+    "d": {"block":"forbidden_arcanus:thin_cherrywood_log","properties":{"axis":"z","east":"false","north":"true","south":"false","waterlogged":"false","west":"false"}},
+    "e": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"5","persistent":"false"}},
+    "f": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"4","persistent":"false"}},
+    "g": {"block":"forbidden_arcanus:thin_cherrywood_log","properties":{"axis":"y","east":"false","north":"false","south":"false","waterlogged":"false","west":"false"}},
+    "h": {"block":"forbidden_arcanus:cherrywood_leaves","properties":{"distance":"1","persistent":"false"}},
+    "i": {"block":"forbidden_arcanus:cherry_flower_vines","properties":{"age":"22"}},
+    "j": {"block":"forbidden_arcanus:thin_cherrywood_log","properties":{"axis":"y","east":"false","north":"false","south":"true","waterlogged":"false","west":"false"}},
+    "k": {"block":"forbidden_arcanus:cherry_flower_vines","properties":{"age":"25"}}
+  },
+  "shape": [
+    [
+      "         ",
+      "     feb ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    af   ",
+      "   acafeb",
+      "   kh    ",
+      "         ",
+      " ch      ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "   acaf  ",
+      "  achcafe",
+      "    gh   ",
+      "   jdk   ",
+      "chjd     ",
+      "  g      ",
+      "  g      ",
+      "  g      "
+    ],
+    [
+      "     f   ",
+      "   acafeb",
+      "    h    ",
+      "         ",
+      " ch      ",
+      "  i      ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "     feb ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

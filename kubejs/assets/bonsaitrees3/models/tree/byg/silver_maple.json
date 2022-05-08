@@ -1,0 +1,80 @@
+{
+  "type": "bonsaitrees3:sapling/byg/silver_maple_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:maple_log","properties":{"axis":"y"}},
+    "b": {"block":"byg:silver_maple_leaves","properties":{"distance":"4","persistent":"false"}},
+    "c": {"block":"byg:silver_maple_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"byg:silver_maple_leaves","properties":{"distance":"5","persistent":"false"}},
+    "e": {"block":"byg:silver_maple_leaves","properties":{"distance":"3","persistent":"false"}},
+    "f": {"block":"byg:silver_maple_leaves","properties":{"distance":"2","persistent":"false"}},
+    "g": {"block":"byg:silver_maple_leaves","properties":{"distance":"6","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "  e  ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  d  ",
+      "  b  ",
+      "  eb ",
+      " efe ",
+      " fcf ",
+      "  c  ",
+      "     ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  g  ",
+      " gd  ",
+      " dbd ",
+      " beb ",
+      " efe ",
+      "efcfe",
+      " cac ",
+      " cac ",
+      "  a  ",
+      "  a  ",
+      " aaa "
+    ],
+    [
+      "     ",
+      "     ",
+      "  d  ",
+      "  b  ",
+      " be  ",
+      " efe ",
+      " fcf ",
+      "  c  ",
+      "     ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "  e  ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

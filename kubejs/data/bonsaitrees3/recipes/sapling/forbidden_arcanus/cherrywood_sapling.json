@@ -1,0 +1,75 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "forbidden_arcanus:cherrywood_sapling"
+  },
+  "drops": [
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "forbidden_arcanus:cherrywood_sapling"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.7,
+      "result": {
+        "item": "forbidden_arcanus:thin_cherrywood_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.1,
+      "result": {
+        "item": "forbidden_arcanus:cherrywood_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "minecraft:stick"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "forbidden_arcanus:cherrywood_leaves"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "forbidden_arcanus:cherry_flower_vines"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": true
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "forbidden_arcanus:cherrywood_leaf_carpet"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "grass",
+    "dirt"
+  ]
+}

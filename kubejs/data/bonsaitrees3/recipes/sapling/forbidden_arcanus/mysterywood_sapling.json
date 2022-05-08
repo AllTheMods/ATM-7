@@ -1,0 +1,57 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "forbidden_arcanus:mysterywood_sapling"
+  },
+  "drops": [
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "forbidden_arcanus:mysterywood_sapling"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "forbidden_arcanus:mysterywood_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "minecraft:stick"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "forbidden_arcanus:mysterywood_leaves"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "forbidden_arcanus:nuggety_mysterywood_leaves"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": true
+    }
+  ],
+  "compatibleSoilTags": [
+    "grass",
+    "dirt"
+  ]
+}

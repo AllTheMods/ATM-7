@@ -1,0 +1,112 @@
+{
+  "type": "bonsaitrees3:sapling/byg/white_cherry_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:cherry_log","properties":{"axis":"y"}},
+    "b": {"block":"byg:white_cherry_leaves","properties":{"distance":"2","persistent":"false"}},
+    "c": {"block":"byg:white_cherry_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"byg:white_cherry_leaves","properties":{"distance":"3","persistent":"false"}},
+    "e": {"block":"byg:white_cherry_leaves","properties":{"distance":"4","persistent":"false"}},
+    "f": {"block":"byg:white_cherry_leaves","properties":{"distance":"5","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "       ",
+      "  ede  ",
+      " f def ",
+      "   de  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   b   ",
+      "  dbd  ",
+      " edbde ",
+      "fedbde ",
+      " edbdef",
+      "  dbde ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "  bcb  ",
+      "  bcb  ",
+      " dbcbd ",
+      "edbcbde",
+      "edbc de",
+      "  bcbde",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   c   ",
+      "  cac  ",
+      " bcac  ",
+      " bcacb ",
+      "dbcacbd",
+      "dbcacbd",
+      " bcacb ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   "
+    ],
+    [
+      "       ",
+      "   c   ",
+      "  bcb  ",
+      " dbcbd ",
+      "edbcbd ",
+      " dbcbde",
+      " dbcb  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "   b   ",
+      "  dbd  ",
+      " edbde ",
+      " edbde ",
+      "  db   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      " fedef ",
+      "  ede  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

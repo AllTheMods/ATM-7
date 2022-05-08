@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:nightshade_phylium"
+  },
+  "compatibleSoilTags": [
+    "nightshade_phylium"
+  ],
+  "display": {
+    "block": "byg:nightshade_phylium"
+  }
+}

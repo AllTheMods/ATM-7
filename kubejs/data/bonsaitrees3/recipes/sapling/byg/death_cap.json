@@ -1,0 +1,38 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:death_cap"
+  },
+  "drops": [
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:death_cap"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "minecraft:mushroom_stem"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:death_cap_mushroom_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "mycelium_netherrack"
+  ]
+}

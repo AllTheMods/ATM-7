@@ -1,0 +1,65 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:nightshade_sapling"
+  },
+  "drops": [
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:nightshade_sapling"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:nightshade_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:imbued_nightshade_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "minecraft:stick"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:nightshade_leaves"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.1,
+      "result": {
+        "item": "byg:flowering_nightshade_leaves"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "nightshade_phylium"
+  ]
+}

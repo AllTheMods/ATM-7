@@ -1,0 +1,56 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:shulkren_fungus"
+  },
+  "drops": [
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:shulkren_fungus"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:white_mushroom_stem"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "byg:shulkren_wart_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:purple_shroomlight"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:shulkren_vine"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "shulkren_phylium"
+  ]
+}

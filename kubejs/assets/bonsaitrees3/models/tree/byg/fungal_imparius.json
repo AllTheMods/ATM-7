@@ -1,0 +1,103 @@
+{
+  "type": "bonsaitrees3:sapling/byg/fungal_imparius",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:fungal_imparius_stem","properties":{"axis":"y"}},
+    "b": {"block":"byg:fungal_imparius_filament"},
+    "c": {"block":"byg:fungal_imparius_block"},
+    "d": {"block":"byg:fungal_imparius_filament_block"}
+  },
+  "shape": [
+    [
+      "       ",
+      " ccccc ",
+      " c cc  ",
+      "    c  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  ccc  ",
+      "ccdddcc",
+      " cbbbcc",
+      " c     ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      " ccccc ",
+      "cdddddc",
+      "cbbbbbc",
+      "      c",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "   a   ",
+      "a  a   "
+    ],
+    [
+      " ccccc ",
+      "cddaddc",
+      " bbabb ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "       ",
+      "  aa   ",
+      " a a   ",
+      " a  a  "
+    ],
+    [
+      " ccccc ",
+      "cdddddc",
+      "cbbbbb ",
+      "       ",
+      "       ",
+      "       ",
+      "  aa   ",
+      "  a    ",
+      "  a    ",
+      "       ",
+      " a     "
+    ],
+    [
+      "  ccc  ",
+      "ccdddcc",
+      "ccbbb c",
+      "c      ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      " ccccc ",
+      "  c cc ",
+      "     c ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "type": "bonsaitrees3:sapling/byg/red_maple_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:maple_log","properties":{"axis":"y"}},
+    "b": {"block":"byg:red_maple_leaves","properties":{"distance":"3","persistent":"false"}},
+    "c": {"block":"byg:red_maple_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"byg:red_maple_leaves","properties":{"distance":"5","persistent":"false"}},
+    "e": {"block":"byg:red_maple_leaves","properties":{"distance":"4","persistent":"false"}},
+    "f": {"block":"byg:red_maple_leaves","properties":{"distance":"2","persistent":"false"}},
+    "g": {"block":"byg:red_maple_leaves","properties":{"distance":"6","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "  b  ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  d  ",
+      "  e  ",
+      "  be ",
+      " bfb ",
+      " fcf ",
+      "  c  ",
+      "     ",
+      "     ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "  g  ",
+      "  dg ",
+      " ded ",
+      " ebe ",
+      " bfb ",
+      "bfcfb",
+      " cac ",
+      " cac ",
+      "  a  ",
+      "  a  ",
+      "  a  ",
+      " aaa "
+    ],
+    [
+      "     ",
+      "     ",
+      "  d  ",
+      "  e  ",
+      " eb  ",
+      " bfb ",
+      " fcf ",
+      "  c  ",
+      "     ",
+      "     ",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "  b  ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

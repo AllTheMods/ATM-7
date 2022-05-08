@@ -1,0 +1,56 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:bulbis_oddity"
+  },
+  "drops": [
+    {
+      "rolls": 2,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:bulbis_anomaly"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:bulbis_oddity"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:bulbis_wood"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "byg:bulbis_shell"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:purple_shroomlight"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "bulbis_phycelium"
+  ]
+}

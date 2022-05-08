@@ -1,0 +1,29 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:warped_coral"
+  },
+  "drops": [
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:warped_coral"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:warped_coral_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "warped_soul_sand"
+  ]
+}

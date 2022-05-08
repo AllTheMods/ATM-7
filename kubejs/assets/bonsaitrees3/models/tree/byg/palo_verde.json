@@ -1,0 +1,137 @@
+{
+  "type": "bonsaitrees3:sapling/byg/palo_verde_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:palo_verde_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"byg:palo_verde_leaves","properties":{"distance":"3","persistent":"false"}},
+    "c": {"block":"byg:palo_verde_leaves","properties":{"distance":"4","persistent":"false"}},
+    "d": {"block":"byg:flowering_palo_verde_leaves","properties":{"distance":"2","persistent":"false"}},
+    "e": {"block":"byg:palo_verde_leaves","properties":{"distance":"5","persistent":"false"}},
+    "f": {"block":"byg:flowering_palo_verde_leaves","properties":{"distance":"3","persistent":"false"}},
+    "g": {"block":"byg:flowering_palo_verde_leaves","properties":{"distance":"4","persistent":"false"}},
+    "h": {"block":"byg:palo_verde_leaves","properties":{"distance":"1","persistent":"false"}},
+    "i": {"block":"byg:palo_verde_leaves","properties":{"distance":"6","persistent":"false"}},
+    "j": {"block":"byg:palo_verde_log","properties":{"axis":"y"}},
+    "k": {"block":"byg:flowering_palo_verde_leaves","properties":{"distance":"5","persistent":"false"}},
+    "l": {"block":"byg:flowering_palo_verde_leaves","properties":{"distance":"1","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "            ",
+      "      ecbce ",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "        b   ",
+      "     ecbabce",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "       bab  ",
+      "     cbahafc",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "      bdhdb ",
+      "     bahjhab",
+      "            ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "       bab  ",
+      "     gbalabc",
+      "        j   ",
+      "        j   ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "        b   ",
+      "     kgbafgk",
+      "            ",
+      "            ",
+      "      jj    ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      "      ecbce ",
+      " iecck      ",
+      "            ",
+      "            ",
+      "     j      ",
+      "     j      "
+    ],
+    [
+      "            ",
+      "   c        ",
+      "iecbbce     ",
+      "            ",
+      "    j       ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      "  cbb       ",
+      "ecbaabc     ",
+      "            ",
+      "    j       ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      " cbaab      ",
+      "cbalhab     ",
+      "   j        ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      "  fdh       ",
+      "cbahjhd     ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      "   b        ",
+      "ecbalab     ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ],
+    [
+      "            ",
+      "            ",
+      " ecbab      ",
+      "            ",
+      "            ",
+      "            ",
+      "            "
+    ]
+  ]
+}

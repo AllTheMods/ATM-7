@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:imparius_phylium"
+  },
+  "compatibleSoilTags": [
+    "imparius_phylium"
+  ],
+  "display": {
+    "block": "byg:imparius_phylium"
+  }
+}

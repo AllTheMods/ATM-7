@@ -1,0 +1,56 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:sythian_fungus"
+  },
+  "drops": [
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:sythian_fungus"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:sythian_stem"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "byg:sythian_wart_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:hanging_sythian_roots"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "minecraft:shroomlight"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "sythian_nylium"
+  ]
+}

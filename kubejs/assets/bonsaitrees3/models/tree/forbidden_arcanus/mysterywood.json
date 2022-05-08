@@ -1,0 +1,57 @@
+{
+  "type": "bonsaitrees3:sapling/forbidden_arcanus/mysterywood_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"forbidden_arcanus:mysterywood_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"forbidden_arcanus:nuggety_mysterywood_leaves","properties":{"distance":"1","persistent":"false"}},
+    "c": {"block":"forbidden_arcanus:mysterywood_leaves","properties":{"distance":"3","persistent":"false"}},
+    "d": {"block":"forbidden_arcanus:mysterywood_leaves","properties":{"distance":"1","persistent":"false"}},
+    "e": {"block":"forbidden_arcanus:nuggety_mysterywood_leaves","properties":{"distance":"4","persistent":"false"}},
+    "f": {"block":"forbidden_arcanus:mysterywood_leaves","properties":{"distance":"4","persistent":"false"}},
+    "g": {"block":"forbidden_arcanus:mysterywood_log","properties":{"axis":"y"}},
+    "h": {"block":"forbidden_arcanus:nuggety_mysterywood_leaves","properties":{"distance":"3","persistent":"false"}},
+    "i": {"block":"forbidden_arcanus:nuggety_mysterywood_leaves","properties":{"distance":"2","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "     ",
+      " fcf ",
+      " cic ",
+      " cih ",
+      "     ",
+      "     "
+    ],
+    [
+      "  h  ",
+      "fcacf",
+      "cidic",
+      "cadac",
+      "  d  ",
+      "     "
+    ],
+    [
+      " hac ",
+      "habac",
+      "adgba",
+      "adgda",
+      " dgb ",
+      "  g  "
+    ],
+    [
+      "  c  ",
+      "fhice",
+      "cidac",
+      "cadah",
+      "  d  ",
+      "     "
+    ],
+    [
+      "     ",
+      " fhf ",
+      " cac ",
+      " cac ",
+      "     ",
+      "     "
+    ]
+  ]
+}
