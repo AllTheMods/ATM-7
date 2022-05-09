@@ -63,7 +63,7 @@ onEvent('recipes', e => {
 	//Forbidden Arcanus Logs
 	sawingLogs('forbidden_arcanus', 'cherrywood')
 	sawing('forbidden_arcanus:edelwood_logs', ['forbidden_arcanus:edelwood_planks', 3], ['mekanism:sawdust', 0.15])
-	sawing('forbidden_arcanus:fungyss_stems', ['forbidden_arcanus:fungys_planks', 6], ['mekanism:sawdust', 0.25])
+	sawing('forbidden_arcanus:fungyss_stems', ['forbidden_arcanus:fungyss_planks', 6], ['mekanism:sawdust', 0.25])
 	sawingLogs('forbidden_arcanus', 'mysterywood')
 	
 	// Hexerei Logs
