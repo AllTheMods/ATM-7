@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:ether_phylium"
+  },
+  "compatibleSoilTags": [
+    "ether_phylium"
+  ],
+  "display": {
+    "block": "byg:ether_phylium"
+  }
+}

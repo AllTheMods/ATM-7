@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:mycelium_netherrack"
+  },
+  "compatibleSoilTags": [
+    "mycelium_netherrack"
+  ],
+  "display": {
+    "block": "byg:mycelium_netherrack"
+  }
+}

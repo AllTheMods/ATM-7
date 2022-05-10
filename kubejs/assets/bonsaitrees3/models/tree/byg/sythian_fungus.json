@@ -1,0 +1,79 @@
+{
+  "type": "bonsaitrees3:sapling/byg/sythian_fungus",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:sythian_stem","properties":{"axis":"y"}},
+    "b": {"block":"byg:hanging_sythian_roots_plant"},
+    "c": {"block":"byg:hanging_sythian_roots","properties":{"age":"0"}},
+    "d": {"block":"byg:sythian_wart_block"},
+    "e": {"block":"minecraft:shroomlight"},
+    "f": {"block":"byg:hanging_sythian_roots","properties":{"age":"1"}}
+  },
+  "shape": [
+    [
+      "     ",
+      " e   ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "ddedd",
+      " e   ",
+      "dd dd",
+      "b   b",
+      "bdddb",
+      "f   c",
+      " ddd ",
+      "     ",
+      " ddd ",
+      "     "
+    ],
+    [
+      " d d ",
+      "dadad",
+      "ea a ",
+      "daaad",
+      "b aeb",
+      "fdadb",
+      "  a b",
+      " dadc",
+      "  a  ",
+      " dad ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "dd dd",
+      "     ",
+      "dd dd",
+      "b  ee",
+      "bddd ",
+      "c    ",
+      " ddd ",
+      "     ",
+      " ddd ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "   e ",
+      "     ",
+      "     ",
+      "     ",
+      "     ",
+      "     "
+    ]
+  ]
+}

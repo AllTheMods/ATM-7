@@ -1,0 +1,109 @@
+{
+  "type": "bonsaitrees3:sapling/byg/weeping_milkcap",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:weeping_milkcap_mushroom_block","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},
+    "b": {"block":"minecraft:mushroom_stem","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}}
+  },
+  "shape": [
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    a    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    a    ",
+      "  a   a  ",
+      " a     a ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "   aaa   ",
+      " aa   aa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "   aaa   ",
+      "  a   a  ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "    a    ",
+      "   aba   ",
+      " aa b aa ",
+      "a   b   a",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    ",
+      "    b    "
+    ],
+    [
+      "         ",
+      "   aaa   ",
+      "  a   a  ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "   aaa   ",
+      " aa   aa ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "    a    ",
+      "  a   a  ",
+      " a     a ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ],
+    [
+      "         ",
+      "         ",
+      "         ",
+      "    a    ",
+      "         ",
+      "         ",
+      "         ",
+      "         ",
+      "         "
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "bonsaitrees3:soil",
+  "tickModifier": 1,
+  "soil": {
+    "item": "byg:embur_nylium"
+  },
+  "compatibleSoilTags": [
+    "embur_nylium"
+  ],
+  "display": {
+    "block": "byg:embur_nylium"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "type": "bonsaitrees3:sapling/byg/pink_cherry_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:pink_cherry_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"byg:cherry_log","properties":{"axis":"y"}},
+    "c": {"block":"byg:pink_cherry_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"byg:pink_cherry_leaves","properties":{"distance":"3","persistent":"false"}},
+    "e": {"block":"byg:pink_cherry_leaves","properties":{"distance":"4","persistent":"false"}},
+    "f": {"block":"byg:pink_cherry_leaves","properties":{"distance":"5","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      " fedef ",
+      "  ede  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "   a   ",
+      "  dad  ",
+      " edade ",
+      " edade ",
+      "   ad  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   c   ",
+      "  aca  ",
+      " dacad ",
+      " dacade",
+      "edacad ",
+      "  acad ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   c   ",
+      "  cbc  ",
+      "  cbca ",
+      " acbca ",
+      "dacbcad",
+      "dacbcad",
+      " acbca ",
+      "   b   ",
+      "   b   ",
+      "   b   ",
+      "   b   "
+    ],
+    [
+      "       ",
+      "  aca  ",
+      "  aca  ",
+      " dacad ",
+      "edacade",
+      "ed cade",
+      "edaca  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   a   ",
+      "  dad  ",
+      " edade ",
+      " edadef",
+      "fedade ",
+      " edad  ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "  ede  ",
+      " fed f ",
+      "  ed   ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

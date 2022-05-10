@@ -1,0 +1,78 @@
+{
+  "type": "bonsaitrees3:sapling/byg/imparius_mushroom",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:imparius_mushroom_block"},
+    "b": {"block":"byg:imparius_mushroom_branch","properties":{"facing":"west","waterlogged":"false"}},
+    "c": {"block":"byg:imparius_stem","properties":{"axis":"y"}},
+    "d": {"block":"byg:imparius_mushroom_branch","properties":{"facing":"east","waterlogged":"false"}},
+    "e": {"block":"byg:imparius_vine","properties":{"age":"0"}},
+    "f": {"block":"byg:imparius_mushroom_branch","properties":{"facing":"north","waterlogged":"false"}},
+    "g": {"block":"byg:imparius_mushroom_branch","properties":{"facing":"south","waterlogged":"false"}}
+  },
+  "shape": [
+    [
+      "   d   ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  fag  ",
+      "  aca  ",
+      "       ",
+      "       ",
+      "       ",
+      "   c   ",
+      "   c   "
+    ],
+    [
+      " daaad ",
+      "aa   aa",
+      "   c   ",
+      "       ",
+      "   c   ",
+      "       ",
+      "       "
+    ],
+    [
+      "faaaaag",
+      "ac ceca",
+      "  ccc  ",
+      "   c   ",
+      "   c   ",
+      "  c c  ",
+      " c   c "
+    ],
+    [
+      " baaab ",
+      "aa  eaa",
+      "   c   ",
+      "       ",
+      "   c   ",
+      "       ",
+      "       "
+    ],
+    [
+      "  fag  ",
+      "  aca  ",
+      "       ",
+      "       ",
+      "       ",
+      "   c   ",
+      "   c   "
+    ],
+    [
+      "   b   ",
+      "  aaa  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

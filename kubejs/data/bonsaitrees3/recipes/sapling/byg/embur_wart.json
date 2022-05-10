@@ -1,0 +1,83 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "byg:embur_wart"
+  },
+  "drops": [
+    {
+      "rolls": 3,
+      "chance": 0.2,
+      "result": {
+        "item": "byg:embur_wart"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "byg:embur_pedu"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    },
+    {
+      "rolls": 2,
+      "chance": 0.18,
+      "result": {
+        "item": "byg:embur_gel_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:embur_gel_branch"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:pollen_block"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": true
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:pollen_dust"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": true
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:embur_gel_vines"
+      },
+      "requiresSilkTouch": true,
+      "requiresBees": false
+    },
+    {
+      "rolls": 1,
+      "chance": 0.05,
+      "result": {
+        "item": "byg:embur_gel_ball"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "embur_nylium"
+  ]
+}

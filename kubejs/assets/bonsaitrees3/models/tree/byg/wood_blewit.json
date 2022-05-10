@@ -1,0 +1,94 @@
+{
+  "type": "bonsaitrees3:sapling/byg/wood_blewit",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:brown_mushroom_stem","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}},
+    "b": {"block":"byg:wood_blewit_mushroom_block","properties":{"down":"true","east":"true","north":"true","south":"true","up":"true","west":"true"}}
+  },
+  "shape": [
+    [
+      "       ",
+      "       ",
+      "       ",
+      "   b   ",
+      "  bbb  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   b   ",
+      "  bbb  ",
+      "  b b  ",
+      " bb bb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "   b   ",
+      "  b b  ",
+      "  b b  ",
+      " b   b ",
+      " b   b ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "  bbb  ",
+      "  bab  ",
+      "  bab  ",
+      " b a b ",
+      "b  a  b",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   ",
+      "   a   "
+    ],
+    [
+      "   b   ",
+      "  b b  ",
+      "  b b  ",
+      " b   b ",
+      " b   b ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "   b   ",
+      "  bbb  ",
+      "  b b  ",
+      " bb bb ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    [
+      "       ",
+      "       ",
+      "       ",
+      "   b   ",
+      "  bbb  ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "type": "bonsaitrees3:sapling/byg/lament_sapling",
+  "version": 3,
+  "ref": {
+    "a": {"block":"byg:lament_leaves","properties":{"distance":"2","persistent":"false"}},
+    "b": {"block":"byg:lament_log","properties":{"axis":"y"}},
+    "c": {"block":"byg:lament_leaves","properties":{"distance":"1","persistent":"false"}},
+    "d": {"block":"byg:lament_leaves","properties":{"distance":"3","persistent":"false"}}
+  },
+  "shape": [
+    [
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "  a   ",
+      " da   ",
+      "      ",
+      "      ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      " ac   ",
+      "daca  ",
+      "      ",
+      " ad   ",
+      "      ",
+      "      "
+    ],
+    [
+      "      ",
+      " da   ",
+      "      ",
+      "      ",
+      "  cca ",
+      " cbc  ",
+      "acbca ",
+      "      ",
+      "acad  ",
+      "  ad  ",
+      "      "
+    ],
+    [
+      "  a   ",
+      "daca  ",
+      "  c   ",
+      "   b  ",
+      " acbca",
+      " ccb  ",
+      "cbcca ",
+      " b    ",
+      "cbca  ",
+      " ccad ",
+      "      "
+    ],
+    [
+      " aca  ",
+      "acbca ",
+      "acb   ",
+      "  b   ",
+      " acca ",
+      "      ",
+      " caa  ",
+      "      ",
+      "acb   ",
+      " cbc  ",
+      "  b   "
+    ],
+    [
+      "  a   ",
+      "dacad ",
+      " a    ",
+      "      ",
+      "  aa  ",
+      "      ",
+      "      ",
+      "      ",
+      " ac   ",
+      "daca  ",
+      "      "
+    ],
+    [
+      "      ",
+      " dad  ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "      ",
+      "  a   ",
+      "      "
+    ]
+  ]
+}

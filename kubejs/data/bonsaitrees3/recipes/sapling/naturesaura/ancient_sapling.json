@@ -1,0 +1,21 @@
+{
+  "type": "bonsaitrees3:sapling",
+  "sapling": {
+    "item": "naturesaura:ancient_sapling"
+  },
+  "drops": [
+    {
+      "rolls": 1,
+      "chance": 0.75,
+      "result": {
+        "item": "naturesaura:ancient_log"
+      },
+      "requiresSilkTouch": false,
+      "requiresBees": false
+    }
+  ],
+  "compatibleSoilTags": [
+    "grass",
+    "dirt"
+  ]
+}
