@@ -17,8 +17,9 @@ onEvent('block.right_click', event => {
                     break
                 }
             }
+            let dir = event.getFacing()
             loot.forEach(item => {
-                Block.popResource(mcLevel, block.pos, item)
+                Block.popResourceFromFace(mcLevel, block.pos, dir, item)
             })
             if (seedYeeted || block.hasTag('minecraft:leaves')) {
                 block.set(block.id, {age: '0'})
