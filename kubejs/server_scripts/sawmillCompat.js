@@ -202,8 +202,8 @@ onEvent('recipes', e => {
                     e.recipes.immersiveengineeringSawmill(ieoutput, logs2, secondary1, stripped2[0]).energy(1600).id(id1)
                     e.recipes.immersiveengineeringSawmill(ieoutput, stripped2, secondary2).energy(800).id(id2)
                 } else {
-                    addRecipeImmersiveEngineeringSawmill(logs2, ieoutput, stripped2[0], 1600, id1)
-                    addRecipeImmersiveEngineeringSawmillStripped(stripped2, ieoutput, 800, id2)
+                    addRecipeImmersiveEngineeringSawmill(logs2, ieoutput, secondary1, stripped2[0], 1600, id1)
+                    addRecipeImmersiveEngineeringSawmillStripped(stripped2, ieoutput, secondary2, 800, id2)
                 }
             })
         } else {
@@ -211,7 +211,7 @@ onEvent('recipes', e => {
                 e.recipes.immersiveengineeringSawmill(ieoutput, logs, secondary1, stripped[0]).energy(1600).id(id1)
                 e.recipes.immersiveengineeringSawmill(ieoutput, stripped, secondary2).energy(800).id(id2)
             } else {
-                addRecipeImmersiveEngineeringSawmill(logs, ieoutput, stripped[0], secondary1, 1600, id1)
+                addRecipeImmersiveEngineeringSawmill(logs, ieoutput, secondary1, stripped[0], 1600, id1)
                 addRecipeImmersiveEngineeringSawmillStripped(stripped, ieoutput, secondary2, 800, id2)
             }
         }
