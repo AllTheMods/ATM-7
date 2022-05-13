@@ -22,10 +22,9 @@ onEvent('recipes', e => {
     let Mek_KubeJS = Platform.isLoaded('kubejs_mekanism')
     let CreateLoaded = Platform.isLoaded('create')
     let Create_KubeJS = Platform.isLoaded('kubejs_create')
-    /* TODO when it releases
-        let ThermalExpansionLoaded = Platform.isLoaded('thermal_expansion')
-        let Thermal_KubeJS = Platform.isLoaded('kubejs_thermal')
-    */
+    let ThermalExpansionLoaded = Platform.isLoaded('thermal_expansion')
+    let Thermal_KubeJS = Platform.isLoaded('kubejs_thermal')
+
     function processInfo(input) {
         inTag = input.tag.toString().split(":")
         inMod = inTag[0]
@@ -126,7 +125,7 @@ onEvent('recipes', e => {
                 "input": { "ingredient": input },
                 "mainOutput": mekoutput,
                 "secondaryOutput": {
-                    "item": "mekanism:sawdust"
+                    "tag": "forge:dusts/wood"
                 },
                 "secondaryChance": 1.5 / mekoutput.count
             }).id(id)
@@ -286,6 +285,43 @@ onEvent('recipes', e => {
         }
     }
 
+    function addThermalSawing(input, output) {
+        thermalOutput = output.copy()
+        thermalOutput.count = 1.5 * thermalOutput.count
+        parsed = processInfo(input)
+        id = `kubejs:thermal/sawmill/${parsed[0]}/${parsed[1]}_log`
+        if (Thermal_KubeJS) {
+            if (e.countRecipes({ type: 'thermal:sawmill', input: input }) > 0) { return; }
+            e.recipes.thermal.sawmill([thermalOutput, Item.of(`#forge:dusts/wood`).withChance(1.25)], input).energy(1000).id(id)
+        } else {
+            found = false
+            e.forEachRecipe({type: 'thermal:sawmill'}, recipe => {
+                recipeId = recipe.getId()
+                regex = new RegExp(`${parsed[1]}_[log|stem]`)
+                if (regex.test(recipeId)) {
+                    if (parsed[0] == 'minecraft') {
+                        found = true
+                        return;
+                    }
+                    regex2 = new RegExp(parsed[0])
+                    if (regex2.test(recipeId)) {
+                        found = true
+                    }
+                }
+            })
+            if (found) {return;}
+            e.custom({
+                "type": "thermal:sawmill",
+                "ingredient": input,
+                "result": [
+                    thermalOutput,
+                    Item.of(`#forge:dusts/wood`).withChance(1.25)
+                    ],
+                "energy": 1000,
+            }).id(id)
+        }
+    }
+
     let planks = Ingredient.of('#minecraft:planks').stacks
     planks.forEach(plank => {
         if (plank.getMod() === 'chipped') {
@@ -308,6 +344,9 @@ onEvent('recipes', e => {
             }
             if (CreateLoaded) {
                 addCreateCutting(inputIngredient, outputItem)
+            }
+            if(ThermalExpansionLoaded) {
+                addThermalSawing(inputIngredient, outputItem)
             }
         });
     });
@@ -340,6 +379,9 @@ onEvent('recipes', e => {
         }
         if (CreateLoaded) {
             addCreateCutting(Ingredient.of(`#${wood}_logs`), Ingredient.of(`${wood}_planks`).withCount(`${customOut[wood] ?? '4'}`))
+        }
+        if (ThermalExpansionLoaded) {
+            addThermalSawing(Ingredient.of(`#${wood}_logs`), Ingredient.of(`${wood}_planks`).withCount(`${customOut[wood] ?? '4'}`))
         }
     })
 
