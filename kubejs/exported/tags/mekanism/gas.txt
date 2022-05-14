@@ -1,0 +1,18 @@
+To refresh this file, delete it and run /reload command again! Last updated: May 9, 2022, 10:47:20 PM
+
+#mekanism:waste_barrel_decay_blacklist
+- mekanism:plutonium
+- mekanism:polonium
+
+#mekanism:tritium
+- mekanismgenerators:tritium
+
+#mekanism:water_vapor
+- mekanism:water_vapor
+- mekanism:steam
+
+#mekanism:fusion_fuel
+- mekanismgenerators:fusion_fuel
+
+#mekanism:deuterium
+- mekanismgenerators:deuterium
