@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ftbic:sulfur",
+  "ingredients": [
+    {
+      "tag": "forge:gems/sulfur"
+    },
+    {
+      "item": "emendatusenigmatica:enigmatic_hammer"
+    }
+  ],
+  "result": {
+    "item": "emendatusenigmatica:sulfur_dust",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "emendatusenigmatica"
+    }
+  ]
+}

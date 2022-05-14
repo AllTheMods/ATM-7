@@ -1,0 +1,23 @@
+{
+  "type": "ftbic:separating",
+  "inputItems": [
+    {
+      "ingredient": {
+        "item": "myrtrees:latex"
+      },
+      "count": 1
+    }
+  ],
+  "outputItems": [
+    {
+      "item": "ftbic:rubber",
+      "count": 3
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "myrtrees"
+    }
+  ]
+}

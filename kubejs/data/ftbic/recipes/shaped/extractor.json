@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ftbic:extractor",
+  "pattern": [
+    "TMT",
+    "TCT"
+  ],
+  "key": {
+    "T": {
+      "item": "myrtrees:tree_tap"
+    },
+    "M": {
+      "item": "ftbic:machine_block"
+    },
+    "C": {
+      "item": "ftbic:electronic_circuit"
+    }
+  },
+  "result": {
+    "item": "ftbic:centrifuge"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "myrtrees"
+    }
+  ]
+}
