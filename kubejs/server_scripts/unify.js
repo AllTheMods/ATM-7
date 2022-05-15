@@ -362,6 +362,78 @@ onEvent('recipes', e => {
     }).id(`kubejs:ftbic/${recipeType}/${metal}_to_${metal}_${type}`)
   }
 
+  function thermalUnifyOres(metal, type) {
+
+  }
+
+  function thermalUnifyPress(metal, type) {
+    e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+    let outputs = []
+    let inputs = []
+    let id = ''
+
+    if (type === 'plate') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+      inputs = [{tag: `forge:ingots/${metal}`}]
+      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
+      id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
+    } else if (type === 'gear') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+      inputs = [{
+        tag:`forge:ingots/${metal}`,
+        count: 4
+      },{
+        item: 'thermal:press_gear_die'
+      }]
+      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
+      id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
+    } else if (type === 'unpacking') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      inputs = [{
+        tag:`forge:storage_blocks/${metal}`
+      },{
+        item: 'thermal:press_unpacking_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`,9)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'raw_unpacking') {
+      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_unpacking/`})
+      inputs = [{
+        tag:`forge:storage_blocks/raw_${metal}`
+      },{
+        item: 'thermal:press_unpacking_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`,9)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'packing') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      inputs = [{
+        tag:`forge:ingots/${metal}`,
+        count: 9
+      },{
+        item: 'thermal:press_packing_3x3_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_block`)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'raw_packing') {
+      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_packing/`})
+      inputs = [{
+        tag:`forge:raw_materials/${metal}`,
+        count: 9
+      },{
+        item: 'thermal:press_packing_3x3_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}_block`)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else { return; }
+
+    e.custom({
+      "type": "thermal:press",
+      "ingredients": inputs,
+      "result": outputs
+    }).id(id)
+  }
+
   function occultismUnifyCrusher(input, type) {
     let outputCount = 2;
     let ignoreMultiplyer = false;
@@ -411,6 +483,7 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(ore, type));
+    ['plate', 'gear', 'unpacking', 'packing','raw_unpacking','raw_packing'].forEach(type => thermalUnifyPress(ore, type));
     createPressing(ore);
     blastingUnifyOres(ore);
     // remove combiner recipes
@@ -420,6 +493,7 @@ onEvent('recipes', e => {
   atoAlloys.forEach(alloy => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type));
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(alloy, type));
+    ['plate', 'gear','unpacking', 'packing'].forEach(type => thermalUnifyPress(alloy, type));
     ftbicUnifyOres(alloy, 'ingot');
     mekUnifyOres(alloy, 'ingot');
     createPressing(alloy);

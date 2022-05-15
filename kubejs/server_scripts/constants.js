@@ -11,6 +11,8 @@ let mekanismMetals = ['osmium', 'lead', 'tin', 'uranium']
 let mekanismAlloys = ['steel', 'refined_obsidian', 'refined_glowstone', 'bronze']
 let ftbicMetals = ['tin', 'lead', 'uranium', 'iridium', 'aluminum']
 let ftbicAlloys = ['enderium', 'bronze']
+let thermalMetals = ['tin', 'lead', 'silver', 'nickel']
+let thermalAlloys = ['bronze', 'electrum', 'invar', 'constantan', 'signalum', 'lumium', 'enderium']
 
 let modifyShaped = (e, result, count, pattern, ingredients) => {
   e.remove({ output: result, type: 'minecraft:crafting_shaped' })
