@@ -362,12 +362,68 @@ onEvent('recipes', e => {
     }).id(`kubejs:ftbic/${recipeType}/${metal}_to_${metal}_${type}`)
   }
 
-  function thermalUnifyOres(metal, type) {
+  let thermalSecondaries = {
+    zinc: "copper",
+    tin: "thermal:apatite",
+    silver: "lead",
+    iron: "nickel",
+    platinum: "tin",
+    copper: "gold",
+    lead: "silver",
+    nickel: "copper",
+    gold: "thermal:cinnabar",
+  }
 
+  function thermalUnifyPulverizer(metal, type) {
+    let outputs = []
+    let input = Ingredient.of(`#forge:${type}s/${metal}`)
+    let id = `kubejs:thermal/pulverizer/${metal}_dust_from_${type}`
+    let experience = 0
+    let energy_mod = 1
+
+    if (type === 'ingot') {
+      e.remove({type:'thermal:pulverizer', id: `/${metal}_ingot_to_dust/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`))
+      energy_mod = 0.5
+    } else if (type === 'ore') {
+      e.remove({type:'thermal:pulverizer', id: `/${metal}_ore/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(2.0))
+      if (metal in thermalSecondaries) {
+        extraItem = thermalSecondaries[metal]
+        console.log(extraItem)
+        if (extraItem.includes('thermal')) {
+          outputs.push(Item.of(extraItem).withChance(0.1))
+        } else {
+          outputs.push(Item.of(`${craftOverride[extraItem] ?? 'alltheores'}:${extraItem}_dust`).withChance(0.1))
+        }
+      }
+      outputs.push(Item.of('minecraft:gravel').withChance(0.2))
+      experience = 0.2
+    } else if (type === 'raw_ore') {
+      e.remove({type:'thermal:pulverizer', id: `/raw_${metal}/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(1.25))
+      if (metal in thermalSecondaries) {
+        extraItem = thermalSecondaries[metal]
+        console.log(extraItem)
+        if (extraItem.includes('thermal')) {
+          outputs.push(Item.of(extraItem).withChance(0.05))
+        } else {
+          outputs.push(Item.of(`${craftOverride[extraItem] ?? 'alltheores'}:${extraItem}_dust`).withChance(0.05))
+        }
+      }
+      experience = 0.1
+    } else { return;}
+
+    e.custom({
+      "type": "thermal:pulverizer",
+      "ingredient": input,
+      "result": outputs,
+      "experience":experience,
+      "energy_mod":energy_mod
+    }).id(id)
   }
 
   function thermalUnifyPress(metal, type) {
-    e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
     let outputs = []
     let inputs = []
     let id = ''
@@ -480,10 +536,11 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => thermalUnifyPulverizer(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(ore, type));
-    ['plate', 'gear', 'unpacking', 'packing','raw_unpacking','raw_packing'].forEach(type => thermalUnifyPress(ore, type));
+    ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing'].forEach(type => thermalUnifyPress(ore, type));
     createPressing(ore);
     blastingUnifyOres(ore);
     // remove combiner recipes
@@ -493,8 +550,9 @@ onEvent('recipes', e => {
   atoAlloys.forEach(alloy => {
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type));
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(alloy, type));
-    ['plate', 'gear','unpacking', 'packing'].forEach(type => thermalUnifyPress(alloy, type));
+    ['plate', 'gear', 'unpacking', 'packing'].forEach(type => thermalUnifyPress(alloy, type));
     ftbicUnifyOres(alloy, 'ingot');
+    thermalUnifyPulverizer(alloy, 'ingot');
     mekUnifyOres(alloy, 'ingot');
     createPressing(alloy);
   })
