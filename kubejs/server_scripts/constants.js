@@ -12,25 +12,6 @@ let mekanismAlloys = ['steel', 'refined_obsidian', 'refined_glowstone', 'bronze'
 let ftbicMetals = ['tin', 'lead', 'uranium', 'iridium', 'aluminum']
 let ftbicAlloys = ['enderium', 'bronze']
 
-let draconicFusion = (e, output, craftingTier, energy, middleItem, ingredientList) => {
-  //crafting tier: 1.draconium, 2.wyvern, 3.draconic, 4.chaotic
-  let tiers = ['WYVERN', 'DRACONIC', 'CHAOTIC']
-  e.custom({
-    type: 'draconicevolution:fusion_crafting',
-    result: { item: output },
-    catalyst: { item: middleItem },
-    total_energy: energy,
-    tier: (craftingTier > 4 && craftingTier <= 1) ? 'DRACONIUM' : tiers[craftingTier - 2],
-    ingredients: ingredientList.map(item => (item.charAt(0) === '#') ? { tag: item.substring(1) } : { item: item })
-  }).id(`kubejs:fusion_crafting/${output.replace(':', '/')}`)
-}
-let energize = (e, ingredient, result, power, count) => {
-  e.recipes.powah.energizing({
-    ingredients: ingredient.map(i => Ingredient.of(i).toJson()),
-    energy: power,
-    result: Item.of(result, count ? count : 1).toResultJson()
-  }).id(`kubejs:energizing/${result.replace(':', '/')}`)
-}
 let modifyShaped = (e, result, count, pattern, ingredients) => {
   e.remove({ output: result, type: 'minecraft:crafting_shaped' })
   e.shaped(Item.of(result, count), pattern, ingredients).id(`kubejs:shaped/${result.replace(':', '/')}`)
