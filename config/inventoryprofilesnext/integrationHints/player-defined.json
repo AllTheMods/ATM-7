@@ -27,5 +27,11 @@
     },
     "mekanism.common.inventory.container.tile.MekanismTileContainer": {
         "ignore": true
+    },
+    "net.permutated.pylons.client.gui.ExpulsionPylonScreen": {
+      "ignore": true
+    },
+    "net.permutated.pylons.client.gui.InfusionPylonScreen": {
+      "ignore": true
     }
 }
