@@ -9,6 +9,8 @@ let immersiveMetals = ['aluminum', 'lead', 'nickel', 'silver', 'uranium']
 let immersiveAlloys = ['steel', 'electrum', 'constantan']
 let mekanismMetals = ['osmium', 'lead', 'tin', 'uranium']
 let mekanismAlloys = ['steel', 'refined_obsidian', 'refined_glowstone', 'bronze']
+let ftbicMetals = ['tin', 'lead', 'uranium', 'iridium', 'aluminum']
+let ftbicAlloys = ['enderium', 'bronze']
 
 let draconicFusion = (e, output, craftingTier, energy, middleItem, ingredientList) => {
   //crafting tier: 1.draconium, 2.wyvern, 3.draconic, 4.chaotic

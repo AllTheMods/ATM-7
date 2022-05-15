@@ -1,0 +1,22 @@
+{
+  "type": "ftbic:separating",
+  "inputItems": [
+    {
+      "ingredient": {
+        "item": "myrtrees:rubberwood_sapling"
+      },
+      "count": 1
+    }
+  ],
+  "outputItems": [
+    {
+      "item": "myrtrees:latex"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "myrtrees"
+    }
+  ]
+}
