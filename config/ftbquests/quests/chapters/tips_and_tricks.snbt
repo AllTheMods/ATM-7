@@ -150,7 +150,7 @@
 			description: [
 				"Stores all the guidebooks you'll ever need!"
 				""
-				"Re-craftable with one stick."
+				""
 			]
 			id: "5718EEFE4F50BB73"
 			tasks: [{
@@ -164,12 +164,6 @@
 						"eccentrictome:version": 1
 					}
 				}
-			}]
-			rewards: [{
-				id: "135DC7E4DBF766E7"
-				type: "item"
-				title: "An Emergency Stick"
-				item: "minecraft:stick"
 			}]
 		}
 		{

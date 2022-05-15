@@ -1,0 +1,258 @@
+{
+	id: "17FBD5F9FD6AAF2D"
+	group: ""
+	order_index: 2
+	filename: "achievements"
+	title: "Achievements"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Kill 5x Each I\\&F Dragon"
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"Tip: bring Woot mob shards with you!"
+				""
+				"It takes 5 kills to fill a mob shard, which can be used later to farm dragon materials in a Woot spawner."
+			]
+			optional: true
+			id: "1D85CE0A88D09165"
+			tasks: [
+				{
+					id: "1DFDC23BABB72AC1"
+					type: "kill"
+					entity: "iceandfire:fire_dragon"
+					value: 5L
+				}
+				{
+					id: "61DFF3FDE570688C"
+					type: "kill"
+					entity: "iceandfire:ice_dragon"
+					value: 5L
+				}
+				{
+					id: "59523A52D7E444A2"
+					type: "kill"
+					entity: "iceandfire:lightning_dragon"
+					value: 5L
+				}
+			]
+			rewards: [{
+				id: "38223539FD086E03"
+				type: "item"
+				auto: "invisible"
+				item: "atmadditions:dragon_soul"
+			}]
+		}
+		{
+			title: "Visit (almost) Every Dimension"
+			x: 0.0d
+			y: -1.5d
+			id: "0B66FB2CE83CD2BD"
+			tasks: [
+				{
+					id: "6C5BF8AB010372DF"
+					type: "dimension"
+					icon: "minecraft:grass_block"
+					dimension: "minecraft:overworld"
+				}
+				{
+					id: "0F35EDDD181481F6"
+					type: "dimension"
+					icon: "minecraft:netherrack"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "563B31B6534ED405"
+					type: "dimension"
+					icon: "minecraft:orange_terracotta"
+					dimension: "allthemodium:the_other"
+				}
+				{
+					id: "1F04C1452010053E"
+					type: "dimension"
+					icon: "minecraft:stone"
+					dimension: "allthemodium:mining"
+				}
+				{
+					id: "1DAB1D499DED6938"
+					type: "dimension"
+					icon: "compactmachines:wall"
+					dimension: "compactmachines:compact_world"
+				}
+				{
+					id: "05FD9DCCD1A94275"
+					type: "dimension"
+					icon: {
+						id: "mahoutsukai:scroll_reality_marble"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								MAHOUTSUKAI_CASTER_NAME: ""
+							}
+						}
+					}
+					dimension: "mahoutsukai:reality_marble"
+				}
+				{
+					id: "3A90698DDCEECDED"
+					type: "dimension"
+					icon: "mythicbotany:kvasir_mead"
+					dimension: "mythicbotany:alfheim"
+				}
+				{
+					id: "3A6E0DB2F6B7A537"
+					type: "dimension"
+					icon: "minecraft:red_bed"
+					dimension: "lostcities:lostcity"
+				}
+			]
+			rewards: [
+				{
+					id: "125C7ED63AB6EFBF"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:allthemodium_ore"
+				}
+				{
+					id: "2D9A756777B58733"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:vibranium_ore"
+				}
+				{
+					id: "0F1377835B90C234"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_ore"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			id: "23797322470A9E4D"
+			tasks: [{
+				id: "36FF69BF35415E37"
+				type: "xp"
+				value: 500L
+				points: false
+			}]
+			rewards: [{
+				id: "5709D6E6CD232ACF"
+				type: "item"
+				auto: "invisible"
+				item: "reliquary:hero_medallion"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			id: "5CF77B044B41E74A"
+			tasks: [{
+				id: "453ED0BE514A51CB"
+				type: "item"
+				item: "allthecompressed:cobblestone_block_9x"
+			}]
+			rewards: [{
+				id: "605623DDD28FABFF"
+				type: "item"
+				auto: "invisible"
+				item: "allthecompressed:cobbled_deepslate_block_4x"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			hide_dependency_lines: false
+			dependencies: ["5CF77B044B41E74A"]
+			id: "79E5AAC316FE9C1B"
+			tasks: [{
+				id: "749CA27C9C82447A"
+				type: "item"
+				item: "allthecompressed:cobbled_deepslate_block_9x"
+				count: 64L
+			}]
+			rewards: [{
+				id: "332D52D5CF4164B1"
+				type: "item"
+				item: "allthecompressed:cobblestone_block_9x"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			id: "212CC58521442922"
+			tasks: [{
+				id: "5EBCD7C3A0113AA9"
+				type: "kill"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 20L
+			}]
+			rewards: [
+				{
+					id: "3795E76486D9705C"
+					type: "item"
+					auto: "invisible"
+					item: "botania:gaia_head"
+				}
+				{
+					id: "5E676BD63BC6F855"
+					type: "item"
+					auto: "invisible"
+					item: "kubejs:mass_of_wills"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			hide_dependency_lines: false
+			dependencies: ["1D85CE0A88D09165"]
+			optional: true
+			id: "27AD35DC3E9ED98E"
+			tasks: [
+				{
+					id: "6B062A4683F886F1"
+					type: "kill"
+					entity: "iceandfire:fire_dragon"
+					value: 50L
+				}
+				{
+					id: "4B01F51997C42B9D"
+					type: "kill"
+					entity: "iceandfire:ice_dragon"
+					value: 50L
+				}
+				{
+					id: "0A95CBA1230772F7"
+					type: "kill"
+					entity: "iceandfire:lightning_dragon"
+					value: 50L
+				}
+			]
+			rewards: [
+				{
+					id: "24AD298140198DB2"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+				}
+				{
+					id: "34D25FEF850E43F2"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+				}
+				{
+					id: "1B16C848C057050B"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+				}
+			]
+		}
+	]
+}

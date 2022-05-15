@@ -1263,22 +1263,6 @@
 		}
 		{
 			x: 6.0d
-			y: -4.5d
-			dependencies: ["6B04FC81351CD1AB"]
-			id: "4328CC603FDD7E56"
-			tasks: [{
-				id: "51FF333E2DDF6349"
-				type: "item"
-				item: "creativewirelesstransmitter:creative_wireless_transmitter"
-			}]
-			rewards: [{
-				id: "070B8D3AD6FE5377"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
-			x: 6.0d
 			y: -7.5d
 			dependencies: ["6B04FC81351CD1AB"]
 			id: "3E0D29502690E02F"
@@ -1423,7 +1407,6 @@
 		{
 			x: -4.5d
 			y: -4.5d
-			dependencies: ["1AAED56198D4799B"]
 			id: "47618EAE323E6C13"
 			tasks: [{
 				id: "50B7CE5116D535CC"
@@ -1466,18 +1449,6 @@
 				id: "52B96A2212B66053"
 				type: "random"
 				table_id: 3567941291661635734L
-			}]
-		}
-		{
-			x: -3.0d
-			y: -4.5d
-			hide_dependency_lines: true
-			dependencies: ["01F18150EC923482"]
-			id: "1AAED56198D4799B"
-			tasks: [{
-				id: "4D5AE30FDB715186"
-				type: "item"
-				item: "rsrequestify:requester"
 			}]
 		}
 		{

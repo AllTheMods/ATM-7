@@ -582,23 +582,6 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "3C3A48848EBEE3EA"
-					type: "item"
-					item: "iceandfire:dragonforge_fire_brick"
-				}
-				{
-					id: "3E669C643FB082F4"
-					type: "item"
-					item: "iceandfire:dragonforge_ice_brick"
-				}
-				{
-					id: "1FEDD6F95E6AC23C"
-					type: "item"
-					item: "iceandfire:dragonforge_lightning_brick"
-				}
-			]
 		}
 		{
 			x: -1.0d
@@ -684,23 +667,6 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "2C617013ECC2052D"
-					type: "item"
-					item: "iceandfire:dragonforge_fire_brick"
-				}
-				{
-					id: "024F61E2555EBC89"
-					type: "item"
-					item: "iceandfire:dragonforge_ice_brick"
-				}
-				{
-					id: "275DEF92814F48E3"
-					type: "item"
-					item: "iceandfire:dragonforge_lightning_brick"
-				}
-			]
 		}
 		{
 			x: 2.5d
@@ -719,23 +685,6 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "7A89B4A20ED43469"
-					type: "item"
-					item: "iceandfire:dragonforge_fire_brick"
-				}
-				{
-					id: "412B8E070736D010"
-					type: "item"
-					item: "iceandfire:dragonforge_ice_brick"
-				}
-				{
-					id: "39E71A5C8AB46D63"
-					type: "item"
-					item: "iceandfire:dragonforge_lightning_brick"
-				}
-			]
 		}
 		{
 			x: 2.5d
@@ -754,23 +703,6 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "574E676180A95510"
-					type: "item"
-					item: "iceandfire:dragonforge_fire_brick"
-				}
-				{
-					id: "62FC110499869F8D"
-					type: "item"
-					item: "iceandfire:dragonforge_ice_brick"
-				}
-				{
-					id: "59893647A12DE6E1"
-					type: "item"
-					item: "iceandfire:dragonforge_lightning_brick"
-				}
-			]
 		}
 		{
 			x: 0.0d
@@ -922,18 +854,11 @@
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "1A5E414C9D25703A"
-			tasks: [
-				{
-					id: "2212DFCF11CE8D69"
-					type: "dimension"
-					dimension: "allthemodium:the_other"
-				}
-				{
-					id: "1D06C07E6AB15648"
-					type: "item"
-					item: "iceandfire:dragonbone"
-				}
-			]
+			tasks: [{
+				id: "2212DFCF11CE8D69"
+				type: "dimension"
+				dimension: "allthemodium:the_other"
+			}]
 		}
 		{
 			x: 0.5d
