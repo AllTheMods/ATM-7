@@ -8,16 +8,11 @@
     "item.kubejs.potassium_nitrate_ingot": "硝酸钾锭",
     "item.kubejs.potassium_dust": "钾粉",
     "item.kubejs.potassium_ingot": "钾锭",
-    "item.kubejs.uru_ingot": "§6乌鲁金属锭",
-    "item.kubejs.uru_nugget": "§6乌鲁金属粒",
 
     "block.kubejs.magical_soil": "§b魔法土壤",
     "block.kubejs.saltpeter_block": "硝酸盐块",
     "block.kubejs.potassium_block": "钾块",
     "block.kubejs.potassium_nitrate_block": "硝酸钾块",
-    "block.kubejs.uru_block": "§6乌鲁金属块",
     "block.kubejs.atm_star_block": "§eATM之星块",
     "block.kubejs.yellow_cake_uranium_block": "§e铀黄饼块"
   }
-  
-  

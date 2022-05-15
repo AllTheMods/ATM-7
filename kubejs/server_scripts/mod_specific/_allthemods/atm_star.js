@@ -1,19 +1,4 @@
 onEvent('recipes', e => {
-  //#region FUNCTIONS
-  function multiCrush(output, input) {
-    e.recipes.mekanism.crushing(output, input).id(`kubejs:allthetweaks/${output.split(':')[1]}_mek_crush`)
-    e.recipes.create.crushing(output, input).id(`kubejs:allthetweaks/${output.split(':')[1]}_create_crush`)
-    e.recipes.immersiveengineering.crusher(output, input).id(`kubejs:allthetweaks/${output.split(':')[1]}_ie_crush`)
-    e.recipes.thermal.pulverizer(output, input).id(`kubejs:allthetweaks/${output.split(':')[1]}_thermal_pulverize`)
-  }
-  function jumbo(ingr, res, xp) {
-    e.recipes.jumbofurnace.jumbo_smelting({
-      ingredients: ingr,
-      result: { item: res },
-      experience: xp
-    }).id(`kubejs:allthetweaks/${res.split(':')[1]}_jumbo`)
-  }
-  //#endregion
   //#region RECIPES
   //#region Dragon Soul
   e.shaped('allthetweaks:dragon_soul', ['CDA', 'SNI', 'BSE'], {
