@@ -24,6 +24,9 @@ onEvent('tags.items', e => {
   e.add('forge:raw_ores/azure_silver', 'silentgear:raw_azure_silver');
   e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
 
+  e.add('forge:raw_ores/iridium', 'ftbic:iridium_chunk');
+  e.remove('forge:silicon', 'ftbic:silicon')
+
   e.add('forge:melons','minecraft:melon_slice')
 
   // fix raw block crafting for other mods

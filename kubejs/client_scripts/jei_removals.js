@@ -1,10 +1,8 @@
 onEvent('jei.hide.items', e => {
   //#region consts
   let refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
-  let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
-  let maDisabledSeeds = ['apatite', 'rubber', 'ruby', 'sapphire', 'basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium']
   let typeFirst = ['mekanism', 'immersiveengineering']
-  let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
+
   //#endregion
   //#region functions
   function hideMetal(mod, name, types) {
@@ -38,7 +36,17 @@ onEvent('jei.hide.items', e => {
     'silentgear:iron_rod',
     'moreminecarts:chunkrodite',
     'moreminecarts:chunkrodite_block',
+    'ftbic:silicon',
   ])
+
+  ftbicMetals.forEach(metal => {
+    hideMetal('ftbic', metal, ['ore', 'ingot', 'dust', 'nugget', 'block', 'gear', 'plate', 'rod'])
+    e.hide(`ftbic:deepslate_${metal}_ore`);
+    e.hide(`ftbic:${metal}_chunk`);
+  });
+  ftbicAlloys.forEach(metal => hideMetal('ftbic', metal, ['ingot', 'dust', 'nugget', 'block', 'gear', 'plate', 'rod']));
+  vanillaMetals.forEach(metal => hideMetal('ftbic', metal, ['dust', 'gear', 'plate', 'rod']));
+  hideMetal('ftbic', 'copper', ['nugget']);
 
   //#region hideMetal
   hideMetal('immersiveengineering', 'copper', ['ingot', 'ore', 'dust', 'nugget', 'storage', 'slab_storage'])

@@ -1,0 +1,10 @@
+[projection.treasury]
+	TREASURY_PROJECTION_DENY_ALL = true
+[projection.projection]
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	PROJECTION_MANA_COST = 100000000
+	#A list of item names which cannot be projected. Such as minecraft:diamond_sword , for example.
+	PROJECTION_BLACKLIST = ["minecraft:stick"]
+	#If False, PROJECTION_BLACKLIST will be considered a whitelist
+	PROJECTION_IS_BLACKLIST = false

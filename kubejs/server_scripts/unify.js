@@ -10,6 +10,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
+    iridium: 'ftbic',
   }
 
   let craftOverride = {
@@ -20,6 +21,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
+    iridium: 'ftbic',
   }
   function mekUnifyOres(metal, type) {
     let input = '';
@@ -46,7 +48,7 @@ onEvent('recipes', e => {
       input = `#forge:ores/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
       outputCount = 2;
-      
+
       e.remove({id: `mekanism:processing/${metal}/dust/from_ore`})
     }
 
@@ -62,7 +64,7 @@ onEvent('recipes', e => {
     if (type === 'dirty_dust') {
       input = `#mekanism:dirty_dusts/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
-      
+
       e.remove({id: `mekanism:processing/${metal}/dust/from_dirty_dust`})
     }
 
@@ -89,6 +91,9 @@ onEvent('recipes', e => {
       time = 350;
       input = `#forge:ores/${metal}`;
       let out = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
+      // override until ATO iridium is available
+      if (out === 'ftbic:raw_iridium') out = 'ftbic:iridium_chunk';
+
       outputs.push({
         item: out
       });
@@ -190,6 +195,8 @@ onEvent('recipes', e => {
       crusherEnergy = 6000;
       inputIngredient = `#forge:ores/${input}`;
       crusherOutput = `${oreOverride[input] ?? 'alltheores'}:raw_${input}`;
+      // override until ATO iridium is available
+      if (crusherOutput === 'ftbic:raw_iridium') crusherOutput = 'ftbic:iridium_chunk';
       crusherSecondaries.push({
         chance: 0.33,
         output: Ingredient.of(crusherOutput)
@@ -294,6 +301,195 @@ onEvent('recipes', e => {
     }).id(`kubejs:metalpress/${type}_${input}`)
   }
 
+  // unify ores for FTB Industrial Contraptions
+  // supported types: ore, raw_ore, ingot
+  function ftbicUnifyOres(metal, type) {
+    let outputCount = 2;
+    let inputTag = `#forge:${type}s/${metal}`;
+
+    if (type === 'ingot') {
+      outputCount = 1;
+    }
+
+    e.custom({
+      "type": "ftbic:macerating",
+      "inputItems": [
+        {
+          "ingredient": Ingredient.of(inputTag),
+          "count": 1
+        }
+      ],
+      "outputItems": [
+        {
+          "item": `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`,
+          "count": outputCount,
+        }
+      ]
+    }).id(`kubejs:ftbic/macerating/${type}/${metal}_to_dust`)
+  }
+
+  // unify pressing for FTB Industrial Contraptions
+  // supported types: plates, rods, gears
+  function ftbicUnifyPress(metal, type) {
+    let recipeType = 'rolling';
+    let inputTag = `#forge:ingots/${metal}`;
+    let inputCount = 1;
+    let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`
+
+    if (type === 'rod') {
+      recipeType = 'extruding';
+    }
+
+    if (type === 'gear') {
+      inputCount = 4;
+      inputTag = `#forge:plates/${metal}`
+    }
+
+    e.custom({
+      "type": `ftbic:${recipeType}`,
+      "inputItems": [
+        {
+          "ingredient": Ingredient.of(inputTag),
+          "count": inputCount
+        }
+      ],
+      "outputItems": [
+        {
+          "item": output,
+          "count": 1
+        }
+      ]
+    }).id(`kubejs:ftbic/${recipeType}/${metal}_to_${metal}_${type}`)
+  }
+
+  let thermalSecondaries = {
+    zinc: "copper",
+    tin: "thermal:apatite",
+    silver: "lead",
+    iron: "nickel",
+    platinum: "tin",
+    copper: "gold",
+    lead: "silver",
+    nickel: "copper",
+    gold: "thermal:cinnabar",
+  }
+
+  function thermalUnifyPulverizer(metal, type) {
+    let outputs = []
+    let input = Ingredient.of(`#forge:${type}s/${metal}`)
+    let id = `kubejs:thermal/pulverizer/${metal}_dust_from_${type}`
+    let experience = 0
+    let energy_mod = 1
+
+    if (type === 'ingot') {
+      e.remove({type:'thermal:pulverizer', id: `/${metal}_ingot_to_dust/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`))
+      energy_mod = 0.5
+    } else if (type === 'ore') {
+      e.remove({type:'thermal:pulverizer', id: `/${metal}_ore/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(2.0))
+      if (metal in thermalSecondaries) {
+        extraItem = thermalSecondaries[metal]
+        console.log(extraItem)
+        if (extraItem.includes('thermal')) {
+          outputs.push(Item.of(extraItem).withChance(0.1))
+        } else {
+          outputs.push(Item.of(`${craftOverride[extraItem] ?? 'alltheores'}:${extraItem}_dust`).withChance(0.1))
+        }
+      }
+      outputs.push(Item.of('minecraft:gravel').withChance(0.2))
+      experience = 0.2
+    } else if (type === 'raw_ore') {
+      e.remove({type:'thermal:pulverizer', id: `/raw_${metal}/`})
+      outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(1.25))
+      if (metal in thermalSecondaries) {
+        extraItem = thermalSecondaries[metal]
+        console.log(extraItem)
+        if (extraItem.includes('thermal')) {
+          outputs.push(Item.of(extraItem).withChance(0.05))
+        } else {
+          outputs.push(Item.of(`${craftOverride[extraItem] ?? 'alltheores'}:${extraItem}_dust`).withChance(0.05))
+        }
+      }
+      experience = 0.1
+    } else { return;}
+
+    e.custom({
+      "type": "thermal:pulverizer",
+      "ingredient": input,
+      "result": outputs,
+      "experience":experience,
+      "energy_mod":energy_mod
+    }).id(id)
+  }
+
+  function thermalUnifyPress(metal, type) {
+    let outputs = []
+    let inputs = []
+    let id = ''
+
+    if (type === 'plate') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+      inputs = [{tag: `forge:ingots/${metal}`}]
+      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
+      id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
+    } else if (type === 'gear') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+      inputs = [{
+        tag:`forge:ingots/${metal}`,
+        count: 4
+      },{
+        item: 'thermal:press_gear_die'
+      }]
+      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
+      id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
+    } else if (type === 'unpacking') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      inputs = [{
+        tag:`forge:storage_blocks/${metal}`
+      },{
+        item: 'thermal:press_unpacking_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`,9)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'raw_unpacking') {
+      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_unpacking/`})
+      inputs = [{
+        tag:`forge:storage_blocks/raw_${metal}`
+      },{
+        item: 'thermal:press_unpacking_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`,9)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'packing') {
+      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      inputs = [{
+        tag:`forge:ingots/${metal}`,
+        count: 9
+      },{
+        item: 'thermal:press_packing_3x3_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_block`)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else if (type === 'raw_packing') {
+      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_packing/`})
+      inputs = [{
+        tag:`forge:raw_materials/${metal}`,
+        count: 9
+      },{
+        item: 'thermal:press_packing_3x3_die'
+      }]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}_block`)]
+      id = `kubejs:thermal/press/press_${metal}_${type}`
+    } else { return; }
+
+    e.custom({
+      "type": "thermal:press",
+      "ingredients": inputs,
+      "result": outputs
+    }).id(id)
+  }
+
   function occultismUnifyCrusher(input, type) {
     let outputCount = 2;
     let ignoreMultiplyer = false;
@@ -339,18 +535,26 @@ onEvent('recipes', e => {
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'raw_block', 'ingot'].forEach(type => createUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => thermalUnifyPulverizer(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
-    createPressing(ore)
-    blastingUnifyOres(ore)
+    ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(ore, type));
+    ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing'].forEach(type => thermalUnifyPress(ore, type));
+    createPressing(ore);
+    blastingUnifyOres(ore);
     // remove combiner recipes
-    e.remove({type:"mekanism:combining", id:`/${ore}\/ore/`})
+    e.remove({type:"mekanism:combining", id:`/${ore}\/ore/`});
   });
 
   atoAlloys.forEach(alloy => {
-    ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type))
-    mekUnifyOres(alloy, 'ingot')
-    createPressing(alloy)
+    ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(alloy, type));
+    ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(alloy, type));
+    ['plate', 'gear', 'unpacking', 'packing'].forEach(type => thermalUnifyPress(alloy, type));
+    ftbicUnifyOres(alloy, 'ingot');
+    thermalUnifyPulverizer(alloy, 'ingot');
+    mekUnifyOres(alloy, 'ingot');
+    createPressing(alloy);
   })
 
   vanillaMetals.concat(mekanismMetals).forEach(ore => {
@@ -394,11 +598,36 @@ onEvent('recipes', e => {
     e.remove({output: `immersiveengineering:ingot_${metal}`})
   });
 
-  ['crimson_iron', 'azure_silver', 'iesnium'].forEach(ore => {
+  ftbicMetals.concat(ftbicAlloys, vanillaMetals).forEach(metal => {
+    e.remove({id: `ftbic:macerating/ingots/${metal}_to_dust`})
+    e.remove({id: `ftbic:blasting/dusts/${metal}_to_ingot`})
+    e.remove({id: `ftbic:smelting/dusts/${metal}_to_ingot`})
+    e.remove({id: `ftbic:blasting/raw_materials/${metal}_to_ingot`})
+    e.remove({id: `ftbic:smelting/raw_materials/${metal}_to_ingot`})
+    e.remove({id: `ftbic:shaped/ingots/${metal}_to_${metal}_rod`})
+    e.remove({id: `ftbic:shaped/ingots/${metal}_to_${metal}_gear`})
+    e.remove({id: `ftbic:extruding/ingots/${metal}_to_${metal}_rod`})
+    e.remove({id: `ftbic:rolling/ingots/${metal}_to_${metal}_plate`})
+    e.remove({id: `ftbic:rolling/plates/${metal}_to_${metal}_gear`})
+    e.remove({id: `ftbic:shapeless/${metal}_block_to_${metal}_ingot`})
+    e.remove({id: `ftbic:shaped/${metal}_ingot_to_${metal}_block`})
+    e.remove({id: `ftbic:shapeless/${metal}_ingot_to_${metal}_nugget`})
+    e.remove({id: `ftbic:shaped/nuggets/${metal}_to_${metal}_ingot`})
+  });
+
+  ftbicMetals.concat(vanillaMetals).forEach(metal => {
+    e.remove({id: `ftbic:blasting/ores/${metal}_to_ingot`})
+    e.remove({id: `ftbic:smelting/ores/${metal}_to_ingot`})
+    e.remove({id: `ftbic:macerating/ores/${metal}_to_dust`})
+    e.remove({id: `ftbic:macerating/raw_materials/${metal}_to_dust`})
+  });
+
+  ['crimson_iron', 'azure_silver', 'iesnium', 'iridium'].forEach(ore => {
     ['ore', 'raw_ore', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => createUnifyOres(ore, type));
-    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));    
+    ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
+    ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
   });
 
   ['crimson_iron', 'azure_silver'].forEach(ore => {
@@ -481,7 +710,12 @@ onEvent('recipes', e => {
     'allthemodium:mek_processing/vibranium/ingot/from_dust_smelting',
     'allthemodium:mek_processing/unobtainium/ingot/from_dust_smelting',
     'mekanism:compat/byg/combining/brimstone_gold_ore_from_raw',
-    'mekanism:compat/byg/combining/blue_gold_ore_from_raw'
+    'mekanism:compat/byg/combining/blue_gold_ore_from_raw',
+    'ftbic:shaped/bronze_dust',
+    'ftbic:shaped/enderium_dust',
+    'ftbic:shaped/enderium_dust_2',
+    'ftbic:separating/silicon_from_quartz',
+    'ftbic:separating/silicon_from_sand',
   ]);
 
   removeRecipeByOutput(e, [

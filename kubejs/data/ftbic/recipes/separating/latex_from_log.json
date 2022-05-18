@@ -1,0 +1,23 @@
+{
+  "type": "ftbic:separating",
+  "inputItems": [
+    {
+      "ingredient": {
+        "item": "myrtrees:rubberwood_log"
+      },
+      "count": 1
+    }
+  ],
+  "outputItems": [
+    {
+      "item": "myrtrees:latex",
+      "chance": 0.8
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "myrtrees"
+    }
+  ]
+}
