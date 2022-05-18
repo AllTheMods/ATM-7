@@ -45,7 +45,7 @@
     # Valid range: (0,)
     # Default: 1.0
     #
-    FuelUsageMultiplier = 1.5
+    FuelUsageMultiplier = 1.25
 
     #
     # Valid range: (0,)
