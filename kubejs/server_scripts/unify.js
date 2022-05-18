@@ -10,7 +10,6 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
-    iridium: 'ftbic',
   }
 
   let craftOverride = {
@@ -21,7 +20,6 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
-    iridium: 'ftbic',
   }
   function mekUnifyOres(metal, type) {
     let input = '';
@@ -91,8 +89,6 @@ onEvent('recipes', e => {
       time = 350;
       input = `#forge:ores/${metal}`;
       let out = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
-      // override until ATO iridium is available
-      if (out === 'ftbic:raw_iridium') out = 'ftbic:iridium_chunk';
 
       outputs.push({
         item: out
@@ -195,17 +191,6 @@ onEvent('recipes', e => {
       crusherEnergy = 6000;
       inputIngredient = `#forge:ores/${input}`;
       crusherOutput = `${oreOverride[input] ?? 'alltheores'}:raw_${input}`;
-      // override until ATO iridium is available
-      if (crusherOutput === 'ftbic:raw_iridium') crusherOutput = 'ftbic:iridium_chunk';
-      crusherSecondaries.push({
-        chance: 0.33,
-        output: Ingredient.of(crusherOutput)
-      })
-      furnaceOutput = crusherOutput;
-      furnaceSecondaries.push({
-        chance: 0.50,
-        output: Ingredient.of(furnaceOutput)
-      })
 
       e.remove({id: `immersiveengineering:crafting/hammercrushing_${input}`});
       e.shapeless(crusherOutput, [inputIngredient, '#alltheores:ore_hammers'])
