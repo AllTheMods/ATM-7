@@ -51,7 +51,7 @@
     # Valid range: (0,)
     # Default: 1.0
     #
-    OutputMultiplier = 1.0
+    OutputMultiplier = 0.9
 
     [Reactor.GUI]
         #
