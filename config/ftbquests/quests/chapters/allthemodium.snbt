@@ -9,9 +9,10 @@
 	default_hide_dependency_lines: true
 	quests: [
 		{
+			title: "Allthemodium Ore"
 			x: -3.5d
 			y: 1.5d
-			description: ["Find this ore in any ocean biome between Y5 to Y45."]
+			description: ["Found in Mountainous biomes inside cave ceilings and walls, with additional deposits in peaks above Y170."]
 			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			hide: false
@@ -20,7 +21,14 @@
 			tasks: [{
 				id: "75498AE05CC06F8F"
 				type: "item"
-				item: "allthemodium:allthemodium_ore"
+				title: "Allthemodium Ore"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/allthemodium"
+					}
+				}
 			}]
 			rewards: [{
 				id: "79B9F276D8F8C3F8"
@@ -31,7 +39,7 @@
 		{
 			x: 0.0d
 			y: 1.5d
-			description: ["Find this ore in the Nethers Warped Forests and Crimson Forests between Y107 to Y113."]
+			description: ["Find this ore in the Nethers Warped Forests and Crimson Forests between Y100 to Y123, or the Other between Y0 to Y20."]
 			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			dependency_requirement: "one_started"
@@ -39,7 +47,14 @@
 			tasks: [{
 				id: "0F6B68E05B7B43AB"
 				type: "item"
-				item: "allthemodium:vibranium_ore"
+				title: "Vibranium Ore"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/vibranium"
+					}
+				}
 			}]
 			rewards: [{
 				id: "2DF58D0443FC347F"
