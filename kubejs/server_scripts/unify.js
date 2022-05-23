@@ -10,6 +10,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
+    cobalt: 'tconstruct'
   }
 
   let craftOverride = {
@@ -20,6 +21,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
+    cobalt: 'kubejs'
   }
   function mekUnifyOres(metal, type) {
     let input = '';
@@ -191,7 +193,15 @@ onEvent('recipes', e => {
       crusherEnergy = 6000;
       inputIngredient = `#forge:ores/${input}`;
       crusherOutput = `${oreOverride[input] ?? 'alltheores'}:raw_${input}`;
-
+      crusherSecondaries.push({
+        chance: 0.33,
+        output: Ingredient.of(crusherOutput)
+      })
+      furnaceOutput = crusherOutput;
+      furnaceSecondaries.push({
+        chance: 0.50,
+        output: Ingredient.of(furnaceOutput)
+      })
       e.remove({ id: `immersiveengineering:crafting/hammercrushing_${input}` });
       e.shapeless(crusherOutput, [inputIngredient, '#alltheores:ore_hammers'])
         .id(`kubejs:hammercrushing/${input}_ore`)
@@ -607,7 +617,7 @@ onEvent('recipes', e => {
     e.remove({ id: `ftbic:macerating/raw_materials/${metal}_to_dust` })
   });
 
-  ['crimson_iron', 'azure_silver', 'iesnium', 'iridium'].forEach(ore => {
+  ['crimson_iron', 'azure_silver', 'iesnium', 'iridium', 'cobalt'].forEach(ore => {
     ['ore', 'raw_ore', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
@@ -615,7 +625,7 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
   });
 
-  ['crimson_iron', 'azure_silver'].forEach(ore => {
+  ['crimson_iron', 'azure_silver', 'cobalt'].forEach(ore => {
     ieUnifyOres(ore, 'raw_block');
     createUnifyOres(ore, 'raw_block');
   });
