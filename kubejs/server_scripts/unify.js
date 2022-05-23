@@ -10,7 +10,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
-    iridium: 'ftbic',
+    cobalt: 'tconstruct'
   }
 
   let craftOverride = {
@@ -21,7 +21,7 @@ onEvent('recipes', e => {
     crimson_iron: 'silentgear',
     azure_silver: 'silentgear',
     iesnium: 'occultism',
-    iridium: 'ftbic',
+    cobalt: 'kubejs'
   }
   function mekUnifyOres(metal, type) {
     let input = '';
@@ -32,7 +32,7 @@ onEvent('recipes', e => {
     if (type === 'ingot') {
       input = `#forge:ingots/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
-      e.remove({id: `mekanism:processing/${metal}/dust/from_ingot`})
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_ingot` })
 
       e.custom({
         "type": "mekanism:crushing",
@@ -49,7 +49,7 @@ onEvent('recipes', e => {
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
       outputCount = 2;
 
-      e.remove({id: `mekanism:processing/${metal}/dust/from_ore`})
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_ore` })
     }
 
     if (type === 'raw_ore') {
@@ -58,14 +58,14 @@ onEvent('recipes', e => {
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
       outputCount = 4;
 
-      e.remove({id: `mekanism:processing/${metal}/dust/from_raw_ore`})
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_raw_ore` })
     }
 
     if (type === 'dirty_dust') {
       input = `#mekanism:dirty_dusts/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
 
-      e.remove({id: `mekanism:processing/${metal}/dust/from_dirty_dust`})
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_dirty_dust` })
     }
 
     e.custom({
@@ -91,8 +91,6 @@ onEvent('recipes', e => {
       time = 350;
       input = `#forge:ores/${metal}`;
       let out = `${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`;
-      // override until ATO iridium is available
-      if (out === 'ftbic:raw_iridium') out = 'ftbic:iridium_chunk';
 
       outputs.push({
         item: out
@@ -106,9 +104,9 @@ onEvent('recipes', e => {
         chance: 0.75
       });
 
-      e.remove({id: `create:crushing/${metal}_ore`});
-      e.remove({id: `create:crushing/nether_${metal}_ore`});
-      e.remove({id: `create:crushing/deepslate_${metal}_ore`});
+      e.remove({ id: `create:crushing/${metal}_ore` });
+      e.remove({ id: `create:crushing/nether_${metal}_ore` });
+      e.remove({ id: `create:crushing/deepslate_${metal}_ore` });
     }
 
     if (type === 'raw_block') {
@@ -123,7 +121,7 @@ onEvent('recipes', e => {
         count: 9,
       });
 
-      e.remove({id: `create:crushing/raw_${metal}_block`});
+      e.remove({ id: `create:crushing/raw_${metal}_block` });
     }
 
     if (type === 'raw_ore') {
@@ -133,8 +131,8 @@ onEvent('recipes', e => {
         count: 2
       });
 
-      e.remove({id: `create:crushing/raw_${metal}`});
-      e.remove({id: `create:crushing/raw_${metal}_ore`});
+      e.remove({ id: `create:crushing/raw_${metal}` });
+      e.remove({ id: `create:crushing/raw_${metal}_ore` });
     }
 
     if (type === 'ingot') {
@@ -162,7 +160,7 @@ onEvent('recipes', e => {
   function createPressing(metal) {
     let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_plate`
 
-    e.remove({id: `create:pressing/${metal}_ingot`});
+    e.remove({ id: `create:pressing/${metal}_ingot` });
     e.custom({
       "type": "create:pressing",
       "ingredients": [
@@ -195,8 +193,6 @@ onEvent('recipes', e => {
       crusherEnergy = 6000;
       inputIngredient = `#forge:ores/${input}`;
       crusherOutput = `${oreOverride[input] ?? 'alltheores'}:raw_${input}`;
-      // override until ATO iridium is available
-      if (crusherOutput === 'ftbic:raw_iridium') crusherOutput = 'ftbic:iridium_chunk';
       crusherSecondaries.push({
         chance: 0.33,
         output: Ingredient.of(crusherOutput)
@@ -206,8 +202,7 @@ onEvent('recipes', e => {
         chance: 0.50,
         output: Ingredient.of(furnaceOutput)
       })
-
-      e.remove({id: `immersiveengineering:crafting/hammercrushing_${input}`});
+      e.remove({ id: `immersiveengineering:crafting/hammercrushing_${input}` });
       e.shapeless(crusherOutput, [inputIngredient, '#alltheores:ore_hammers'])
         .id(`kubejs:hammercrushing/${input}_ore`)
     }
@@ -242,7 +237,7 @@ onEvent('recipes', e => {
     }
 
     if (crusherOutput !== '') {
-      e.remove({id: `immersiveengineering:crusher/${type}_${input}`})
+      e.remove({ id: `immersiveengineering:crusher/${type}_${input}` })
       e.custom({
         "type": "immersiveengineering:crusher",
         "secondaries": crusherSecondaries,
@@ -256,7 +251,7 @@ onEvent('recipes', e => {
     }
 
     if (furnaceOutput !== '') {
-      e.remove({id: `immersiveengineering:arcfurnace/${type}_${input}`})
+      e.remove({ id: `immersiveengineering:arcfurnace/${type}_${input}` })
       e.custom({
         "type": "immersiveengineering:arc_furnace",
         "additives": [],
@@ -281,12 +276,12 @@ onEvent('recipes', e => {
     }
 
     if (type === 'plate') {
-      e.remove({id: `immersiveengineering:crafting/plate_${input}_hammering`});
+      e.remove({ id: `immersiveengineering:crafting/plate_${input}_hammering` });
       e.shapeless(output, [`2x #forge:ingots/${input}`, '#misctags:immersive_engineering_hammer'])
         .id(`kubejs:crafting/plate_${input}_hammering`);
     }
 
-    e.remove({id: `immersiveengineering:metalpress/${type}_${input}`})
+    e.remove({ id: `immersiveengineering:metalpress/${type}_${input}` })
     e.custom({
       "type": "immersiveengineering:metal_press",
       "mold": `immersiveengineering:mold_${type}`,
@@ -382,11 +377,11 @@ onEvent('recipes', e => {
     let energy_mod = 1
 
     if (type === 'ingot') {
-      e.remove({type:'thermal:pulverizer', id: `/${metal}_ingot_to_dust/`})
+      e.remove({ type: 'thermal:pulverizer', id: `/${metal}_ingot_to_dust/` })
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`))
       energy_mod = 0.5
     } else if (type === 'ore') {
-      e.remove({type:'thermal:pulverizer', id: `/${metal}_ore/`})
+      e.remove({ type: 'thermal:pulverizer', id: `/${metal}_ore/` })
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(2.0))
       if (metal in thermalSecondaries) {
         extraItem = thermalSecondaries[metal]
@@ -400,7 +395,7 @@ onEvent('recipes', e => {
       outputs.push(Item.of('minecraft:gravel').withChance(0.2))
       experience = 0.2
     } else if (type === 'raw_ore') {
-      e.remove({type:'thermal:pulverizer', id: `/raw_${metal}/`})
+      e.remove({ type: 'thermal:pulverizer', id: `/raw_${metal}/` })
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(1.25))
       if (metal in thermalSecondaries) {
         extraItem = thermalSecondaries[metal]
@@ -412,14 +407,14 @@ onEvent('recipes', e => {
         }
       }
       experience = 0.1
-    } else { return;}
+    } else { return; }
 
     e.custom({
       "type": "thermal:pulverizer",
       "ingredient": input,
       "result": outputs,
-      "experience":experience,
-      "energy_mod":energy_mod
+      "experience": experience,
+      "energy_mod": energy_mod
     }).id(id)
   }
 
@@ -429,54 +424,54 @@ onEvent('recipes', e => {
     let id = ''
 
     if (type === 'plate') {
-      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
-      inputs = [{tag: `forge:ingots/${metal}`}]
+      e.remove({ type: `thermal:press`, id: `/press_${metal}_ingot_to_${type}/` })
+      inputs = [{ tag: `forge:ingots/${metal}` }]
       outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
       id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
     } else if (type === 'gear') {
-      e.remove({type:`thermal:press`, id:`/press_${metal}_ingot_to_${type}/`})
+      e.remove({ type: `thermal:press`, id: `/press_${metal}_ingot_to_${type}/` })
       inputs = [{
-        tag:`forge:ingots/${metal}`,
+        tag: `forge:ingots/${metal}`,
         count: 4
-      },{
+      }, {
         item: 'thermal:press_gear_die'
       }]
       outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`)]
       id = `kubejs:thermal/press/press_${metal}_ingot_to_${type}`
     } else if (type === 'unpacking') {
-      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      e.remove({ type: `thermal:press`, id: `/press_${metal}_${type}/` })
       inputs = [{
-        tag:`forge:storage_blocks/${metal}`
-      },{
+        tag: `forge:storage_blocks/${metal}`
+      }, {
         item: 'thermal:press_unpacking_die'
       }]
-      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`,9)]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, 9)]
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'raw_unpacking') {
-      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_unpacking/`})
+      e.remove({ type: `thermal:press`, id: `/press_raw_${metal}_unpacking/` })
       inputs = [{
-        tag:`forge:storage_blocks/raw_${metal}`
-      },{
+        tag: `forge:storage_blocks/raw_${metal}`
+      }, {
         item: 'thermal:press_unpacking_die'
       }]
-      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`,9)]
+      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}`, 9)]
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'packing') {
-      e.remove({type:`thermal:press`, id:`/press_${metal}_${type}/`})
+      e.remove({ type: `thermal:press`, id: `/press_${metal}_${type}/` })
       inputs = [{
-        tag:`forge:ingots/${metal}`,
+        tag: `forge:ingots/${metal}`,
         count: 9
-      },{
+      }, {
         item: 'thermal:press_packing_3x3_die'
       }]
       outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_block`)]
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'raw_packing') {
-      e.remove({type:`thermal:press`, id:`/press_raw_${metal}_packing/`})
+      e.remove({ type: `thermal:press`, id: `/press_raw_${metal}_packing/` })
       inputs = [{
-        tag:`forge:raw_materials/${metal}`,
+        tag: `forge:raw_materials/${metal}`,
         count: 9
-      },{
+      }, {
         item: 'thermal:press_packing_3x3_die'
       }]
       outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:raw_${metal}_block`)]
@@ -521,14 +516,14 @@ onEvent('recipes', e => {
 
   function blastingUnifyOres(ore) {
     //find all dust to ingot recipes, remove, and replace with a single one
-    e.remove({type:"minecraft:blasting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_dust/`})
+    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_dust/` })
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:blasting/${ore}_ingot_from_dust`)
-    e.remove({type:"minecraft:smelting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_dust/`})
+    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_dust/` })
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:smelting/${ore}_ingot_from_dust`)
     //find all ore to ingot recipes, remove, and replace with a single one
-    e.remove({type:"minecraft:blasting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_ore/`})
+    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_ore/` })
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:blasting/${ore}_ingot_from_ore`)
-    e.remove({type:"minecraft:smelting", output:`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`,id:`/_ore/`})
+    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_ore/` })
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:smelting/${ore}_ingot_from_ore`)
   }
 
@@ -544,7 +539,7 @@ onEvent('recipes', e => {
     createPressing(ore);
     blastingUnifyOres(ore);
     // remove combiner recipes
-    e.remove({type:"mekanism:combining", id:`/${ore}\/ore/`});
+    e.remove({ type: "mekanism:combining", id: `/${ore}\/ore/` });
   });
 
   atoAlloys.forEach(alloy => {
@@ -569,7 +564,7 @@ onEvent('recipes', e => {
       `mekanism:processing/${metal}/ingot/from_block`,
       `mekanism:processing/${metal}/nugget/from_ingot`,
     ])
-    e.remove({output: `mekanism:ingot_${metal}`})
+    e.remove({ output: `mekanism:ingot_${metal}` })
   });
 
   // Mek alloys overlapping with ATO
@@ -587,42 +582,42 @@ onEvent('recipes', e => {
   });
 
   immersiveMetals.forEach(metal => {
-    e.remove({id: `immersiveengineering:crafting/raw_${metal}_to_raw_block_${metal}`})
-    e.remove({id: `immersiveengineering:crafting/raw_block_${metal}_to_raw_${metal}`})
+    e.remove({ id: `immersiveengineering:crafting/raw_${metal}_to_raw_block_${metal}` })
+    e.remove({ id: `immersiveengineering:crafting/raw_block_${metal}_to_raw_${metal}` })
   });
 
   immersiveMetals.concat(immersiveAlloys).forEach(metal => {
-    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_storage_${metal}`})
-    e.remove({id: `immersiveengineering:crafting/storage_${metal}_to_ingot_${metal}`})
-    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_nugget_${metal}`})
-    e.remove({output: `immersiveengineering:ingot_${metal}`})
+    e.remove({ id: `immersiveengineering:crafting/ingot_${metal}_to_storage_${metal}` })
+    e.remove({ id: `immersiveengineering:crafting/storage_${metal}_to_ingot_${metal}` })
+    e.remove({ id: `immersiveengineering:crafting/ingot_${metal}_to_nugget_${metal}` })
+    e.remove({ output: `immersiveengineering:ingot_${metal}` })
   });
 
   ftbicMetals.concat(ftbicAlloys, vanillaMetals).forEach(metal => {
-    e.remove({id: `ftbic:macerating/ingots/${metal}_to_dust`})
-    e.remove({id: `ftbic:blasting/dusts/${metal}_to_ingot`})
-    e.remove({id: `ftbic:smelting/dusts/${metal}_to_ingot`})
-    e.remove({id: `ftbic:blasting/raw_materials/${metal}_to_ingot`})
-    e.remove({id: `ftbic:smelting/raw_materials/${metal}_to_ingot`})
-    e.remove({id: `ftbic:shaped/ingots/${metal}_to_${metal}_rod`})
-    e.remove({id: `ftbic:shaped/ingots/${metal}_to_${metal}_gear`})
-    e.remove({id: `ftbic:extruding/ingots/${metal}_to_${metal}_rod`})
-    e.remove({id: `ftbic:rolling/ingots/${metal}_to_${metal}_plate`})
-    e.remove({id: `ftbic:rolling/plates/${metal}_to_${metal}_gear`})
-    e.remove({id: `ftbic:shapeless/${metal}_block_to_${metal}_ingot`})
-    e.remove({id: `ftbic:shaped/${metal}_ingot_to_${metal}_block`})
-    e.remove({id: `ftbic:shapeless/${metal}_ingot_to_${metal}_nugget`})
-    e.remove({id: `ftbic:shaped/nuggets/${metal}_to_${metal}_ingot`})
+    e.remove({ id: `ftbic:macerating/ingots/${metal}_to_dust` })
+    e.remove({ id: `ftbic:blasting/dusts/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:smelting/dusts/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:blasting/raw_materials/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:smelting/raw_materials/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:shaped/ingots/${metal}_to_${metal}_rod` })
+    e.remove({ id: `ftbic:shaped/ingots/${metal}_to_${metal}_gear` })
+    e.remove({ id: `ftbic:extruding/ingots/${metal}_to_${metal}_rod` })
+    e.remove({ id: `ftbic:rolling/ingots/${metal}_to_${metal}_plate` })
+    e.remove({ id: `ftbic:rolling/plates/${metal}_to_${metal}_gear` })
+    e.remove({ id: `ftbic:shapeless/${metal}_block_to_${metal}_ingot` })
+    e.remove({ id: `ftbic:shaped/${metal}_ingot_to_${metal}_block` })
+    e.remove({ id: `ftbic:shapeless/${metal}_ingot_to_${metal}_nugget` })
+    e.remove({ id: `ftbic:shaped/nuggets/${metal}_to_${metal}_ingot` })
   });
 
   ftbicMetals.concat(vanillaMetals).forEach(metal => {
-    e.remove({id: `ftbic:blasting/ores/${metal}_to_ingot`})
-    e.remove({id: `ftbic:smelting/ores/${metal}_to_ingot`})
-    e.remove({id: `ftbic:macerating/ores/${metal}_to_dust`})
-    e.remove({id: `ftbic:macerating/raw_materials/${metal}_to_dust`})
+    e.remove({ id: `ftbic:blasting/ores/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:smelting/ores/${metal}_to_ingot` })
+    e.remove({ id: `ftbic:macerating/ores/${metal}_to_dust` })
+    e.remove({ id: `ftbic:macerating/raw_materials/${metal}_to_dust` })
   });
 
-  ['crimson_iron', 'azure_silver', 'iesnium', 'iridium'].forEach(ore => {
+  ['crimson_iron', 'azure_silver', 'iesnium', 'iridium', 'cobalt'].forEach(ore => {
     ['ore', 'raw_ore', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => createUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
@@ -630,7 +625,7 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
   });
 
-  ['crimson_iron', 'azure_silver'].forEach(ore => {
+  ['crimson_iron', 'azure_silver', 'cobalt'].forEach(ore => {
     ieUnifyOres(ore, 'raw_block');
     createUnifyOres(ore, 'raw_block');
   });
@@ -672,13 +667,13 @@ onEvent('recipes', e => {
 
   // temporary fix to allow using any steel dust
   e.smelting('alltheores:steel_ingot', '#forge:dusts/steel');
-  e.remove({id: 'alltheores:steel_ingot_from_dust'})
+  e.remove({ id: 'alltheores:steel_ingot_from_dust' })
   e.blasting('alltheores:steel_ingot', '#forge:dusts/steel');
-  e.remove({id: 'alltheores:steel_ingot_from_dust_blasting'})
+  e.remove({ id: 'alltheores:steel_ingot_from_dust_blasting' })
 
   // temporary for missing recipes
   e.shapeless('allthemodium:unobtainium_ingot', '9x #forge:nuggets/unobtainium');
-  e.remove({id: 'allthemodium:main/unobtainium_nugget_from_unobtainium_ingot'})
+  e.remove({ id: 'allthemodium:main/unobtainium_nugget_from_unobtainium_ingot' })
 
   removeRecipeByID(e, [
     'immersiveengineering:crusher/nether_gold',
@@ -731,31 +726,31 @@ onEvent('recipes', e => {
     let comb = (ore === 'uranium') ? 'radioactive' : ore;
     e.remove({ id: `/honeycomb_${comb}/` });
     e.custom({
-        "type": "productivebees:centrifuge",
-        "ingredient": {
-            "type": "forge:nbt",
-            "item": "productivebees:configurable_honeycomb",
-            "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
-        },
-        "outputs": [
-            { item: { item: `${craftOverride[ore] ?? 'alltheores'}:${ore}_dust` }, chance: 40 },
-            { item: { item: "productivebees:wax" } },
-            { fluid: { fluid: "productivebees:honey" }, amount: 50 }
-        ]
+      "type": "productivebees:centrifuge",
+      "ingredient": {
+        "type": "forge:nbt",
+        "item": "productivebees:configurable_honeycomb",
+        "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
+      },
+      "outputs": [
+        { item: { item: `${craftOverride[ore] ?? 'alltheores'}:${ore}_dust` }, chance: 40 },
+        { item: { item: "productivebees:wax" } },
+        { fluid: { fluid: "productivebees:honey" }, amount: 50 }
+      ]
     }).id(`kubejs:centrifuge/honeycomb_${comb}`);
     e.custom({
-        "type": "create:mixing",
-        "ingredients": [{
-            "type": "forge:nbt",
-            "item": "productivebees:configurable_honeycomb",
-            "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
-        }],
-        "results": [
-            { item: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, chance: 0.4 },
-            { item: "productivebees:wax" },
-            { fluid: "productivebees:honey", amount: 50 }
-        ],
-        "heatRequirement": "heated"
+      "type": "create:mixing",
+      "ingredients": [{
+        "type": "forge:nbt",
+        "item": "productivebees:configurable_honeycomb",
+        "nbt": { "EntityTag": { "type": `productivebees:${comb}` } }
+      }],
+      "results": [
+        { item: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, chance: 0.4 },
+        { item: "productivebees:wax" },
+        { fluid: "productivebees:honey", amount: 50 }
+      ],
+      "heatRequirement": "heated"
     }).id(`kubejs:mixing/honeycomb_${comb}`)
   });
   e.remove({ id: `/honeycomb_aluminium/` });
