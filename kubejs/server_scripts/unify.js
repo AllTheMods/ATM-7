@@ -385,7 +385,6 @@ onEvent('recipes', e => {
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(2.0))
       if (metal in thermalSecondaries) {
         extraItem = thermalSecondaries[metal]
-        console.log(extraItem)
         if (extraItem.includes('thermal')) {
           outputs.push(Item.of(extraItem).withChance(0.1))
         } else {
@@ -399,7 +398,6 @@ onEvent('recipes', e => {
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(1.25))
       if (metal in thermalSecondaries) {
         extraItem = thermalSecondaries[metal]
-        console.log(extraItem)
         if (extraItem.includes('thermal')) {
           outputs.push(Item.of(extraItem).withChance(0.05))
         } else {
@@ -623,6 +621,7 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'ingot'].forEach(type => mekUnifyOres(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['ore', 'raw_ore', 'ingot'].forEach(type => ftbicUnifyOres(ore, type));
+    blastingUnifyOres(ore);
   });
 
   ['crimson_iron', 'azure_silver', 'cobalt'].forEach(ore => {
@@ -672,6 +671,8 @@ onEvent('recipes', e => {
   e.remove({ id: 'alltheores:steel_ingot_from_dust_blasting' })
 
   // temporary for missing recipes
+  e.shapeless('2x kubejs:cobalt_dust',['#forge:raw_ores/cobalt','#alltheores:ore_hammers'])
+  e.shapeless('9x alltheores:brass_ingot', '#forge:storage_blocks/brass')
   e.shapeless('allthemodium:unobtainium_ingot', '9x #forge:nuggets/unobtainium');
   e.remove({ id: 'allthemodium:main/unobtainium_nugget_from_unobtainium_ingot' })
 
