@@ -1,0 +1,13 @@
+{
+  "kubejs.ponder.tag.tipstricks": "Tips and Tricks",
+  "kubejs.ponder.tag.tipstricks.description": "Helpful Information for AllTheMods 7",
+  "kubejs.ponder.heph_forge.header": "Building the Hephaestus Forge",
+  "kubejs.ponder.heph_forge.text_1": "Build the base structure",
+  "kubejs.ponder.heph_forge.text_2": "9x Arcane Chiseled Polished Darkstone",
+  "kubejs.ponder.heph_forge.text_3": "4x Chiseled Arcane Polished Darkstone",
+  "kubejs.ponder.heph_forge.text_4": "45x Polished Darkstone",
+  "kubejs.ponder.heph_forge.text_5": "Place down a Smithing Table in the center",
+  "kubejs.ponder.heph_forge2.header": "Using the Hephaestus Forge",
+  "kubejs.ponder.heph_forge2.text_1": "Darkstone Pedestals can be placed like so, they hold items for the ritual",
+  "kubejs.ponder.heph_forge2.text_2": "Arcane Crystal Obelisks can be placed in the same spaces and passively generate Aureal"
+}
