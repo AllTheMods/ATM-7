@@ -722,6 +722,10 @@ onEvent('recipes', e => {
     'occultism:silver_ingot',
   ]);
 
+  // remove InDy ore processing
+  e.remove({ type: "integrateddynamics:squeezer", input:'#forge:ores'});
+  e.remove({ type: "integrateddynamics:mechanical_squeezer", input:'#forge:ores'});
+
   // honeycomb unify ores/alloys
   vanillaMetals.concat(atoMetals, atoAlloys).forEach(ore => {
     let comb = (ore === 'uranium') ? 'radioactive' : ore;
