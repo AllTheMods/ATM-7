@@ -22,18 +22,12 @@
 				id: "75498AE05CC06F8F"
 				type: "item"
 				title: "Allthemodium Ore"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ores/allthemodium"
-					}
-				}
+				item: "allthemodium:raw_allthemodium"
 			}]
 			rewards: [{
 				id: "79B9F276D8F8C3F8"
 				type: "item"
-				item: "allthemodium:allthemodium_nugget"
+				item: "allthemodium:allthemodium_dust"
 			}]
 		}
 		{
@@ -48,18 +42,12 @@
 				id: "0F6B68E05B7B43AB"
 				type: "item"
 				title: "Vibranium Ore"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "forge:ores/vibranium"
-					}
-				}
+				item: "allthemodium:raw_vibranium"
 			}]
 			rewards: [{
 				id: "2DF58D0443FC347F"
 				type: "item"
-				item: "allthemodium:vibranium_nugget"
+				item: "allthemodium:vibranium_dust"
 			}]
 		}
 		{
@@ -72,12 +60,12 @@
 			tasks: [{
 				id: "52CCB85E5967BF9F"
 				type: "item"
-				item: "allthemodium:unobtainium_ore"
+				item: "allthemodium:raw_unobtainium"
 			}]
 			rewards: [{
 				id: "088E6395809A89F6"
 				type: "item"
-				item: "allthemodium:unobtainium_nugget"
+				item: "allthemodium:unobtainium_dust"
 			}]
 		}
 		{
