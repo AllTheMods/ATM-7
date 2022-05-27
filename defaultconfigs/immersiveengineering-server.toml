@@ -360,16 +360,16 @@
 		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
-		vein_size = 6
+		vein_size = 0
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		min_y = 32
+		min_y = 0
 		#The maximum Y coordinate this ore can spawn at
 		#Range: > -2147483648
-		max_y = 112
+		max_y = 0
 		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		attempts_per_chunk = 16
+		attempts_per_chunk = 0
 		#Set this to true to allow retro-generation of bauxite Ore.
 		retrogen_enable = false
 
