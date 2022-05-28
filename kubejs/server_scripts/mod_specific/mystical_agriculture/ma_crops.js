@@ -115,6 +115,7 @@ onEvent('recipes', e => {
     'osmium',
     'uranium',
     'fluorite',
+    'cobalt',
   ], 3250, '#misctags:farmland/tier4', 2)
   //Tier 5 Crops
   tier([
