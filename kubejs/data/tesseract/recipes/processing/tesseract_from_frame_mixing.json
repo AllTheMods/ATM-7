@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "kubejs:tesseract_frame"
+    },
+    {
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "tesseract:tesseract"
+    }
+  ]
+}

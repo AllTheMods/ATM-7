@@ -1,0 +1,17 @@
+{
+  "type": "thermal:bottler",
+  "ingredient": [
+    {
+      "item": "kubejs:tesseract_frame"
+    },
+    {
+      "fluid": "tconstruct:molten_enderium",
+      "amount": 1000
+    }
+  ],
+  "result": [
+    {
+      "item": "tesseract:tesseract"
+    }
+  ]
+}
