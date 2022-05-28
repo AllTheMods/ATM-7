@@ -8,4 +8,5 @@ onEvent('item.registry', event => {
 onEvent('block.registry', event => {
 	// Register new blocks here
 	event.create('magical_soil').displayName('§bMagical Soil').material('grass').hardness(0.6);
+  event.create('tesseract_frame').displayName("Tesseract Frame").material("metal").hardness(15);
 })
