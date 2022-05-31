@@ -262,16 +262,16 @@
 [Nuclear]
 	#How many blocks in a circular radius the nuke will effect
 	#Range: 1.0 ~ 1000.0
-	"Nuke Radius" = 36.0
+	"Nuke Radius" = 1.0
 	#The starting radius for a nuclear reactor explosion
 	#Range: 1.0 ~ 1000.0
-	"Base Nuclear blast radius" = 10.0
+	"Base Nuclear blast radius" = 1.0
 	#How much to multiple the above base radius of the explosion
 	#Range: 0.001 ~ 100.0
-	"Nuclear blast radius multiplier" = 0.5
+	"Nuclear blast radius multiplier" = 0.001
 	#The limit of how large an explosion can be
 	#Range: 1.0 ~ 10000.0
-	"Nuclear blast limit" = 80.0
+	"Nuclear blast limit" = 1.0
 	#How much fluid a fluid cell can contain
 	#Range: 1 ~ 100000
 	"Fluid cell capacity" = 1000
