@@ -121,26 +121,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 1.0d
-			dependencies: ["55F12D063F9D9430"]
-			id: "5408B4319D86920D"
-			tasks: [{
-				id: "1BB2305B3A343183"
-				type: "item"
-				item: "elementalcraft:strongly_contained_crystal"
-			}]
-			rewards: [{
-				id: "3F68CFBDCA169CE7"
-				type: "item"
-				item: "elementalcraft:contained_crystal"
-				count: 5
-			}]
-		}
-		{
 			x: 2.0d
 			y: 0.0d
-			dependencies: ["5408B4319D86920D"]
 			id: "04C3CDC36ED3DA81"
 			tasks: [{
 				id: "73DD538F07BAF5B0"
