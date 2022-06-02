@@ -6,4 +6,20 @@ onEvent('recipes', e => {
     E: 'alltheores:enderium_plate',
 	N: 'minecraft:netherite_ingot'
 })
+e.shaped('ae2:calculation_processor_press', ['III', 'ISI', 'III'], {
+    I: '#forge:ingots/iron',
+	S: 'ae2:sky_stone_block'
+})
+e.shaped('ae2:engineering_processor_press', ['III', 'ISI', 'III'], {
+    I: '#forge:ingots/iron',
+	S: 'ae2:smooth_sky_stone_block'
+})
+e.shaped('ae2:logic_processor_press', ['III', 'ISI', 'III'], {
+    I: '#forge:ingots/iron',
+	S: 'ae2:sky_stone_brick'
+})
+e.shaped('ae2:silicon_press', ['III', 'ISI', 'III'], {
+    I: '#forge:ingots/iron',
+	S: 'ae2:sky_stone_small_brick'
+})
 })
