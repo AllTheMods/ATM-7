@@ -38,14 +38,6 @@
     U: `#forge:ingots/unobtainium`
   }).id(`kubejs:creativecrafter/creative_crafter`)
   
-  //Creative Wireless Transmitter
-  e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', ['ITI', 'ICI', 'IDI'], {
-    I: 'allthemodium:unobtainium_ingot',
-    D: 'rsinfinitybooster:dimension_card',
-    C: 'refinedstorage:machine_casing',
-    T: 'refinedstorage:wireless_transmitter'
-  }).id('kubejs:creativewirelesstransmitter/creative_wireless_transmitter')
-  
   //gold-netherite crafter temp till mod updates with proper tags
   modifyShaped(e, 'extrastorage:gold_crafter', 1, ['BSB', 'PCP', 'B B'], {
     S: '#forge:chests',
