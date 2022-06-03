@@ -330,18 +330,6 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -2.5d
-			shape: "diamond"
-			dependencies: ["576ABF43FCF886B7"]
-			id: "13EDB9956517B349"
-			tasks: [{
-				id: "291B67AB95D93F72"
-				type: "item"
-				item: "mysticalagriculture:apatite_seeds"
-			}]
-		}
-		{
 			x: -4.5d
 			y: 1.5d
 			shape: "rsquare"
@@ -572,8 +560,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -2.5d
+			x: -8.0d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "5EE485880EA9FACF"
@@ -593,18 +581,6 @@
 				id: "2D62D0EC3AC2BA8D"
 				type: "item"
 				item: "mysticalagriculture:glowstone_seeds"
-			}]
-		}
-		{
-			x: -8.0d
-			y: -3.0d
-			shape: "diamond"
-			dependencies: ["76071C22A73A2026"]
-			id: "62020721A69D40F2"
-			tasks: [{
-				id: "702FF74EA6FCA251"
-				type: "item"
-				item: "mysticalagriculture:aquamarine_seeds"
 			}]
 		}
 		{

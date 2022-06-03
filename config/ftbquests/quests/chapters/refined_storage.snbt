@@ -982,23 +982,6 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -7.5d
-			description: ["Same as normal, but doesn't require power."]
-			dependencies: ["15ECBC8E174FA39B"]
-			id: "1F401D7BAA62DCD0"
-			tasks: [{
-				id: "62A5AB8953D3C40F"
-				type: "item"
-				item: "refinedstorage:creative_wireless_grid"
-			}]
-			rewards: [{
-				id: "1CDEC66A21C643D7"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
 			x: 3.0d
 			y: -4.5d
 			description: ["Allows you to access your fluid grid wirelessly."]
@@ -1016,23 +999,6 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -4.5d
-			description: ["Same as normal, but doesn't require power."]
-			dependencies: ["7FA85713C86166DA"]
-			id: "600FF2547C984051"
-			tasks: [{
-				id: "503000471D053809"
-				type: "item"
-				item: "refinedstorage:creative_wireless_fluid_grid"
-			}]
-			rewards: [{
-				id: "17124A8C072F8FE3"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-		}
-		{
 			x: 3.0d
 			y: -6.0d
 			description: ["Allows you to access your grid wirelessly but with a crafting table built-in."]
@@ -1047,23 +1013,6 @@
 				id: "6B5DF00E7050694D"
 				type: "random"
 				table_id: 4001436279668650237L
-			}]
-		}
-		{
-			x: 4.5d
-			y: -6.0d
-			description: ["Same as normal, but doesn't require power."]
-			dependencies: ["744842B2AED28344"]
-			id: "058743CD4EDB32E2"
-			tasks: [{
-				id: "68483497FD13714D"
-				type: "item"
-				item: "refinedstorageaddons:creative_wireless_crafting_grid"
-			}]
-			rewards: [{
-				id: "07C6D34C6249B5D6"
-				type: "xp_levels"
-				xp_levels: 5
 			}]
 		}
 		{
@@ -1088,27 +1037,6 @@
 				id: "2977A7581BEC6C48"
 				type: "random"
 				table_id: 3567941291661635734L
-			}]
-		}
-		{
-			x: 4.5d
-			y: -9.0d
-			description: ["Same as normal, but doesn't require power."]
-			dependencies: ["66D85424EC74EDCC"]
-			id: "6E9A6A69CDB7CB7B"
-			tasks: [{
-				id: "628D9FA4EECEFF1C"
-				type: "item"
-				item: {
-					id: "refinedstorage:creative_portable_grid"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "4972D6C60B105B8A"
-				type: "xp_levels"
-				xp_levels: 5
 			}]
 		}
 		{
@@ -1400,53 +1328,6 @@
 			}]
 			rewards: [{
 				id: "33D9B8255C24B552"
-				type: "random"
-				table_id: 3567941291661635734L
-			}]
-		}
-		{
-			x: -4.5d
-			y: -4.5d
-			id: "47618EAE323E6C13"
-			tasks: [{
-				id: "50B7CE5116D535CC"
-				type: "item"
-				item: "cabletiers:elite_requester"
-			}]
-			rewards: [{
-				id: "65A1BD79F6588C6E"
-				type: "random"
-				table_id: 3567941291661635734L
-			}]
-		}
-		{
-			x: -6.0d
-			y: -4.5d
-			dependencies: ["47618EAE323E6C13"]
-			id: "477C8F4946794B9C"
-			tasks: [{
-				id: "132F3AB80796CDB4"
-				type: "item"
-				item: "cabletiers:ultra_requester"
-			}]
-			rewards: [{
-				id: "29AF7B5B2F5566B3"
-				type: "random"
-				table_id: 3567941291661635734L
-			}]
-		}
-		{
-			x: -7.5d
-			y: -4.5d
-			dependencies: ["477C8F4946794B9C"]
-			id: "7641F925A9AE8C01"
-			tasks: [{
-				id: "3C7F1D198FDE1393"
-				type: "item"
-				item: "cabletiers:creative_requester"
-			}]
-			rewards: [{
-				id: "52B96A2212B66053"
 				type: "random"
 				table_id: 3567941291661635734L
 			}]
