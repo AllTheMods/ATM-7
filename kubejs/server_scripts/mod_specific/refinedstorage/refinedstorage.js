@@ -5,6 +5,39 @@
     C: '#refinedstorage:crafter'
   })
   
+  //Universal Grid
+  e.shaped('universalgrid:creative_wireless_universal_grid', ['ABA', 'CBD', 'ABA'], {
+	A: 'minecraft:netherite_ingot',
+	B: 'refinedstorage:quartz_enriched_iron',
+	C: 'refinedstorageaddons:creative_wireless_crafting_grid',
+	D: 'universalgrid:wireless_universal_grid'
+  }).id('kubejs:universalgrid/creative_wireless_universal_grid')
+  
+  //Cable Tiers
+  function caTier(tier, corners, processor, cables) {
+    Utils.listOf(['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']).forEach(caType => {
+      e.shaped(`cabletiers:${tier}_${caType}`, [`a a`, `bcb`, `a a`], {
+        a: corners,
+        b: processor,
+        c: `${(caType == 'requester' && tier == 'elite') ? 'rsrequestify:' : cables}${caType}`
+      })
+    })
+  }
+
+  e.remove({ mod: 'cabletiers' })
+  
+  caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
+  caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
+  caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
+  
+  //Creative Crafter
+  e.shaped(`creativecrafter:creative_crafter`, [`BUB`, `PCP`, `BUB`], {
+    B: `#forge:storage_blocks/netherite`,
+    P: `extradisks:withering_processor`,
+    C: `extrastorage:netherite_crafter`,
+    U: `#forge:ingots/unobtainium`
+  }).id(`kubejs:creativecrafter/creative_crafter`)
+  
   //gold-netherite crafter temp till mod updates with proper tags
   modifyShaped(e, 'extrastorage:gold_crafter', 1, ['BSB', 'PCP', 'B B'], {
     S: '#forge:chests',
@@ -117,6 +150,8 @@
     'extradisks:part/infinite_fluid_storage_part',
     'extradisks:part/infinite_storage_part',
     /^extrastorage:(?:part|disk|storage_block)\/.+/,
+	'creativecrafter:creative_crafter',
+    'creativewirelesstransmitter:creative_wireless_transmitter',
     'extrastorage:iron_crafter'
   ])
   e.remove({id: 'rsinfinitybooster:infinity_card'})

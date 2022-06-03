@@ -498,30 +498,6 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 2.0d
-			description: ["&cCurrently this item has no uses."]
-			dependencies: ["5EE53C2C83F73244"]
-			id: "5EBCFDDB3D74F000"
-			tasks: [{
-				id: "20C538A66BB39D54"
-				type: "item"
-				item: "create:shadow_steel_casing"
-			}]
-		}
-		{
-			x: -4.5d
-			y: -2.0d
-			description: ["&cCurrently this item has no uses."]
-			dependencies: ["21CF93BDCE7BA2F9"]
-			id: "1086C6450728C3B4"
-			tasks: [{
-				id: "499034410753391A"
-				type: "item"
-				item: "create:refined_radiance_casing"
-			}]
-		}
-		{
 			x: 13.5d
 			y: 5.0d
 			dependencies: ["7A43D2A2632BEA9B"]
@@ -641,18 +617,6 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 5.5d
-			description: ["The &n&5Adjustable Crate&r is a Chest that has adjustable slots. You can select how many stacks it can hold by limiting the number of slots."]
-			dependencies: ["48EA6D9923E38B71"]
-			id: "78002595642C50A7"
-			tasks: [{
-				id: "3976CB67C78A1474"
-				type: "item"
-				item: "create:adjustable_crate"
-			}]
-		}
-		{
 			x: 0.0d
 			y: 2.0d
 			description: [
@@ -697,22 +661,6 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -1.0d
-			description: [
-				"To craft &n&5Refined Radiance&r simply throw one or more &n&5Chromatic Compound&r into the beam of an active &n&5Beacon&r."
-				""
-				"It will be converted and will start levitating. A magnet is highly recommended!"
-			]
-			dependencies: ["52D8D124CCC5EE39"]
-			id: "21CF93BDCE7BA2F9"
-			tasks: [{
-				id: "14C6182E103486AF"
-				type: "item"
-				item: "create:refined_radiance"
-			}]
-		}
-		{
 			x: 14.0d
 			y: 0.0d
 			description: ["The &n&5Blaze Cake&r is used to Super-Heat the Blaze Burner for crafting the Chromatic Compound."]
@@ -722,54 +670,6 @@
 				id: "2E9A4E9BFFC10819"
 				type: "item"
 				item: "create:blaze_cake"
-			}]
-		}
-		{
-			x: -4.5d
-			y: 0.0d
-			description: ["To craft the &n&5Chromatic Compound&r throw all the recipes inside the &n&5Basin&r and &n&5Super-Heat&r the &n&5Blaze Burner&r by fueling it with a &n&5Blaze Cake&r."]
-			dependencies: ["610DEC4FC4FBB63E"]
-			id: "52D8D124CCC5EE39"
-			tasks: [{
-				id: "081039A2EE1CFFA2"
-				type: "item"
-				item: {
-					id: "create:chromatic_compound"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: -6.0d
-			y: 1.0d
-			description: [
-				"To craft &n&5Shadow Steel&r simply throw one or more &n&5Chromatic Compound&r into the void."
-				""
-				"It will be converted and will levitate back up. A magnet is highly recommended!"
-			]
-			dependencies: ["52D8D124CCC5EE39"]
-			id: "5EE53C2C83F73244"
-			tasks: [{
-				id: "3B1D5DAAC314F8A8"
-				type: "item"
-				item: "create:shadow_steel"
-			}]
-		}
-		{
-			x: -7.5d
-			y: -2.0d
-			description: [
-				"The &n&5Wand of Symmetry&r will place down a mirror wherever you R-Click it. Everything you place on one side of the mirror, will be copied to the other side."
-				""
-				"You can also Shift + R-Click to access some settings."
-			]
-			dependencies: ["21CF93BDCE7BA2F9"]
-			id: "1559256D87C89D70"
-			tasks: [{
-				id: "4E8CD4A011936D0C"
-				type: "item"
-				item: "create:wand_of_symmetry"
 			}]
 		}
 		{
