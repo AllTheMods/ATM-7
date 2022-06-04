@@ -1,0 +1,21 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+Appearing on terrain below sea level, here is the "ocean_biomes" layout:
+[ SHALLOW-ICY, SHALLOW-COLD, SHALLOW-NEUTRAL, SHALLOW-WARM, SHALLOW-HOT ],
+[ DEEP-ICY, DEEP-COLD, DEEP-NEUTRAL, DEEP-WARM, DEEP-HOT ]
+
+All keys passed in must be valid in the biome registry!
+"minecraft:the_void" is invalid as it represents a value of "NULL(nothing)" internally.
+*/
+{
+	"value": [
+		[ "byg:lush_stacks", "byg:lush_stacks", "byg:lush_stacks", "byg:dead_sea", "byg:dead_sea" ],
+		[ "byg:lush_stacks", "byg:lush_stacks", "byg:lush_stacks", "byg:dead_sea", "byg:dead_sea" ]
+	]
+}
