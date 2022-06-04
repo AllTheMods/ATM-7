@@ -1,0 +1,264 @@
+{
+  "dictionary": {
+    "byg:frosted_coniferous_forest": [
+      "FOREST",
+      "SNOWY",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:firecracker_shrubland": [
+      "PLAINS",
+      "DRY",
+      "SPARSE",
+      "OVERWORLD"
+    ],
+    "byg:rose_fields": [
+      "OVERWORLD",
+      "PLAINS",
+      "RARE",
+      "LUSH"
+    ],
+    "byg:autumnal_forest": [
+      "FOREST",
+      "COLD",
+      "OVERWORLD"
+    ],
+    "byg:red_rock_valley": [
+      "DRY",
+      "HOT",
+      "MOUNTAIN",
+      "OVERWORLD"
+    ],
+    "byg:windswept_dunes": [
+      "DRY",
+      "HOT",
+      "SANDY",
+      "OVERWORLD"
+    ],
+    "byg:borealis_grove": [
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:allium_fields": [
+      "PLAINS",
+      "RARE",
+      "LUSH",
+      "OVERWORLD"
+    ],
+    "byg:amaranth_fields": [
+      "PLAINS",
+      "RARE",
+      "LUSH",
+      "OVERWORLD"
+    ],
+    "byg:guiana_shield": [
+      "JUNGLE",
+      "HOT",
+      "DENSE",
+      "FOREST",
+      "MOUNTAIN",
+      "OVERWORLD"
+    ],
+    "byg:autumnal_valley": [
+      "PLAINS",
+      "DRY",
+      "OVERWORLD"
+    ],
+    "byg:autumnal_taiga": [
+      "FOREST",
+      "COLD",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:cherry_blossom_forest": [
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:cika_woods": [
+      "FOREST",
+      "COLD",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:ebony_woods": [
+      "FOREST",
+      "DENSE",
+      "OVERWORLD"
+    ],
+    "byg:skyris_vale": [
+      "MAGICAL",
+      "FOREST",
+      "LUSH",
+      "RARE",
+      "OVERWORLD"
+    ],
+    "byg:temperate_rainforest": [
+      "FOREST",
+      "DENSE",
+      "MAGICAL",
+      "OVERWORLD"
+    ],
+    "byg:cypress_swamplands": [
+      "SWAMP",
+      "OVERWORLD"
+    ],
+    "byg:black_forest": [
+      "OVERWORLD",
+      "DENSE",
+      "PLATEAU"
+    ],
+    "byg:crag_gardens": [
+      "JUNGLE",
+      "WET",
+      "PLATEAU",
+      "RARE",
+      "MAGICAL",
+      "OVERWORLD"
+    ],
+    "byg:frosted_taiga": [
+      "FOREST",
+      "SNOWY",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:fragment_forest": [
+      "OVERWORLD",
+      "DENSE",
+      "PLATEAU"
+    ],
+    "byg:temperate_grove": [
+      "PLAINS",
+      "LUSH",
+      "OVERWORLD"
+    ],
+    "byg:forgotten_forest": [
+      "FOREST",
+      "RARE",
+      "MAGICAL",
+      "OVERWORLD"
+    ],
+    "byg:redwood_thicket": [
+      "FOREST",
+      "DENSE",
+      "RARE",
+      "OVERWORLD"
+    ],
+    "byg:coconino_meadow": [
+      "PLAINS",
+      "LUSH",
+      "COLD",
+      "OVERWORLD"
+    ],
+    "byg:zelkova_forest": [
+      "CONIFEROUS",
+      "COLD",
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:dacite_ridges": [
+      "MOUNTAIN",
+      "COLD",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:sierra_badlands": [
+      "DRY",
+      "HOT",
+      "PLAINS",
+      "OVERWORLD"
+    ],
+    "byg:twilight_meadow": [
+      "COLD",
+      "WASTELAND",
+      "MAGICAL",
+      "OVERWORLD"
+    ],
+    "byg:red_oak_forest": [
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:mojave_desert": [
+      "DRY",
+      "HOT",
+      "SANDY",
+      "OVERWORLD"
+    ],
+    "byg:canadian_shield": [
+      "MOUNTAIN",
+      "CONIFEROUS",
+      "COLD",
+      "OVERWORLD"
+    ],
+    "byg:bayou": [
+      "SWAMP",
+      "FOREST",
+      "WET",
+      "OVERWORLD"
+    ],
+    "byg:shattered_glacier": [
+      "SNOWY",
+      "OVERWORLD",
+      "RARE"
+    ],
+    "byg:windswept_desert": [
+      "DRY",
+      "HOT",
+      "SANDY",
+      "OVERWORLD"
+    ],
+    "byg:weeping_witch_forest": [
+      "FOREST",
+      "COLD",
+      "MAGICAL",
+      "RARE",
+      "SPOOKY",
+      "OVERWORLD"
+    ],
+    "byg:coniferous_forest": [
+      "FOREST",
+      "COLD",
+      "CONIFEROUS",
+      "OVERWORLD"
+    ],
+    "byg:baobab_savanna": [
+      "SAVANNA",
+      "SPARSE",
+      "DRY",
+      "OVERWORLD"
+    ],
+    "byg:maple_taiga": [
+      "FOREST",
+      "COLD",
+      "OVERWORLD"
+    ],
+    "byg:lush_stacks": [
+      "OCEAN",
+      "WASTELAND",
+      "SPOOKY",
+      "OVERWORLD"
+    ],
+    "byg:araucaria_savanna": [
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:jacaranda_forest": [
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:orchard": [
+      "PLAINS",
+      "LUSH",
+      "FOREST",
+      "OVERWORLD"
+    ],
+    "byg:prairie": [
+      "PLAINS",
+      "DRY",
+      "OVERWORLD"
+    ],
+    "byg:aspen_forest": [
+      "FOREST",
+      "OVERWORLD"
+    ]
+  }
+}
