@@ -80,6 +80,7 @@ onEvent('recipes', e => {
     'sulfur',
     'mystical_flower',
     'limestone',
+    'menril'
   ], 1750, '#misctags:farmland/tier2', 2)
   //Tier 3 Crops
   tier([
