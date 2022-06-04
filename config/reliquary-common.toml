@@ -165,7 +165,7 @@ mobDropsEnabled = true
 		aoeCooldown = 3
 		#Maximum number of units harvest rod can hold per plantable item
 		#Range: 0 ~ 9999
-		maxCapacityPerPlantable = 250
+		maxCapacityPerPlantable = 0
 		#Range at which harvest rod will automatically hoe/plant/bonemeal/break crops around pedestals
 		#Range: 1 ~ 20
 		pedestalRange = 4
