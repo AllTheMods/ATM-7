@@ -1,7 +1,8 @@
 //priority: 1000
 onEvent('tags.blocks', e => {
   e.add('allthemodium:other_te_whitelist', ['mekanism:teleporter', 'waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone', '#waystones:sharestones'])
-  })
+  e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
+})
 
 onEvent('tags.items', e => {
   e.add('misctags:farmland/tier6', ['mysticalagradditions:insanium_farmland'])
