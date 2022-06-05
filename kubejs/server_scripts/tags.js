@@ -20,9 +20,11 @@ onEvent('tags.items', e => {
 
   e.add('forge:storage_blocks/raw_crimson_iron', 'silentgear:raw_crimson_iron_block');
   e.add('forge:raw_ores/crimson_iron', 'silentgear:raw_crimson_iron');
+  e.add('forge:raw_materials/crimson_iron', 'silentgear:raw_crimson_iron');
   e.add('forge:dusts/crimson_iron', 'silentgear:crimson_iron_dust');
   e.add('forge:storage_blocks/raw_azure_silver', 'silentgear:raw_azure_silver_block');
   e.add('forge:raw_ores/azure_silver', 'silentgear:raw_azure_silver');
+  e.add('forge:raw_materials/azure_silver', 'silentgear:raw_azure_silver');
   e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
   e.add('forge:raw_ores/cobalt', 'tconstruct:raw_cobalt');
   e.add('forge:dusts/cobalt', 'kubejs:cobalt_dust');
