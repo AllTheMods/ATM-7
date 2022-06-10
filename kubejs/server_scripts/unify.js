@@ -14,9 +14,6 @@ onEvent('recipes', e => {
   }
 
   let craftOverride = {
-    iron: 'minecraft',
-    gold: 'minecraft',
-    copper: 'minecraft',
     allthemodium: 'allthemodium',
     vibranium: 'allthemodium',
     unobtainium: 'allthemodium',
