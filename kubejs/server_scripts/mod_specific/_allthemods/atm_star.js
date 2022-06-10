@@ -51,7 +51,7 @@ onEvent('recipes', e => {
   e.shaped('allthetweaks:improbable_probability_device', ['AAB', 'CGE', 'FDF'], {
     A: 'computercraft:monitor_advanced',
     B: 'mekanismgenerators:module_solar_recharging_unit',
-    C: ['extradisks:1048576k_storage_part', 'ae2extras:16m_cell_component', 'extradisks:1048576k_fluid_storage_part'],
+    C: ['extradisks:1048576k_storage_part', 'extradisks:1048576k_fluid_storage_part', 'megacells:256m_storage_component'],
     D: 'forbidden_arcanus:eternal_obsidian_skull',
     E: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_knowledge" }),
     F: 'allthecompressed:enderium_block_3x',
@@ -61,7 +61,7 @@ onEvent('recipes', e => {
   //#region Nexium Emitter
   e.shaped('allthetweaks:nexium_emitter', ['A C', ' BF', 'CED'], {
     A: 'ftbic:ev_solar_panel',
-    B: ['refinedstorageaddons:wireless_crafting_grid', 'appliedenergistics2:wireless_terminal', 'refinedstorage:wireless_grid', 'refinedstorage:wireless_fluid_grid'],
+    B: ['ae2:wireless_terminal', 'ae2:wireless_crafting_terminal', 'refinedstorageaddons:wireless_crafting_grid', 'refinedstorage:wireless_grid', 'refinedstorage:wireless_fluid_grid'],
     C: 'alltheores:platinum_block',
     D: 'allthecompressed:netherite_block_5x',
     E: 'ae2:singularity',
