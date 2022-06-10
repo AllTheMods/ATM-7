@@ -391,7 +391,7 @@ onEvent('recipes', e => {
     let ingredient = Ingredient.of(`#forge:dusts/${metal}`);
     let outputs = [];
 
-    let mainResult = {"item": `${craftOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "count": 1};
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "count": 1};
     outputs.push(mainResult)
 
     e.custom({
@@ -411,7 +411,7 @@ onEvent('recipes', e => {
     let ingredient = Ingredient.of(`#forge:raw_materials/${metal}`)
     let outputs = [];
 
-    let mainResult = {"item": `${craftOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.5, "locked": true};
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.5, "locked": true};
     outputs.push(mainResult);
 
     if (metal in thermalSecondaries) {
@@ -425,7 +425,7 @@ onEvent('recipes', e => {
       if (extraItemName.includes('thermal')) {
         outputs.push(Item.of(extraItemName).withChance(chance))
       } else {
-        outputs.push(Item.of(`${craftOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`).withChance(chance))
+        outputs.push(Item.of(`${oreOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`).withChance(chance))
       }
     }
 
@@ -446,7 +446,7 @@ onEvent('recipes', e => {
     let ingredient = Ingredient.of(`#forge:ores/${metal}`);
     let outputs = [];
 
-    let mainResult = {"item": `${craftOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.0};
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.0};
     outputs.push(mainResult);
 
     if (metal in thermalSecondaries) {
@@ -460,7 +460,7 @@ onEvent('recipes', e => {
       if (extraItemName.includes('thermal')) {
         outputs.push({"item": extraItemName, "chance": chance})
       } else {
-        outputs.push({"item": `${craftOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_ingot`, "chance": chance})
+        outputs.push({"item": `${oreOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_ingot`, "chance": chance})
       }
     }
 
