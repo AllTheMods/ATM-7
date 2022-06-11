@@ -1,0 +1,43 @@
+{
+    "modId": "twilightforest",
+    "group": {
+      "name": "Twilight Forest Saplings",
+      "enabledByDefault": false,
+      "defaultPayment": {
+        "item": "minecraft:emerald"
+      },
+      "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+      {
+        "output": "twilightforest:twilight_oak_sapling"
+      },
+      {
+        "output": "twilightforest:canopy_sapling"
+      },
+      {
+        "output": "twilightforest:mangrove_sapling"
+      },
+      {
+        "output": "twilightforest:darkwood_sapling"
+      },
+      {
+        "output": "twilightforest:hollow_oak_sapling"
+      },
+      {
+        "output": "twilightforest:time_sapling"
+      },
+      {
+        "output": "twilightforest:transformation_sapling"
+      },
+      {
+        "output": "twilightforest:mining_sapling"
+      },
+      {
+        "output": "twilightforest:sorting_sapling"
+      },
+      {
+        "output": "twilightforest:rainbow_oak_sapling"
+      }
+    ]
+  }
