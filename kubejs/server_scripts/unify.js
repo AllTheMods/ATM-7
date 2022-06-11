@@ -717,6 +717,7 @@ onEvent('recipes', e => {
     'ftbic:shaped/enderium_dust_2',
     'ftbic:separating/silicon_from_quartz',
     'ftbic:separating/silicon_from_sand',
+    'twilightforest:uncrafting_table'
   ]);
 
   removeRecipeByOutput(e, [
