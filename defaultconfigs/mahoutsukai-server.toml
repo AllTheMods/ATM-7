@@ -1,5 +1,3 @@
-[projection.treasury]
-	TREASURY_PROJECTION_DENY_ALL = true
 [projection.projection]
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
