@@ -1,0 +1,20 @@
+{
+    "type": "advancement_reward",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "eccentrictome:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{\"eccentrictome:mods\": {advancedperipherals: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"advancedperipherals:manual\"}}},allthemodium: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"allthemodium:allthemodium\"}}},apotheosis: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"apotheosis:apoth_chronicle\"}}},ars_nouveau: {0: {Count: 1,id: \"ars_nouveau:worn_notebook\"}},botania: {0: {Count: 1,id: \"botania:lexicon\"}},byg: {0: {Count: 1,id: \"byg:biomepedia\"}},cookingforblockheads: {0: {Count: 1,id: \"cookingforblockheads:recipe_book\"}},croptopia: {0: {Count: 1,id: \"croptopia:guide\"}},elementalcraft: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"elementalcraft:element_book\"}}},engineersdecor: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"engineersdecor:engineersdecor_manual\"}}},hexcasting: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"hexcasting:thehexbook\"}}},immersiveengineering: {0: {Count: 1,id: \"immersiveengineering:manual\"}},industrialforegoing: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"industrialforegoing:industrial_foregoing\"}}},integrateddynamics: {0: {Count: 1,id: \"integrateddynamics:on_the_dynamics_of_integration\"}},laserio: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"laserio:laseriobook\"}}},littlelogistics: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"littlelogistics:guide\"}}},mahoutsukai: {0: {Count: 1,id: \"mahoutsukai:guidebook\"}},modularrouters: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"modularrouters:book\"}}},mysticalagriculture: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"mysticalagriculture:guide\"}}},naturesaura: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"naturesaura:book\"}}},occultism: {0: {Count: 1,id: \"occultism:dictionary_of_spirits\"}},pneumaticcraft: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"pneumaticcraft:book\"}}},productivebees: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"productivebees:guide\"}}},tconstruct: {0: {Count: 1,id: \"tconstruct:materials_and_you\"}},thermal: {0: {Count: 1,id: \"patchouli:guide_book\",tag: {\"patchouli:book\": \"thermal:guidebook\"}}}},\"eccentrictome:version\": 1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

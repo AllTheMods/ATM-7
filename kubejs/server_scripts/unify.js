@@ -523,6 +523,11 @@ onEvent('recipes', e => {
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:blasting/${ore}_ingot_from_ore`)
     e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_ore/` })
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:smelting/${ore}_ingot_from_ore`)
+    // find all raw ore to ingot recipes, remove, and replace with a single one
+    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/raw/` })
+    e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:raw_materials/${ore}`).xp(0.7).id(`kubejs:blasting/${ore}_ingot_from_raw`)
+    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/raw/` })
+    e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:raw_materials/${ore}`).xp(0.7).id(`kubejs:smelting/${ore}_ingot_from_raw`)
   }
 
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
@@ -712,6 +717,7 @@ onEvent('recipes', e => {
     'ftbic:shaped/enderium_dust_2',
     'ftbic:separating/silicon_from_quartz',
     'ftbic:separating/silicon_from_sand',
+    'twilightforest:uncrafting_table'
   ]);
 
   removeRecipeByOutput(e, [

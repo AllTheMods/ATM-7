@@ -1,0 +1,17 @@
+{
+	"conditions": [
+	{
+		"type": "forge:mod_loaded",
+		"modid": "eccentrictome"
+	}],
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"loot": [
+			"kubejs:book"
+		]
+	}
+}
