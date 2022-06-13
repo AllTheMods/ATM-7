@@ -416,6 +416,7 @@ onEvent('recipes', e => {
 
     if (metal in thermalSecondaries) {
       let extraItemName = thermalSecondaries[metal]
+      let extraItem;
       let chance = 1;
 
       if (metal in thermalSmelterRawSecondaryChanceOverrides) {
@@ -423,10 +424,14 @@ onEvent('recipes', e => {
       }
 
       if (extraItemName.includes('thermal')) {
-        outputs.push(Item.of(extraItemName).withChance(chance))
+        extraItem = Item.of(extraItemName)
+      } else if (extraItemName === 'iron') || extraItemName === 'gold')) {
+        extraItem = Item.of(`minecraft:${extraItemName}_nugget`)
       } else {
-        outputs.push(Item.of(`${oreOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`).withChance(chance))
+        extraItem = Item.of(`${craftOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`)
       }
+      
+      outputs.push(extraItem.withChance(chance))
     }
 
     e.custom({
