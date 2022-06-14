@@ -105,6 +105,7 @@
 		{
 			x: -0.5d
 			y: -1.5d
+			shape: "circle"
 			subtitle: "Ol' Reliable"
 			description: [
 				"Everyone loves the sword."
@@ -134,6 +135,7 @@
 		{
 			x: -0.5d
 			y: -3.0d
+			shape: "circle"
 			subtitle: "Release Your Inner Samurai"
 			description: ["Slightly faster than a sword, but lower damage."]
 			dependencies: ["0DF4B01CC5B49E4E"]
@@ -152,6 +154,7 @@
 		{
 			x: -1.5d
 			y: -2.5d
+			shape: "circle"
 			subtitle: "Thicc Sword"
 			description: ["More damage than a sword, but slower."]
 			dependencies: ["0DF4B01CC5B49E4E"]
@@ -170,6 +173,7 @@
 		{
 			x: 0.5d
 			y: -2.5d
+			shape: "circle"
 			subtitle: "Release Your Inner Spartan"
 			description: ["Less damage than a sword, but longer reach."]
 			dependencies: ["0DF4B01CC5B49E4E"]
@@ -188,6 +192,7 @@
 		{
 			x: 1.0d
 			y: -1.5d
+			shape: "circle"
 			subtitle: "Stabby."
 			description: ["Higher Durability than a dagger, but lower damage and speed."]
 			dependencies: ["0DF4B01CC5B49E4E"]
@@ -206,6 +211,7 @@
 		{
 			x: -2.0d
 			y: -1.5d
+			shape: "circle"
 			subtitle: "Stabby Stabby"
 			description: [" Low damage, very high attack speed. Reduces the invincibility time of the target."]
 			dependencies: ["0DF4B01CC5B49E4E"]
@@ -554,7 +560,7 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -4.0d
 			y: -3.5d
 			hide_dependency_lines: true
 			dependencies: ["64AB1E133E218173"]
@@ -865,8 +871,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -3.5d
+			x: 10.0d
+			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["64AB1E133E218173"]
 			optional: true
@@ -878,23 +884,6 @@
 			}]
 			rewards: [{
 				id: "37525488AF6404B2"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.5d
-			y: -3.5d
-			hide_dependency_lines: true
-			dependencies: ["64AB1E133E218173"]
-			id: "5601C7AFF0EA8887"
-			tasks: [{
-				id: "1101501AA2EE8F99"
-				type: "item"
-				item: "silentgear:bowstring_blueprint"
-			}]
-			rewards: [{
-				id: "30BDA41C7547DAB3"
 				type: "xp"
 				xp: 10
 			}]
@@ -954,7 +943,7 @@
 					id: "02BF731EB9C877A9"
 					type: "item"
 					item: "silentgear:crimson_steel_ingot"
-					count: 4
+					count: 2
 				}
 				{
 					id: "2A50AB8483F114F2"

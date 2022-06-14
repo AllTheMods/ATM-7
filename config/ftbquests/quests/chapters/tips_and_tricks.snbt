@@ -1,15 +1,27 @@
 {
 	id: "1BE666F01EFFC00D"
 	group: ""
-	order_index: 1
+	order_index: 2
 	filename: "tips_and_tricks"
 	title: "Tips \\& Tricks"
-	default_quest_shape: ""
+	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	images: [{
+		x: 1.0d
+		y: 1.0d
+		width: 12.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "atm:textures/tips_and_tricks.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			x: -1.5d
-			y: 0.0d
+			y: 6.5d
 			subtitle: "Can be used as Reactor Coolant"
 			description: ["Easy item to automate infinite water. Need more water? Make another!"]
 			id: "722978AC0C1B2649"
@@ -18,15 +30,23 @@
 				type: "item"
 				item: "cookingforblockheads:sink"
 			}]
-			rewards: [{
-				id: "145F9B3A17676EAA"
-				type: "item"
-				item: "pipez:fluid_pipe"
-			}]
+			rewards: [
+				{
+					id: "145F9B3A17676EAA"
+					type: "item"
+					item: "pipez:fluid_pipe"
+				}
+				{
+					id: "1159FE6CDF262C46"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			x: -2.0d
-			y: -2.0d
+			x: -1.0d
+			y: 5.0d
+			shape: "diamond"
 			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."]
 			id: "7EC8814940C4C3D7"
 			tasks: [{
@@ -38,17 +58,26 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "7CCC4171B93B35F0"
-				type: "item"
-				item: "compactmachines:wall"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "7CCC4171B93B35F0"
+					type: "item"
+					item: "compactmachines:wall"
+					count: 8
+				}
+				{
+					id: "156D559B0B56BA9A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			description: ["Craftable X-Ray potions are very useful when you are running low on an item."]
+			title: "OreSight Potions"
+			x: 4.0d
+			y: 5.0d
+			subtitle: "It's like X-Ray Vision!"
+			description: ["This potion will allow you to see the respective ore through the walls."]
 			id: "3EE9F242794CD95F"
 			tasks: [{
 				id: "03F9DE34E4C766D8"
@@ -57,43 +86,33 @@
 					id: "minecraft:potion"
 					Count: 1b
 					tag: {
-						Potion: "potionsmaster:diamond_sight"
+						Potion: "potionsmaster:iron_sight"
 					}
 				}
 			}]
-			rewards: [{
-				id: "319A13116831F46D"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:emerald_sight"
+			rewards: [
+				{
+					id: "319A13116831F46D"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:gold_sight"
+						}
 					}
 				}
-			}]
-		}
-		{
-			title: "Farmer's Market"
-			x: -3.0d
-			y: 0.0d
-			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."]
-			id: "27D9B9F9695206BE"
-			tasks: [{
-				id: "5DDBD32533AB4583"
-				type: "item"
-				item: "farmingforblockheads:market"
-			}]
-			rewards: [{
-				id: "500A1F43838C5E64"
-				type: "item"
-				item: "minecraft:emerald"
-			}]
+				{
+					id: "717AB46363706266"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Comforts"
-			x: 1.0d
-			y: 1.0d
+			x: 3.0d
+			y: 5.0d
 			subtitle: "ZZZzzz..."
 			description: [
 				"The sleeping bag lets you sleep during the night."
@@ -115,16 +134,23 @@
 					item: "comforts:sleeping_bag_white"
 				}
 			]
-			rewards: [{
-				id: "34037270BA530831"
-				type: "item"
-				item: "comforts:rope_and_nail"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "34037270BA530831"
+					type: "item"
+					item: "comforts:rope_and_nail"
+					count: 2
+				}
+				{
+					id: "0CA8B7411485A9D0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: -1.0d
+			x: -2.0d
+			y: 5.0d
 			subtitle: "When an infinite world is too small"
 			description: [
 				"It's an entire room in one block!"
@@ -137,18 +163,25 @@
 				type: "item"
 				item: "compactmachines:machine_tiny"
 			}]
-			rewards: [{
-				id: "17FAC4A27147E065"
-				type: "item"
-				item: "compactmachines:personal_shrinking_device"
-			}]
+			rewards: [
+				{
+					id: "17FAC4A27147E065"
+					type: "item"
+					item: "compactmachines:personal_shrinking_device"
+				}
+				{
+					id: "5AB0E68060FA408D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			x: 0.0d
-			y: -1.5d
-			subtitle: "A Mega Guidebook"
+			x: 3.5d
+			y: 5.5d
+			subtitle: "The Akhastic Tome's Distant Relative!"
 			description: [
-				"Stores all the guidebooks you'll ever need!"
+				"Stores all of the guidebooks you'll ever need!"
 				""
 				""
 			]
@@ -165,10 +198,15 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "68A3E7700C79876A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
+			x: -2.0d
+			y: 6.0d
 			description: [
 				"A quick way to switch between tools."
 				""
@@ -180,16 +218,23 @@
 				type: "item"
 				item: "toolbelt:belt"
 			}]
-			rewards: [{
-				id: "40BCE4D56FE98018"
-				type: "item"
-				item: "toolbelt:pouch"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "40BCE4D56FE98018"
+					type: "item"
+					item: "toolbelt:pouch"
+					count: 2
+				}
+				{
+					id: "4E495FC797AED7A4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: 6.0d
 			description: [
 				"Allows you to store multiple tools in one!"
 				""
@@ -201,11 +246,17 @@
 				type: "item"
 				item: "compactmachines:personal_shrinking_device"
 			}]
+			rewards: [{
+				id: "43605B432D1C8172"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Building Gadgets"
-			x: 2.0d
-			y: -2.0d
+			x: -1.5d
+			y: 4.5d
+			shape: "diamond"
 			description: [
 				"Some useful gadgets for building."
 				""
@@ -277,11 +328,16 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "2087EBA230655A8C"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			title: "Other Gadgets"
-			x: 3.0d
-			y: 0.0d
+			title: "Building Wands"
+			x: -1.5d
+			y: 5.5d
 			description: [
 				"Can be helpful for building."
 				""
@@ -300,65 +356,23 @@
 					}
 				}
 			}]
-		}
-		{
-			title: "Automatic Fishing"
-			x: -0.5d
-			y: 1.0d
-			description: [
-				"Place the strainer base under water, and place a strainer inside. It should slowly start to give you resources."
-				""
-				"Put food or plants into the Worm Bin to produce worms and fertilizer. The worms can be used as bait in a strainer to get more loot. The fertilizer is a bonemeal equivalent."
-			]
-			id: "7D831F7B42EC0951"
-			tasks: [
-				{
-					id: "33D7B488E87983D1"
-					type: "item"
-					item: "waterstrainer:strainer_base"
-				}
-				{
-					id: "6E4B09E902175543"
-					type: "item"
-					item: "waterstrainer:worm_bin"
-				}
-			]
-			rewards: [
-				{
-					id: "32CF3C1A3CF3E630"
-					type: "item"
-					item: {
-						id: "waterstrainer:strainer_survivalist"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "780CEA8950A8545B"
-					type: "item"
-					item: {
-						id: "waterstrainer:strainer_fisherman"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			rewards: [{
+				id: "03F64743F4F59499"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Tipped Out"
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: 5.5d
+			shape: "gear"
 			subtitle: "Complete all of the tips!"
 			hide_dependency_lines: true
 			dependencies: [
 				"722978AC0C1B2649"
 				"7EC8814940C4C3D7"
 				"3EE9F242794CD95F"
-				"27D9B9F9695206BE"
 				"14C8FC3F19190054"
 				"594540768120A627"
 				"5718EEFE4F50BB73"
@@ -366,7 +380,6 @@
 				"73F91BF3D424B269"
 				"0F75D7B9F4FF2459"
 				"2A2E3D020B1F5126"
-				"7D831F7B42EC0951"
 			]
 			id: "0F8F37D7E12078F5"
 			tasks: [{
@@ -374,9 +387,152 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "4389EE84B9FAA973"
-				type: "xp_levels"
-				xp_levels: 5
+				id: "032158E75A1291D8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "X-Ray Charms"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"OreSight Potions can be used to craft Charms!"
+				""
+				"Charms are Curios that last longer, and can be toggled on and off."
+			]
+			dependencies: ["3EE9F242794CD95F"]
+			id: "6396AA6918B47DDC"
+			tasks: [{
+				id: "3611DE52B33035E8"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Potion: "potionsmaster:iron_sight"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "46455F0068AFFF60"
+					type: "item"
+					item: {
+						id: "minecraft:lingering_potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:diamond_sight"
+						}
+					}
+				}
+				{
+					id: "403115903FE0D456"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			shape: "hexagon"
+			subtitle: "And Other Useful Items!"
+			description: ["On this page, you'll find some useful items and info to help you on your journey!"]
+			size: 2.0d
+			id: "0C856BBB1679A7DD"
+			tasks: [{
+				id: "3DC008A578A93CCF"
+				type: "checkmark"
+				title: "Tips and Tricks!"
+			}]
+		}
+		{
+			icon: "minecraft:iron_ore"
+			x: 3.5d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "The 1.18 Changes"
+			description: [
+				"If you've played MC in previous versions, it's important to know that Ore Generation has changed as well as max build level."
+				""
+				"Make sure to check out the \"Ore Gen\" tab in the ore's recipe to see the Y level the ore generates!"
+				""
+				""
+			]
+			id: "7732A4AE58D1315E"
+			tasks: [{
+				id: "599B3277CC40D052"
+				type: "checkmark"
+				title: "Ore Generation"
+			}]
+			rewards: [
+				{
+					id: "259A40A2BD1763AA"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+				{
+					id: "4ACA4C826FB02CE1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Time in a Bottle"
+			x: 3.5d
+			y: 4.5d
+			subtitle: "Now with a new recipe!"
+			description: [
+				"If you've used this before, you know this is OP."
+				""
+				"Time in a Bottle stores \"time\" while it is in your inventory. With the stored time, you and shift-right click on a machine or item, and increase the tick speed. It goes up to x256 speed."
+			]
+			id: "445CFBFE882716D1"
+			tasks: [{
+				id: "56186C6CF977B96D"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "40CAE83425A4BB93"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3
+				}
+				{
+					id: "6D0D5202EF1F98D9"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Miniature Tree Farm"
+			x: 3.0d
+			y: 6.0d
+			description: [
+				"This item will grow saplings placed in it over time."
+				""
+				"It can be upgraded for automation. Check out the &aFood and Farming&r for more info!"
+			]
+			id: "5055ED14EDAD08ED"
+			tasks: [{
+				id: "0843049F8ADCEDA8"
+				type: "item"
+				item: "bonsaitrees3:bonsaipot"
+			}]
+			rewards: [{
+				id: "7D97C6358E827878"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
