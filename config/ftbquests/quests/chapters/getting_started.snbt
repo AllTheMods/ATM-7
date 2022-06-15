@@ -7,18 +7,32 @@
 	icon: "minecraft:furnace"
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	images: [{
-		x: -6.5d
-		y: -4.5d
-		width: 5.0d
-		height: 5.0d
-		rotation: 0.0d
-		image: "byg:textures/block/baobab_crafting_table_top.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -6.0d
+			y: -2.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 45.0d
+			image: "minecraft:textures/block/crafting_table_top.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.0d
+			y: 2.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 45.0d
+			image: "minecraft:textures/block/crafting_table_top.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "&9Getting Started!"
@@ -48,6 +62,7 @@
 		}
 		{
 			title: "Getting Wood"
+			icon: "minecraft:oak_log"
 			x: -6.0d
 			y: 0.0d
 			subtitle: "The Start of Everyone's Journey"
@@ -364,18 +379,11 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "2355AABD596C3199"
-					type: "item"
-					item: "pamhc2foodextended:greenbeancasseroleitem"
-				}
-				{
-					id: "571539FD99069C56"
-					type: "xp"
-					xp: 5
-				}
-			]
+			rewards: [{
+				id: "571539FD99069C56"
+				type: "xp"
+				xp: 5
+			}]
 		}
 		{
 			title: "Teleporting"
@@ -487,34 +495,6 @@
 			]
 		}
 		{
-			title: "Efficient Smelting"
-			x: 0.0d
-			y: 3.0d
-			subtitle: "Tiny Pieces of Charcoal"
-			description: [
-				"Putting Charcoal back into the crafting table gives you 8 Charcoal Pieces."
-				""
-				"These are used as efficient fuel, as it smelts 1 item per charcoal piece."
-				""
-				"These aren't necessary at all, but saves materials in the beginning."
-			]
-			dependencies: ["52D18CDB05357525"]
-			optional: true
-			id: "51620A05A5844661"
-			tasks: [{
-				id: "5916E86774F651E9"
-				type: "item"
-				item: "pickletweaks:charcoal_piece"
-				count: 8L
-			}]
-			rewards: [{
-				id: "11C8B0E269A301BD"
-				type: "item"
-				item: "minecraft:charcoal"
-				count: 8
-			}]
-		}
-		{
 			title: "Getting an Upgrade"
 			icon: {
 				id: "minecraft:iron_pickaxe"
@@ -606,11 +586,18 @@
 				type: "item"
 				item: "ironfurnaces:iron_furnace"
 			}]
-			rewards: [{
-				id: "2D9829459275EC1F"
-				type: "item"
-				item: "ironfurnaces:upgrade_iron"
-			}]
+			rewards: [
+				{
+					id: "2D9829459275EC1F"
+					type: "item"
+					item: "ironfurnaces:upgrade_iron"
+				}
+				{
+					id: "5E42C040428B7845"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			icon: "minecraft:chest"
@@ -753,6 +740,11 @@
 				type: "item"
 				item: "rftoolspower:coalgenerator"
 			}]
+			rewards: [{
+				id: "627AC0B50101C5CE"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Basic Ingots"
@@ -848,6 +840,7 @@
 		}
 		{
 			title: "Building Materials"
+			icon: "minecraft:stone_bricks"
 			x: -1.0d
 			y: -2.0d
 			subtitle: "Starter Supplies"
@@ -956,6 +949,7 @@
 		}
 		{
 			title: "Storing Stuff"
+			icon: "minecraft:chest"
 			x: -3.0d
 			y: 1.5d
 			description: ["Make your first chest."]
@@ -964,14 +958,20 @@
 			tasks: [{
 				id: "56CC6703530D3AD8"
 				type: "item"
-				item: "minecraft:chest"
+				title: "Any #forge:chests"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests"
+					}
+				}
 			}]
 			rewards: [
 				{
 					id: "350067AECBCFCCE9"
 					type: "item"
 					item: "minecraft:chest"
-					count: 2
 				}
 				{
 					id: "0CD74B61C7ED99F1"
@@ -979,23 +979,6 @@
 					xp: 5
 				}
 			]
-		}
-		{
-			x: -4.5d
-			y: 1.5d
-			subtitle: "Portable Crafting Table"
-			dependencies: ["34632E58F226ED0B"]
-			id: "6BFB212879D080BE"
-			tasks: [{
-				id: "2DD4DE2880D13AE8"
-				type: "item"
-				item: "cyclic:crafting_stick"
-			}]
-			rewards: [{
-				id: "48738360C71AEFA3"
-				type: "xp"
-				xp: 5
-			}]
 		}
 		{
 			x: -3.0d
@@ -1044,6 +1027,53 @@
 				type: "xp"
 				xp: 5
 			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			subtitle: "Portable Crafting!"
+			dependencies: ["34632E58F226ED0B"]
+			id: "7DBCD01ABA2D029C"
+			tasks: [{
+				id: "3FB662A53432B6A6"
+				type: "item"
+				item: "crafting_on_a_stick:crafting_table"
+			}]
+			rewards: [{
+				id: "28EC22F3423CF4A6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Efficient Smelting!"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"You can break down Charcoal AND Coal into tiny pieces, which smelt 1 item a piece."
+				""
+				"No more left over fuel burning!"
+			]
+			dependencies: ["52D18CDB05357525"]
+			id: "008BA27244838C81"
+			tasks: [{
+				id: "5FA84E05C343D3A9"
+				type: "item"
+				item: "utilitix:tiny_charcoal"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "5ED7A37C2D4EBEFC"
+					type: "item"
+					item: "minecraft:coal_block"
+				}
+				{
+					id: "675AC559B2D13AE0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 }

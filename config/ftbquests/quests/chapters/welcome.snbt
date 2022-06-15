@@ -1,0 +1,84 @@
+{
+	id: "69DBD1BDA43872D9"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: "minecraft:diamond"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -0.5d
+			y: -4.5d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "packmenu:textures/gui/logo.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.1020408163265287d
+			y: -0.4999999999999929d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ftbquests:textures/gui/arrow_left.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -1.2040816326530646d
+			y: -0.4999999999999929d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ftbquests:textures/gui/arrow_collapsed.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [{
+		title: "Welcome to All The Mods 7!"
+		icon: "allthecompressed:atm_star_block_1x"
+		x: 0.0d
+		y: -0.5d
+		shape: "hexagon"
+		description: [
+			"Welcome to ATM7!"
+			""
+			"To get started with questing, check out the tabs on the left to get started!"
+			""
+			"If you are new to AllTheMods, make sure to check out the &aAllTheModium&r Chapter!"
+			""
+			"If you are new to modded MC, check out the &6Main Questline&r to help you get started."
+		]
+		size: 2.0d
+		optional: true
+		id: "23BDBBD3001F9774"
+		tasks: [{
+			id: "46E0A1A561E38460"
+			type: "dimension"
+			dimension: "minecraft:overworld"
+		}]
+		rewards: [
+			{
+				id: "41B357A352E97746"
+				type: "item"
+				item: "ftbquests:book"
+			}
+			{
+				id: "36E0A3FA2E45757D"
+				type: "xp"
+				xp: 10
+			}
+		]
+	}]
+}
