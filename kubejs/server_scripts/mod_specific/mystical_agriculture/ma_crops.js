@@ -18,10 +18,19 @@ onEvent('recipes', e => {
       }).id(`kubejs:cloche/${seed.replace(':', '/')}`)
   }
 
+  function insolator(output, input, id) {
+    e.custom({
+      "type": "thermal:insolator",
+      "ingredient": input,
+      "result": output
+    }).id(id)
+  }
+
   //#region FUNCTIONS
   function tier(types, time, soil, rCount) {
     types.forEach(type => {
       cloche(`mysticalagriculture:${type}_essence`, rCount, `mysticalagriculture:${type}_seeds`, soil, `mysticalagriculture:${type}_crop`, time);
+      insolator([Item.of(`mysticalagriculture:${type}_essence`),Item.of( `mysticalagriculture:${type}_seeds`)], Item.of(`mysticalagriculture:${type}_seeds`),`kubejs:thermal/insolator_${type}_seeds`)
     })
   }
 
