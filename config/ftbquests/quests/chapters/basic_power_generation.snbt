@@ -145,6 +145,11 @@
 				type: "checkmark"
 				title: "Getting Started: Part 2 - Basic Power"
 			}]
+			rewards: [{
+				id: "2A6FF8DEB3D7A9B5"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Using Our Power"
@@ -154,7 +159,7 @@
 			description: [
 				"Let's make a Metallurgic Infuser."
 				""
-				"This item allows us to make a renewable energy source, the Wind Generator."
+				"This machine allows us to make several materials needed to make a renewable energy source, the Wind Generator."
 				""
 				"Place the Infuser beside the Coal Generator to give it power."
 			]
@@ -241,6 +246,8 @@
 				"Use the parts from the previous quest to create your first Wind Generator!"
 				""
 				"Wind Generators need to be placed in view of the sky, and the higher they are placed, the more power it generates!"
+				""
+				"*Note: If the noise is too much, you can install the muffling upgrade into the Generator."
 			]
 			dependencies: ["531DFFDE9EA7838E"]
 			size: 1.5d
@@ -261,6 +268,11 @@
 					id: "47BB20E97AF70BAE"
 					type: "xp"
 					xp: 10
+				}
+				{
+					id: "671BF1D485FD3478"
+					type: "item"
+					item: "mekanism:upgrade_muffling"
 				}
 			]
 		}
@@ -572,7 +584,6 @@
 					id: "7DF48E2657A34158"
 					type: "item"
 					item: "minecraft:redstone_block"
-					count: 2
 				}
 				{
 					id: "4F6159B4C39C586F"
@@ -813,9 +824,9 @@
 			y: -0.5d
 			subtitle: "The First of Many"
 			description: [
-				"Use the Crimson Steel to upgrade your pickaxe, and then let's find some Allthemodium Ore!"
+				"Use the Crimson Steel or Netherite to upgrade your pickaxe, and then let's find some Allthemodium Ore!"
 				""
-				"*Note: This is found in Mountain Biomes in the Overworld above Y:170"
+				"*Note: This is found in Mountainous biomes inside cave ceilings and walls, with additional deposits in peaks above Y170."
 			]
 			dependencies: [
 				"4713FBB21B859A3B"
@@ -1210,7 +1221,7 @@
 			description: [
 				"For your next mining-level upgrade, you'll need Vibranium."
 				""
-				"Vibranium can be found in the Nether in Crimson and Warped Forests, between the Y100 and Y123, and the Other from Y0 to Y20."
+				"Vibranium can be found in the Nether in Crimson and Warped Forests, between Y100 to Y123, and the Other from Y0 to Y20."
 			]
 			dependencies: ["746D39907C15027A"]
 			id: "75A0CAF9E85198EF"
@@ -1249,7 +1260,7 @@
 				id: "3918D137B6EDB405"
 				type: "item"
 				item: "minecraft:ender_pearl"
-				count: 16L
+				count: 12L
 			}]
 			rewards: [
 				{
@@ -1322,7 +1333,7 @@
 			x: 23.5d
 			y: 3.5d
 			shape: "square"
-			subtitle: "for the first time....."
+			subtitle: "For the first time....."
 			description: ["Head to the End and kill the Ender Dragon!"]
 			dependencies: [
 				"75A0CAF9E85198EF"
@@ -1416,7 +1427,7 @@
 			description: [
 				"Somewhere in the End, you'll find a floating ship."
 				""
-				"Defeat the enemies there, and you'll find yourself your first Elytra."
+				"Defeat the enemies there and make your way to the loot room, and you'll find yourself your first Elytra."
 			]
 			dependencies: ["1EC4BA2569828891"]
 			id: "427B251ABCD4B085"
@@ -1504,7 +1515,7 @@
 			y: -1.0d
 			subtitle: "Ancient... or something."
 			description: [
-				"Heading into the Nether, you can find yourself some Netherite for an upgrade!"
+				"Heading into the Nether, you can find yourself some Ancient Debris to create some Netherite for an upgrade!"
 				""
 				"Netherite also makes a great coating for Silent Gear items."
 			]
@@ -1514,6 +1525,11 @@
 				id: "7CC6167CF3372FEF"
 				type: "item"
 				item: "minecraft:netherite_ingot"
+			}]
+			rewards: [{
+				id: "60F0013E800D183C"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -1570,7 +1586,7 @@
 			]
 		}
 		{
-			title: "Sticking with Mechanism"
+			title: "Sticking with Mekanism"
 			x: 6.5d
 			y: 0.0d
 			subtitle: "Leads to creating an ore FACTORY."
@@ -1598,7 +1614,7 @@
 				""
 				"You'll place a chest on both, and then use the Cogwheel in the Pulverizer to configure input and output. Turn the top face Blue (input) and the right face Red (Output). Make sure to press the \"Auto Eject\" and \"Auto Input\" buttons."
 				""
-				"In the Iron Furnace, you'll do the same thing, except Input from the right and Output to the top."
+				"In the Iron Furnace, you'll do the same thing, except Input from the left and Output to the top."
 			]
 			dependencies: ["7410CB313F03A6B5"]
 			id: "7FF2F202BE2AEF3E"
@@ -1630,9 +1646,9 @@
 			description: [
 				"To set up automated Ore smelting from Mekanism, place the Enrichment Chamber to the left of your Iron Furnace, and place a Chest on top of both."
 				""
-				"In the Enrichment Chamber, use the \"Side Config\" to input from the top, and output to the left. Make sure to press the \"Auto Eject\" button."
+				"In the Enrichment Chamber, use the \"Side Config\" to input from the top, and output to the right. Make sure to press the \"Auto Eject\" button."
 				""
-				"In the Iron Furnace, you'll do the same thing, except Input from the right and Output to the top."
+				"In the Iron Furnace, you'll do the same thing, except Input from the left and Output to the top."
 			]
 			dependencies: ["487F54A97A334E04"]
 			id: "216E75E350303F42"
@@ -1663,7 +1679,7 @@
 			description: [
 				"To get started with Mekanism, check out the &aMekanism&r Chapter in the &6Technology&r Group."
 				""
-				"&o To be Continued..."
+				"*Note: This quest chapter will be added in a later update.&o To be Continued..."
 			]
 			dependencies: ["216E75E350303F42"]
 			size: 1.5d
@@ -1686,7 +1702,7 @@
 			shape: "square"
 			subtitle: "Alloys are in your future."
 			description: [
-				"To get started with Thermal Expansion, check out the &aThermal Series&r Chapter in the &6Technology&r Group."
+				"Thermal Expansion is a simple power mod! The quest chapter will be added in a later update."
 				""
 				"&o To be Continued..."
 			]

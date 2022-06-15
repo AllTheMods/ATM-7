@@ -472,7 +472,7 @@
 		{
 			x: 4.550000000000001d
 			y: 6.0d
-			subtitle: "More than Once."
+			subtitle: "This isn't even my final form."
 			size: 1.5d
 			id: "56DA46DC82F6665D"
 			tasks: [{
@@ -571,6 +571,11 @@
 					type: "xp"
 					xp: 100
 				}
+				{
+					id: "70505A07F2966850"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
 			]
 		}
 		{
@@ -582,7 +587,7 @@
 			tasks: [{
 				id: "0EA4B08DAAFA4287"
 				type: "kill"
-				title: "&l&9The End Bounty:&r&e Enderman"
+				title: "&l&9The End Bounty:&r&e Endermen"
 				icon: "tconstruct:enderman_head"
 				entity: "minecraft:enderman"
 				value: 5L
@@ -698,7 +703,7 @@
 			]
 		}
 		{
-			title: "&l&9Overworld Bounty:&r&e Creepers"
+			title: "&l&9Overworld Bounty:&r&e Spiders"
 			icon: "minecraft:spider_eye"
 			x: 2.0d
 			y: -0.5d
