@@ -1,7 +1,7 @@
 {
 	id: "5C764279146E5E66"
 	group: "6614EE2378B8AFB9"
-	order_index: 0
+	order_index: 1
 	filename: "resourceful_ways"
 	title: "Mystical Agriculture"
 	default_quest_shape: ""
@@ -977,8 +977,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: 3.5d
+			x: -2.0d
+			y: 2.5d
 			shape: "octagon"
 			description: ["This augment allows creative flight."]
 			dependencies: ["6A4C49AE72E98727"]
@@ -992,6 +992,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			description: ["Note: Seeds will not grow a duplicate seed when harvested."]
 			id: "1CC4F8570A7A99EB"
 			tasks: [{
 				id: "667004CD0469493D"
