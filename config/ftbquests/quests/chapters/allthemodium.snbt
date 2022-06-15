@@ -33,7 +33,7 @@
 		{
 			x: 0.0d
 			y: 1.5d
-			description: ["Find this ore in the Nethers Warped Forests and Crimson Forests between Y100 to Y123, or the Other between Y0 to Y20."]
+			description: ["Find this ore in the Nether's Warped Forests and Crimson Forests between Y100 to Y123, or the Other between Y0 to Y20."]
 			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			dependency_requirement: "one_started"
@@ -79,16 +79,11 @@
 				type: "item"
 				item: "ironfurnaces:allthemodium_furnace"
 			}]
-			rewards: [{
-				id: "434234EED2F21388"
-				type: "item"
-				item: "ironfurnaces:heater"
-			}]
 		}
 		{
 			x: -2.5d
 			y: 2.0d
-			description: ["It is recommended to use this potion with your first ingot. "]
+			description: ["t is recommended to craft this potion with your first ingot."]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "04AB01C841CD3E3F"
 			tasks: [{
@@ -136,7 +131,7 @@
 		{
 			x: 1.0d
 			y: 2.0d
-			description: ["It is recommended to use this potion with your first ingot. "]
+			description: [""]
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "7496DB58411060AE"
 			tasks: [{
@@ -165,7 +160,7 @@
 		{
 			x: 4.5d
 			y: 2.0d
-			description: ["It is recommended to use this potion with your first ingot. "]
+			description: [""]
 			dependencies: ["44760B819EB3CA68"]
 			id: "76016E5C8C9397D2"
 			tasks: [{
@@ -219,11 +214,6 @@
 				id: "0B2932972CD2E73E"
 				type: "item"
 				item: "ironfurnaces:vibranium_furnace"
-			}]
-			rewards: [{
-				id: "75920A94628447C9"
-				type: "item"
-				item: "ironfurnaces:item_heater"
 			}]
 		}
 		{
@@ -302,7 +292,7 @@
 		{
 			x: 1.0d
 			y: 3.0d
-			description: ["My god this stuff is a lot more commen then I thought."]
+			description: ["My god this stuff is a lot more common then I thought."]
 			dependencies: ["7496DB58411060AE"]
 			id: "479B9579742354E1"
 			tasks: [{
@@ -326,7 +316,7 @@
 		{
 			x: 4.5d
 			y: 3.0d
-			description: ["Why cant I hold all these things."]
+			description: [""]
 			dependencies: ["76016E5C8C9397D2"]
 			id: "2D76BDEC76B0C788"
 			tasks: [{
@@ -723,6 +713,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4D04379836E29120"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -2.5d
@@ -853,7 +848,11 @@
 			icon: "minecraft:netherrack"
 			x: 1.0d
 			y: 9.5d
-			description: ["Here be dragons - you can find their skeletons scattered across the landscape, or fight a live one if you're feeling brave!"]
+			description: [
+				"A long time ago, dragons lived in these lands."
+				""
+				"There are no dragons to be found now, but Vibranium is abundant in The Other."
+			]
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "1A5E414C9D25703A"

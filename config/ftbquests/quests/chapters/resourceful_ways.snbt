@@ -992,7 +992,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
-			description: ["Note: Seeds will not grow a duplicate seed when harvested."]
+			description: ["Note: Seeds will not drop a duplicate seed when harvested."]
 			id: "1CC4F8570A7A99EB"
 			tasks: [{
 				id: "667004CD0469493D"

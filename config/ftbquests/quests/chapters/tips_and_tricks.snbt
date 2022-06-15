@@ -44,9 +44,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: 5.0d
+			x: -1.5d
+			y: 5.5d
 			shape: "diamond"
+			subtitle: "Honey I Shrunk Myself"
 			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."]
 			id: "7EC8814940C4C3D7"
 			tasks: [{
@@ -62,8 +63,7 @@
 				{
 					id: "7CCC4171B93B35F0"
 					type: "item"
-					item: "compactmachines:wall"
-					count: 8
+					item: "botania:cosmetic_tiny_potato_mask"
 				}
 				{
 					id: "156D559B0B56BA9A"
@@ -150,13 +150,14 @@
 		}
 		{
 			x: -2.0d
-			y: 5.0d
+			y: 6.0d
 			subtitle: "When an infinite world is too small"
 			description: [
 				"It's an entire room in one block!"
 				""
 				"Higher tiers are even bigger on the inside."
 			]
+			dependencies: ["73F91BF3D424B269"]
 			id: "594540768120A627"
 			tasks: [{
 				id: "029DB3044D5E30A0"
@@ -165,12 +166,13 @@
 			}]
 			rewards: [
 				{
-					id: "17FAC4A27147E065"
+					id: "0325FA11C261E21D"
 					type: "item"
-					item: "compactmachines:personal_shrinking_device"
+					item: "compactmachines:wall"
+					count: 8
 				}
 				{
-					id: "5AB0E68060FA408D"
+					id: "10CFB937D14BE803"
 					type: "xp"
 					xp: 10
 				}
@@ -179,7 +181,7 @@
 		{
 			x: 3.5d
 			y: 5.5d
-			subtitle: "The Akhastic Tome's Distant Relative!"
+			subtitle: "The Akashic Tome's Distant Relative!"
 			description: [
 				"Stores all of the guidebooks you'll ever need!"
 				""
@@ -205,8 +207,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 6.0d
+			x: -1.0d
+			y: 5.0d
 			description: [
 				"A quick way to switch between tools."
 				""
@@ -233,13 +235,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: 6.0d
-			description: [
-				"Allows you to store multiple tools in one!"
-				""
-				"It'll automatically morph in to a mod's tool when looking at a block from that mod. You must add tools via crafting."
-			]
+			title: "Compact Machines"
+			x: -2.0d
+			y: 5.0d
+			description: ["This item is serves as the guide for Compact Machines, as well as the tool needed to teleport into your tiny machine worlds."]
 			id: "73F91BF3D424B269"
 			tasks: [{
 				id: "3B227EED4B839733"
@@ -331,13 +330,13 @@
 			rewards: [{
 				id: "2087EBA230655A8C"
 				type: "xp"
-				xp: 10
+				xp: 100
 			}]
 		}
 		{
 			title: "Building Wands"
-			x: -1.5d
-			y: 5.5d
+			x: -1.0d
+			y: 6.0d
 			description: [
 				"Can be helpful for building."
 				""
@@ -447,6 +446,11 @@
 				type: "checkmark"
 				title: "Tips and Tricks!"
 			}]
+			rewards: [{
+				id: "5FA6EA3609ABF6BE"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			icon: "minecraft:iron_ore"
@@ -457,7 +461,7 @@
 			description: [
 				"If you've played MC in previous versions, it's important to know that Ore Generation has changed as well as max build level."
 				""
-				"Make sure to check out the \"Ore Gen\" tab in the ore's recipe to see the Y level the ore generates!"
+				"Make sure to check out the \"World Gen\" tab in the ore's recipe to see the Y level the ore generates!"
 				""
 				""
 			]
