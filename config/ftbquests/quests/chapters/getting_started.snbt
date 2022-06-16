@@ -40,9 +40,9 @@
 			x: -8.0d
 			y: 0.0d
 			shape: "hexagon"
-			subtitle: "Welcome to All The Mods 6"
+			subtitle: "Welcome to All The Mods 7"
 			description: [
-				"ATM6 has a ton of utilities to start you out. Veinminer is in the pack with FTB Ultamine. The default key is ~. You can change this in the keybind settings."
+				"ATM7 has a ton of utilities to start you out. Veinminer is in the pack with FTB Ultimine. The default key is ~. You can change this in the keybind settings."
 				""
 				"Go out and have some fun!"
 			]
@@ -66,7 +66,11 @@
 			x: -6.0d
 			y: 0.0d
 			subtitle: "The Start of Everyone's Journey"
-			description: ["Chop down a tree."]
+			description: [
+				"Chop down a tree."
+				""
+				"*Note: Any logs/planks will complete the quest."
+			]
 			dependencies: ["22C568A17B5D1B46"]
 			dependency_requirement: "one_completed"
 			id: "3001B2EEE5C6C9AB"
@@ -75,6 +79,7 @@
 					id: "1BB08F6BC4167067"
 					type: "item"
 					title: "Any #minecraft:logs"
+					icon: "minecraft:oak_log"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -88,6 +93,7 @@
 					id: "63E6BD713B5AF4AE"
 					type: "item"
 					title: "Any #minecraft:planks"
+					icon: "minecraft:oak_planks"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -256,6 +262,12 @@
 					type: "xp"
 					xp: 20
 				}
+				{
+					id: "72764D11BBFD56D2"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 4
+				}
 			]
 		}
 		{
@@ -271,12 +283,17 @@
 				type: "checkmark"
 				title: "Silent Gear Tools"
 			}]
+			rewards: [{
+				id: "76A8806566716FF5"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Your Very First Knife"
 			x: -3.0d
 			y: -3.0d
-			subtitle: "My baby is all grown up."
+			subtitle: "Not just a stabbing tool."
 			description: [
 				"Combine 2 Sticks in the crafting table to create 2 Rough Rods. Then combine a rough rod with a piece of cobble to create a knife."
 				""
@@ -343,7 +360,6 @@
 					id: "588782323B6C8779"
 					type: "item"
 					item: "minecraft:iron_ingot"
-					count: 4
 				}
 				{
 					id: "4FC6999889B3BB90"
@@ -426,11 +442,19 @@
 				item: "waystones:warp_plate"
 				count: 2L
 			}]
-			rewards: [{
-				id: "79B4325D5FE8AC0E"
-				type: "item"
-				item: "waystones:warp_plate"
-			}]
+			rewards: [
+				{
+					id: "79B4325D5FE8AC0E"
+					type: "item"
+					item: "waystones:warp_plate"
+					count: 2
+				}
+				{
+					id: "7D2F568C9541B3E0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Teleport Scrolls"
@@ -560,7 +584,7 @@
 					id: "5137D5DA40D41450"
 					type: "item"
 					item: "minecraft:iron_ingot"
-					count: 16
+					count: 8
 				}
 				{
 					id: "7D9E82A58FF438C1"
@@ -630,6 +654,11 @@
 				type: "checkmark"
 				title: "Better Tools"
 			}]
+			rewards: [{
+				id: "094E3F101DE493DA"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Start a Farm"
@@ -650,11 +679,19 @@
 				{
 					id: "270877E392533EC4"
 					type: "item"
-					item: {
+					title: "Any Hoe"
+					icon: {
 						id: "minecraft:stone_hoe"
 						Count: 1b
 						tag: {
 							Damage: 0
+						}
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/hoe"
 						}
 					}
 				}
@@ -686,13 +723,13 @@
 			]
 		}
 		{
-			title: "Farming and Food Chapter"
+			title: "Food and Farming Chapter"
 			icon: "minecraft:apple"
 			x: 6.0d
 			y: -2.0d
 			shape: "gear"
 			subtitle: "Getting Started with Food"
-			description: ["Get started by checking out the \"Farming and Food\" chapter."]
+			description: ["Learn about all things food by checking out the &aFood and Farming&r chapter."]
 			dependencies: ["1658780534451E39"]
 			size: 2.0d
 			id: "5ED547FE0A9CFC63"
@@ -700,6 +737,11 @@
 				id: "212FE7B11E7CA150"
 				type: "checkmark"
 				title: "Food and Farming"
+			}]
+			rewards: [{
+				id: "7452FA68B77452AA"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -740,11 +782,19 @@
 				type: "item"
 				item: "rftoolspower:coalgenerator"
 			}]
-			rewards: [{
-				id: "627AC0B50101C5CE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "44E15F1AD8E6807C"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 4
+				}
+				{
+					id: "333830DA1521CB83"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Basic Ingots"
@@ -779,18 +829,19 @@
 					item: "minecraft:redstone"
 					count: 16L
 				}
+			]
+			rewards: [
 				{
-					id: "1CDB0A9B9CBBA334"
+					id: "7C5F7B3272E7C8A4"
 					type: "item"
-					item: "minecraft:diamond"
-					count: 3L
+					item: "minecraft:golden_apple"
+				}
+				{
+					id: "43B7BFD740A5BDE2"
+					type: "xp"
+					xp: 100
 				}
 			]
-			rewards: [{
-				id: "7C5F7B3272E7C8A4"
-				type: "item"
-				item: "minecraft:golden_apple"
-			}]
 		}
 		{
 			title: "Getting Started: Part 2"
@@ -800,7 +851,7 @@
 			shape: "gear"
 			subtitle: "Starting with Power and Beyond"
 			description: [
-				"ATM6 has plenty of Tech mods to get you started!"
+				"ATM7 has plenty of Tech mods to get you started!"
 				""
 				"If you're new to tech mods, check out the &aGetting Started: Part 2&r to get started!"
 			]
@@ -837,6 +888,11 @@
 				type: "checkmark"
 				title: "Growing Resources"
 			}]
+			rewards: [{
+				id: "7707A7BA2F7892B7"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Building Materials"
@@ -858,6 +914,7 @@
 					id: "2447018019B93BB7"
 					type: "item"
 					title: "Any #minecraft:logs"
+					icon: "minecraft:oak_log"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -871,6 +928,7 @@
 					id: "07F5584697531C74"
 					type: "item"
 					title: "Any #minecraft:planks"
+					icon: "minecraft:oak_planks"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -940,12 +998,19 @@
 					item: "mysticalagriculture:inferium_seeds"
 				}
 			]
-			rewards: [{
-				id: "3B61755CB8D2821B"
-				type: "item"
-				item: "mysticalagriculture:inferium_seeds"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "3B61755CB8D2821B"
+					type: "item"
+					item: "mysticalagriculture:inferium_seeds"
+					count: 2
+				}
+				{
+					id: "17FF55DC48B53E4D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Storing Stuff"
@@ -959,6 +1024,7 @@
 				id: "56CC6703530D3AD8"
 				type: "item"
 				title: "Any #forge:chests"
+				icon: "minecraft:chest"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1013,7 +1079,7 @@
 				""
 				"Use the command &a/ftbteams party create&r to create your team."
 				""
-				"To claim chunks, open your map and click the \"Claim Chunks\" button in the top left. To claim a chunk, left click and drag to claim. To force load a chunk, Shift-Left Click the chunk. If done properly, you'll see lines across the chunk."
+				"To claim chunks, the default key to open the Claim Map is \"M\". To claim a chunk, left click and drag to claim. To force load a chunk, shift-left click the chunk. If done properly, you'll see lines across the chunk."
 			]
 			dependencies: ["39C364C1D308A36E"]
 			id: "5E7C6705CE996BDF"
@@ -1033,6 +1099,7 @@
 			y: 1.5d
 			subtitle: "Portable Crafting!"
 			dependencies: ["34632E58F226ED0B"]
+			optional: true
 			id: "7DBCD01ABA2D029C"
 			tasks: [{
 				id: "3FB662A53432B6A6"
@@ -1066,7 +1133,8 @@
 				{
 					id: "5ED7A37C2D4EBEFC"
 					type: "item"
-					item: "minecraft:coal_block"
+					item: "minecraft:coal"
+					count: 8
 				}
 				{
 					id: "675AC559B2D13AE0"

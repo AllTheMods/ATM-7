@@ -226,6 +226,7 @@
 				id: "7F08D4E77359BF4A"
 				type: "item"
 				title: "Any #minecraft:wool"
+				icon: "minecraft:white_wool"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -235,6 +236,18 @@
 				}
 				count: 3L
 			}]
+			rewards: [
+				{
+					id: "59024F65DCEB9DAA"
+					type: "item"
+					item: "minecraft:white_wool"
+				}
+				{
+					id: "1609AC17930BA465"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "It's Clippin' Time"
@@ -252,6 +265,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "68AA10BF3AA0408A"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -286,7 +304,7 @@
 			]
 		}
 		{
-			title: "Cows can't be Sheared."
+			title: "But....Cows can't be sheared..."
 			x: 6.0d
 			y: -1.0d
 			description: ["I don't wanna know how you got these."]
@@ -320,7 +338,7 @@
 			description: [
 				"Markets provide you with a villager than can sell you anything, if you have the right amount of emeralds."
 				""
-				"Spoiler: It's usually just 1 Emerald per item. BUT HE HAS EVERYTHING."
+				"Spoiler: It's usually just 1 Emerald per item. BUT THEY HAVE EVERYTHING."
 			]
 			dependencies: ["3EA883C0BB7BD38F"]
 			size: 1.5d
@@ -330,6 +348,18 @@
 				type: "item"
 				item: "farmingforblockheads:market"
 			}]
+			rewards: [
+				{
+					id: "2A90BE5DD251767D"
+					type: "item"
+					item: "minecraft:emerald"
+				}
+				{
+					id: "72142B51809511CF"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			title: "We're doing this the old fashioned way."
@@ -347,6 +377,11 @@
 				id: "63282E8604721F13"
 				type: "item"
 				item: "minecraft:lead"
+			}]
+			rewards: [{
+				id: "04DF879E17A497AD"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -404,7 +439,8 @@
 				{
 					id: "75D8B76E11F272AC"
 					type: "item"
-					item: "pamhc2foodextended:omeletitem"
+					item: "croptopia:scrambled_eggs"
+					count: 2
 				}
 				{
 					id: "25D2B3D4AE631792"
@@ -436,15 +472,14 @@
 			]
 			rewards: [
 				{
-					id: "7CA76C249C92F750"
-					type: "item"
-					item: "pamhc2foodcore:chickennuggetitem"
-					count: 4
-				}
-				{
 					id: "7A84544510F1D4EE"
 					type: "xp"
 					xp: 10
+				}
+				{
+					id: "6ABAD303E8397549"
+					type: "item"
+					item: "croptopia:fried_chicken"
 				}
 			]
 		}
@@ -468,6 +503,19 @@
 				type: "checkmark"
 				title: "The Planter"
 			}]
+			rewards: [
+				{
+					id: "70556C33AE952F49"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 2
+				}
+				{
+					id: "116FA96039FC2359"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Wheat."
@@ -513,7 +561,7 @@
 				{
 					id: "1C449D2589FD1836"
 					type: "item"
-					item: "pamhc2foodcore:toastitem"
+					item: "croptopia:toast"
 					count: 2
 				}
 				{
@@ -1098,6 +1146,18 @@
 				type: "item"
 				item: "minecraft:cake"
 			}]
+			rewards: [
+				{
+					id: "2C168199050CC470"
+					type: "item"
+					item: "minecraft:cake"
+				}
+				{
+					id: "7F528DE479E680AE"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			title: "You so sweet."
@@ -1113,6 +1173,19 @@
 				item: "minecraft:sugar"
 				count: 3L
 			}]
+			rewards: [
+				{
+					id: "7EAE8BCBABAA8B89"
+					type: "item"
+					item: "minecraft:sugar_cane"
+					count: 3
+				}
+				{
+					id: "04AB9DC101FCAB74"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Tree Harvesting"

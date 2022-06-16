@@ -54,11 +54,13 @@
 		description: [
 			"Welcome to ATM7!"
 			""
-			"To get started with questing, check out the tabs on the left to get started!"
+			"To get started with questing, check out the tabs on the left to jump in!"
 			""
 			"If you are new to AllTheMods, make sure to check out the &aAllTheModium&r Chapter!"
 			""
 			"If you are new to modded MC, check out the &6Main Questline&r to help you get started."
+			""
+			"Note:  Mods are not gated by quests. Quests are optional."
 		]
 		size: 2.0d
 		optional: true

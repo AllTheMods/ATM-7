@@ -37,19 +37,26 @@
 				type: "checkmark"
 				title: "Silent Gear Weapons, Tools and Armor"
 			}]
-			rewards: [{
-				id: "6FBB64122AC8F84B"
-				type: "item"
-				item: {
-					id: "silentgear:blueprint_package"
-					Count: 1b
-					tag: {
-						silentlib.LootContainer: {
-							LootTable: "silentgear:starter_blueprints"
+			rewards: [
+				{
+					id: "6FBB64122AC8F84B"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_package"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: {
+								LootTable: "silentgear:starter_blueprints"
+							}
 						}
 					}
 				}
-			}]
+				{
+					id: "383D184AE6F5236A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Guide Book"
@@ -67,6 +74,11 @@
 				id: "2E0D0BBFC2D0BCAC"
 				type: "item"
 				item: "silentgear:guide_book"
+			}]
+			rewards: [{
+				id: "7004B19E09FEE74B"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -93,7 +105,7 @@
 					id: "1CBB5DDFC361C0C6"
 					type: "item"
 					item: "silentgear:blueprint_paper"
-					count: 8
+					count: 4
 				}
 				{
 					id: "5079BE02B6810490"
@@ -615,7 +627,8 @@
 		{
 			x: 5.5d
 			y: 0.0d
-			subtitle: "Breaks down Silent Gear components."
+			subtitle: "Breaks down items into their components."
+			description: [""]
 			dependencies: ["15DE3BF0CBD8E0B4"]
 			id: "2EB96FF06627FD9A"
 			tasks: [{
@@ -780,18 +793,19 @@
 			title: "&5Starlight Charger"
 			x: 14.5d
 			y: 0.0d
+			shape: "diamond"
 			subtitle: "\"Enchanting\" Materials"
 			description: [
 				"The Starlight Charger can \"enchant\" materials with the \"Star Charged\" enchantment."
 				""
-				"A structure must be built, with the Starlight Charger in the middle in view of the night sky. It only gains Starlight Power during the night."
+				"A structure must be built with the Starlight Charger in the middle in view of the night sky. It only gains Starlight Power during the night."
 				""
 				"The Charger must be placed in the middle of a 7x7 structure, with a Pillar in each corner. Each pillar must have a \"Starlight Charger Cap\"."
 				""
 				"It also requires a charger catalyst per material."
 			]
 			dependencies: ["3930404D5C8B44EB"]
-			size: 1.5d
+			size: 1.75d
 			id: "7C3D763CF22D167A"
 			tasks: [{
 				id: "03C944C082828C47"
@@ -955,7 +969,8 @@
 		{
 			title: "Tier 1 Starlight Charger Pillar Cap"
 			x: 12.5d
-			y: -2.5d
+			y: -2.0d
+			shape: "circle"
 			description: [
 				"This is a Tier 1 Pillar Cap for the Starlight Charger structure."
 				""
@@ -986,7 +1001,8 @@
 		{
 			title: "Tier 2 Starlight Charger Pillar Cap"
 			x: 14.5d
-			y: -3.0d
+			y: -2.5d
+			shape: "circle"
 			description: ["This is a Tier 2 Pillar Cap for the Starlight Charger structure."]
 			dependencies: ["7C3D763CF22D167A"]
 			id: "29131C3532610ADF"
@@ -1013,7 +1029,8 @@
 		{
 			title: "Tier 3 Starlight Charger Pillar Cap"
 			x: 16.5d
-			y: -2.5d
+			y: -2.0d
+			shape: "circle"
 			description: ["This is a Tier 3 Pillar Cap for the Starlight Charger structure."]
 			dependencies: ["7C3D763CF22D167A"]
 			id: "3B560B2ECE331CAF"
@@ -1041,6 +1058,7 @@
 			title: "Tier 1 Starlight Charger Catalyst"
 			x: 13.5d
 			y: -1.0d
+			shape: "circle"
 			dependencies: ["7C3D763CF22D167A"]
 			id: "48D358470A019E7A"
 			tasks: [{
@@ -1066,6 +1084,7 @@
 			title: "Tier 2 Starlight Charger Catalyst"
 			x: 14.5d
 			y: -1.5d
+			shape: "circle"
 			dependencies: ["7C3D763CF22D167A"]
 			id: "2BF119DD5D977409"
 			tasks: [{
@@ -1091,6 +1110,7 @@
 			title: "Tier 3 Starlight Charger Catalyst"
 			x: 15.5d
 			y: -1.0d
+			shape: "circle"
 			dependencies: ["7C3D763CF22D167A"]
 			id: "0FEAD3CA2CC4A8B1"
 			tasks: [{

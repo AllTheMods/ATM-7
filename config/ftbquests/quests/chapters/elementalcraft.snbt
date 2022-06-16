@@ -85,7 +85,7 @@
 			description: [
 				"Welcome to &aElementalCraft&f!"
 				""
-				"The &eElementopedia&f in you &eAkashic Tome&f will guide you through the mod."
+				"The &eElementopedia&f in your&e Eccentric Tome&f will guide you through the mod."
 			]
 			size: 1.5d
 			id: "55F12D063F9D9430"
@@ -94,30 +94,9 @@
 				type: "checkmark"
 			}]
 			rewards: [{
-				id: "2C3A0CE67B4C644F"
-				type: "item"
-				item: {
-					id: "minecraft:player_head"
-					Count: 1b
-					tag: {
-						SkullOwner: {
-							Properties: {
-								textures: [{
-									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
-								}]
-							}
-							Id: [I;
-								-647195142
-								2010533167
-								-1243897687
-								1144171008
-							]
-						}
-						display: {
-							Name: "{\"text\":\"BovineShaman\"}"
-						}
-					}
-				}
+				id: "740DFA8F51630C10"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{

@@ -115,7 +115,7 @@
 			x: -1.0d
 			y: -1.5d
 			subtitle: "So much room for activities!"
-			description: ["The obsidian chest has the same storage capacity as a diamond chest, it just can't be blown up."]
+			description: ["Even MORE slots for storage and upgrades."]
 			dependencies: ["4C0BDD483CCB40C4"]
 			id: "77F241BEE9902751"
 			tasks: [{
@@ -366,30 +366,9 @@
 				title: "Storage"
 			}]
 			rewards: [{
-				id: "0F57A73B1DA8276A"
-				type: "item"
-				item: {
-					id: "minecraft:player_head"
-					Count: 1b
-					tag: {
-						SkullOwner: {
-							Properties: {
-								textures: [{
-									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
-								}]
-							}
-							Id: [I;
-								-647195142
-								2010533167
-								-1243897687
-								1144171008
-							]
-						}
-						display: {
-							Name: "{\"text\":\"BovineShaman\"}"
-						}
-					}
-				}
+				id: "570FFAC4E65BBF46"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -417,11 +396,18 @@
 					item: "trashcans:energy_trash_can"
 				}
 			]
-			rewards: [{
-				id: "69AE6A259BD33878"
-				type: "item"
-				item: "trashcans:ultimate_trash_can"
-			}]
+			rewards: [
+				{
+					id: "69AE6A259BD33878"
+					type: "item"
+					item: "trashcans:ultimate_trash_can"
+				}
+				{
+					id: "5828D3729B49DFEC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Dimensional Storage"
@@ -521,7 +507,7 @@
 			shape: "square"
 			subtitle: "Storage Drawers Distant Relative"
 			description: [
-				"Storage Drawers is a mod for storing stacks of the same items."
+				"Functional Storage is a mod for storing stacks of the same items."
 				""
 				"This is useful for items like Cobblestone, Dirt, etc."
 			]
@@ -550,7 +536,7 @@
 			x: -11.25d
 			y: -1.5d
 			shape: "square"
-			subtitle: "Upgradable Chests! (Sophisticated Backpacks' Older Brother)"
+			subtitle: "Upgradable Chests!"
 			description: [
 				"Sophisticated Chests allows you to upgrade your chests with metals to increase storage! You can also add upgrade filters to increase the functionality of the chest."
 				""
@@ -912,7 +898,8 @@
 		{
 			x: -7.5d
 			y: 6.5d
-			subtitle: "Allows the backpack to be emptied by Shift-Right Clicking an inventory."
+			subtitle: "Allows the backpack to be emptied."
+			description: ["Shift-Right Click an inventory to empty."]
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
 			hide: true
@@ -950,7 +937,7 @@
 		{
 			x: -3.0d
 			y: 5.0d
-			subtitle: "Keeps player's inventory stacked up from backpack."
+			subtitle: "Keeps the player's inventory stacked up from items in the backpack."
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
 			hide: true
@@ -1015,7 +1002,7 @@
 		{
 			x: -6.0d
 			y: 9.0d
-			subtitle: "Adds Smelting Tab to Backpack"
+			subtitle: "Adds a Smelting Tab to Backpack"
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
 			hide: true
@@ -1130,7 +1117,7 @@
 		{
 			x: 1.5d
 			y: 5.0d
-			subtitle: "Adds a Crafting Table Gui to the backpack."
+			subtitle: "Adds a Crafting Table GUI to the backpack."
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
 			hide: true
@@ -1191,7 +1178,7 @@
 			x: -1.5d
 			y: 4.0d
 			dependencies: ["7E9E03274A88347D"]
-			hide: true
+			hide: false
 			optional: true
 			id: "785951190FFDAA21"
 			tasks: [{
@@ -1209,7 +1196,7 @@
 			x: 0.0d
 			y: 4.0d
 			dependencies: ["785951190FFDAA21"]
-			hide: true
+			hide: false
 			optional: true
 			id: "0298A17C2AAC5765"
 			tasks: [{
@@ -1227,7 +1214,7 @@
 			x: 1.5d
 			y: 4.0d
 			dependencies: ["0298A17C2AAC5765"]
-			hide: true
+			hide: false
 			optional: true
 			id: "7AE3C8134F5ED726"
 			tasks: [{
@@ -1345,7 +1332,7 @@
 			subtitle: "Adds the ability to pump liquids from the tank upgrade."
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
-			hide: true
+			hide: false
 			optional: true
 			id: "6E9041744C592573"
 			tasks: [{
@@ -1363,7 +1350,7 @@
 			x: -6.0d
 			y: 4.0d
 			dependencies: ["6E9041744C592573"]
-			hide: true
+			hide: false
 			optional: true
 			id: "56B80A7EBFE21428"
 			tasks: [{
@@ -1381,7 +1368,7 @@
 			x: -4.5d
 			y: 4.0d
 			dependencies: ["56B80A7EBFE21428"]
-			hide: true
+			hide: false
 			optional: true
 			id: "6E3D53D1C4569A89"
 			tasks: [{
@@ -1409,8 +1396,13 @@
 				{
 					id: "10BF8798AEC3B008"
 					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 4
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:gold_sight"
+						}
+					}
 				}
 				{
 					id: "588A8E368C4561A4"
@@ -1433,8 +1425,13 @@
 				{
 					id: "17E3F7A56B54895F"
 					type: "item"
-					item: "minecraft:diamond"
-					count: 4
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:diamond_sight"
+						}
+					}
 				}
 				{
 					id: "1CD2A81868C15FC6"

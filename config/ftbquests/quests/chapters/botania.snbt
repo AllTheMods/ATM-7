@@ -29,7 +29,7 @@
 			description: [
 				"Welcome to &aBotania&f!"
 				""
-				"Please refer to the &eLexica Botania &fin your &eAkashic Tome &ffor additional help with the mod."
+				"Please refer to the &eLexica Botania &fin your &eEccentric Tome &ffor additional help with the mod."
 			]
 			size: 1.5d
 			id: "3712DD92B446BB60"
@@ -45,30 +45,9 @@
 					item: "botania:flower_bag"
 				}
 				{
-					id: "3050309DCDB7533F"
-					type: "item"
-					item: {
-						id: "minecraft:player_head"
-						Count: 1b
-						tag: {
-							SkullOwner: {
-								Properties: {
-									textures: [{
-										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
-									}]
-								}
-								Id: [I;
-									-757981255
-									353128114
-									-1977494863
-									-538281118
-								]
-							}
-							display: {
-								Name: "{\"text\":\"BovineShaman\"}"
-							}
-						}
-					}
+					id: "544AF0D812BA96E5"
+					type: "xp"
+					xp: 10
 				}
 			]
 		}
