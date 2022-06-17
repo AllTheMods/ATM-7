@@ -51,7 +51,7 @@ onEvent('recipes', e => {
   e.shaped('allthetweaks:improbable_probability_device', ['AAB', 'CGE', 'FDF'], {
     A: 'computercraft:monitor_advanced',
     B: 'mekanismgenerators:module_solar_recharging_unit',
-    C: ['extradisks:1048576k_storage_part', 'extradisks:1048576k_fluid_storage_part', 'megacells:256m_storage_component'],
+    C: ['extradisks:1048576k_storage_part', 'extradisks:1048576k_fluid_storage_part', 'megacells:cell_component_256m'],
     D: 'forbidden_arcanus:eternal_obsidian_skull',
     E: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_knowledge" }),
     F: 'allthecompressed:enderium_block_3x',
