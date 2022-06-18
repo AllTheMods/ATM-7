@@ -1,0 +1,216 @@
+{
+	id: "16956970FF49BB4D"
+	group: ""
+	order_index: 2
+	filename: "creative"
+	title: "Creative "
+	icon: "atmadditions:atm_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Create"
+			x: -0.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			id: "2CF11A70229000AB"
+			tasks: [
+				{
+					id: "0CF133CEADDC504C"
+					type: "item"
+					item: "create:creative_motor"
+				}
+				{
+					id: "72936F6095FF124A"
+					type: "item"
+					item: "create:creative_blaze_cake"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "314537C71B1B5741"
+			tasks: [{
+				id: "4F7E4F430154E96E"
+				type: "item"
+				item: "mysticalagradditions:creative_essence"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "088E6EA318D25659"
+			tasks: [{
+				id: "48CC30220D7FC2C9"
+				type: "item"
+				item: "allthetweaks:nexium_emitter"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			id: "29FFA090ADB56195"
+			tasks: [{
+				id: "3F1E9259BB90D044"
+				type: "item"
+				item: "allthetweaks:philosophers_fuel"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			id: "296E89E2DF857B25"
+			tasks: [{
+				id: "56F3DEFF2D46B881"
+				type: "item"
+				item: "allthetweaks:pulsating_black_hole"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			id: "794EC696A3B7DAC3"
+			tasks: [{
+				id: "10834451DAC877C5"
+				type: "item"
+				item: "allthetweaks:dimensional_seed"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Needed for crafting OP creative items"]
+			id: "464D0C17601E8A2B"
+			tasks: [{
+				id: "5F6988D125AAB233"
+				type: "item"
+				item: "allthetweaks:atm_star"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "24CE3AF373180CC9"
+			tasks: [{
+				id: "7222BF35C9281295"
+				type: "item"
+				item: "allthetweaks:patrick_star"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			id: "20408CB5A15237EA"
+			tasks: [{
+				id: "64A1AE71DDC8F0B0"
+				type: "item"
+				item: "allthetweaks:oblivion_shard"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			id: "4A629299C15E7E81"
+			tasks: [{
+				id: "52DDA8A874F605CB"
+				type: "item"
+				item: "allthetweaks:improbable_probability_device"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			id: "3615BAFD4F2AD479"
+			tasks: [{
+				id: "48CE28F5C1683093"
+				type: "item"
+				item: "allthetweaks:dragon_soul"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			id: "5477FBAEBDE2D10B"
+			tasks: [{
+				id: "042808E2D5E02DED"
+				type: "item"
+				item: "allthetweaks:withers_compass"
+			}]
+		}
+		{
+			title: "Infinite Mana"
+			x: 0.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			id: "5C7B81756CA58056"
+			tasks: [
+				{
+					id: "775BD503F830BB6C"
+					type: "item"
+					item: "botania:creative_pool"
+				}
+				{
+					id: "7FDBB3698C087D8B"
+					type: "item"
+					item: {
+						id: "botania:mana_tablet"
+						Count: 1b
+						tag: {
+							mana: 500000
+							creative: 1b
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Set For Life"
+			x: 0.0d
+			y: -5.5d
+			subtitle: "Enough to make everything in the pack?"
+			hide_dependency_lines: true
+			dependencies: [
+				"2CF11A70229000AB"
+				"5C7B81756CA58056"
+			]
+			hide: true
+			size: 3.0d
+			id: "6E6FDF551EA4FF1A"
+			tasks: [{
+				id: "0814C4E6DE262193"
+				type: "item"
+				item: "allthecompressed:atm_star_block_1x"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			description: [
+				""
+				""
+				""
+			]
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "3A6E437A6D0C634D"
+			tasks: [{
+				id: "7185D1288C51896F"
+				type: "item"
+				item: "allthetweaks:atm_star_shard"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3A6E437A6D0C634D"]
+			id: "435F4E14490CBE2B"
+			tasks: [{
+				id: "6E417FA286B2F2BF"
+				type: "item"
+				item: "allthetweaks:allthecatalystium"
+			}]
+		}
+	]
+}
