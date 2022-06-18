@@ -1,0 +1,80 @@
+{
+	id: "4225E4EC11922E5E"
+	group: ""
+	order_index: 5
+	filename: "faq"
+	title: "F.A.Q."
+	icon: "minecraft:writable_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: -0.5d
+			shape: "rsquare"
+			description: [
+				"Welcome to the F.A.Q. section!"
+				""
+				"Here, you'll find answers to questions that are frequently asked!"
+				""
+				"Have a question you want answered? You can ask us on &9Discord!&r! You can get an invite in-game in the Allthemodium Book!"
+			]
+			size: 1.5d
+			id: "62CC147A4CF5A769"
+			tasks: [{
+				id: "06B63BD1D37D859B"
+				type: "checkmark"
+				title: "Frequently Asked Questions!"
+			}]
+			rewards: [{
+				id: "506A78AE08B1FADD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "minecraft:white_bed"
+			x: -4.0d
+			y: 1.5d
+			description: [
+				"Find the \"serverconfig\" folder in your world/save files. Inside, you'll look for the file &aftbessentials.snbt&r. "
+				""
+				"You can edit everything here! Use the Find function (ctrl+f) to search for the settings you are looking for!"
+				""
+				"&l&9Note:&r These settings are &ePer Save&r, so if you start a new world, you will need to adjust the settings again!"
+				""
+				"A restart will be required."
+			]
+			id: "0ACB60D1A45F0BF9"
+			tasks: [{
+				id: "6E53A94E30768FA6"
+				type: "checkmark"
+				title: "How do I edit how many homes, cooldowns, etc. for commands?"
+			}]
+		}
+		{
+			title: "Shaders and FPS!"
+			icon: "minecraft:orange_stained_glass"
+			x: -2.0d
+			y: 1.5d
+			description: [
+				"&l&eOptifine is known to crash in modpacks&r. Several mods conflict with Optifine, like the Twilight Forest. You can either remove the conflicting mods, or use an alternative."
+				""
+				"&l&9Rubidium&r is an alternative that you can use. If you are using Optifine for shaders, check out &l&eOculus &r&d(Requires Rubidium)&r."
+				""
+				"&9Disclaimer(s)&r:"
+				"- We do not provide support for graphical mods."
+				"- &eOculus&r has  minor invisible texture issues, mostly with Immersive Engineering."
+				"- &9Rubidium and Oculus&r are not affiliated with &l&6 AllTheMods&r."
+				"- Issues with the related mods should be reported to the appropriate mod Github."
+				""
+			]
+			id: "15486094482010BB"
+			tasks: [{
+				id: "32F1926C5D54ED84"
+				type: "checkmark"
+				title: "Optifine is crashing my game!"
+			}]
+		}
+	]
+}
