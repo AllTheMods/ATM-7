@@ -187,7 +187,7 @@
 			tasks: [{
 				id: "187FFED3F1787FFA"
 				type: "item"
-				item: "elementalcraft:container"
+				item: "elementalcraft:small_container"
 			}]
 			rewards: [{
 				id: "660C1E9798CF4734"
