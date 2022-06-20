@@ -1,0 +1,761 @@
+{
+	id: "16956970FF49BB4D"
+	group: ""
+	order_index: 2
+	filename: "creative"
+	title: "Creative "
+	icon: "allthetweaks:atm_star"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 0.0d
+			y: -4.5d
+			width: 16.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "atm:textures/creative.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			width: 2.0d
+			height: 2.0d
+			rotation: 20.0d
+			image: "allthetweaks:textures/item/atm_star.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			width: 2.0d
+			height: 2.0d
+			rotation: -20.0d
+			image: "allthetweaks:textures/item/atm_star.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Getting Create-ive."
+			x: -1.5d
+			y: 4.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "2CF11A70229000AB"
+			tasks: [
+				{
+					id: "0CF133CEADDC504C"
+					type: "item"
+					item: "create:creative_motor"
+				}
+				{
+					id: "72936F6095FF124A"
+					type: "item"
+					item: "create:creative_blaze_cake"
+				}
+			]
+			rewards: [
+				{
+					id: "188E0370AB963600"
+					type: "item"
+					item: "farmersdelight:cake_slice"
+				}
+				{
+					id: "297894608F40D90C"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+			]
+		}
+		{
+			title: "Master of Creation"
+			x: 0.5d
+			y: 1.5d
+			id: "314537C71B1B5741"
+			tasks: [{
+				id: "4F7E4F430154E96E"
+				type: "item"
+				item: "mysticalagradditions:creative_essence"
+			}]
+			rewards: [
+				{
+					id: "398125AAF450E6E0"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "0B38949A6771E5A4"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_sword"
+						Count: 1b
+						tag: {
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of Creation\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of the Sky"
+			x: -2.0d
+			y: 0.0d
+			id: "088E6EA318D25659"
+			tasks: [{
+				id: "48CC30220D7FC2C9"
+				type: "item"
+				item: "allthetweaks:nexium_emitter"
+			}]
+			rewards: [
+				{
+					id: "4D0E3B723F4F7569"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "2F1A13FCF5901140"
+					type: "item"
+					item: {
+						id: "botania:elementium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of the Sky\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of Alchemy"
+			x: -0.5d
+			y: 1.5d
+			shape: "diamond"
+			id: "29FFA090ADB56195"
+			tasks: [{
+				id: "3F1E9259BB90D044"
+				type: "item"
+				item: "allthetweaks:philosophers_fuel"
+			}]
+			rewards: [
+				{
+					id: "2609BCC306245807"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "10E868E717A42A4C"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_scepter"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "\"Master of Alchemy\""
+							}
+							Enchantments: [{
+								lvl: 3
+								id: "unbreaking"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of Space"
+			x: 0.5d
+			y: -2.5d
+			id: "296E89E2DF857B25"
+			tasks: [{
+				id: "56F3DEFF2D46B881"
+				type: "item"
+				item: "allthetweaks:pulsating_black_hole"
+			}]
+			rewards: [
+				{
+					id: "6292D653EF08B7B3"
+					type: "item"
+					item: {
+						id: "twilightforest:glass_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of Space\""
+							}
+						}
+					}
+				}
+				{
+					id: "405BF0FCC81D5658"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+			]
+		}
+		{
+			title: "Master of Dimensions"
+			x: 2.0d
+			y: -1.0d
+			id: "794EC696A3B7DAC3"
+			tasks: [{
+				id: "10834451DAC877C5"
+				type: "item"
+				item: "allthetweaks:dimensional_seed"
+			}]
+			rewards: [
+				{
+					id: "44165A6E4A341DF6"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "64D5BD099D3D3702"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of Dimensions\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "&6ATM Star"
+			x: 0.0d
+			y: -0.5d
+			shape: "octagon"
+			subtitle: "Take over the world."
+			description: [
+				"The ATM Star."
+				""
+				"This is needed to craft Creative items."
+			]
+			dependencies: [
+				"29FFA090ADB56195"
+				"4A629299C15E7E81"
+				"314537C71B1B5741"
+				"24CE3AF373180CC9"
+				"5E18FCD27271E6B3"
+				"794EC696A3B7DAC3"
+				"296E89E2DF857B25"
+				"20408CB5A15237EA"
+				"5477FBAEBDE2D10B"
+				"3615BAFD4F2AD479"
+				"2607937598AEAFA8"
+				"088E6EA318D25659"
+				"3047DB8DF8454D18"
+				"7F3C377120EF35B8"
+			]
+			size: 3.0d
+			id: "464D0C17601E8A2B"
+			tasks: [{
+				id: "5F6988D125AAB233"
+				type: "item"
+				item: "allthetweaks:atm_star"
+			}]
+			rewards: [
+				{
+					id: "1BA347591332B24A"
+					type: "item"
+					item: {
+						id: "allthetweaks:patrick_star"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "\"Master of All\""
+							}
+							Enchantments: [{
+								lvl: 1
+								id: "vanishing_curse"
+							}]
+						}
+					}
+				}
+				{
+					id: "1A44EDC903F8E8D7"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+			]
+		}
+		{
+			title: "Master of....Patrick?"
+			x: 2.0d
+			y: 0.0d
+			id: "24CE3AF373180CC9"
+			tasks: [{
+				id: "7222BF35C9281295"
+				type: "item"
+				item: "allthetweaks:patrick_star"
+			}]
+			rewards: [
+				{
+					id: "67087A134C6947DF"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "7A79D37078705E41"
+					type: "item"
+					item: {
+						id: "minecraft:trident"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of...Patrick?\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of The Oblivion"
+			x: 0.0d
+			y: -3.0d
+			shape: "diamond"
+			id: "20408CB5A15237EA"
+			tasks: [{
+				id: "64A1AE71DDC8F0B0"
+				type: "item"
+				item: "allthetweaks:oblivion_shard"
+			}]
+			rewards: [
+				{
+					id: "2369BD6A4B7FB000"
+					type: "item"
+					item: {
+						id: "allthemodium:unobtainium_sword"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "\"Master of Oblivion\""
+							}
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7812BBD0CC80C2A8"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+			]
+		}
+		{
+			title: "Master of Reality"
+			x: 0.0d
+			y: 2.0d
+			id: "4A629299C15E7E81"
+			tasks: [{
+				id: "52DDA8A874F605CB"
+				type: "item"
+				item: "allthetweaks:improbable_probability_device"
+			}]
+			rewards: [
+				{
+					id: "2EFB7B4F97D220BF"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "35885A4F2B92CF9C"
+					type: "item"
+					item: {
+						id: "twilightforest:twilight_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+							display: {
+								Name: "\"Master of Reality\""
+							}
+							Enchantments: [{
+								lvl: 3
+								id: "unbreaking"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of Dragons"
+			x: -2.0d
+			y: -1.0d
+			id: "3615BAFD4F2AD479"
+			tasks: [{
+				id: "48CE28F5C1683093"
+				type: "item"
+				item: "allthetweaks:dragon_soul"
+			}]
+			rewards: [
+				{
+					id: "72475F102A9A0E9B"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of Dragons\""
+							}
+						}
+					}
+				}
+				{
+					id: "7952CD1C4621CA26"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+			]
+		}
+		{
+			title: "Master of The Undead"
+			x: -0.5d
+			y: -2.5d
+			id: "5477FBAEBDE2D10B"
+			tasks: [{
+				id: "042808E2D5E02DED"
+				type: "item"
+				item: "allthetweaks:withers_compass"
+			}]
+			rewards: [
+				{
+					id: "0213A51FA0362198"
+					type: "item"
+					item: {
+						id: "twilightforest:lifedrain_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+							display: {
+								Name: "\"Master of The Undead\""
+							}
+							Enchantments: [{
+								lvl: 3
+								id: "unbreaking"
+							}]
+						}
+					}
+				}
+				{
+					id: "5241889A5D8B8931"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+			]
+		}
+		{
+			title: "Infinite Mana"
+			x: 1.5d
+			y: 4.5d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "5C7B81756CA58056"
+			tasks: [
+				{
+					id: "775BD503F830BB6C"
+					type: "item"
+					item: "botania:creative_pool"
+				}
+				{
+					id: "7FDBB3698C087D8B"
+					type: "item"
+					item: {
+						id: "botania:mana_tablet"
+						Count: 1b
+						tag: {
+							mana: 500000
+							creative: 1b
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "753A05B6079F4FBA"
+					type: "item"
+					item: "botania:gaia_head"
+				}
+				{
+					id: "7D74C1F49E9E5D28"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+			]
+		}
+		{
+			title: "Set For Life"
+			x: 0.0d
+			y: 4.5d
+			shape: "hexagon"
+			subtitle: "Enough to make everything in the pack?"
+			hide_dependency_lines: true
+			dependencies: [
+				"2CF11A70229000AB"
+				"5C7B81756CA58056"
+				"464D0C17601E8A2B"
+			]
+			hide: true
+			size: 2.0d
+			id: "6E6FDF551EA4FF1A"
+			tasks: [{
+				id: "0814C4E6DE262193"
+				type: "item"
+				item: "allthecompressed:atm_star_block_1x"
+			}]
+		}
+		{
+			title: "Dwarven Master"
+			x: -2.5d
+			y: -0.5d
+			shape: "diamond"
+			id: "2607937598AEAFA8"
+			tasks: [{
+				id: "6CA6A70FC0B43B43"
+				type: "item"
+				item: "mythicbotany:nidavellir_rune"
+			}]
+			rewards: [
+				{
+					id: "37B2B805430F6AA3"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "23D7D622C51A8824"
+					type: "item"
+					item: {
+						id: "botania:manasteel_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Dwarven Master\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Master of The Fire"
+			x: 2.5d
+			y: -0.5d
+			id: "5E18FCD27271E6B3"
+			tasks: [{
+				id: "6EF8747859DAA399"
+				type: "item"
+				item: "mythicbotany:muspelheim_rune"
+			}]
+			rewards: [
+				{
+					id: "3F873730E9C9DE2F"
+					type: "item"
+					item: "reliquary:pedestals/passive/white_passive_pedestal"
+				}
+				{
+					id: "2141092A01122DD1"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 5
+									id: "sharpness"
+								}
+								{
+									lvl: 3
+									id: "looting"
+								}
+								{
+									lvl: 3
+									id: "sweeping"
+								}
+							]
+							display: {
+								Name: "\"Master of The Fire\""
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			shape: "pentagon"
+			subtitle: "That's a lot of ingots."
+			id: "7F3C377120EF35B8"
+			tasks: [{
+				id: "44051D66A5EF2F12"
+				type: "item"
+				item: "allthemodium:unobtainium_allthemodium_alloy_block"
+				count: 28L
+			}]
+			rewards: [{
+				id: "7CCD72B5FE63E74B"
+				type: "item"
+				item: "allthecompressed:ua_alloy_block_1x"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			shape: "pentagon"
+			subtitle: "The Wither is Not A Boss."
+			id: "3047DB8DF8454D18"
+			tasks: [{
+				id: "15781E3FD52A7921"
+				type: "item"
+				item: "allthecompressed:nether_star_block_3x"
+				count: 15L
+			}]
+			rewards: [{
+				id: "0AA7C62AB60CECD4"
+				type: "item"
+				item: "allthecompressed:nether_star_block_3x"
+			}]
+		}
+	]
+}

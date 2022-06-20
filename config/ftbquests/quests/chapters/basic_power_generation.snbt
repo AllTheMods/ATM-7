@@ -470,7 +470,7 @@
 				{
 					id: "48AC4A7E931847EE"
 					type: "item"
-					item: "ironfurnaces:upgrade_gold"
+					item: "minecraft:gold_block"
 				}
 				{
 					id: "1B818AB1DE891746"
@@ -1526,11 +1526,18 @@
 				type: "item"
 				item: "minecraft:netherite_ingot"
 			}]
-			rewards: [{
-				id: "60F0013E800D183C"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "60F0013E800D183C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2E0F6B624E74D5C6"
+					type: "item"
+					item: "minecraft:ancient_debris"
+				}
+			]
 		}
 		{
 			title: "Where to Next?"
@@ -1602,6 +1609,25 @@
 				type: "item"
 				item: "mekanism:enrichment_chamber"
 			}]
+			rewards: [
+				{
+					id: "19B9A062D9DBE6FB"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 4
+				}
+				{
+					id: "0D4B4778A88FE069"
+					type: "item"
+					item: "minecraft:raw_gold"
+					count: 2
+				}
+				{
+					id: "08C93B627FDA5691"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Automated Ore Smelting with Thermal Expansion"
@@ -1714,6 +1740,11 @@
 				type: "checkmark"
 				title: "Getting Started with Thermal Expansion"
 			}]
+			rewards: [{
+				id: "587CD4FCD1A38537"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Storing Power"
@@ -1765,6 +1796,37 @@
 				item: "minecraft:ghast_tear"
 				count: 2L
 			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			dependencies: ["201143A8D039A543"]
+			id: "36BF9C4CB26090CA"
+			tasks: [{
+				id: "2DDAC9CCB14302B9"
+				type: "item"
+				item: {
+					id: "ironjetpacks:jetpack"
+					Count: 1b
+					tag: {
+						Id: "ironjetpacks:stone"
+						Throttle: 1.0d
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6FC970F580F54F61"
+					type: "item"
+					item: "ironjetpacks:basic_coil"
+					count: 3
+				}
+				{
+					id: "45A335F04A8929A6"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 	]
 }

@@ -1228,20 +1228,9 @@
 			optional: true
 			id: "0BFBB64E405A0F41"
 			tasks: [{
-				id: "0FAF4AEDF385446F"
-				type: "item"
-				title: "Efficiency Enchanted Axe"
-				item: {
-					id: "minecraft:iron_axe"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							lvl: 1
-							id: "efficiency"
-						}]
-					}
-				}
+				id: "4C7C96FE727113C7"
+				type: "checkmark"
+				title: "Efficiency Upgrade"
 			}]
 			rewards: [{
 				id: "67197E1F4B94A8E4"
@@ -1259,19 +1248,9 @@
 			optional: true
 			id: "698A7F6155FB2701"
 			tasks: [{
-				id: "1648D5CE388C3C81"
-				type: "item"
-				item: {
-					id: "minecraft:iron_axe"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							lvl: 1
-							id: "silk_touch"
-						}]
-					}
-				}
+				id: "04D9023F39A3C28C"
+				type: "checkmark"
+				title: "Silk Touch Upgrade"
 			}]
 			rewards: [{
 				id: "2069BCF252C96FB1"
@@ -1288,19 +1267,9 @@
 			dependencies: ["6A78CF3396654D01"]
 			id: "6B02C78840493D86"
 			tasks: [{
-				id: "0BF27AC7EF4582C6"
-				type: "item"
-				item: {
-					id: "minecraft:iron_axe"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							lvl: 1
-							id: "fortune"
-						}]
-					}
-				}
+				id: "648BD06BDD4E9FA0"
+				type: "checkmark"
+				title: "Fortune Upgrade"
 			}]
 			rewards: [{
 				id: "7C5DC33A2DF9BBFF"
@@ -1377,6 +1346,32 @@
 				}
 				{
 					id: "62FB77230F1D9F9B"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Fruit Upgrade"
+			x: 4.0d
+			y: 3.0d
+			description: ["Placing a Beehive in the Bonsai Pot will allow the saplings to produce Fruit."]
+			dependencies: ["3EE9BBAA3CC677D9"]
+			id: "51D678DB7193FB2E"
+			tasks: [{
+				id: "3B13E9F87DA783F2"
+				type: "item"
+				item: "minecraft:beehive"
+			}]
+			rewards: [
+				{
+					id: "45880BD8C223F87B"
+					type: "item"
+					item: "minecraft:honeycomb"
+					count: 2
+				}
+				{
+					id: "23A80E239D7FC6E1"
 					type: "xp"
 					xp: 10
 				}
