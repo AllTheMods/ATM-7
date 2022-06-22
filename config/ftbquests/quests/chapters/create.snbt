@@ -1,7 +1,7 @@
 {
 	id: "100C477F4E63F20A"
 	group: "2B51AC12041E3F89"
-	order_index: 0
+	order_index: 1
 	filename: "create"
 	title: "Create"
 	icon: "create:large_cogwheel"
@@ -27,39 +27,11 @@
 				title: "Create"
 				icon: "create:wrench"
 			}]
-			rewards: [
-				{
-					id: "1E5B06A1884F3578"
-					type: "item"
-					item: "create:wrench"
-				}
-				{
-					id: "7D53F8A8D382F356"
-					type: "item"
-					item: {
-						id: "minecraft:player_head"
-						Count: 1b
-						tag: {
-							SkullOwner: {
-								Properties: {
-									textures: [{
-										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyOGRhNTIzNzBmZGJkZDkyZmMwYTg3Yjc2NTQxOTNlOTk3YWI3ZTI5MzNhYjYxZDM3ZTYzYWY5NjgxNzVjNCJ9fX0="
-									}]
-								}
-								Id: [I;
-									522720834
-									384190020
-									-1750486376
-									1760436187
-								]
-							}
-							display: {
-								Name: "{\"text\":\"LadyLexxie\"}"
-							}
-						}
-					}
-				}
-			]
+			rewards: [{
+				id: "1E5B06A1884F3578"
+				type: "item"
+				item: "create:wrench"
+			}]
 		}
 		{
 			x: 0.0d
@@ -832,6 +804,7 @@
 			}]
 		}
 		{
+			title: "Brass"
 			x: 10.5d
 			y: 3.0d
 			dependencies: ["5DC892BA79EB52EC"]
@@ -839,7 +812,15 @@
 			tasks: [{
 				id: "07896B715ED0E04F"
 				type: "item"
-				item: "create:brass_ingot"
+				title: "Any Brass Ingot"
+				icon: "create:brass_ingot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
 			}]
 		}
 		{

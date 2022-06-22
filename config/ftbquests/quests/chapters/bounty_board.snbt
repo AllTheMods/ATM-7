@@ -576,6 +576,11 @@
 					type: "item"
 					item: "reliquary:pedestals/passive/white_passive_pedestal"
 				}
+				{
+					id: "0CE048FBADDEFFD0"
+					type: "item"
+					item: "nomowanderer:no_soliciting_sign"
+				}
 			]
 		}
 		{
