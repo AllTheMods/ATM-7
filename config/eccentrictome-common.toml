@@ -1,0 +1,17 @@
+
+#Common configuration settings
+[common]
+	#Allow all items to be added
+	allitems = false
+	#Disable overlay previewing tome conversion
+	disable_overlay = false
+	#Whitelisted items
+	items = ["tconstruct:materials_and_you", "tconstruct:puny_smelting", "tconstruct:mighty_smelting", "tconstruct:fantastic_foundry", "tconstruct:tinkers_gadgetry", "integrateddynamics:on_the_dynamics_of_integration", "cookingforblockheads:no_filter_edition", "alexsmobs:animal_dictionary", "occultism:dictionary_of_spirits", "theoneprobe:probenote", "compactmachines:personal_shrinking_device", "rootsclassic:runic_tablet", "evilcraft:origins_of_darkness"]
+	#Whitelisted names
+	names = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "journal", "enchiridion"]
+	#Mod aliases
+	aliases = ["thermalexpansion=thermalfoundation", "thermaldynamics=thermalfoundation", "thermalcultivation=thermalfoundation", "redstonearsenal=thermalfoundation", "rftoolsdim=rftools", "rftoolspower=rftools", "rftoolscontrol=rftools", "xnet=rftools"]
+	#Blacklisted mods
+	exclude = []
+	#Blacklisted items
+	exclude_items = ["apotheosis:boots_tome", "apotheosis:bow_tome", "apotheosis:chestplate_tome", "apotheosis:fishing_tome", "apotheosis:helmet_tome", "apotheosis:leggings_tome", "apotheosis:other_tome", "apotheosis:pickaxe_tome", "apotheosis:scrap_tome", "apotheosis:weapon_tome", "darkutils:tome_enchanting", "darkutils:tome_illager", "darkutils:tome_pigpen", "darkutils:tome_runelic", "darkutils:tome_sga", "darkutils:tome_shadows", "minecolonies:ancienttome", "occultism:book_of_binding_afrit", "occultism:book_of_binding_bound_afrit", "occultism:book_of_binding_bound_djinni", "occultism:book_of_binding_bound_foliot", "occultism:book_of_binding_bound_marid", "occultism:book_of_binding_djinni", "occultism:book_of_binding_foliot", "occultism:book_of_binding_marid", "occultism:book_of_calling_djinni_manage_machine", "occultism:book_of_calling_foliot_cleaner", "occultism:book_of_calling_foliot_lumberjack", "occultism:book_of_calling_foliot_transport_items", "villagertools:knowledge"]
