@@ -74,7 +74,7 @@
 		}
 		{
 			title: "OreSight Potions"
-			x: 4.0d
+			x: 3.0d
 			y: 5.0d
 			subtitle: "It's like X-Ray Vision!"
 			description: ["This potion will allow you to see the respective ore through the walls."]
@@ -111,7 +111,7 @@
 		}
 		{
 			title: "Comforts"
-			x: 3.0d
+			x: 4.0d
 			y: 5.0d
 			subtitle: "ZZZzzz..."
 			description: [
@@ -149,7 +149,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: -1.0d
 			y: 6.0d
 			subtitle: "When an infinite world is too small"
 			description: [
@@ -207,8 +207,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 5.0d
+			x: -2.0d
+			y: 6.0d
 			description: [
 				"A quick way to switch between tools."
 				""
@@ -236,7 +236,7 @@
 		}
 		{
 			title: "Compact Machines"
-			x: -2.0d
+			x: -1.0d
 			y: 5.0d
 			description: ["This item is serves as the guide for Compact Machines, as well as the tool needed to teleport into your tiny machine worlds."]
 			id: "73F91BF3D424B269"
@@ -335,8 +335,8 @@
 		}
 		{
 			title: "Building Wands"
-			x: -1.0d
-			y: 6.0d
+			x: -2.0d
+			y: 5.0d
 			description: [
 				"Can be helpful for building."
 				""
@@ -393,7 +393,7 @@
 		}
 		{
 			title: "X-Ray Charms"
-			x: 4.0d
+			x: 3.0d
 			y: 6.0d
 			description: [
 				"OreSight Potions can be used to craft Charms!"
@@ -520,7 +520,7 @@
 		}
 		{
 			title: "Miniature Tree Farm"
-			x: 3.0d
+			x: 4.0d
 			y: 6.0d
 			description: [
 				"This item will grow saplings placed in it over time."
@@ -535,6 +535,51 @@
 			}]
 			rewards: [{
 				id: "7D97C6358E827878"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.5d
+			subtitle: "A Simple Magnet!"
+			id: "3FC002E5A6C08DCC"
+			tasks: [{
+				id: "4112D6272EC400DE"
+				type: "item"
+				item: {
+					id: "simplemagnets:basicmagnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0F5B656ED410D441"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			subtitle: "Helps Find Biomes"
+			description: [
+				"Gives you a list of biomes you can search for."
+				""
+				"Select a biome, then hit \"Search.\" You'll see some info in the top left, and the compass will point in the direction of the biome."
+			]
+			id: "70B6C9409AE69284"
+			tasks: [{
+				id: "595B3FA9F32B712D"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "554BFA90C78DEDD5"
 				type: "xp"
 				xp: 10
 			}]

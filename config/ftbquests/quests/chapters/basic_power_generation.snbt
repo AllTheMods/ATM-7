@@ -69,8 +69,8 @@
 			corner: false
 		}
 		{
-			x: 14.489795918367356d
-			y: 1.8265306122449019d
+			x: 14.51275510204082d
+			y: 1.7984693877550981d
 			width: 0.5d
 			height: 0.5d
 			rotation: 15.0d
@@ -695,11 +695,25 @@
 			description: ["It's time to grab some obsidian and get to the Nether!"]
 			dependencies: ["12885F27C5152DBB"]
 			id: "0B8213C1DDCC540F"
-			tasks: [{
-				id: "03E19A1DD74B040C"
-				type: "dimension"
-				dimension: "minecraft:the_nether"
-			}]
+			tasks: [
+				{
+					id: "754E3C12FF8F71D0"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 10L
+				}
+				{
+					id: "2DBBEC756EAB5C26"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [
 				{
 					id: "1CF3324C0CF23184"
@@ -728,11 +742,25 @@
 			dependencies: ["12885F27C5152DBB"]
 			optional: true
 			id: "02A068D4CD02D677"
-			tasks: [{
-				id: "083BDC56671843BE"
-				type: "dimension"
-				dimension: "twilightforest:twilightforest"
-			}]
+			tasks: [
+				{
+					id: "5ED34AD2FF7B1CE5"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+				{
+					id: "741F4225529F0094"
+					type: "item"
+					title: "Any Flower"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "7CA766D7B8F2C7ED"
 				type: "xp"
@@ -914,9 +942,9 @@
 			y: -1.5d
 			shape: "square"
 			description: [
-				"The other is a dangerous place. Make sure to be prepared!"
+				"The Other is a dangerous place. Make sure to be prepared!"
 				""
-				""
+				"This is also where you'll find Pigliches. You'll need their hearts!!!"
 			]
 			dependencies: ["746D39907C15027A"]
 			id: "7E0626539160CB29"
@@ -1318,9 +1346,9 @@
 			dependencies: ["1B47EE1C29C4AD73"]
 			id: "1ECF6495A3D77E27"
 			tasks: [{
-				id: "23A31C9CCB268843"
-				type: "dimension"
-				dimension: "minecraft:the_end"
+				id: "3EDD7F00E94F9F28"
+				type: "item"
+				item: "minecraft:end_stone"
 			}]
 			rewards: [{
 				id: "1EC6E0E46142E6D8"
@@ -1552,6 +1580,8 @@
 				""
 				"You take over the World, by crafting the &d&lATM Star&r."
 				""
+				"Like the questline so far? Have any suggestions for future quests? Let us know in the Discord!"
+				""
 				"&o Questline To be Continued...."
 			]
 			dependencies: ["427B251ABCD4B085"]
@@ -1562,11 +1592,38 @@
 				type: "checkmark"
 				title: "Where"
 			}]
-			rewards: [{
-				id: "1E3695EC69F2AFE2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1E3695EC69F2AFE2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "438268027F6A5C88"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-863860352
+									-241416883
+									-1794774798
+									1141039977
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY1NTczOTkyMzYyMywKICAicHJvZmlsZUlkIiA6ICJjYzgyODk4MGYxOWM0NTRkOTUwNWU4ZjI0NDAyZTM2OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbGZyZWRHRyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81MDU1YmNkY2FkOWM5NDM2NmFhMmJmMzYyNmRhYjcwN2NjMTU2N2RmOGViNmI2ODliZmEzMGI1Mzk5MWRmYzQzIgogICAgfQogIH0KfQ=="
+										Signature: "wdXPfoAQeNYy1BmDxPt7vYA4ZdZRXrR7f10LrwJeMdGzk1vt6UuT/UjV5nwVwVRmfopO4SuMHlnKGCkf9xaMTlag1SRv1qoFPbL3o+wury4PNmbpQyt1aId7hD0NHubjEQde6b4ple3Xc7pX9VvSJd9lXfVW2RfjmWiDVTA/w4XK6vB14QEvfxLXvKNrBU3tSwqJY+M5T3pBipne73xRvQTYQIeLPCmLJYRDsnwyedfvgj0JACXZ3fzDGkazul7+7Q3V8/AsNtnyVZ3uO4m11as/BPu2fRV/mNgQ9gKrj0OJAlarROtpgx1Ba0A+LbuuSkzTUiyki0TQGfK/9o2b2qKlqPuqog4ZFEEwrJPlezL5ZQ+0ayrHiJn0U1C4K+e+6SyiyXc73/gK4bEWY74nvxw232kN/AKhcfykaSFxvUxS+Cj+BYqCIGAMyhzYQCWx4fQ3Fdbn+U3QqxDbxLjJejXjCrvoeGOfdkq26RUpxt52X7AVaAro04M3gnsQYWh81HfXCeGPckNzeKzeNigRZmXuZ44ljD+geO6y2IKd0Nlt2DBX6weJsEYMhoNMnVuoBarG+1iY3HB9f5IsA4+K/+BrmMOe+a+XSvjwtgpP+yxzJc8XInLa7Fwt8GKWJSA8rYrFWi0tPh4mrMn1a/rke5BXT046VbX1q/LKcTf6ano="
+									}]
+								}
+								Name: "AlfredGG"
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -1641,6 +1698,7 @@
 				"You'll place a chest on both, and then use the Cogwheel in the Pulverizer to configure input and output. Turn the top face Blue (input) and the right face Red (Output). Make sure to press the \"Auto Eject\" and \"Auto Input\" buttons."
 				""
 				"In the Iron Furnace, you'll do the same thing, except Input from the left and Output to the top."
+				"{image:atm:textures/pulverizer_easy_setup.png width:200 height:158 align:1 fit:true}"
 			]
 			dependencies: ["7410CB313F03A6B5"]
 			id: "7FF2F202BE2AEF3E"
@@ -1670,11 +1728,14 @@
 			y: 0.0d
 			subtitle: "The Factory is Coming."
 			description: [
-				"To set up automated Ore smelting from Mekanism, place the Enrichment Chamber to the left of your Iron Furnace, and place a Chest on top of both."
+				"To set up automated ore smelting from Mekanism, place the Enrichment Chamber to the left of your Iron Furnace, and place a Chest on top of both."
 				""
-				"In the Enrichment Chamber, use the \"Side Config\" to input from the top, and output to the right. Make sure to press the \"Auto Eject\" button."
+				"In the Enrichment Chamber, use the \"Side Config\" settings to output to the right. Make sure to press the \"Auto Eject\" button."
 				""
-				"In the Iron Furnace, you'll do the same thing, except Input from the left and Output to the top."
+				"To get items into the Enrichment Chamber, you'll need a pipe connecting the chest on top to the machine. This can be done using an Item Pipe from &aPipez&r, or a Basic Logistical Transporter pipe from &9Mekanism&r. "
+				""
+				"In the Iron Furnace, you'll set it to Input from the left and Output to the top. Make sure to select the auto-input and output buttons."
+				"{image:atm:textures/mekanism_easy_setup.png width:300 height:207 align:1 fit:true}"
 			]
 			dependencies: ["487F54A97A334E04"]
 			id: "216E75E350303F42"
@@ -1702,11 +1763,7 @@
 			x: 8.6d
 			y: 2.5d
 			shape: "square"
-			description: [
-				"To get started with Mekanism, check out the &aMekanism&r Chapter in the &6Technology&r Group."
-				""
-				"*Note: This quest chapter will be added in a later update.&o To be Continued..."
-			]
+			description: ["To get started with Mekanism, check out the &aMekanism&r Chapter in the &6Technology&r Group."]
 			dependencies: ["216E75E350303F42"]
 			size: 1.5d
 			id: "4D21D9AAFACD40C3"
@@ -1727,11 +1784,7 @@
 			y: -3.5d
 			shape: "square"
 			subtitle: "Alloys are in your future."
-			description: [
-				"Thermal Expansion is a simple power mod! The quest chapter will be added in a later update."
-				""
-				"&o To be Continued..."
-			]
+			description: ["Thermal Expansion is a simple power mod! Check out the &6Thermal Series&r Chapter to get started!"]
 			dependencies: ["7FF2F202BE2AEF3E"]
 			size: 1.5d
 			id: "6A2CBA329A84CAE5"
