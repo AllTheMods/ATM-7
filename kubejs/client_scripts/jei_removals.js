@@ -71,6 +71,10 @@ onEvent('jei.hide.items', e => {
   hideMetal('thermal', 'lead', ['ingot', 'ore', 'dust', 'nugget', 'block'])
   hideMetal('thermal', 'silver', ['ingot', 'ore', 'dust', 'nugget', 'block'])
   hideMetal('thermal', 'nickel', ['ingot', 'ore', 'dust', 'nugget', 'block'])
+  hideMetal('thermal', 'signalum', ['ingot', 'ore', 'dust', 'nugget', 'block'])
+  hideMetal('thermal', 'enderium', ['ingot', 'ore', 'dust', 'nugget', 'block'])
+  hideMetal('thermal', 'electrum', ['ingot', 'ore', 'dust', 'nugget', 'block'])
+  
   //#endregion
   //#region hideStuff
   hideStuff('thermal', 'dust', ['iron', 'gold'])
