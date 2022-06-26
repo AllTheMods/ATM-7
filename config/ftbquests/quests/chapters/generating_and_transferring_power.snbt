@@ -159,7 +159,7 @@
 		}
 		{
 			x: -8.0d
-			y: 1.0d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "Mekanism's Starter Power Solution"
 			description: [
@@ -208,7 +208,7 @@
 		}
 		{
 			x: -9.0d
-			y: 1.0d
+			y: 1.5d
 			shape: "diamond"
 			description: [
 				"The RFTools Coal Generator is one of the easiest to make."
@@ -230,7 +230,7 @@
 		}
 		{
 			x: -8.5d
-			y: 1.5d
+			y: 2.0d
 			shape: "diamond"
 			subtitle: "Industrial Foregoing's Basic Power"
 			description: [
@@ -334,7 +334,7 @@
 		{
 			title: "&9Using Mekanism:&a Basic Universal Cable"
 			x: -1.0d
-			y: 2.0d
+			y: 1.0d
 			shape: "diamond"
 			subtitle: "Mekanism's Energy Transfer Pipe"
 			dependencies: ["1F81EA5E45424308"]
@@ -371,7 +371,7 @@
 		{
 			title: "&9Wireless Transfer: &6Quantum Entangloporter"
 			x: -1.0d
-			y: 1.0d
+			y: 2.0d
 			shape: "diamond"
 			subtitle: "Also works for items, gases, liquids, and heat."
 			description: [
@@ -471,6 +471,11 @@
 				id: "3121BA0C9976AFCD"
 				type: "checkmark"
 				title: "Storing Power"
+			}]
+			rewards: [{
+				id: "477F18566EC6FB2A"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
