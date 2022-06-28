@@ -567,6 +567,8 @@
 				"Gives you a list of biomes you can search for."
 				""
 				"Select a biome, then hit \"Search.\" You'll see some info in the top left, and the compass will point in the direction of the biome."
+				""
+				"Pro Tip: Search for \"Peaks\" to find the biomes that AllTheModium ore spawns in. They can also spawn in Meadows!"
 			]
 			id: "70B6C9409AE69284"
 			tasks: [{
