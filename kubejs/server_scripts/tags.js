@@ -50,5 +50,7 @@ onEvent('tags.blocks', e => {
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
 })
 onEvent('tags.entity_types', e => {
-  e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic',])
+  e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
+  e.add('pneumaticcraft:vacuum_trap_blacklisted', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
+  e.add('industrialforegoing:mob_duplicator_blacklist',[/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
 })
