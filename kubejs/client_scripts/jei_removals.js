@@ -37,6 +37,7 @@ onEvent('jei.hide.items', e => {
     'moreminecarts:chunkrodite',
     'moreminecarts:chunkrodite_block',
     'ftbic:silicon',
+    'twilightforest:uncrafting_table',
   ])
 
   ftbicMetals.forEach(metal => {
