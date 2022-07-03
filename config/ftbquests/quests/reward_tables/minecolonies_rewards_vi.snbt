@@ -1,0 +1,19 @@
+{
+	id: "56D4BAD46595A82C"
+	order_index: 12
+	title: "Minecolonies Food Seeds Rewards"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "thermal:corn_seeds" }
+		{ item: "farmersdelight:cabbage_seeds" }
+		{ item: "thermal:eggplant_seeds" }
+		{ item: "thermal:green_bean_seeds" }
+		{ item: "thermal:tomato_seeds" }
+		{ item: "thermal:onion_seeds" }
+		{ item: "thermal:rice_seeds" }
+		{ item: "croptopia:apple_sapling" }
+		{ item: "croptopia:orange_sapling" }
+	]
+}

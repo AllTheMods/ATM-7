@@ -1,0 +1,28 @@
+{
+	id: "23A6571ABEBA4221"
+	order_index: 13
+	title: "Minecolonies Scroll Rewards"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "minecolonies:scroll_highlight", weight: 8 }
+		{ item: "minecolonies:scroll_guard_help", weight: 4 }
+		{ item: "minecolonies:scroll_buff", weight: 4 }
+		{
+			item: {
+				id: "minecolonies:scroll_tp"
+				Count: 1b
+				tag: { }
+			}
+			weight: 3
+		}
+		{
+			item: {
+				id: "minecolonies:scroll_area_tp"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	id: "2A9DD2DDBC9D2947"
+	order_index: 9
+	title: "Minecolonies Item Rewards"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:white_wool", count: 8 }
+		{ item: "minecraft:leather", count: 8 }
+		{ item: "minecraft:feather", count: 16 }
+		{ item: "minecraft:cobweb", count: 16 }
+		{ item: "minecraft:sugar_cane", count: 16 }
+		{ item: "minecraft:redstone", count: 4 }
+		{ item: "minecraft:coal", count: 32 }
+		{ item: "minecraft:bone", count: 16 }
+		{ item: "minecraft:iron_ingot", count: 8 }
+	]
+}
