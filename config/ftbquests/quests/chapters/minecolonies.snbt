@@ -1,0 +1,3159 @@
+{
+	id: "4F4B5906D4C0C6AF"
+	group: "1CF541D7529DA9CF"
+	order_index: 2
+	filename: "minecolonies"
+	title: "MineColonies"
+	icon: "structurize:sceptergold"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -1.5d
+		y: -6.5d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "minecolonies:textures/items/sceptergold.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Founding a Colony"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "You may now cannibalize your supply building for materials."
+			description: ["Once you place your supply ship or supply camp, check the racks or chests in your placed structure and retrieve your build tool and town hall block. Use the build tool to select your town hall's style, positioning, and orientation. You can preview what each style will look like at each level, up to level 5, but you will need to position the building using the level 1 preview."]
+			dependencies: [
+				"13E7371EAAA91B6D"
+				"78E8447A8EC47160"
+			]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "6C2F3B4147475B25"
+			tasks: [
+				{
+					id: "59D8531448B5F7AA"
+					type: "item"
+					item: "structurize:sceptergold"
+				}
+				{
+					id: "66172C329FD562EA"
+					type: "item"
+					item: "minecolonies:blockhuttownhall"
+				}
+			]
+			rewards: [{
+				id: "064BCBCF8DACAA0D"
+				type: "choice"
+				table_id: 6881821841574066692L
+			}]
+		}
+		{
+			title: "Supply Camp"
+			x: -2.0d
+			y: -3.0d
+			shape: "circle"
+			subtitle: "When placing your Supply building, you can use the upper-rightmost option to switch the style of building. Some styles are larger than others, and require more room. You can press escape with the preview visible to unlock your position and walk around to preview what it will look like from another angle. Use the central button to flip the building horizontally."
+			hide_dependency_lines: false
+			dependencies: ["45373911AB259174"]
+			hide: false
+			id: "13E7371EAAA91B6D"
+			tasks: [{
+				id: "4337F2424E4944E6"
+				type: "item"
+				item: "minecolonies:supplycampdeployer"
+			}]
+		}
+		{
+			title: "Supply Ship"
+			x: -1.0d
+			y: -3.0d
+			subtitle: "When placing your Supply building, you can use the upper-rightmost option to switch the style of building. Some styles are larger than others, and require more room. You can press escape with the preview visible to unlock your position and walk around to preview what it will look like from another angle. Use the central button to flip the building horizontally."
+			dependencies: ["45373911AB259174"]
+			id: "78E8447A8EC47160"
+			tasks: [{
+				id: "3A5C4487653222F2"
+				type: "item"
+				item: "minecolonies:supplychestdeployer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "No, seriously."
+			description: [
+				"Once you place a Supply Camp or Supply Ship, you will no longer be able to place another Supply building of either kind in this world. Choose carefully!"
+				""
+				""
+				"There is one exception to this, however - if you loot a supply chest or supply ship from a lootr chest and it has the title \"SupplyShip Chest - Free\" or \"SupplyCamp Chest - Free,\" you can place these once you have placed your original supply building."
+			]
+			id: "45373911AB259174"
+			tasks: [{
+				id: "03296DF93D85FD1C"
+				type: "checkmark"
+				title: "An Important Note"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			description: ["A tavern will also attract visitors to your colony, who you can gift resources to entice them to join your colony."]
+			dependencies: ["1989581BD3569845"]
+			hide: true
+			id: "62482652EF022256"
+			tasks: [{
+				id: "01EFF81294A766FC"
+				type: "item"
+				item: "minecolonies:blockhuttavern"
+			}]
+			rewards: [
+				{
+					id: "2418F99649A49D8C"
+					type: "random"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "7D6C97B57D9DB1AB"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			description: ["An angler will produce food for your colony in the form of raw fish. They will also keep any other items they fish up."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "1A909E0483EB4B14"
+			tasks: [{
+				id: "4A94517C772A352E"
+				type: "item"
+				item: "minecolonies:blockhutfisherman"
+			}]
+			rewards: [{
+				id: "39E6A4280388AA78"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.5d
+			description: ["A farmer will tend any assigned fields, and replant the crops after harvesting. You will need to create and assign fields before the farmer will work."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "000C3DC6DBDA6C40"
+			tasks: [{
+				id: "1E6FDF1762F0C10B"
+				type: "item"
+				item: "minecolonies:blockhutfarmer"
+			}]
+			rewards: [{
+				id: "38FDCE55BB5C6023"
+				type: "random"
+				table_id: 4543195676608404141L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 9.5d
+			description: ["You can increase the size of a field by clicking the arrow buttons on the field interface when placing the field. You can decrease the size by right clicking the same buttons."]
+			dependencies: ["0D0E8E07AE8842D6"]
+			hide: true
+			id: "1B9CCE08AD13B327"
+			tasks: [{
+				id: "220C5170DEF1AF05"
+				type: "item"
+				item: "minecolonies:blockhutfield"
+			}]
+			rewards: [
+				{
+					id: "62428466B51635F1"
+					type: "random"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "19BE16C7CA8A5822"
+					type: "random"
+					table_id: 4543195676608404141L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 8.5d
+			description: ["The shepherd will breed, shear, and butcher sheep. Shearing can be disabled if necessary. The number of sheep kept alive is limited to twice the building's level. You will need to provide the initial breeding pair of sheep; the shepherd will not seek out and catch them."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "10B26F43560F72F8"
+			tasks: [{
+				id: "2F44BCDE516520A3"
+				type: "item"
+				item: "minecolonies:blockhutshepherd"
+			}]
+			rewards: [{
+				id: "10B158BBB70E4FBD"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.5d
+			description: ["The swineherd will breed and butcher pigs. The number of pigs kept alive is limited to twice the building's level. You will need to provide the initial breeding pair of pigs; the swineherd will not seek out and catch them."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "556981C91FD67863"
+			tasks: [{
+				id: "46B977048B56489C"
+				type: "item"
+				item: "minecolonies:blockhutswineherder"
+			}]
+			rewards: [{
+				id: "5A0202A896C834D3"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			description: ["The cowhand will breed and butcher cows for meat and leather. Optionally, they will also milk cows. The number of cows kept alive is limited to twice the building's level. You will need to provide the initial breeding pair of cows; the cowhand will not seek them out and catch them."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "2F2062EC5BC5158F"
+			tasks: [{
+				id: "4FBFDCA3FAA6A2DE"
+				type: "item"
+				item: "minecolonies:blockhutcowboy"
+			}]
+			rewards: [{
+				id: "2F4434D39E566732"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["A chicken farmer will raise chickens, collect eggs, and butcher chickens for food. The maximum number of chickens kept alive is limited to twice the building level. You will need to provide the initial chickens; the farmer will not catch the chickens themselves."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "6286957C43C9A62A"
+			tasks: [{
+				id: "41CDB05A320609EA"
+				type: "item"
+				item: "minecolonies:blockhutchickenherder"
+			}]
+			rewards: [{
+				id: "3C73239B9370AE5F"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			description: ["The rabbit herder will breed and butcher rabbits. The number of rabbits kept alive is limited to twice the building's level. You will need to provide the initial breeding pair of rabbits; the worker will not seek out and catch them."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "5C90770F6832FBAC"
+			tasks: [{
+				id: "3A15D1E1A60BDEBB"
+				type: "item"
+				item: "minecolonies:blockhutrabbithutch"
+			}]
+			rewards: [{
+				id: "659E5E9C87A056C5"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.5d
+			description: ["Foresters will gather any trees in a radius of approximately 150 blocks. Trees which are part of a schematic or are placed atop cobblestone will not be harvested."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "6E25BF48B8A630BB"
+			tasks: [{
+				id: "3DD39DEA463E816A"
+				type: "item"
+				item: "minecolonies:blockhutlumberjack"
+			}]
+			rewards: [{
+				id: "1240760A90F2E21F"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.0d
+			description: ["The baker is capable of creating bread dough, cookie dough, cake batter, and pumpkin pie. They will only do so if requested to by the cook, the postbox, or the minimum stock level in the warehouse network."]
+			dependencies: ["1B9CCE08AD13B327"]
+			hide: true
+			id: "176EE03129262B4D"
+			tasks: [{
+				id: "2851104DE215D75D"
+				type: "item"
+				item: "minecolonies:blockhutbaker"
+			}]
+			rewards: [{
+				id: "49E0C3DC129B6589"
+				type: "item"
+				item: "minecraft:bread"
+				count: 8
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			description: ["The restaurant is where the cook will cook food, as long as they have raw ingredients and fuel. Hungry citizens will come to the restaurant when they are hungry and feed themselves, saving you from having to feed them manually."]
+			dependencies: [
+				"1B9CCE08AD13B327"
+				"10B26F43560F72F8"
+				"556981C91FD67863"
+				"5C90770F6832FBAC"
+				"2F2062EC5BC5158F"
+				"6286957C43C9A62A"
+				"1A909E0483EB4B14"
+			]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "0BF6F813790F5FED"
+			tasks: [{
+				id: "72C92068F6E643CB"
+				type: "item"
+				item: "minecolonies:blockhutcook"
+			}]
+			rewards: [
+				{
+					id: "0FFA256564171A5C"
+					type: "item"
+					item: "minecraft:porkchop"
+					count: 16
+				}
+				{
+					id: "221C48FA3D801970"
+					type: "item"
+					item: "minecraft:beef"
+					count: 16
+				}
+				{
+					id: "3675FEE7FBB3A5A4"
+					type: "item"
+					item: "minecraft:chicken"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 4.0d
+			description: ["Miners will dig a mineshaft down to the maximum depth their building's upgrade level supports, before mining at the Y level specified in the fifth page of their building interface."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "7C7DDCADF435559D"
+			tasks: [{
+				id: "1ED2DFB94450AC12"
+				type: "item"
+				item: "minecolonies:blockhutminer"
+			}]
+			rewards: [{
+				id: "15D9729D277DEFD7"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			description: ["A quarry is a 1x1 or 2x2 chunk pit where a quarrier will dig blocks to be used as raw materials."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "1E88D62C6F2BDA6D"
+			tasks: [{
+				id: "376285698F2DE76B"
+				type: "item"
+				item: "minecolonies:simplequarry"
+			}]
+			rewards: [{
+				id: "73FA53AA7827D41B"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -8.0d
+			y: 9.5d
+			description: ["Quarriers are limited by the quality of their pickaxe, which is in turn limited by the level of their mining hut."]
+			dependencies: [
+				"2122676384AB9089"
+				"1E88D62C6F2BDA6D"
+			]
+			hide: true
+			id: "5B86313FD336C60F"
+			tasks: [{
+				id: "3A7AD38D921DDBA2"
+				type: "item"
+				item: "minecolonies:mediumquarry"
+			}]
+			rewards: [
+				{
+					id: "0BA4F59354B7E973"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5182648F66A8D03A"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 5.5d
+			description: ["Blacksmiths are capable of crafting vanilla tools, armor, and weapons, as well as shields and chainmail. They must be taught these recipes before they will craft them."]
+			dependencies: ["102805C659BDC0F7"]
+			hide: true
+			id: "2D27EAD693B3BAB7"
+			tasks: [{
+				id: "02D68CE353D0905E"
+				type: "item"
+				item: "minecolonies:blockhutblacksmith"
+			}]
+			rewards: [{
+				id: "58F6E1E1E053C40C"
+				type: "choice"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			description: ["Each house can provide housing for 1 citizen per upgrade level. If breeding is not turned off at the town hall, two unrelated adults of different genders assigned to the same house will eventually have a child, as long as there is room in the colony for that child."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "45DADEB0AB60588A"
+			tasks: [{
+				id: "62E03A8561DD1D32"
+				type: "item"
+				item: "minecolonies:blockhutcitizen"
+			}]
+			rewards: [{
+				id: "115FD2E4DFC900F1"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			description: ["A courier can fulfill your colonist's requests by delivering items from their inventory to the colonists requesting them."]
+			dependencies: [
+				"67AA0A8D3B71B282"
+				"78317E82EC239B88"
+			]
+			hide: true
+			id: "6D0FE4009E79D52F"
+			tasks: [{
+				id: "500410D16C69EED2"
+				type: "item"
+				item: "minecolonies:blockhutdeliveryman"
+			}]
+			rewards: [{
+				id: "0AA5B4109B2C0A5D"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			description: ["Deposit items in a stash and a courier will store them in your warehouse network."]
+			dependencies: ["2171949C673AF4C2"]
+			hide: true
+			id: "239539D416FA5E04"
+			tasks: [{
+				id: "58224E71AC855612"
+				type: "item"
+				item: "minecolonies:blockstash"
+			}]
+			rewards: [{
+				id: "7FA96F3DC4B0D9B0"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			description: [
+				"Use postboxes to place requests for items stored in your warehouse network. If the items are not available, as long as the ingredients are in stock and you have a colonist capable of crafting the item(s), the colonist will request the ingredients by courier in order to craft the items, which will then be delivered to the postbox."
+				""
+				"The \"deliver what's available\" option will request the courier carry out a partial delivery if the full quantity is not in stock and cannot be crafted from the available ingredients."
+			]
+			dependencies: ["2171949C673AF4C2"]
+			hide: true
+			id: "2C100800E089B5A4"
+			tasks: [{
+				id: "6EBE77326222BFF7"
+				type: "item"
+				item: "minecolonies:blockpostbox"
+			}]
+			rewards: [{
+				id: "0744C92263B6A667"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			description: ["Each level of warehouse supports 2 couriers. Your couriers will not use the inventory accessed through the warehouse block itself, they will use the racks inside the warehouse. You can set the minimum stock to maintain for specific items on the third tab of the warehouse interface. If a colonist requests an item that would fall below the minimum stock level, the request will be fulfilled but the couriers will request additional stock of that item. It can be fulfilled by a player, or, if the colony is capable of producing the item in question, the worker in question will use raw materials to craft the item(s) before a courier picks them up and stores them in the warehouse."]
+			dependencies: ["32C26D05CB144045"]
+			hide: true
+			id: "133EE6FA05DD1F44"
+			tasks: [{
+				id: "45F007F8E40E9012"
+				type: "item"
+				item: "minecolonies:blockhutwarehouse"
+			}]
+			rewards: [{
+				id: "2CCC1DB6D4002122"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -6.0d
+			y: 10.0d
+			description: ["Once your population reaches 7 colonists, your colony will be raided by biome-appropriate enemy units every 2-4 minecraft weeks."]
+			dependencies: ["6DAC1C2E42A70FB3"]
+			hide: true
+			id: "1353FE61F1EC1804"
+			tasks: [{
+				id: "6E6B8B80DEBF687E"
+				type: "item"
+				item: "minecolonies:blockhutguardtower"
+			}]
+			rewards: [{
+				id: "38F87EF57F3EC832"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 8.5d
+			description: ["Once taught the appropriate recipes, stonemasons can craft recipes made entirely from vanilla stones, quartz, purpur, nether bricks, prismarine, sandstone, blackstone, or ores. They cannot use ingots or redstone items."]
+			dependencies: ["2AC47594A6B140B2"]
+			hide: true
+			id: "6CCDCF2FB4F821A2"
+			tasks: [{
+				id: "114BDBDE2ED6432B"
+				type: "item"
+				item: "minecolonies:blockhutstonemason"
+			}]
+			rewards: [{
+				id: "36147FA0C6783303"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 2.5d
+			description: ["Carpenters can be taught most recipes which use at least 75% wood as long as the recipe does not use ingots, stone, redstone, or string."]
+			dependencies: ["02CCEA8ABC4E6D03"]
+			hide: true
+			id: "1879C406D5E182A8"
+			tasks: [{
+				id: "6BD699BC256957E3"
+				type: "item"
+				item: "minecolonies:blockhutsawmill"
+			}]
+			rewards: [{
+				id: "533A3486F70AD9C7"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 12.0d
+			description: ["Succesfully repelling a raid will increase the difficulty of future raids."]
+			dependencies: ["7673E9B7CED9BE4A"]
+			hide: true
+			id: "13D8C5801148048D"
+			tasks: [{
+				id: "6BD078EB296414B0"
+				type: "item"
+				item: "minecolonies:blockhutbarracks"
+			}]
+			rewards: [{
+				id: "124EF95E14008F38"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -8.0d
+			y: 5.5d
+			description: ["Smelters are capable of smelting ore many times faster than a player, once their athletics level is sufficiently high."]
+			dependencies: ["7C7DDCADF435559D"]
+			hide: true
+			id: "1D778C13E7B54A95"
+			tasks: [{
+				id: "2083780B5A788206"
+				type: "item"
+				item: "minecolonies:blockhutsmeltery"
+			}]
+			rewards: [{
+				id: "76AF4AE36E371EFC"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 10.5d
+			description: ["The composter will use organic matter such as leaves to produce compost, which functions like bonemeal. While farmers can work without compost or bonemeal, and can be instructed to not use fertilizer while farming, florists will only grow flowers using compost and cannot work without it."]
+			dependencies: ["05EAFD907D414E79"]
+			hide: true
+			id: "0348CC0C490FB49B"
+			tasks: [{
+				id: "10AD4F161B5970D4"
+				type: "item"
+				item: "minecolonies:blockhutcomposter"
+			}]
+			rewards: [
+				{
+					id: "225547661A53DB4E"
+					type: "item"
+					item: "minecraft:oak_leaves"
+					count: 8
+				}
+				{
+					id: "267C8F504FA0C63E"
+					type: "random"
+					table_id: 3070842370730568007L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 14.0d
+			description: ["Assigning colonists to the library will increase their intelligence stat."]
+			dependencies: ["674C0666C6595854"]
+			hide: true
+			id: "7CA7008F33637126"
+			tasks: [{
+				id: "4F7EEBA730CFF828"
+				type: "item"
+				item: "minecolonies:blockhutlibrary"
+			}]
+			rewards: [{
+				id: "10C47EA359710237"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 18.0d
+			description: ["Archers do not require arrows to use their bows, but will consume arrows in exchange for increased damage if the corresponding research has been completed."]
+			dependencies: [
+				"674C0666C6595854"
+				"05F76D10AEC3497F"
+			]
+			hide: true
+			id: "0767E630D4EC4BA8"
+			tasks: [{
+				id: "2169794413987360"
+				type: "item"
+				item: "minecolonies:blockhutarchery"
+			}]
+			rewards: [
+				{
+					id: "7ED42EC404F1F3B4"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "46EC5F875DEFB46C"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 16.0d
+			description: ["The combat academy allows the training of knights. They will practice fighting against dummies to gain experience. Knights have higher health and damage than untrained guards."]
+			dependencies: [
+				"674C0666C6595854"
+				"46F0E795EDB221F5"
+			]
+			hide: true
+			id: "505BCBC584D99B61"
+			tasks: [{
+				id: "3DE85C26ADF0E78F"
+				type: "item"
+				item: "minecolonies:blockhutcombatacademy"
+			}]
+			rewards: [
+				{
+					id: "5B4D6614FBB286D2"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "6F51E688FB5488E5"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 7.5d
+			description: ["the stone smelter will smelt cobblestone into stone, stone bricks into cracked stone bricks, clay balls into bricks, clay blocks into terracotta, terracotta into glazed terracotta, all types of stone into all types of smooth stone, and logs into charcoal. They can also pop chorus fruits. They will need to be taught the recipe before they craft any item."]
+			dependencies: ["1E88D62C6F2BDA6D"]
+			hide: true
+			id: "2AC47594A6B140B2"
+			tasks: [{
+				id: "0A01AABCCA3A489E"
+				type: "item"
+				item: "minecolonies:blockhutstonesmeltery"
+			}]
+			rewards: [{
+				id: "42C819B84621D419"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 10.5d
+			description: ["The crusher is capable of crushing bone into bonemeal, cobblestone into gravel (and sometimes flint), clay into clay balls, gravel into sand, and sand into clay."]
+			dependencies: ["5B86313FD336C60F"]
+			hide: true
+			id: "50313B0C3E1237F0"
+			tasks: [{
+				id: "0A96058752E4F8AC"
+				type: "item"
+				item: "minecolonies:blockhutcrusher"
+			}]
+			rewards: [{
+				id: "5617378D883ED704"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -11.0d
+			y: 12.5d
+			description: ["The sifter will sift through dirt, gravel, sand, or soul sand for items. The sifted block is destroyed."]
+			dependencies: ["105A42795C768B80"]
+			hide: true
+			id: "5531EB9B56BE76C7"
+			tasks: [{
+				id: "571325975811E688"
+				type: "item"
+				item: "minecolonies:blockhutsifter"
+			}]
+			rewards: [{
+				id: "1C66460D0590A8EF"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 13.5d
+			description: ["Florists' success chance when harvesting grown flowers is dictated by their dexterity stat. The rate at which they grow flowers is dictated by their agility."]
+			dependencies: [
+				"3D26A543B2CFC994"
+				"06BF749A65CB3196"
+			]
+			hide: true
+			id: "7B8EA0C116F824CA"
+			tasks: [{
+				id: "1D1A516B361D5E9D"
+				type: "item"
+				item: "minecolonies:blockhutflorist"
+			}]
+			rewards: [
+				{
+					id: "6BD77F5A65DA8A4D"
+					type: "random"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "6CB6D1E87A208F31"
+					type: "random"
+					table_id: 2568836409842090529L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 18.0d
+			description: ["The enchanter will gather XP from other workers to create enchanted books. They can also craft magical scrolls, which have a low chance of failing, destroying the scroll and producing no effect."]
+			dependencies: ["674C0666C6595854"]
+			hide: true
+			id: "553EBEFF38753D85"
+			tasks: [{
+				id: "13BDF96E700C8146"
+				type: "item"
+				item: "minecolonies:blockhutenchanter"
+			}]
+			rewards: [{
+				id: "34C7496AF36E2695"
+				type: "choice"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 16.0d
+			description: ["The university allows you to research new buildings as well as buffs affecting the colony. Levels 1-5 in each research tree require the university to be upgraded to the corresponding level. A level 5 university allows you to research a single level 6 upgrade per research tree. These upgrades are mutually exclusive and must be cancelled before another level 6 research in the same tree can be chosen. Some researches require the total levels of another type of building to reach a certain threshold. This can be reached with multiple lower level buildings or a single high level building."]
+			dependencies: ["08998B5D0F508F73"]
+			hide: true
+			id: "674C0666C6595854"
+			tasks: [{
+				id: "212C64C75E7E64F0"
+				type: "item"
+				item: "minecolonies:blockhutuniversity"
+			}]
+			rewards: [
+				{
+					id: "36C4E548B18244E4"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "432AF0618CB22A10"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "3F89A1E8CC3BB6D6"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 10.0d
+			description: [
+				"Your citizens will eventually get sick and require curing. The chance of getting sick is increased if the citizen in question is homeless."
+				""
+				"Citizens will not work while sick, and will spread infection to other citizens if left untreated."
+			]
+			dependencies: ["08998B5D0F508F73"]
+			hide: true
+			id: "20A3C67033045352"
+			tasks: [{
+				id: "34F0A11CAD787569"
+				type: "item"
+				item: "minecolonies:blockhuthospital"
+			}]
+			rewards: [
+				{
+					id: "07F4AC6D5E390F78"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "028EB79669A333E1"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "152EB99284CB0C31"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "37636EF6B2198F13"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 12.0d
+			description: ["Child colonists will attend school to increase their intelligence stat."]
+			dependencies: ["674C0666C6595854"]
+			hide: true
+			id: "325733A5E6440D88"
+			tasks: [{
+				id: "00EF96E21A9A2195"
+				type: "item"
+				item: "minecolonies:blockhutschool"
+			}]
+			rewards: [{
+				id: "214925D41F73DB9B"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -10.0d
+			y: 6.5d
+			description: ["The glassblower can make glass blocks (or panes, if taught the recipe) many times faster than a player can, so long as their focus stat is sufficiently high."]
+			dependencies: ["1CD690064490E079"]
+			hide: true
+			id: "390C6C6709661D8B"
+			tasks: [{
+				id: "707AB30FF16165BF"
+				type: "item"
+				item: "minecolonies:blockhutglassblower"
+			}]
+			rewards: [{
+				id: "5AC2F231407054B9"
+				type: "item"
+				item: "minecraft:sand"
+				count: 64
+			}]
+		}
+		{
+			x: 6.5d
+			y: 15.5d
+			description: ["Dyers only have knowledge of the recipes for green dye and red sand by default. However, once taught the appropriate recipes, they can (depending on their dexterity level) operate furnaces at a much faster rate than players are able to."]
+			dependencies: ["31B8CB4215091C40"]
+			hide: true
+			id: "5CBB195A7A035D9F"
+			tasks: [{
+				id: "1F9903F190C59FD7"
+				type: "item"
+				item: "minecolonies:blockhutdyer"
+			}]
+			rewards: [
+				{
+					id: "76CD25BE254B0994"
+					type: "item"
+					item: "minecraft:white_dye"
+				}
+				{
+					id: "3C92549A881861A4"
+					type: "item"
+					item: "minecraft:orange_dye"
+				}
+				{
+					id: "75975CEBA8CDEFD3"
+					type: "item"
+					item: "minecraft:magenta_dye"
+				}
+				{
+					id: "49774BCD26379280"
+					type: "item"
+					item: "minecraft:light_blue_dye"
+				}
+				{
+					id: "7B3641E669DDF613"
+					type: "item"
+					item: "minecraft:yellow_dye"
+				}
+				{
+					id: "1AAA4BE3B7A212B8"
+					type: "item"
+					item: "minecraft:lime_dye"
+				}
+				{
+					id: "6D0FA056B246C2F0"
+					type: "item"
+					item: "minecraft:pink_dye"
+				}
+				{
+					id: "30B5D01CADCBC59C"
+					type: "item"
+					item: "minecraft:gray_dye"
+				}
+				{
+					id: "33BD4D1545AD77AF"
+					type: "item"
+					item: "minecraft:light_gray_dye"
+				}
+				{
+					id: "0FBB2A92A346ABD6"
+					type: "item"
+					item: "minecraft:cyan_dye"
+				}
+				{
+					id: "1E6F6ADF8A834890"
+					type: "item"
+					item: "minecraft:purple_dye"
+				}
+				{
+					id: "0EE1C85E9EB24971"
+					type: "item"
+					item: "minecraft:blue_dye"
+				}
+				{
+					id: "79EE02CD5BA37A00"
+					type: "item"
+					item: "minecraft:brown_dye"
+				}
+				{
+					id: "5C896840FC9BD89C"
+					type: "item"
+					item: "minecraft:green_dye"
+				}
+				{
+					id: "7D51023D6B775CA0"
+					type: "item"
+					item: "minecraft:red_dye"
+				}
+				{
+					id: "5CDA9624F6A37E69"
+					type: "item"
+					item: "minecraft:black_dye"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 1.5d
+			description: ["The fletcher is responsible for crafting not only arrows, but other items which use string or wool."]
+			dependencies: ["4C41B81DFBCE772A"]
+			hide: true
+			id: "553E59321F1BE7C4"
+			tasks: [{
+				id: "6C7097949591C9D1"
+				type: "item"
+				item: "minecolonies:blockhutfletcher"
+			}]
+			rewards: [
+				{
+					id: "2AC2BF18DB69575A"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "78273BD0A5E71962"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 18.0d
+			description: [
+				"The mechanic is capable of crafting multi-block pistons as well as gates for raid defense."
+				""
+				"The mechanic is also responsible for all other \"advanced\" crafts unavailable to other professions, such as those requiring redstone or blaze rods."
+			]
+			dependencies: ["674C0666C6595854"]
+			hide: true
+			id: "307A449954A03570"
+			tasks: [{
+				id: "1BD043A9CBCE6D6C"
+				type: "item"
+				item: "minecolonies:blockhutmechanic"
+			}]
+			rewards: [{
+				id: "54810DDF557564E7"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 64
+			}]
+		}
+		{
+			x: 5.0d
+			y: 10.5d
+			description: ["Plantations can be used to grow bamboo, sugar, or cacti. Plantation workers can be taught recipes which use these items as ingredients, including sugar, paper, and books."]
+			dependencies: ["1B9CCE08AD13B327"]
+			hide: true
+			id: "7E95FD72666A3C51"
+			tasks: [{
+				id: "70F429BABD18C6FD"
+				type: "item"
+				item: "minecolonies:blockhutplantation"
+			}]
+			rewards: [
+				{
+					id: "4DD401DC02EA229D"
+					type: "item"
+					item: "minecraft:sugar_cane"
+					count: 16
+				}
+				{
+					id: "4179CAFD205A6325"
+					type: "item"
+					item: "minecraft:cactus"
+					count: 16
+				}
+				{
+					id: "6DBE55804FDB11F6"
+					type: "item"
+					item: "minecraft:bamboo"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -11.0d
+			y: 10.5d
+			description: ["The concrete mixer will craft concrete powder, mix it with water, and mine it out as blocks. They do not need to be taught any recipes."]
+			dependencies: ["105A42795C768B80"]
+			hide: true
+			id: "5ABC4744CAE43EA2"
+			tasks: [{
+				id: "4DF3D6D57E7B5DAB"
+				type: "item"
+				item: "minecolonies:blockhutconcretemixer"
+			}]
+			rewards: [{
+				id: "443BB5225FB213C2"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.5d
+			description: [
+				"The beekeeper will breed bees and collect honey, honeycomb, or both. This can be configured in the apiary interface. You can access the hive tool in the second page of the apiary interface; use the hive tool to set which hives the beekeeper should take care of."
+				""
+				"The list of flowers requested for breeding use by the beekeeper is located on the fourth page of the apiary interface. All flowers default to \"off,\" so you will need to enable one or more types of flower before they can be used for breeding bees."
+			]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "37684898BB438CE2"
+			tasks: [{
+				id: "395587B35724317C"
+				type: "item"
+				item: "minecolonies:blockhutbeekeeper"
+			}]
+			rewards: [{
+				id: "741AD56293165F5A"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 20.0d
+			description: ["The mystical site requires no worker and increases the happiness level of all colonists."]
+			dependencies: ["751CC8C84A22F906"]
+			hide: true
+			id: "71E3053267D4AD28"
+			tasks: [{
+				id: "3E4DFA1DBD9D3104"
+				type: "item"
+				item: "minecolonies:blockhutmysticalsite"
+			}]
+			rewards: [{
+				id: "7161724E5C9CF600"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 10.0d
+			description: [
+				"Your colonists will mourn (refuse to work) every time one of them dies. You can build a graveyard to honor their memory."
+				""
+				"The graveyard requires university research to unlock, and once unlocked serves as the final resting place for all deceased colonists."
+			]
+			dependencies: ["4233DC16390B8D9A"]
+			hide: true
+			id: "18EFA165A7A09C73"
+			tasks: [{
+				id: "397861F308D5CC5A"
+				type: "item"
+				item: "minecolonies:blockhutgraveyard"
+			}]
+			rewards: [
+				{
+					id: "327355DC87B06185"
+					type: "item"
+					item: "tombstone:dark_marble"
+					count: 16
+				}
+				{
+					id: "3F74326DD289C67E"
+					type: "item"
+					item: "tombstone:white_marble"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 4.0d
+			description: ["Nether miners are capable of producing different items depending on the upgrade level of their building. At max level, any vanilla resource which can be found in the nether, including ancient debris, can be brought back by the miner. They do not actually travel to the nether or mine blocks there, however they are still at risk of dying with each trip. Their survival chances are dependent on their adaptability stat. Their loot depends on their hut's upgrade level and their strength stat."]
+			dependencies: ["3220864781B67862"]
+			hide: true
+			id: "42F20D21207B75DB"
+			tasks: [{
+				id: "1F169FCF3D352351"
+				type: "item"
+				item: "minecolonies:blockhutnetherworker"
+			}]
+			rewards: [
+				{
+					id: "694ACC8016C0E578"
+					type: "item"
+					item: "minecraft:ladder"
+					count: 64
+				}
+				{
+					id: "4883505F7CEDCE95"
+					type: "item"
+					item: "minecraft:nether_gold_ore"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 18.0d
+			description: ["The alchemist is responsible for brewing potions, harvesting netherwart, and growing mistletoe."]
+			dependencies: ["674C0666C6595854"]
+			hide: true
+			id: "09B12660B2BAA94E"
+			tasks: [{
+				id: "54BD8A688345EB88"
+				type: "item"
+				item: "minecolonies:blockhutalchemist"
+			}]
+			rewards: [
+				{
+					id: "3ABAB36C90B77DB3"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "24AABFCE460691F9"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "1198D9EC35ECAA87"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 12.5d
+			description: ["Composted dirt is a necessary block in Florist buildings."]
+			dependencies: ["21A4EA03EC1C5D4D"]
+			hide: true
+			id: "3D26A543B2CFC994"
+			tasks: [{
+				id: "2E7DF8B5C23792A9"
+				type: "item"
+				item: "minecolonies:composted_dirt"
+			}]
+			rewards: [{
+				id: "4B1D53F1B835ED5F"
+				type: "item"
+				item: "minecolonies:composted_dirt"
+				count: 7
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["A clipboard works like a resource scroll, except colony-wide, and shows a list of items your colonists are in need of. If you click the exclamation mark, it will filter requests to only show those that are currently preventing your colonists from being able to work."]
+			dependencies: ["740F774C3F44D55C"]
+			hide: true
+			id: "67AA0A8D3B71B282"
+			tasks: [{
+				id: "446AFCDAE12E2707"
+				type: "item"
+				item: "minecolonies:clipboard"
+			}]
+			rewards: [{
+				id: "4FEB73AE51E945D8"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -8.5d
+			y: 13.0d
+			description: [
+				"Use a rallying banner to direct your guards to the location of enemies during raids. Guards will not seek out raiders on their own."
+				""
+				"First, assign the guards in a guard tower or barracks tower to the banner by shift-right clicking on the building's main block. Shift-right click again on any other block to summon the guards to that location. Repeat to dismiss the guards. You can also right click while holding the banner to view the towers bound to that banner and remove them if necessary. You can also rally or dismiss the guards from that interface."
+			]
+			dependencies: ["36D1803AF1004626"]
+			hide: true
+			id: "28666D1BC8E769E0"
+			tasks: [{
+				id: "023AC49039127649"
+				type: "item"
+				item: {
+					id: "minecolonies:banner_rally_guards"
+					Count: 1b
+					tag: {
+						isActive: 0b
+						guardtowerpositions: [ ]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "406C53B51BE49983"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "55D87C6E7C2A3EDD"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "042D20A8AA865100"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "382FA850C7C4A512"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["Once you've crafted a resource scroll, you need to bind it to your builder's hut before you can use it. Once you've done so, it will allow you to access the second page of the builder's hut interface remotely."]
+			dependencies: ["1A08BFD1FF2D4EE2"]
+			hide: true
+			id: "78317E82EC239B88"
+			tasks: [{
+				id: "3F97AFA24E2BF811"
+				type: "item"
+				item: {
+					id: "minecolonies:resourcescroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0566AD6537BEBFD2"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: 7.0d
+			y: 12.5d
+			description: ["By default, no items are permitted to be used by the composter to produce compost. You can turn item permissions on individually in the compost hut interface."]
+			dependencies: ["21A4EA03EC1C5D4D"]
+			hide: true
+			id: "06BF749A65CB3196"
+			tasks: [{
+				id: "354537BC793BB547"
+				type: "item"
+				item: "minecolonies:compost"
+			}]
+			rewards: [{
+				id: "6ADEA549C990C39D"
+				type: "item"
+				item: "minecolonies:compost"
+				count: 15
+			}]
+		}
+		{
+			title: "Getting Started With Building"
+			x: -1.5d
+			y: -0.5d
+			description: [
+				"Once you've placed your Town Hall, you should get your first batch of colonists. In order to construct any buildings (including the Town Hall you just placed!), you will need a builder. Craft a Builder's Hut item and place it using the Build Tool. Your builder will selfishly insist on building their own home before they will start working on anything else."
+				""
+				"Remember, you can press F3+G to turn on chunk borders. This is helpful if you're planning to have your entire colony aligned to a grid."
+			]
+			dependencies: ["6C2F3B4147475B25"]
+			hide: true
+			id: "1F578C1B095A25BA"
+			tasks: [
+				{
+					id: "58119367AADA080A"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+				{
+					id: "24DE16AD5AFC7002"
+					type: "advancement"
+					advancement: "minecolonies:minecolonies/place_townhall"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "6F422E2E41D4D2CB"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			description: [
+				"Interact with the object you placed down in the builder hut's construction zone to order your new builder to begin constructing the builder hut."
+				""
+				"You can use this block to select a different colonist as your colony's builder, if necessary. You can review any outstanding items the builder needs, as well as instructing them to upgrade their hut. Colonists' experience levels are softcapped by the level of their job building, and building levels are hardcapped to the level of your builder hut. You will need to upgrade your builder hut before any other buildings can be upgraded. Upgrading the level of job buildings also increases the quality of tools workers can use."
+			]
+			dependencies: ["1F578C1B095A25BA"]
+			hide: true
+			id: "602060F2E9A720FC"
+			tasks: [{
+				id: "300076866B58C990"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/start_builder"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1810B5C0D763DF70"
+				type: "random"
+				table_id: 3070842370730568007L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["Now that you've finished the builder's hut, you should probably construct a tavern. Taverns serve as housing for colonists without an allocated home, as long as there is space available at the tavern. Homeless colonists will work slower and are at greater risk of getting sick."]
+			dependencies: ["602060F2E9A720FC"]
+			hide: true
+			id: "1989581BD3569845"
+			tasks: [{
+				id: "0A7A85B42AE96523"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_builder"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "556E6831B0FB0B06"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			description: ["Right click your builder's hut to open the interface for this building. You can click the button on the bottom right hand side of the window to open the guide."]
+			dependencies: ["602060F2E9A720FC"]
+			hide: true
+			id: "740F774C3F44D55C"
+			tasks: [{
+				id: "23EA860A85BF65F5"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/check_out_guide"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7E2AD49F3002BD57"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["Your builder, like the rest of your colonists, is entirely reliant on you to bring them any items they need for their job. Once your colony is well-established, you can build a courier hut and a warehouse to automate request fulfillment. Until then, you can craft a resource scroll to view your builder's current needs while away from their hut."]
+			dependencies: ["602060F2E9A720FC"]
+			hide: true
+			id: "1A08BFD1FF2D4EE2"
+			tasks: [{
+				id: "3A9D087FC62121BE"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/fulfill_request"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "11A8241E54A1F378"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			dependencies: [
+				"239539D416FA5E04"
+				"2C100800E089B5A4"
+			]
+			hide: true
+			id: "6CD2BEB4112D9A6C"
+			tasks: [{
+				id: "50BB2BEC97D87021"
+				type: "advancement"
+				advancement: "minecolonies:production/post_and_stash"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5275D85A6F99A0D7"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "25A799DBCB1C0456"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			description: ["If you build a warehouse, your courier will retrieve requested items from the warehouse storage preferentially. Upgrading the warehouse will increase the amount of storage space available."]
+			dependencies: ["6D0FE4009E79D52F"]
+			hide: true
+			id: "32C26D05CB144045"
+			tasks: [{
+				id: "5EBE4D228763E3CD"
+				type: "advancement"
+				advancement: "minecolonies:production/build_delivery_person"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "22B0060224EC9F2F"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: ["Once your warehouse is upgraded to level 5, you can increase the amount of storage available in each rack by paying emerald blocks. If your delivery network is too slow for your liking, you can set down path blocks (smooth/polished blocks or brickwork) to allow your colonists to move around faster. If your colonists have trouble pathfinding, you can craft waypoints and use the build tool to ask your builder to place them. Used sparingly, waypoints can help your colonists navigate around or over obstacles more effectively. However, overuse of waypoints will result in no speed gain or decreased speed as colonists will insist on traveling via waypoints whenever their destination is more than a few dozen blocks away."]
+			dependencies: ["133EE6FA05DD1F44"]
+			hide: true
+			id: "2171949C673AF4C2"
+			tasks: [{
+				id: "31BBCE136D1F004D"
+				type: "advancement"
+				advancement: "minecolonies:production/build_warehouse"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "01CA10F75349E6AB"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			description: [
+				"You can teach your builder recipes, as long as they don't require a crafting table or station to produce. The number of recipes your builder can remember is limited by their level."
+				"Colonists will craft recipes they know automatically as long as they need the items in question and have the ingredients available in their personal inventory or a rack in their workplace."
+			]
+			dependencies: ["1989581BD3569845"]
+			hide: true
+			id: "1AF835E2EA93B89B"
+			tasks: [{
+				id: "6E3002E427D6F7EB"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/building_add_recipe_torch"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "05CA2E01B4FEC6B9"
+					type: "item"
+					item: "minecraft:torch"
+					count: 64
+				}
+				{
+					id: "3E08102EA6E5E646"
+					type: "item"
+					item: "torchmaster:megatorch"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: [
+				"Now that you've built a tavern, you should consider putting the rest of your colonists to work."
+				""
+				"It's up to you to determine whether the first step towards self-sufficiency for your colony is a source of food or a source of building materials. If you're concerned about population growth, the colony owner can use the town hall to toggle colonist breeding until you're ready to expand more aggressively."
+			]
+			dependencies: ["62482652EF022256"]
+			hide: true
+			id: "6AEFE83A459C4EBA"
+			tasks: [{
+				id: "1A2D5B4F2CBF8920"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_tavern"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "48B2B4E66B9F58C1"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "26121A6F73498DC3"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5802FC8C32F2A102"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 7.0d
+			dependencies: ["45DADEB0AB60588A"]
+			hide: true
+			id: "5E9EBEBE456AAD28"
+			tasks: [{
+				id: "40FC92387D9E48C2"
+				type: "advancement"
+				advancement: "tombstone:adventure/use_home"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6C3B8B8EFA40F273"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 7.0d
+			description: ["As your colony expands, you will need to increase the amount of housing available, as well as paying additional attention to colonist happiness and defense."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "6DAC1C2E42A70FB3"
+			tasks: [{
+				id: "1CDBD8CAEBA9E183"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/colony_population_5"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "3D13C55B07772931"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "06A1D3EB2CF97FC4"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			description: [
+				"Upgrading your town hall expands your colony's borders and unlocks new research branches at the university."
+				""
+				"Once the town hall reaches level 3, you can teleport to allied colonies."
+			]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "470D6BAD39CA8D13"
+			tasks: [{
+				id: "1B30A759765C2CEE"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_town_hall"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "37727D70F2DA7EC3"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "33D6A134080A649F"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "14A6752E02B76005"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			title: "Feeding Your Colonists"
+			x: 0.5d
+			y: 5.0d
+			description: ["Your colonists will work more slowly, and eventually stop working entirely, unless they are fed regularly. You can feed them just about anything you can eat yourself, but if you put cooked meat into their inventory they will eat it themselves. They don't have any nutritional requirements, so feel free to sustain them on a single mass-produced food source indefinitely."]
+			dependencies: ["6AEFE83A459C4EBA"]
+			hide: true
+			id: "316B283CF23844AE"
+			tasks: [{
+				id: "14C08C13421E160E"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_eat_food_first"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4B667A343386157E"
+					type: "random"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "200CAEDE96544187"
+					type: "random"
+					table_id: 5995782240531346593L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 2.5d
+			description: ["If a sapling is toggled \"on\" in the forester hut interface, the forester will replant any saplings of that type which they pick up from felled trees or which are given to them."]
+			dependencies: ["6E25BF48B8A630BB"]
+			hide: true
+			id: "02CCEA8ABC4E6D03"
+			tasks: [{
+				id: "7263A67D5680E258"
+				type: "advancement"
+				advancement: "minecolonies:production/build_lumberjack"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "142D8E634A58A8B1"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.5d
+			description: ["Feeding your colonists rotten meat is technically possible, though not advised."]
+			dependencies: ["316B283CF23844AE"]
+			hide: true
+			id: "4233DC16390B8D9A"
+			tasks: [{
+				id: "367D618C3A9B4E27"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_eat_food_rotten_flesh"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "48A16CA0947BFC93"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "249D2350E4CD3B89"
+					type: "random"
+					table_id: 5995782240531346593L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			description: ["Miners are capable of finding ores players are not; they have a small chance with each block mined of producing an additional ore-type item."]
+			dependencies: ["7C7DDCADF435559D"]
+			hide: true
+			id: "3788BBDB42572D2F"
+			tasks: [{
+				id: "6D7EB4320A67EE77"
+				type: "advancement"
+				advancement: "minecolonies:production/build_miner"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1F220D38A8A88796"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -6.5d
+			y: 11.0d
+			description: [
+				"The enemies which spawn by biome are as follows:"
+				""
+				"Nearby large body of water - Pirate"
+				"Taiga - Nordic"
+				"Desert - Mummy"
+				"Jungle - Amazon"
+				"Any other biome - Barbarian"
+				""
+				"If you are raided by pirates, you will need to board their ship and break any spawners before the raid will end. The ship will despawn after approximately 3 minecraft days."
+			]
+			dependencies: ["1353FE61F1EC1804"]
+			hide: true
+			id: "7673E9B7CED9BE4A"
+			tasks: [{
+				id: "7E571A10D54B555F"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_guard_tower"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5A614D1F69D1BE5B"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			description: ["A farmer can tend the same number of fields as the level of their farm."]
+			dependencies: ["000C3DC6DBDA6C40"]
+			hide: true
+			id: "0D0E8E07AE8842D6"
+			tasks: [{
+				id: "15DC0522DCE22A6B"
+				type: "advancement"
+				advancement: "minecolonies:production/build_farmer"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "16D65961BEFB7492"
+				type: "choice"
+				table_id: 4543195676608404141L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 12.0d
+			description: ["The undertaker is the only colonist who does not mourn the deaths of other citizens. When a citizen dies, a grave will be placed at their location. Before their grave decays, you can ransack it to retrieve any items that were in the colonist's inventory at the time of their passing. Once any items have been recovered, the undertaker will transport the colonist's corpse to the graveyard."]
+			dependencies: ["18EFA165A7A09C73"]
+			hide: true
+			id: "24870C4F30B82F03"
+			tasks: [{
+				id: "1369E934381DB269"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_bury"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "01DFF28499F17DA9"
+					type: "item"
+					item: "tombstone:dark_marble"
+					count: 32
+				}
+				{
+					id: "4024200A119F5CD0"
+					type: "item"
+					item: "tombstone:white_marble"
+					count: 32
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 14.0d
+			description: ["Once an undertaker retrieves a corpse, they will attempt to resurrect the dead colonist. The success rate is determined by your completed research, the undertaker's mana stat, the level of the graveyard, and the level of your mystical site."]
+			dependencies: ["24870C4F30B82F03"]
+			hide: true
+			id: "5ABFF5A2070DD6DF"
+			tasks: [{
+				id: "4D6E600D95BC52C0"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/citizen_resurrect"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "38991B7C658B057B"
+					type: "item"
+					item: "tombstone:white_marble"
+					count: 64
+				}
+				{
+					id: "62322C23410D93C6"
+					type: "item"
+					item: "tombstone:dark_marble"
+					count: 64
+				}
+				{
+					id: "00A7F2AF3A7DAD64"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "15514140363075A4"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 2.5d
+			description: ["Carpenters can also craft cactus planks, shingles, timber frames, compost barrels, and racks. They must be taught these recipes before they will craft them."]
+			dependencies: ["1879C406D5E182A8"]
+			hide: true
+			id: "4C41B81DFBCE772A"
+			tasks: [{
+				id: "7BEBEAD02D81A988"
+				type: "advancement"
+				advancement: "minecolonies:production/build_sawmill"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "170A4461F66DF86F"
+				type: "random"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -11.0d
+			y: 2.5d
+			description: [
+				"Colonists will craft any recipe they have been taught so long as it is appropriate to their profession and the item has been requested by another citizen or the warehouse system. If a colonist is not crafting an item, check that they know the recipe! Most professions start out able to remember 10 recipes at building level 1. This doubles with each upgrade, until they can hold 160 upgrades at building level 5. This can be further increased with university research."
+				""
+				"Each time a crafter crafts a recipe they have been taught, there is a small chance (based on their knowledge stat) that they will improve the recipe, decreasing the amount of materials necessary to craft it. This can happen to the same recipe repeatedly over time."
+			]
+			dependencies: ["4C41B81DFBCE772A"]
+			hide: true
+			id: "46E84ACBAFACDA33"
+			tasks: [{
+				id: "0B97579A564ECC19"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/building_add_recipe_door"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "015D97BEBC64335F"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -10.0d
+			y: 9.5d
+			description: ["Given the appropriate research and recipe, stonemasons can also craft end stone."]
+			dependencies: ["6CCDCF2FB4F821A2"]
+			hide: true
+			id: "55F08B24101D83A2"
+			tasks: [{
+				id: "3933C5FCB98266E4"
+				type: "advancement"
+				advancement: "minecolonies:production/build_stonemason"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "123F352A245D086D"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5E0E3FF466E6B20E"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 5.5d
+			description: ["Upgrading a smeltery increases the chance that they will produce additional ingots when smelting ore."]
+			dependencies: ["1D778C13E7B54A95"]
+			hide: true
+			id: "102805C659BDC0F7"
+			tasks: [{
+				id: "10689D32C0C4EE55"
+				type: "advancement"
+				advancement: "minecolonies:production/build_smeltery"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5B63D579871B1060"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "45103DDD1E73BF56"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "0AE20A115E497C10"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 7.5d
+			description: ["With a sufficiently high dexterity stat, stone smelters can smelt stone many times faster than a player."]
+			dependencies: ["2AC47594A6B140B2"]
+			hide: true
+			id: "11F061CAD3FDB32C"
+			tasks: [{
+				id: "2F880F50CA16558D"
+				type: "advancement"
+				advancement: "minecolonies:production/build_stone_smeltery"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2C295B5950525BC3"
+					type: "item"
+					item: "ironfurnaces:gold_furnace"
+				}
+				{
+					id: "2FFE542D568F19B2"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 8.0d
+			description: ["Upgrading the bakery allows additional breads to be crafted. These include sweet bread, which gives a speed buff and removes poison, milk bread, which removes all potion effects, golden bread, which heals 2 hearts instantly, and chorus bread, which has a higher saturation than normal bread and teleports you to the surface."]
+			dependencies: ["176EE03129262B4D"]
+			hide: true
+			id: "7B7590EDECBFB00D"
+			tasks: [{
+				id: "35477A6C12078C41"
+				type: "advancement"
+				advancement: "minecolonies:production/build_baker"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "31EC5ECB5F439A3E"
+				type: "item"
+				item: "croptopia:toast_sandwich"
+				count: 16
+			}]
+		}
+		{
+			x: -11.0d
+			y: 5.5d
+			description: ["At upgrade level 5, a blacksmith learns the netherite sword, tool, and armor recipes automatically."]
+			dependencies: ["2D27EAD693B3BAB7"]
+			hide: true
+			id: "45B266FB28403754"
+			tasks: [{
+				id: "3214643DBD7E4E3E"
+				type: "advancement"
+				advancement: "minecolonies:production/build_blacksmith"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "617C96972E1BCB79"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "16DAE418B9668825"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 13.0d
+			description: ["You can train additional types of guards by carrying out research at the university."]
+			dependencies: ["13D8C5801148048D"]
+			hide: true
+			id: "36D1803AF1004626"
+			tasks: [{
+				id: "370A76C1E135D9CD"
+				type: "advancement"
+				advancement: "minecolonies:military/build_barracks"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "393DA01227A1DF22"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "2AF1C983556B924A"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 15.0d
+			description: ["Specialty guard types include archers, knights, and druids. Druids are purely a support unit and do not have a way to defend themselves unless they are deployed alongside other guard types."]
+			dependencies: ["36D1803AF1004626"]
+			hide: true
+			id: "46F0E795EDB221F5"
+			tasks: [{
+				id: "0BD72A91538D20E1"
+				type: "advancement"
+				advancement: "minecolonies:military/build_barracks_tower"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "08E8FD6F3A4406EC"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "6CC1F7112B186CFE"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 17.0d
+			dependencies: ["505BCBC584D99B61"]
+			hide: true
+			id: "05F76D10AEC3497F"
+			tasks: [{
+				id: "351FC500F8F89EFA"
+				type: "advancement"
+				advancement: "minecolonies:military/build_combat_academy"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "0E2DFD64912A6E26"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "382B27D19325DD34"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "7F84EDBFD5668C64"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 11.5d
+			description: ["There is a chance that a composter will produce podzol instead of dirt when they have been instructed to produce dirt. This chance can be increased with university research."]
+			dependencies: ["0348CC0C490FB49B"]
+			hide: true
+			id: "21A4EA03EC1C5D4D"
+			tasks: [{
+				id: "7DB7BFF395C6CE0A"
+				type: "advancement"
+				advancement: "minecolonies:production/build_composter"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "01CBBEC2EB359981"
+					type: "item"
+					item: "minecraft:oak_leaves"
+					count: 64
+				}
+				{
+					id: "14D39DFC1ED7FF79"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 6.0d
+			description: ["An assistant cook can be hired at restaurant level 3."]
+			dependencies: ["0BF6F813790F5FED"]
+			hide: true
+			id: "383A2826B23B5163"
+			tasks: [{
+				id: "4C3A898C5397BB69"
+				type: "advancement"
+				advancement: "minecolonies:production/build_cook"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "340BB63F7026E3E2"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "41B809CFEC8CB2EE"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 11.5d
+			description: ["The output ratio of crushed items can be improved from 2:1 to 1:1 with university research. The crusher can process more items per day as the building is upgraded."]
+			dependencies: ["50313B0C3E1237F0"]
+			hide: true
+			id: "105A42795C768B80"
+			tasks: [{
+				id: "2463196DF79D7079"
+				type: "advancement"
+				advancement: "minecolonies:production/build_crusher"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "26924F60DC43E8E3"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			description: ["If a fisher is working in an Ocean-type biome, the loot table for their fishing actions is expanded to include treasure-type items. The building's level determines the maximum quality of fishing rod they can make use of, as well as how much additional loot they reel in (in addition to fish)."]
+			dependencies: ["1A909E0483EB4B14"]
+			hide: true
+			id: "3A9D08AC1F141ED5"
+			tasks: [{
+				id: "365AAA1310E76CA6"
+				type: "advancement"
+				advancement: "minecolonies:production/build_fisherman"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "46A0361E413AC5C4"
+				type: "item"
+				item: {
+					id: "aquaculture:gold_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 14.0d
+			description: ["The intelligence stat governs the rate at which all other stats increase and the rate at which experience is gained."]
+			dependencies: ["7CA7008F33637126"]
+			hide: true
+			id: "0B5119F2147184E6"
+			tasks: [{
+				id: "51B32D206D2E2965"
+				type: "advancement"
+				advancement: "minecolonies:production/build_library"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5EFF53DBD52FFFAD"
+				type: "choice"
+				table_id: 1365761949232019744L
+			}]
+		}
+		{
+			x: -12.0d
+			y: 13.5d
+			description: ["Upgrading the sifter's hut increases the number of blocks the sifter can process per day. It also upgrades the quality of mesh that can be used, if better meshes have been unlocked through other professions."]
+			dependencies: ["5531EB9B56BE76C7"]
+			hide: true
+			id: "55BC1832868C12A3"
+			tasks: [{
+				id: "29994C41173255AC"
+				type: "advancement"
+				advancement: "minecolonies:production/build_sifter"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "329E6B6A7D42D9D1"
+					type: "random"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "59CCBF5A1425F601"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 8.5d
+			description: ["Upgrading your builder's hut will allow them to upgrade other buildings. Upgrading buildings can unlock new buildings or research at the university, as well as increasing the capabilities of the workers employed at that building."]
+			dependencies: ["6DAC1C2E42A70FB3"]
+			hide: true
+			id: "2122676384AB9089"
+			tasks: [{
+				id: "37F2AE879EBDCC08"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_builder_2"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2FB88A55A88DED54"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "681E5C3AFB27157C"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			dependencies: ["6DAC1C2E42A70FB3"]
+			hide: true
+			id: "08998B5D0F508F73"
+			tasks: [{
+				id: "3EB8373B41C66CE2"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/colony_population_10"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "065328AE65F837CC"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "49FBE0690969B039"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 8.5d
+			dependencies: ["08998B5D0F508F73"]
+			hide: true
+			id: "03CD6CD7441B82A4"
+			tasks: [{
+				id: "0A40847F140E1304"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/colony_population_25"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "474C8E9C9246FCBD"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "22CA344322CF287E"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "4B52BBDEFF3A3EE0"
+					type: "random"
+					table_id: 2568836409842090529L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 8.5d
+			dependencies: ["03CD6CD7441B82A4"]
+			hide: true
+			id: "5001674773BFA11C"
+			tasks: [{
+				id: "46E1C0B02FE0EE25"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/colony_population_50"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2120766D8FCF47C9"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "71A8F399C9E6F793"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "37440B2D3C54404A"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "2EE8DF29D2C9189E"
+					type: "random"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "762CDB0032A41789"
+					type: "random"
+					table_id: 2568836409842090529L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 8.5d
+			dependencies: ["5001674773BFA11C"]
+			hide: true
+			id: "4D71174B8D3EBF75"
+			tasks: [{
+				id: "54B2A23CD9320E00"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/colony_population_75"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "588ACEC55AA82F61"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "6BF842E66583B8F9"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "0EB2957BD457974F"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "13EA530D48C5ECBB"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "0950B1915903E210"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "423B9970EBB7306F"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "4DF982A20B7E43EC"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "60E2DF7F9425B715"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "26B8594E735794A2"
+					type: "choice"
+					table_id: 4543195676608404141L
+				}
+				{
+					id: "7C9D962AEB720A6B"
+					type: "choice"
+					table_id: 4543195676608404141L
+				}
+				{
+					id: "3AEEA2E1C095F688"
+					type: "choice"
+					table_id: 4543195676608404141L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 6.5d
+			description: ["Smeltery upgrades apply the fortune enchantment when smelting ores with a level equal to one less than the upgrade level of the smeltery."]
+			dependencies: ["102805C659BDC0F7"]
+			hide: true
+			id: "1CD690064490E079"
+			tasks: [{
+				id: "147F12D637C08EF7"
+				type: "advancement"
+				advancement: "minecolonies:production/build_smeltery_3"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "1E895CF7708E6BC5"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 32
+				}
+				{
+					id: "011C333B96421BAD"
+					type: "item"
+					item: "minecraft:diamond_ore"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 7.5d
+			description: ["A level 5 smeltery will produce on average 2.67 smelted items per ore."]
+			dependencies: ["1CD690064490E079"]
+			hide: true
+			id: "026D08414D29C7D4"
+			tasks: [{
+				id: "2D6B65EE2978E6E8"
+				type: "advancement"
+				advancement: "minecolonies:production/build_smeltery_5"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "12596D7F3F7890CD"
+					type: "item"
+					item: "minecraft:emerald_ore"
+					count: 2
+				}
+				{
+					id: "47340362DD3A1093"
+					type: "item"
+					item: "minecraft:diamond_ore"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 20.0d
+			dependencies: ["0767E630D4EC4BA8"]
+			hide: true
+			id: "27FBB88BF11B4B42"
+			tasks: [{
+				id: "23EDDCE82E002FF7"
+				type: "advancement"
+				advancement: "minecolonies:military/build_archery"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "12CAB5BCB22D2DFC"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "3EF0AA7AEFBA4111"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 14.5d
+			description: ["Upgrading a florist to level 3 allows you to specify which items are and are not plantable by the florist."]
+			dependencies: ["7B8EA0C116F824CA"]
+			hide: true
+			id: "31B8CB4215091C40"
+			tasks: [{
+				id: "67857D5313FA6C6C"
+				type: "advancement"
+				advancement: "minecolonies:production/build_florist"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "6F40AF5AC52448FB"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "10C90934843EC8D5"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "0C2796FF54B35DE6"
+					type: "random"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 19.0d
+			dependencies: ["553EBEFF38753D85"]
+			hide: true
+			id: "751CC8C84A22F906"
+			tasks: [{
+				id: "6D52DAD01D375BB9"
+				type: "advancement"
+				advancement: "minecolonies:production/build_enchanter"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2573FED004EA4342"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "36E56DA0AC8BD65B"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "7105D12D05BCB865"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "57ED70250DD44096"
+					type: "choice"
+					table_id: 1340875193044128734L
+				}
+				{
+					id: "2306C54FB9A6F8ED"
+					type: "choice"
+					table_id: 5354288240016506720L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			dependencies: [
+				"6286957C43C9A62A"
+				"556981C91FD67863"
+				"2F2062EC5BC5158F"
+				"5C90770F6832FBAC"
+				"10B26F43560F72F8"
+			]
+			hide: true
+			id: "49CA0412ADDC78B3"
+			tasks: [{
+				id: "732D59690B0A6697"
+				type: "advancement"
+				advancement: "minecolonies:production/build_all_herders"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "5F637D97584E18A1"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "2FC938BE4EA96D1E"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "2A3A791156BA25A3"
+					type: "choice"
+					table_id: 5995782240531346593L
+				}
+				{
+					id: "00886C0495DE898F"
+					type: "random"
+					table_id: 5995782240531346593L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 21.0d
+			dependencies: ["71E3053267D4AD28"]
+			hide: true
+			id: "4CDFCB6C3ED8E6CA"
+			tasks: [{
+				id: "228B88F82EE3F6C3"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_mysticalsite"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "0C6395658FFB2B9F"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "2891B182CE68AAC2"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 21.0d
+			dependencies: ["4CDFCB6C3ED8E6CA"]
+			hide: true
+			id: "36496176AAF4E1DD"
+			tasks: [{
+				id: "4C2DA3B5D0F16CB8"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_mysticalsite_5"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "2CDE194D252E0227"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5A88CDFF4665D80C"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "69BCE4931E758A01"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 9.5d
+			dependencies: ["1B9CCE08AD13B327"]
+			hide: true
+			id: "05EAFD907D414E79"
+			tasks: [{
+				id: "7DA1AD5E4BB4F0CF"
+				type: "advancement"
+				advancement: "minecolonies:production/max_fields"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4C197822F1DFE3AE"
+					type: "choice"
+					table_id: 4543195676608404141L
+				}
+				{
+					id: "2941E1135E9C602D"
+					type: "choice"
+					table_id: 4543195676608404141L
+				}
+				{
+					id: "7ED5A84DB771C063"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+				{
+					id: "54D419AFA1B67A2D"
+					type: "choice"
+					table_id: 6256831203724601388L
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 4.0d
+			description: ["The maximum depth a miner can work at is dictated by the upgrade level of their building. Level 4 is required before the miner will go down until reaching bedrock."]
+			dependencies: ["3788BBDB42572D2F"]
+			hide: true
+			id: "3220864781B67862"
+			tasks: [{
+				id: "6F9AFACCCC3B8F4C"
+				type: "advancement"
+				advancement: "minecolonies:production/deep_mine"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5A05047C049D692E"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 64
+			}]
+		}
+		{
+			x: -10.0d
+			y: 15.0d
+			dependencies: ["46F0E795EDB221F5"]
+			hide: true
+			id: "7FDAF4702AA8DF57"
+			tasks: [{
+				id: "7D67812DA153E3C4"
+				type: "advancement"
+				advancement: "minecolonies:military/army_8"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "769E399FECBD2B28"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "6A774822C1A2C629"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "2D67B220592F54C7"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 17.0d
+			dependencies: [
+				"05F76D10AEC3497F"
+				"7FDAF4702AA8DF57"
+			]
+			hide: true
+			id: "6AEF48DCF3698870"
+			tasks: [{
+				id: "59380EF8BC2E8C1E"
+				type: "advancement"
+				advancement: "minecolonies:military/army_30"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "7DF03305B79B49B4"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "6B31F5C1A76938E7"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5B74236442BAD06F"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "1ABB1D107E640879"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "2A701C565FA0DE1B"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "7A22C53D1B43BBE8"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 20.0d
+			dependencies: [
+				"6AEF48DCF3698870"
+				"27FBB88BF11B4B42"
+			]
+			hide: true
+			id: "4E6F14C96A6D8092"
+			tasks: [{
+				id: "0BA53FB931E45A99"
+				type: "advancement"
+				advancement: "minecolonies:military/army_80"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4C6EBB2F98D9D581"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "70B2861E18030415"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "1C5CDE88D2898996"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "627358D77B7465E6"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "3F5F0938ED4310BA"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "4D3D8C4D9ADA1796"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "3B5250F4AC86B76D"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "1288ADD6900A9605"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "4EC905F76F22B924"
+					type: "choice"
+					table_id: 1340875193044128734L
+				}
+				{
+					id: "23BB6E20CDF497CB"
+					type: "choice"
+					table_id: 1340875193044128734L
+				}
+				{
+					id: "68C84F225D59CDA0"
+					type: "choice"
+					table_id: 1340875193044128734L
+				}
+				{
+					id: "6ACE0F184410F600"
+					type: "choice"
+					table_id: 5354288240016506720L
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 21.0d
+			dependencies: ["4E6F14C96A6D8092"]
+			hide: true
+			id: "22FA548922AF1F7A"
+			tasks: [{
+				id: "2F306ACD48B38F2D"
+				type: "advancement"
+				advancement: "minecolonies:military/build_all_barracks_towers"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "258A3421E014401B"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "23A66C827F95B60B"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "3EBDF5322C272663"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "2E8647D6753B9AB7"
+					type: "choice"
+					table_id: 2568836409842090529L
+				}
+				{
+					id: "0DCCD527D30436AC"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "72CF78DA5E7C3EEA"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "61AAB8C8329C8DB9"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "5663B001A289A1CE"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "6FF93219DE31BE0A"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "3DEBC8DDFA17B3BC"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "3F91AFF2ACF3FF87"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "2E26F1E479FED2E1"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "21EC6782C7CB5E46"
+					type: "choice"
+					table_id: 5354288240016506720L
+				}
+				{
+					id: "6EFCEEF7F639462E"
+					type: "choice"
+					table_id: 1340875193044128734L
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 16.0d
+			description: ["The chance a totem will be consumed by an undertaker attempting to revive a colonist is 1%. Having multiple totems increases the chance to revive a colonist by up to 7.5%. The maximum chance to resurrect a colonist is capped at 12.5%."]
+			dependencies: [
+				"5ABFF5A2070DD6DF"
+				"674C0666C6595854"
+			]
+			hide: true
+			id: "0776DF1FBF0232EB"
+			tasks: [{
+				id: "73373304F77024C5"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/undertaker_totem"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "56C3ACEA8F85B8C0"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "5CF351851B8C26AA"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "18DC6759DBDF1F38"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "63336F62AB2B6250"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "7C846F4A77C34749"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "074ACC22AF0D7C13"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			dependencies: [
+				"5001674773BFA11C"
+				"470D6BAD39CA8D13"
+			]
+			hide: true
+			id: "7D0269C030AE9FDE"
+			tasks: [{
+				id: "27D88C2D84CC08C6"
+				type: "advancement"
+				advancement: "minecolonies:minecolonies/build_town_hall_5"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4B0DB8642018EFF1"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "6EC59FF7A16E81CE"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "103C015ADD7CBED6"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "13EBDE26FD01C048"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "59B84991FBA133F0"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "630CDBF64C441153"
+					type: "choice"
+					table_id: 1365761949232019744L
+				}
+				{
+					id: "007281277AD88A38"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "2F64D96FBEBDFB36"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+				{
+					id: "53DACE740B662964"
+					type: "choice"
+					table_id: 3070842370730568007L
+				}
+			]
+		}
+	]
+}
