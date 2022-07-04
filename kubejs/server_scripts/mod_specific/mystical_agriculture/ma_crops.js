@@ -134,6 +134,7 @@ onEvent('recipes', e => {
     'netherite',
     'wither_skeleton',
     'platinum',
+    'uraninite',
   ], 4000, '#misctags:farmland/tier5', 2)
   //Tier 6 Crops
   tier(['nether_star'], 4750, 'mysticalagradditions:nether_star_crux', 2)
