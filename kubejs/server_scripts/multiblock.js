@@ -11,7 +11,7 @@ onEvent('block.right_click', e => {
     if (targetBlock.id.equals('mekanism:ultimate_energy_cube')) {
       if (!!targetBlock.entityData.EnergyContainers[0]) {
         if (!!targetBlock.entityData.EnergyContainers[0].stored) {
-          if (targetBlock.entityData.EnergyContainers[0].stored == 4096000000) {
+          if (targetBlock.entityData.EnergyContainers[0].stored == 256000000) {
             return true
           }
         }
