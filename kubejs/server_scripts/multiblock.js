@@ -24,7 +24,7 @@ onEvent('block.right_click', e => {
     if (e.hand == MAIN_HAND) {
       let heldItem = e.entity.getHeldItem(MAIN_HAND).id
       if (placedBlock.id.equals('mekanism:creative_energy_cube')) {
-        if (heldItem.equals('atmadditions:atm_star')) {
+        if (heldItem.equals('allthetweaks:atm_star')) {
           if (
             placedBlock.offset(SOUTH, 1).id.equals('mekanism:ultimate_induction_provider') &&
             placedBlock.offset(NORTH, 1).id.equals('mekanism:ultimate_induction_provider') &&
