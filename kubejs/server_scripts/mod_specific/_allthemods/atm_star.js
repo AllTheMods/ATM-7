@@ -14,9 +14,9 @@ onEvent('recipes', e => {
   //#endregion
   //#region Dimensional Seed
   e.shaped('allthetweaks:dimensional_seed', ['ABC', 'DEF', 'GHI'], {
-    A: 'allthecompressed:blackstone_block_9x',
+    A: 'allthecompressed:blackstone_block_7x',
     B: 'allthecompressed:end_stone_block_5x',
-    C: 'allthecompressed:netherrack_block_9x',
+    C: 'allthecompressed:netherrack_block_7x',
     D: 'allthecompressed:clay_block_5x',
     E: 'allthecompressed:emerald_block_6x',
     F: 'allthecompressed:soul_sand_block_4x',
