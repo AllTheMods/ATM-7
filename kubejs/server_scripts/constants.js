@@ -67,3 +67,11 @@ let maInfusion = (e, output, middle, item1, item2, item3, item4, item5, item6, i
     result: { item: output }
   }).id(`kubejs:mainfusion/${output.replace(':', '/')}`)
 }
+
+let energize = (e, ingredient, result, power, count) => {
+  e.recipes.powah.energizing({
+    ingredients: ingredient.map(i => Ingredient.of(i).toJson()),
+    energy: power,
+    result: Item.of(result, count ? count : 1).toResultJson()
+  }).id(`kubejs:energizing/${result.replace(':', '/')}`)
+}
