@@ -6,6 +6,12 @@ onEvent('recipes', e => {
     });
   });
 
+    removeRecipeByOutput(e, [
+    'mysticalagradditions:nitro_crystal_crux',
+    'mysticalagriculture:nitro_crystal_essence',
+  ])
+  e.remove({ id: 'mysticalagradditions:essence/nitro_crystal'})
+  
   e.remove({ id: 'mysticalagriculture:augment/flight' });
   maInfusion(e, 'mysticalagriculture:flight_augment', 'mysticalagriculture:unattuned_augment', 'mysticalagriculture:supremium_block', 'mysticalagriculture:supremium_block', 'mysticalagriculture:supremium_block', 'allthemodium:unobtainium_block', 'allthecompressed:nether_star_block_1x', 'mysticalagriculture:supremium_block', 'allthecompressed:nether_star_block_1x', 'allthemodium:unobtainium_block', 'mysticalagriculture:supremium_block')
   maInfusion(e,'kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
