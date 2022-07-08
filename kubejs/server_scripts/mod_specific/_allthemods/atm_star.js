@@ -12,19 +12,20 @@ onEvent('recipes', e => {
     I: Item.of('blue_skies:nature_arc', '{ArcLevel:2}')
   }).id('kubejs:allthetweaks/dragon_soul')
   //#endregion
+  
   //#region Dimensional Seed
-  e.shaped('allthetweaks:dimensional_seed', ['ABC', 'DEF', 'GHI'], {
-    A: 'allthecompressed:blackstone_block_7x',
-    B: 'allthecompressed:end_stone_block_5x',
-    C: 'allthecompressed:netherrack_block_7x',
-    D: 'allthecompressed:clay_block_5x',
-    E: 'allthecompressed:emerald_block_6x',
-    F: 'allthecompressed:soul_sand_block_4x',
-    G: 'allthecompressed:red_sand_block_4x',
-    H: 'allthecompressed:red_sand_block_4x',
-    I: 'allthecompressed:obsidian_block_6x'
-  }).id('kubejs:allthetweaks/dimensional_seed')
+  maInfusion(e, 'allthetweaks:dimensional_seed',
+      'allthecompressed:emerald_block_6x',
+      'allthecompressed:blackstone_block_7x',
+      'allthecompressed:end_stone_block_5x',
+      'allthecompressed:netherrack_block_7x',
+      'allthecompressed:clay_block_5x',
+      'allthecompressed:soul_sand_block_4x',
+      'allthecompressed:red_sand_block_4x',
+      'allthecompressed:red_sand_block_4x',
+      'allthecompressed:obsidian_block_6x')
   //#endregion
+  
   //#region Withers Compass
   e.shaped('allthetweaks:withers_compass', ['DCD', 'ABA', 'DED'], {
     A: 'mekanism:module_gravitational_modulating_unit',
@@ -34,19 +35,21 @@ onEvent('recipes', e => {
     E: 'mekanism:module_gravitational_modulating_unit'
   }).id('kubejs:allthetweaks/withers_compass')
   //#endregion
+  
   //#region Philosopher's Fuel
   e.shaped('allthetweaks:philosophers_fuel', ['ABC', 'DEF', 'GHI'], {
     A: 'mysticalagradditions:insanium_coal_block',
     B: Item.of('ftbic:quad_uranium_fuel_rod', '{Damage:0}'),
     C: 'mekanism:pellet_antimatter',
-    D: 'evilcraft:burning_gem_stone',
+    D: 'evilcraft:piercing_vengeance_focus',
     E: 'mysticalagriculture:supremium_furnace',
     F: Item.of('elementalcraft:jewel', '{elementalcraft:{jewel:"elementalcraft:phoenix"}}'),
     G: 'allthecompressed:uranium_block_5x',
-    H: '#minecolonies:blacksmith_ingredient_excluded',
+    H: 'twilightforest:carminite_block',
     I: 'ftbic:nuclear_reactor'
   }).id('kubejs:allthetweaks/philosophers_fuel')
   //#endregion
+  
   //#region Improbable Probaility Device
   e.shaped('allthetweaks:improbable_probability_device', ['AAB', 'CGE', 'FDF'], {
     A: 'computercraft:monitor_advanced',
@@ -58,33 +61,43 @@ onEvent('recipes', e => {
     G: 'ftbic:nuke'
   }).id('kubejs:allthetweaks/improbable_probability_device')
   //#endregion
+  
   //#region Nexium Emitter
-  e.shaped('allthetweaks:nexium_emitter', ['A C', ' BF', 'CED'], {
-    A: 'ftbic:ev_solar_panel',
+  e.shaped('allthetweaks:nexium_emitter', ['A B', ' CF', 'GED'], {
+    A: 'powah:player_transmitter_nitro',
     B: ['ae2:wireless_terminal', 'ae2:wireless_crafting_terminal', 'refinedstorageaddons:wireless_crafting_grid', 'refinedstorage:wireless_grid', 'refinedstorage:wireless_fluid_grid'],
-    C: 'alltheores:platinum_block',
-    D: 'allthecompressed:netherite_block_5x',
+    C: 'mekanism:supercharged_coil',
+    D: 'ftbic:ev_solar_panel',
     E: 'ae2:singularity',
-    F: 'mekanismgenerators:module_solar_recharging_unit'
+    F: 'mekanismgenerators:module_solar_recharging_unit',
+    G: 'ftbic:overclocked_heat_vent'
   }).id('kubejs:allthetweaks/nexium_emitter')
   //#endregion
 
-
   //#region Pulsating Black Hole
-  e.shaped('allthetweaks:pulsating_black_hole', ['ABC', 'DEF', 'GHI'], {
-    A: 'mekanism:pellet_antimatter',
-    B: 'ftbic:antimatter',
-    C: 'ftbic:nuke',
-    D: 'mekanism:quantum_entangloporter',
-    E: 'allthecompressed:unobtainium_block_3x',
-    F: 'allthecompressed:unobtainium_block_3x',
-    G: 'ae2:quantum_ring',
-    H: 'forbidden_arcanus:quantum_catcher',
-    I: 'forbidden_arcanus:quantum_catcher'
-  }).id('kubejs:pulsating_black_hole')
+  function pressure(inputs, result, rCount, pressure) {
+    e.recipes.pneumaticcraft.pressure_chamber({
+      inputs: inputs,
+      pressure: pressure,
+      results: [{
+        item: result,
+        count: rCount
+      }]
+    }).id(`kubejs:pressure/${result.replace(':', '/')}`)
+  }
+  pressure([
+    {'type': 'pneumaticcraft:stacked_item', 'item':'mekanism:pellet_antimatter','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'forbidden_arcanus:quantum_catcher','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'ftbic:nuke','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'botania:black_hole_talisman','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'allthecompressed:unobtainium_block_3x','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'bloodmagic:sigilofsuppression','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'industrialforegoing:infinity_nuke','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'ae2:quantum_ring','count': 1},
+    {'type': 'pneumaticcraft:stacked_item', 'item':'ftbic:antimatter','count': 1}
+  ], 'allthetweaks:pulsating_black_hole', 1, 4.9)
   //#endregion
-
-
+  
   //#region Oblivion Shard
   e.shaped('allthetweaks:oblivion_shard', [' AB', 'ACA', 'BA '], {
     A: 'allthemodium:unobtainium_block',
@@ -92,6 +105,7 @@ onEvent('recipes', e => {
     B: 'forbidden_arcanus:dark_nether_star_block'
   }).id('kubejs:allthetweaks/oblivion_shard')
   //#endregion
+  
   //#region Creative Essence
   e.shaped('mysticalagradditions:creative_essence', ['CAC', 'ABA', 'CAC'], {
     A: 'mysticalagradditions:insanium_block',
@@ -99,6 +113,7 @@ onEvent('recipes', e => {
     B: 'mysticalagriculture:master_infusion_crystal'
   }).id('kubejs:allthetweaks/creative_essence')
   //#endregion
+  
   //#region Patrick Star
   e.recipes.create.mechanical_crafting('allthetweaks:patrick_star', [
     '    B    ',
