@@ -26,9 +26,9 @@ onEvent('recipes', e => {
     G: 'create:gearbox'
   })
   e.recipes.create.mixing('create:creative_blaze_cake', [
-    'createaddition:chocolate_cake',
+    'thermal:chocolate_cake',
     'allthetweaks:atm_star',
-    'createaddition:honey_cake'
+    'create_confectionery:honey_candy'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
 
 ///#Mekanism
