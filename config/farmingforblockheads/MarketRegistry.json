@@ -1,0 +1,13 @@
+{  
+"customEntries": [
+    {
+      "output": {
+        "item": "croptopia:soybean_seed"
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      },
+      "category": "seeds"
+    }
+]
+}
