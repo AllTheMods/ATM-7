@@ -41,10 +41,10 @@
 [drygmy_production]
 	#How much source drygmys consume per generation
 	#Range: 0 ~ 10000
-	drygmyManaCost = 1000
+	drygmyManaCost = 5000
 	#How many channels must occur before a drygmy produces loot
 	#Range: 0 ~ 300
-	drygmyMaxProgress = 20
+	drygmyMaxProgress = 80
 	#Bonus number of items a drygmy produces per unique mob
 	#Range: 0 ~ 300
 	drygmyUniqueBonus = 2
