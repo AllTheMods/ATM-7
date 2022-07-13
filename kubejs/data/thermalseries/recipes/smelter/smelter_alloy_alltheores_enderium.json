@@ -1,0 +1,38 @@
+{
+  "type": "thermal:smelter",
+  "input": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/lead"
+        },
+        {
+          "tag": "forge:dusts/lead"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "tag": "forge:dusts/diamond",
+      "count": 1
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ender_pearls"
+        },
+        {
+          "tag": "forge:dusts/ender_pearl"
+        }
+      ],
+      "count": 2
+    }
+  ],
+  "result": [
+    {
+      "item": "alltheores:enderium_ingot",
+      "count": 2
+    }
+  ],
+  "energy": 16000
+}
