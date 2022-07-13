@@ -425,7 +425,7 @@ onEvent('recipes', e => {
 
       if (extraItemName.includes('thermal')) {
         extraItem = Item.of(extraItemName)
-      } else if (extraItemName === 'iron') || extraItemName === 'gold')) {
+      } else if (extraItemName === 'iron' || extraItemName === 'gold') {
         extraItem = Item.of(`minecraft:${extraItemName}_nugget`)
       } else {
         extraItem = Item.of(`${craftOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`)
