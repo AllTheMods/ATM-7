@@ -20,3 +20,19 @@ onEvent('worldgen.remove', e => {
     ]
   })
 })
+
+onEvent('worldgen.add', event => {
+    event.addOre((ore) => {
+        ore.id = "kubejs:mining_certus" // optional
+        ore.biomes = ['allthemodium:mining']
+        ore.addTarget('minecraft:stone', 'ae2:quartz_ore')
+        ore.addTarget('minecraft:deepslate', 'ae2:deepslate_quartz_ore')
+        // ores per cluster
+        ore.size(7)
+        // clusters per chunk
+        // can also be a range   ore.count(15,20)
+        ore.count(20)
+        ore.squared()
+        ore.triangleHeight(-34, 36)
+    })
+})

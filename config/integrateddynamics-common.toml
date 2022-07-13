@@ -15,7 +15,7 @@
 		#The slowest possible frequency in ticks at which ingredient network should be observed.
 		ingredientNetworkObserverFrequencyMax = 40
 		#If an anonymous mod startup analytics request may be sent to our analytics service.
-		analytics = true
+		analytics = false
 		#If the ingredient network observer can work on separate thread.
 		ingredientNetworkObserverEnableMultithreading = true
 		#When enabled, networks will stop ticking and values will not be shown and evaluated again. This can be used to fix crashing networks by temporarily enabling this option.
@@ -30,6 +30,10 @@
 		ingredientNetworkObserverFrequencyForced = 0
 		#If the version checker should be enabled.
 		versionChecker = false
+		#If corrupted networks should automatically be restored on first tick.
+		recreateCorruptedNetworks = true
+		#The maximum frequency at which speach messages can be played in millis.
+		speachMaxFrequency = 1000
 
 [general]
 
@@ -134,6 +138,10 @@
 		consumptionRate = 80
 		#The energy capacity of a mechanical drying basin.
 		capacity = 100000
+
+	[machine.cable]
+		#If cable shapes should be determined dynamically. Disable this if FPS issues would occur.
+		dynamicShape = true
 
 [worldgeneration]
 
