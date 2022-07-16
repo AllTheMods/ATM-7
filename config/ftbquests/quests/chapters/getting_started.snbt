@@ -645,7 +645,7 @@
 			x: 6.0d
 			y: 0.0d
 			shape: "gear"
-			description: ["To get better tools, check out the chapter &aTools and Armor&r"]
+			description: ["To get better tools, check out the chapters in the &aTools and Armor&r category."]
 			dependencies: ["147BC89798F3F925"]
 			size: 2.0d
 			id: "3BD46BF30D2E0B63"
@@ -821,7 +821,7 @@
 					id: "7CDC7225B59508B5"
 					type: "item"
 					item: "alltheores:tin_ingot"
-					count: 16L
+					count: 4L
 				}
 				{
 					id: "2AED93C7245AD1C1"

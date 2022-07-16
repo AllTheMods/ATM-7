@@ -394,8 +394,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 5.5d
+			x: 13.5d
+			y: 4.0d
 			description: [
 				"The &n&5Portable Interface&r works in pairs. You need to have one placed in the world and another one on a moving entity, like a Minecart."
 				""
@@ -446,8 +446,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 4.5d
+			x: 12.0d
+			y: 4.0d
 			description: ["&n&5Casings&r are used as a crafting ingredient for most blocks."]
 			dependencies: ["1DA6B8B2DCC97809"]
 			id: "48EA6D9923E38B71"
@@ -467,35 +467,6 @@
 				id: "7FE62F264B4FA5DE"
 				type: "item"
 				item: "create:copper_casing"
-			}]
-		}
-		{
-			x: 13.5d
-			y: 5.0d
-			dependencies: ["7A43D2A2632BEA9B"]
-			id: "2244A1B11D7D6E11"
-			tasks: [{
-				id: "4BE77A9A3F878072"
-				type: "item"
-				item: "create:flywheel"
-			}]
-		}
-		{
-			x: 12.0d
-			y: 4.0d
-			description: [
-				"The &n&5Furnace Engine&r must be placed on a Furnace or Blast Furnace. The Blast Furnace will be more efficient."
-				""
-				"You must also connect it to a &n&5Flywheel&r. Place them one block apart to have them connect."
-				""
-				"The heat created by the furnaces will spin the Flywheel, creating rotational force with very high stress capacity."
-			]
-			dependencies: ["1DA6B8B2DCC97809"]
-			id: "7A43D2A2632BEA9B"
-			tasks: [{
-				id: "4E4C808C70D08946"
-				type: "item"
-				item: "create:furnace_engine"
 			}]
 		}
 		{
@@ -530,7 +501,7 @@
 		}
 		{
 			x: 9.0d
-			y: 2.5d
+			y: 3.5d
 			description: ["The &n&5Funnel&r can import or export items from connected inventories."]
 			dependencies: ["1DA6B8B2DCC97809"]
 			id: "495B0CC178B4CFA9"
@@ -553,8 +524,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 4.0d
+			x: 10.5d
+			y: 5.0d
 			description: ["The &n&5Tunnels&r can be placed on belts and they will filter items that pass through them. You can link multiple tunnels by placing them next to each other."]
 			dependencies: ["1DA6B8B2DCC97809"]
 			id: "78656C89EEE80DB5"

@@ -74,38 +74,43 @@
 		}
 		{
 			title: "OreSight Potions"
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "potionsmaster:iron_sight"
+				}
+			}
 			x: 3.0d
 			y: 5.0d
 			subtitle: "It's like X-Ray Vision!"
-			description: ["This potion will allow you to see the respective ore through the walls."]
+			description: [
+				"Having trouble finding a specific ore? Make an Oresight potion!"
+				""
+				"Oresight potions give you x-ray vision for ores. Check out the mod &9Potions Master&r by searching up @potionsmaster in the JEI searchbox."
+			]
 			id: "3EE9F242794CD95F"
 			tasks: [{
-				id: "03F9DE34E4C766D8"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:iron_sight"
-					}
-				}
+				id: "5EB6069EECDB5D95"
+				type: "checkmark"
+				title: "Oresight Potions"
 			}]
 			rewards: [
 				{
-					id: "319A13116831F46D"
+					id: "717AB46363706266"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "27C7514C31B446D1"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
 						Count: 1b
 						tag: {
-							Potion: "potionsmaster:gold_sight"
+							Potion: "potionsmaster:iron_sight"
 						}
 					}
-				}
-				{
-					id: "717AB46363706266"
-					type: "xp"
-					xp: 10
 				}
 			]
 		}
@@ -398,19 +403,20 @@
 			description: [
 				"OreSight Potions can be used to craft Charms!"
 				""
-				"Charms are Curios that last longer, and can be toggled on and off."
+				"Charms are Curios that last longer, and can be toggled on and off. To make them, you'll need some Blaze Powders."
 			]
 			dependencies: ["3EE9F242794CD95F"]
 			id: "6396AA6918B47DDC"
 			tasks: [{
-				id: "3611DE52B33035E8"
-				type: "item"
-				item: {
+				id: "412D4D8A09692DF9"
+				type: "checkmark"
+				title: "Charms of Oresight"
+				icon: {
 					id: "apotheosis:potion_charm"
 					Count: 1b
 					tag: {
 						Damage: 0
-						Potion: "potionsmaster:iron_sight"
+						Potion: "potionsmaster:diamond_sight"
 					}
 				}
 			}]
