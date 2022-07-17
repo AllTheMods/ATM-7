@@ -1047,7 +1047,7 @@
 			description: [
 				"With the 1k Storage Component, you can now craft yourself a 1k ME Item Storage Cell to start your digital item storage system. You'll most likely want the majority of your storage to be for items, so you'll probably want to make a few &bME Item Storage Cells&f."
 				""
-				"ME Item Storage Cells can each hold up to 63 different types of items. Each new type of item added to a cell will take up a certain fraction of the storage cell's total capacity in bytes, typically 1/64th. For each type already present, 1 \"byte\" counts for 8 items of that same type."
+				"ME Item Storage Cells can each hold up to 63 different types of items. Each new type of item added to a cell will take up a certain fraction of the storage cell's total capacity in bytes. For each type already present, 1 \"byte\" counts for 8 items of that same type."
 				""
 				"As an example, a 1k Item Storage Cell containing only cobblestone can hold up to 8128 cobblestone (8*1024b - 8b/type * 1 type)."
 				""

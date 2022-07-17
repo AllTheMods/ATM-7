@@ -48,8 +48,8 @@
 	quests: [
 		{
 			title: "Getting Create-ive."
-			x: -1.5d
-			y: 4.5d
+			x: -3.0d
+			y: 2.0d
 			shape: "hexagon"
 			hide_dependency_lines: true
 			dependencies: ["464D0C17601E8A2B"]
@@ -569,8 +569,8 @@
 		}
 		{
 			title: "Infinite Mana"
-			x: 1.5d
-			y: 4.5d
+			x: -5.0d
+			y: 2.0d
 			shape: "hexagon"
 			hide_dependency_lines: true
 			dependencies: ["464D0C17601E8A2B"]
@@ -609,8 +609,8 @@
 		}
 		{
 			title: "Set For Life"
-			x: 0.0d
-			y: 4.5d
+			x: -4.0d
+			y: 3.0d
 			shape: "hexagon"
 			subtitle: "Enough to make everything in the pack?"
 			hide_dependency_lines: true
@@ -619,7 +619,6 @@
 				"5C7B81756CA58056"
 				"464D0C17601E8A2B"
 			]
-			hide: true
 			size: 2.0d
 			id: "6E6FDF551EA4FF1A"
 			tasks: [{
@@ -755,6 +754,143 @@
 				id: "0AA7C62AB60CECD4"
 				type: "item"
 				item: "allthecompressed:nether_star_block_3x"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["3DA9649DC32DDF7C"]
+			id: "26D347115B607878"
+			tasks: [{
+				id: "4E8338EDAA530671"
+				type: "item"
+				item: "waterstrainer:super_worm"
+			}]
+			rewards: [
+				{
+					id: "502AD9D4CAC4E129"
+					type: "item"
+					item: "allthecompressed:dirt_block_1x"
+				}
+				{
+					id: "2F35902A3D9C91E2"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			size: 2.0d
+			id: "3DA9649DC32DDF7C"
+			tasks: [{
+				id: "425542D0B83DFC9E"
+				type: "item"
+				item: "allthetweaks:atm_star_shard"
+			}]
+			rewards: [{
+				id: "1483F0383FB2B474"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			shape: "diamond"
+			dependencies: ["3DA9649DC32DDF7C"]
+			id: "182FD093AEDC84D4"
+			tasks: [{
+				id: "13CDE75623F0EBD5"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+			rewards: [
+				{
+					id: "541776E0DD3F58F3"
+					type: "item"
+					item: "thermal:upgrade_augment_3"
+					count: 3
+				}
+				{
+					id: "2F45E675F1DAD3BB"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			shape: "diamond"
+			dependencies: ["3DA9649DC32DDF7C"]
+			id: "4F420AB27F056D9C"
+			tasks: [{
+				id: "23419C4DB7C1E5CB"
+				type: "item"
+				item: "pipez:infinity_upgrade"
+			}]
+			rewards: [
+				{
+					id: "19B74A3FD58E767F"
+					type: "item"
+					item: "pipez:universal_pipe"
+					count: 64
+				}
+				{
+					id: "7AABD1369C9574CC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 4.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "695C8159D28F16B7"
+			tasks: [{
+				id: "2E44EAD876619015"
+				type: "item"
+				item: "ars_nouveau:creative_source_jar"
+			}]
+			rewards: [
+				{
+					id: "032C5EC50FDC018F"
+					type: "item"
+					item: "ars_nouveau:ritual_awakening"
+					count: 10
+				}
+				{
+					id: "3841CBE0A9BBA8A6"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			shape: "hexagon"
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "3F833B656A0DBB0E"
+			tasks: [{
+				id: "5973E65E0C940E27"
+				type: "item"
+				item: "ars_nouveau:creative_spell_book"
+			}]
+			rewards: [{
+				id: "0886FF12E77AAC17"
+				type: "xp"
+				xp: 1000
 			}]
 		}
 	]
