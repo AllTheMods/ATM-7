@@ -54,7 +54,12 @@ onEvent('recipes', e => {
     'allthetweaks:atm_star',
     'create_confectionery:honey_candy'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
-  
+    energize(e, [
+    Item.of('create:flywheel').toJson(),
+    Item.of('createaddition:alternator').toJson(),
+    Item.of('allthetweaks:atm_star').toJson()
+  ], 'createaddition:creative_energy', 2147483647)
+
 ///# Integrated Dynamics 
   energize(e, [
     'integrateddynamics:energy_battery',

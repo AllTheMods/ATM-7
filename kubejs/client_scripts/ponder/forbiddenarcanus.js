@@ -16,7 +16,7 @@ onEvent("ponder.registry", event => {
                     scene.text(80, "4x Chiseled Arcane Polished Darkstone", [3.5, 1, 4.5])
                 }
                 if (x == 4) {
-                    scene.text(80, "45x Polished Darkstone", [4.5, 1, 6.5])
+                    scene.text(80, "48x Polished Darkstone", [4.5, 1, 6.5])
                 }
             }
             scene.idle(10)
