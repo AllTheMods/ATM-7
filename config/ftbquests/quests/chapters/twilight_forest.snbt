@@ -175,6 +175,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			optional: true
 			id: "604F2B68B27885BF"
 			tasks: [
@@ -302,11 +303,6 @@
 					type: "xp"
 					xp: 1000
 				}
-				{
-					id: "307ADDA3F89CF02E"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -375,11 +371,6 @@
 					type: "xp"
 					xp: 100
 				}
-				{
-					id: "5C86EA40DE0D0702"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -406,18 +397,11 @@
 					item: "twilightforest:meef_stroganoff"
 				}
 			]
-			rewards: [
-				{
-					id: "7DDF1FEFAE5F311F"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "2348B79F8ADCFD49"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "7DDF1FEFAE5F311F"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Hydra Slayer"
@@ -438,18 +422,11 @@
 				type: "item"
 				item: "twilightforest:hydra_trophy"
 			}]
-			rewards: [
-				{
-					id: "185A446AAFA6CAD6"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "55F90DB2EEEEE064"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "185A446AAFA6CAD6"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Entering the Dark Forest"
@@ -471,18 +448,11 @@
 				type: "item"
 				item: "twilightforest:knight_phantom_trophy"
 			}]
-			rewards: [
-				{
-					id: "2FDFDEDC63DBFACE"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "0432C721D444184B"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "2FDFDEDC63DBFACE"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Tears of Fire"
@@ -518,11 +488,6 @@
 					count: 2
 					random_bonus: 2
 				}
-				{
-					id: "436197AB331DD880"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -557,11 +522,6 @@
 					count: 2
 					random_bonus: 2
 				}
-				{
-					id: "23174C24D051B80E"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -586,18 +546,11 @@
 				type: "item"
 				item: "twilightforest:snow_queen_trophy"
 			}]
-			rewards: [
-				{
-					id: "7C737743505C71EA"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "21B903DE9EB6367F"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "7C737743505C71EA"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			icon: {
@@ -681,18 +634,11 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "57BD859AC0E3617B"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "10163664BE8E155F"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "57BD859AC0E3617B"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Naga Scale Armor"
@@ -733,18 +679,11 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "481E680F0F18B148"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "7AFB735476E84420"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "481E680F0F18B148"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -5.0d
@@ -965,6 +904,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "2BEBF66D7EA594FA"
 			tasks: [
 				{
@@ -1055,6 +995,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "40258842B0359A2D"
 			tasks: [
 				{
@@ -1203,11 +1144,6 @@
 					count: 2
 					random_bonus: 2
 				}
-				{
-					id: "3BB1CF44BD9DF7B4"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -1241,18 +1177,11 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "1BA06461A6CFA2A8"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "269E12B24D6C62AD"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "1BA06461A6CFA2A8"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Knightmetal Armor"
@@ -1308,18 +1237,11 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "73E3E17874A35218"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "7F25EEC7FA00F6A8"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "73E3E17874A35218"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Ramification"
@@ -1356,6 +1278,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "6F67079A453DAABE"
 			tasks: [{
 				id: "5F7D02D164E85469"
@@ -1451,18 +1374,11 @@
 				type: "item"
 				item: "twilightforest:charm_of_keeping_3"
 			}]
-			rewards: [
-				{
-					id: "757D67F1402CEA6E"
-					type: "xp_levels"
-					xp_levels: 100
-				}
-				{
-					id: "62FB99FCB11C009F"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "757D67F1402CEA6E"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
 		}
 		{
 			x: 6.0d
@@ -1471,6 +1387,7 @@
 			subtitle: "A Glorified Leafblower"
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "1464D45C474464DB"
 			tasks: [{
 				id: "13C31B864EC1DE9B"
@@ -1577,11 +1494,6 @@
 					count: 2
 					random_bonus: 2
 				}
-				{
-					id: "0151BD8A11801463"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
 			]
 		}
 		{
@@ -1638,18 +1550,11 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "1561C0CA37248A7C"
-					type: "xp"
-					xp: 100
-				}
-				{
-					id: "3DE875692CDA73EC"
-					type: "random"
-					table_id: 5351477636770726245L
-				}
-			]
+			rewards: [{
+				id: "1561C0CA37248A7C"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -1.0d
@@ -1747,6 +1652,7 @@
 			description: ["Found randomly in loot chests, this bow will inflict Slowness III for 10 seconds on hit."]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "49EE6D2A3684A510"
 			tasks: [{
 				id: "52E28B85293DE45A"
@@ -1776,6 +1682,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "3D29EF7F150F5334"
 			tasks: [{
 				id: "37A1612D95C34DF2"
@@ -1805,6 +1712,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide_text_until_complete: true
 			id: "5FE4DAE8F41B1437"
 			tasks: [{
 				id: "7B5C5A02D22359AF"
@@ -1836,6 +1744,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "38ADDF7FF4E4892D"
 			tasks: [{
 				id: "68A6B72FD1DF6A75"
@@ -1861,6 +1770,7 @@
 			description: ["Found in the Aurora Palace, this sword will give enemies Frosted for 10 seconds when attacked."]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "78CE2ECEF0B651DA"
 			tasks: [{
 				id: "2E37E73B5297E0F7"
@@ -1890,6 +1800,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "60FC2DAEA954A849"
 			tasks: [{
 				id: "0BE7DD735B1FB717"
@@ -1921,6 +1832,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4193303999597249"]
+			hide: true
 			id: "0E9DE6293DF611E1"
 			tasks: [{
 				id: "220F1E09B54E7ECA"
@@ -2020,11 +1932,6 @@
 					id: "00F7086DDD7126F7"
 					type: "xp"
 					xp: 100
-				}
-				{
-					id: "7A5E43387F7110E9"
-					type: "random"
-					table_id: 5351477636770726245L
 				}
 			]
 		}
@@ -2127,11 +2034,6 @@
 					id: "343843C0B976060B"
 					type: "xp"
 					xp: 100
-				}
-				{
-					id: "13FA9172DE9942D6"
-					type: "random"
-					table_id: 5351477636770726245L
 				}
 			]
 		}
@@ -2281,11 +2183,6 @@
 					id: "3A33D234FEAA59C6"
 					type: "xp"
 					xp: 100
-				}
-				{
-					id: "0A2372BA1C0E172A"
-					type: "random"
-					table_id: 5351477636770726245L
 				}
 			]
 		}
