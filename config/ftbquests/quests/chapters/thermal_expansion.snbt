@@ -316,7 +316,11 @@
 			y: 2.0d
 			shape: "hexagon"
 			subtitle: "Tier 1 Base Upgrade"
-			description: ["This is a base upgrade for all machines and items. It does not stack with itself."]
+			description: [
+				"This is a base upgrade for all machines and items."
+				""
+				"Note: While you can put several base upgrades into a machine, only the highest tier takes effect."
+			]
 			hide_dependency_lines: true
 			dependencies: ["2C50B0E024C3D92E"]
 			id: "76084BE1BBCF941F"
@@ -325,6 +329,19 @@
 				type: "item"
 				item: "thermal:upgrade_augment_1"
 			}]
+			rewards: [
+				{
+					id: "6F6FE7215CE5F711"
+					type: "item"
+					item: "alltheores:invar_ingot"
+					random_bonus: 2
+				}
+				{
+					id: "7CD91CF01EAA7BCD"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -334,7 +351,7 @@
 			description: [
 				"This is a tier 2 upgrade for Thermal Series items and machines."
 				""
-				"It does not stack with itself, but can stack with other tier upgrades."
+				"Note: While you can put several base upgrades into a machine, only the highest tier takes effect."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2C50B0E024C3D92E"]
@@ -344,6 +361,19 @@
 				type: "item"
 				item: "thermal:upgrade_augment_2"
 			}]
+			rewards: [
+				{
+					id: "7B0C61173C1E385F"
+					type: "item"
+					item: "alltheores:electrum_ingot"
+					random_bonus: 2
+				}
+				{
+					id: "723FE016CAA6566D"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -353,7 +383,7 @@
 			description: [
 				"This is the highest base tier upgrade for Thermal Series items and machines."
 				""
-				"It cannot stack with itself, but can stack with other base tier upgrades."
+				"Note: While you can put several base upgrades into a machine, only the highest tier takes effect."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2C50B0E024C3D92E"]
@@ -363,6 +393,19 @@
 				type: "item"
 				item: "thermal:upgrade_augment_3"
 			}]
+			rewards: [
+				{
+					id: "73069B8BEF917238"
+					type: "item"
+					item: "alltheores:enderium_ingot"
+					random_bonus: 2
+				}
+				{
+					id: "6724D7DE6CC92091"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: -5.0d

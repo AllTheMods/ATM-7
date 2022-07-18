@@ -1,0 +1,2461 @@
+{
+	id: "4F91F43F3651DB74"
+	group: "470D66B33874E150"
+	order_index: 1
+	filename: "tinkers_construct"
+	title: "Tinkers' Construct"
+	icon: {
+		id: "tconstruct:tinker_station"
+		Count: 1b
+		tag: {
+			texture: "minecraft:oak_planks"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -9.0d
+			y: -0.5d
+			shape: "octagon"
+			subtitle: "Custom Tools and Armor!"
+			description: [
+				"Welcome to &9Tinkers' Construct!&r"
+				""
+				"TC is all about creating custom tools and armor by creating individual parts that combine to make bigger and better tools!"
+				""
+				"It also adds new ways to smelt ores with custom multiblock Smelteries for all of your smelting needs."
+			]
+			size: 1.5d
+			id: "681E777B4C8E19CF"
+			tasks: [{
+				id: "34CAB10421425B7F"
+				type: "checkmark"
+				title: "Welcome to Tinkers' Construct!"
+			}]
+			rewards: [{
+				id: "280EE4ECA87B53D1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Patterns"
+			x: -7.0d
+			y: -0.5d
+			subtitle: "The Basic Pattern"
+			description: [
+				"To get started in TC, you'll need to create &ePatterns&r."
+				""
+				"These are made out of planks and sticks, so make sure to make plenty of them!"
+				""
+				"These are used to create the basic tables we'll need to create parts, as well as making tool patterns to create new tools!"
+			]
+			dependencies: ["681E777B4C8E19CF"]
+			id: "63318C8E26E28F58"
+			tasks: [{
+				id: "6E6A9B43E5936FD1"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 6L
+			}]
+			rewards: [
+				{
+					id: "127C1F9B87DBB586"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "40458073C2223A37"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			description: [
+				"To start crafting custom tools, we'll need 2 things:"
+				""
+				"The &9Tinker Station&r, which is what we'll use to combine parts into tools. This is also where you'll repair, upgrade, and enchance your tools."
+				""
+				"The &9Part Builder&r, which is what we'll use to create parts using &ePatterns&r and materials."
+				""
+				"Note: If you place these beside each other, you can access them all from one block! This also works for other TC workbenches or anvils."
+			]
+			dependencies: ["4E3BAD0EE3974503"]
+			id: "4E0F952F75FBC1C9"
+			tasks: [
+				{
+					id: "621FAD19ED0FD894"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "1060C73CDE482FE7"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "7272A308B3B605FB"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "7A1D6C2D78607250"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			subtitle: "Storing Parts"
+			description: ["The Part Chest is used to store extra parts that you might need in the future."]
+			dependencies: ["4E0F952F75FBC1C9"]
+			optional: true
+			id: "6C934DA835ECBAB6"
+			tasks: [{
+				id: "3FB0279E97A1C58E"
+				type: "item"
+				item: "tconstruct:part_chest"
+			}]
+			rewards: [
+				{
+					id: "5A65C81A3B2505D0"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 2
+				}
+				{
+					id: "4FDD45D8D8C2A4E1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			subtitle: "Even More Storage"
+			description: ["The Tinker's Chest allows you to store even more parts!"]
+			dependencies: ["4E0F952F75FBC1C9"]
+			optional: true
+			id: "6ECF405B1017AE53"
+			tasks: [{
+				id: "79E701B8D1414E05"
+				type: "item"
+				item: "tconstruct:tinkers_chest"
+			}]
+			rewards: [
+				{
+					id: "55761C8D2DADADA7"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 2
+				}
+				{
+					id: "2A993492F447F860"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Creating Parts"
+			x: -1.0d
+			y: -0.5d
+			description: [
+				"Take some blank patterns and place them inside of your Part Builder."
+				""
+				"you'll place materials beside the pattern to create certain parts. Start by placing some cobble in to create yourself a &9Stone Pickaxe Head&r, &9Stone Tool Rod&r, and &9Stone Binding&r."
+				""
+				"Note: Metals like Ingots will not work in this table. This is only for basic materials like wood, stone, etc."
+			]
+			dependencies: ["4E0F952F75FBC1C9"]
+			id: "66FB4821105A417E"
+			tasks: [
+				{
+					id: "3EDC127CFEF9C0A8"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:rock"
+						}
+					}
+				}
+				{
+					id: "77B21F897E0868CA"
+					type: "item"
+					item: {
+						id: "tconstruct:pick_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:rock"
+						}
+					}
+				}
+				{
+					id: "2632875F3AC02196"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:rock"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "08827DBF3EF84DB9"
+					type: "item"
+					item: "minecraft:stone"
+					count: 4
+				}
+				{
+					id: "637ECF48A8F402FB"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Your First Tool"
+			x: 1.0d
+			y: -0.5d
+			description: [
+				"With our parts in hand, let's jump over to the Tinker Station."
+				""
+				"The Tinker Station is how we combine parts to make tools, as well as upgrading and repairing them."
+				""
+				"Select the Pickaxe left side, and you'll see the 3 items needed to craft a pickaxe. Place in your parts, and you'll have created your first tool!"
+			]
+			dependencies: ["66FB4821105A417E"]
+			id: "4D580C89653F69AA"
+			tasks: [{
+				id: "050E9115DF330AF7"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:mining_speed": 4.2f
+							"tconstruct:attack_damage": 1.0f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:durability": 116.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing"
+								level: 1s
+							}
+							{
+								name: "tconstruct:stonebound"
+								level: 3s
+							}
+						]
+						tic_materials: [
+							"tconstruct:rock"
+							"tconstruct:rock"
+							"tconstruct:rock"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "30C69F1D2B71A028"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 8
+				}
+				{
+					id: "794018E99B1225DD"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"The Traveler's Goggles has low armor and durability, but it also comes with:"
+				""
+				"3 Upgrade Slots"
+				"2 Defense Slots"
+				"1 Ability Slot"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E9618EEC90169C3"]
+			hide: true
+			id: "3AC751D62C90AB7D"
+			tasks: [{
+				id: "1CC0640DDA90F52A"
+				type: "item"
+				item: {
+					id: "tconstruct:travelers_helmet"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 110.0f
+							"tconstruct:armor": 1.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 2
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "095E0A3C02B9BA87"
+					type: "item"
+					item: "minecraft:leather"
+					count: 2
+				}
+				{
+					id: "13F490A55ADA297D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"The Traveler's Vest has low armor and durability, but has:"
+				""
+				"3 Upgrade Slots"
+				"2 Defense Slots"
+				"1 Ability Slot"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E9618EEC90169C3"]
+			hide: true
+			id: "1D29F9AF07663111"
+			tasks: [{
+				id: "709A1A9D3AABFAE0"
+				type: "item"
+				item: {
+					id: "tconstruct:travelers_chestplate"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 160.0f
+							"tconstruct:armor": 5.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 2
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0B1B97E1843E5057"
+					type: "item"
+					item: "minecraft:leather"
+					count: 2
+				}
+				{
+					id: "688770CB82181A2B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"The pants have low armor and durability, but comes with:"
+				""
+				"3 Upgrade Slots"
+				"2 Defense Slots"
+				"1 Ability Slot"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E9618EEC90169C3"]
+			hide: true
+			id: "0DA42F096583C13C"
+			tasks: [{
+				id: "700AC57D0ACF1FCE"
+				type: "item"
+				item: {
+					id: "tconstruct:travelers_leggings"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 150.0f
+							"tconstruct:armor": 4.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 2
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7CCAE98342347C8A"
+					type: "item"
+					item: "minecraft:leather"
+					count: 2
+				}
+				{
+					id: "3DCE5B86E9A8AC10"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			shape: "square"
+			description: [
+				"As the rest of the gear, the boots come with low durability and armor, but comes with:"
+				""
+				"3 Upgrade Slots"
+				"2 Defense Slots"
+				"1 Ability Slot"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E9618EEC90169C3"]
+			hide: true
+			id: "6D8D7E0A97E14F2B"
+			tasks: [{
+				id: "74F9810054D8EB4B"
+				type: "item"
+				item: {
+					id: "tconstruct:travelers_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:durability": 130.0f
+							"tconstruct:armor": 1.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 2
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "273779C45A2214AC"
+					type: "item"
+					item: "minecraft:leather"
+					count: 2
+				}
+				{
+					id: "30CDBB4E2EFB493C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			shape: "diamond"
+			description: [
+				"Using the Tinker Station, you can modify your tools."
+				""
+				"Modifiers add special stats and abilities to your tools based on the modifier type."
+				""
+				"This section explains the types of modifiers!"
+			]
+			dependencies: ["4D580C89653F69AA"]
+			size: 1.5d
+			id: "317872EB7FB600F4"
+			tasks: [{
+				id: "536A0DA9D3833EB2"
+				type: "checkmark"
+				title: "Modifiers"
+			}]
+			rewards: [{
+				id: "541FF53B6B620C4B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"Traits are abilities or extra stats that are attached to either the type of tool, or the materials the tool was built out of."
+				""
+				"To see all of the different kinds of traits, make sure to check out the books &eMaterials and You&r, &eMighty Smelting&r, and &eFantastic Foundry&r."
+			]
+			dependencies: ["317872EB7FB600F4"]
+			id: "4D31658BCB3234D5"
+			tasks: [{
+				id: "11B59B175364E355"
+				type: "checkmark"
+				title: "Traits"
+			}]
+			rewards: [{
+				id: "39851B1532A36866"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"Each tool starts with 3 to 4 upgrade slots. These slots can be used to enhance the tool, like adding redstone to increase the speed."
+				""
+				"Make sure to check out the book &9Puny Smelting&r to see all of the available upgrades!"
+			]
+			dependencies: ["317872EB7FB600F4"]
+			id: "24535A5965EB8324"
+			tasks: [{
+				id: "10B656EADDAAD5BC"
+				type: "checkmark"
+				title: "Tool Upgrade Slots"
+			}]
+			rewards: [{
+				id: "64D7777877CA749C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Slotless Mods"
+			x: 1.0d
+			y: -4.0d
+			shape: "diamond"
+			description: [
+				"Slotless Modifiers do not require a slot to add. You can add as many as you'd like."
+				""
+				"These are usually cosmetic."
+				""
+				"To see a list of available Slotless Modifiers, check out the book &ePuny Smelting&r."
+			]
+			dependencies: ["317872EB7FB600F4"]
+			id: "7240E64810E9D832"
+			tasks: [{
+				id: "15D2B52AD79FCF54"
+				type: "checkmark"
+				title: "Slotless Modifiers"
+			}]
+			rewards: [{
+				id: "5D7262C6E05329A0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"Abilities are powerful modifiers, like Silk Touch or Autosmelt."
+				""
+				"Abilities require ability slots on the tool, which most tools start with at least one slot. You can only add 1 more ability slot per tool, so choose wisely!"
+				""
+				"The book &eMighty Smelting&r lists all available abilities that can be placed on tools."
+			]
+			dependencies: ["317872EB7FB600F4"]
+			id: "2948ECD7FB504F05"
+			tasks: [{
+				id: "0322FB95614F8672"
+				type: "checkmark"
+				title: "Tool Abilities"
+			}]
+			rewards: [{
+				id: "4CD8C7A3B34B766F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"These mods are applied to Armor, which gives certain defense abilities like Fire Resistance."
+				""
+				"If you're looking to check out all of the available Defense Modifiers, check out the book &eMighty Smelting&r."
+			]
+			dependencies: ["317872EB7FB600F4"]
+			id: "3E12B682BA858D79"
+			tasks: [{
+				id: "3EB37CED2BD3684A"
+				type: "checkmark"
+				title: "Defense Mods"
+			}]
+			rewards: [{
+				id: "3E6D66FE68D5CA8D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Gathering Grout"
+			x: 3.0d
+			y: -0.5d
+			subtitle: "I am Grout."
+			description: [
+				"To be able to use metals to create tools, we'll need a smeltery, which is created from &eGrout&r."
+				""
+				"To create Grout, you'll need Sand, Gravel, and Clay. Get as much as you can!"
+			]
+			dependencies: ["4D580C89653F69AA"]
+			id: "5D4F82496A6D1228"
+			tasks: [{
+				id: "487B22C8735A2ECF"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "26F2490E60E67CFA"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 8
+				}
+				{
+					id: "443C1FE5DFF3CD42"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			subtitle: "The Starter Guide"
+			description: [
+				"&eMaterials and You&r is the starter guide for Tinkers' Construct."
+				""
+				"You can also just use the Eccentric Tome that you started with, as it should have this book inside of it."
+				""
+				"You might be wondering why you're getting one in return. You'll need it to upgrade the book to the next tier!"
+			]
+			dependencies: ["63318C8E26E28F58"]
+			id: "4E3BAD0EE3974503"
+			tasks: [{
+				id: "3470A9B8D6C75484"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+			rewards: [
+				{
+					id: "3842E31DE5C28EAC"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "01175E9DECA5B0DC"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: ["This book will teach you how to make your first setup, the Melter."]
+			dependencies: ["5D4F82496A6D1228"]
+			optional: true
+			id: "202C1C3E4F32BC62"
+			tasks: [{
+				id: "5B872818EE37EE6E"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+			rewards: [{
+				id: "73313AB1ED590B7F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Throw it in the Furnace"
+			x: 5.0d
+			y: 1.0d
+			description: [
+				"Smelting &eGrout&r will give you &9Seared Bricks&r. Don't confuse these with the block Brick, as those are different."
+				""
+				"&9Seared Brick&r is the basic crafting material used to make a smeltery. It never hurts to get as many as you can."
+			]
+			dependencies: ["5D4F82496A6D1228"]
+			id: "20F30F5FFD3D669D"
+			tasks: [{
+				id: "4ECA340F0B13246E"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "45A3DDD7E9EE6C41"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 8
+				}
+				{
+					id: "210EFE8836D5C96F"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Your First Smeltery"
+			icon: "tconstruct:seared_melter"
+			x: 7.0d
+			y: 1.0d
+			description: [
+				"To create metal tools, we'll need to make a Smeltery to make molten metal."
+				""
+				"We're going to make a Melter, which is the first simple smeltery we'll need before we can make our big custom smelteries."
+				""
+				"This is how the Melter is setup:"
+				""
+				"{image:atm:textures/basic_melter.png width:200 height:150 align:1}"
+			]
+			dependencies: ["20F30F5FFD3D669D"]
+			id: "6DB1A9EDAAE6D12F"
+			tasks: [
+				{
+					id: "3DE5F08F9FD9261E"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 3L
+				}
+				{
+					id: "198F70795D1D162D"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "415D563EFA54D0B4"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "57759004B7A593B3"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "72EF56B5BF01B7A7"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "6DCFE80D576A51B4"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+			]
+			rewards: [
+				{
+					id: "78DEE685B1297282"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 16
+				}
+				{
+					id: "089CED85E7BE296A"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "70B9B5045ED1E393"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Single-Use Metal Casts"
+			x: 6.5d
+			y: -0.5d
+			description: ["At the start, you can make Sand Casts to create the tool casts for your first metal parts."]
+			dependencies: ["6DB1A9EDAAE6D12F"]
+			optional: true
+			id: "7A49EC84CABC8B5F"
+			tasks: [{
+				id: "7835ABA7AED1C995"
+				type: "item"
+				item: "tconstruct:blank_sand_cast"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "3C23865CD6B19F75"
+					type: "item"
+					item: "tconstruct:blank_sand_cast"
+					count: 2
+				}
+				{
+					id: "27890A00132013B1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Reusable Metal Casts"
+			x: 7.5d
+			y: -0.5d
+			description: [
+				"If you have the gold, you can make reusable casts by pouring the molten gold over the item you are looking to make a cast out of."
+				""
+				"Let's make an Ingot Gold Cast. Place some gold in the Melter to smelt it into Molten Gold, then place an ingot on the Casting Table. Right click on the faucet to pour out the Molten Gold over the ingot, creating us an Ingot Cast."
+			]
+			dependencies: ["6DB1A9EDAAE6D12F"]
+			id: "5D1661EB762777E3"
+			tasks: [{
+				id: "356977F9A6FC2A45"
+				type: "item"
+				item: "tconstruct:ingot_cast"
+			}]
+			rewards: [
+				{
+					id: "432855073A576998"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 2
+				}
+				{
+					id: "0C0DF2A27C56D01F"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Making the Smeltery Controller"
+			x: 11.0d
+			y: -0.5d
+			description: [
+				"Using our Melter, let's smelt down some Copper."
+				""
+				"Start by smelting 4 ingots of Copper in the Melter. Then, place a Seared Brick in our Casting Basin."
+				""
+				"With the Copper selected in the Melter (left click if you have other molten metals inside), right-click on the faucet to pour out the Molten Copper in the Casting Basin."
+				""
+				"This will create our Smeltery Controller."
+			]
+			dependencies: ["61EB8322B3E68C50"]
+			id: "506049B1F127462A"
+			tasks: [
+				{
+					id: "40ADC273F5D44DCA"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+				}
+				{
+					id: "08C4B1DE3B6D2EF2"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "70097EBD5FD3999C"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "036AA5EE1D7109FF"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "The Mighty Smeltery"
+			x: 11.0d
+			y: -3.0d
+			shape: "square"
+			description: [
+				"It's time to build the Smeltery."
+				""
+				"This can be any size, up to 16x16x64, but it must be rectangular."
+				""
+				"The basic standard Smeltery starts with a 3x3 base, usually in the ground. Then on the next layer, add Seared Bricks around the edges. At the front of the Smeltery, you'll place your Smeltery Controller and Seared Tank."
+				""
+				"To pump molten ingots out, we'll need a Seared Drain to pour the molten metal into our Casting Table and Basin. Don't forget the Faucets!"
+				""
+				"{image:atm:textures/basic_smeltery2.png width:200 height:100 align:1}"
+			]
+			dependencies: ["506049B1F127462A"]
+			size: 1.5d
+			id: "71409AA6F3C56CCC"
+			tasks: [
+				{
+					id: "4EEE29D9B449D303"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 18L
+				}
+				{
+					id: "1998C202C2C79D45"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+			]
+			rewards: [
+				{
+					id: "53DE1D55ABAB5FE7"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 8
+				}
+				{
+					id: "3585CA56CD4C38A7"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "0DFD9AB2C6951D7F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			subtitle: "Taking the Training Wheels Off"
+			description: ["To learn more about creating a Smeltery, let's make the next book: Mighty Smelting"]
+			dependencies: ["6DB1A9EDAAE6D12F"]
+			id: "61EB8322B3E68C50"
+			tasks: [{
+				id: "47CED3C0AADE17AC"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+			rewards: [{
+				id: "1555EB8AABC53C5E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Customizing your Smeltery"
+			x: 10.5d
+			y: -5.0d
+			shape: "diamond"
+			description: ["These blocks can be used as a replacement for Seared Bricks, while still making the Smeltery functional!"]
+			dependencies: ["71409AA6F3C56CCC"]
+			optional: true
+			id: "740EE68B4E779115"
+			tasks: [
+				{
+					id: "0B71EE4D0F307829"
+					type: "item"
+					item: "tconstruct:seared_ladder"
+				}
+				{
+					id: "50C1E4D079FBE02E"
+					type: "item"
+					item: "tconstruct:seared_glass"
+				}
+			]
+			rewards: [
+				{
+					id: "06ADC89063647698"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "1358BF38F880072D"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Input/Output"
+			x: 11.5d
+			y: -5.0d
+			shape: "diamond"
+			description: [
+				"Aside from the Seared Drain, there are more ways to pump fluids and items into or out of your Smeltery."
+				""
+				"The &9Seared Duct&r allows you to pump specific fluids out of your Smeltery. To do this, fill a Copper Can or Bucket filled with the fluid you wish to filter out, then put it inside of the Duct to act as a filter. This will then be shown in the middle of the Duct."
+				""
+				"The &6Seared Chute&r allows you to pump items into the Smeltery."
+			]
+			dependencies: ["71409AA6F3C56CCC"]
+			id: "2AD7445095E1822A"
+			tasks: [
+				{
+					id: "28F6D40B8B5A2D39"
+					type: "item"
+					item: "tconstruct:seared_duct"
+				}
+				{
+					id: "066CDE3E5A1C8AEB"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+			]
+			rewards: [
+				{
+					id: "6EA16F3E5DA49AF9"
+					type: "item"
+					item: "tconstruct:seared_brick"
+					count: 4
+				}
+				{
+					id: "69854B849BDE9C3B"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Making Alloys"
+			x: 13.0d
+			y: -3.0d
+			description: [
+				"The Smeltery will combine molten ingots together to create &9Alloys&r. You'll figure this out really fast if you just pump random ores into it."
+				""
+				"We will need alloys to create better tools and armor, so let's get ourselves some Bronze."
+				""
+				"To get Bronze, smelt Copper and Tin together. The alloy is 3 parts Copper, 1 part Tin."
+				""
+				"Tip: Pouring the molten Bronze into a Casting Basin creates a Bronze block, instead of making the individual ingots with the Casting Table."
+			]
+			dependencies: ["71409AA6F3C56CCC"]
+			id: "63A17D740F3718F1"
+			tasks: [{
+				id: "14270AD6B80B4628"
+				type: "item"
+				item: "alltheores:bronze_block"
+			}]
+			rewards: [
+				{
+					id: "00CD9D44BCB705FB"
+					type: "item"
+					item: "alltheores:bronze_ingot"
+					count: 3
+					random_bonus: 3
+				}
+				{
+					id: "2DB76C89B9437FD7"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "The Ultimate Creation Table"
+			description: [
+				"The &6Tinker's Anvil&r is the upgrade to the Tinker Station."
+				""
+				"It allows you to create &9Broad Tools&r like the Hammer, Excavator, and more."
+				""
+				"Note: The anvil top can be made out of any alloy, not just Bronze."
+			]
+			dependencies: ["63A17D740F3718F1"]
+			id: "1E35D97AF9B2A0C8"
+			tasks: [{
+				id: "534231B9986B7876"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "alltheores:bronze_block"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1BEC5A38A1C8159A"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:bronze"
+						}
+					}
+				}
+				{
+					id: "179970C0AF023F3C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Increasing the Size"
+			x: 11.0d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "Size Does Matter"
+			description: [
+				"If you want to increase the amount of storage and input slots the Smeltery has, build the Smeltery upwards!"
+				""
+				"Every layer on top of the Smeltery increases the amount of items it can smelt at the same time, and how much molten Ingots it can store."
+				""
+				"The max height is 64."
+			]
+			dependencies: ["71409AA6F3C56CCC"]
+			id: "79FEF7F610F0DB64"
+			tasks: [{
+				id: "18B1E0EC9C938915"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 12L
+			}]
+			rewards: [
+				{
+					id: "1A41759A80120C0E"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 4
+				}
+				{
+					id: "4D290773F5C0A967"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			icon: "tconstruct:smeltery_controller"
+			x: 7.0d
+			y: 2.5d
+			description: [
+				"If you're new to TC, it's helpful to know each part of the Smeltery and how it functions."
+				""
+				"The main controller, whether it is a &9Melter&r or &9Smeltery Controller&r will have a GUI when you right click. If it doesn't, the structure isn't complete!"
+				""
+				"This is how you manually insert ores and items into the Smeltery."
+			]
+			dependencies: ["6DB1A9EDAAE6D12F"]
+			optional: true
+			id: "01A303E16F56A744"
+			tasks: [{
+				id: "23353CA86237AE30"
+				type: "checkmark"
+				title: "Understanding Smeltery Parts"
+			}]
+			rewards: [{
+				id: "127FF1A55308259A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "tconstruct:seared_basin"
+			x: 6.5d
+			y: 3.5d
+			shape: "diamond"
+			description: [
+				"&9Casting Basins&r are used to create blocks out of molten metal. This is the easiest way to get metal out of the Smeltery, as it extracts 9 ingots to create a block. These can also be used to create specific items by pouring molten metals onto blocks placed in the Basin."
+				""
+				"&9Casting Tables&r are used for more precise pours, like creating casts or tool parts."
+			]
+			dependencies: ["01A303E16F56A744"]
+			optional: true
+			id: "3341EC0F88729061"
+			tasks: [{
+				id: "0738C23F6D0FFADB"
+				type: "checkmark"
+				title: "Casting Basin and Table"
+			}]
+			rewards: [{
+				id: "1BA529454AD71699"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "tconstruct:seared_faucet"
+			x: 7.5d
+			y: 3.5d
+			shape: "diamond"
+			description: [
+				"When right-clicked, &9Faucets&r function as a way to extract molten ingots from the Smeltery. This will only work if there is something to pour out onto, like a Casting Table."
+				""
+				"&9Channels&r are used to extend the reach of a faucet, and create a pipe-like network for molten liquids."
+			]
+			dependencies: ["01A303E16F56A744"]
+			optional: true
+			id: "3D4D2D0B160E22B5"
+			tasks: [{
+				id: "2562C1A8B4DB2EBB"
+				type: "checkmark"
+				title: "Faucets and Channels"
+			}]
+		}
+		{
+			icon: "tconstruct:seared_fuel_tank"
+			x: 7.0d
+			y: 4.0d
+			shape: "diamond"
+			description: [
+				"&9Seared Fuel Tanks&r store liquids that are used to heat up the Smeltery to smelt items down. These can stack on top of each other within the Smeltery multi-block, and can hold 4 buckets of fuel."
+				""
+				"Certain &eFuels&r are required to smelt certain ingots, depending on the heat required. Lava works for most ores, but you'll need &6Blazing Blood&r to smelt higher tier materials, like Allthemodium."
+			]
+			dependencies: ["01A303E16F56A744"]
+			optional: true
+			id: "05BC6BF2AAA43091"
+			tasks: [{
+				id: "282F6F2D6CC2E09D"
+				type: "checkmark"
+				title: "Fuel Tanks and Fuels"
+			}]
+			rewards: [{
+				id: "00290449960DE450"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Smelting Entities"
+			x: 9.0d
+			y: -3.5d
+			shape: "hexagon"
+			subtitle: "Don't Stand in the Smeltery"
+			description: [
+				"The Smeltery can be used to smelt entities to create items."
+				""
+				"&lNotable Entities:&r"
+				""
+				"Players - Blood (Slimeball substitute)"
+				"Silverfish - Seared Stone"
+				"Villagers and Illagers - Emeralds"
+				"Skeletons - Milk"
+				"Ender Dragon - What?"
+			]
+			dependencies: ["71409AA6F3C56CCC"]
+			optional: true
+			id: "00CB0F26B3751D32"
+			tasks: [{
+				id: "16789775F365204D"
+				type: "item"
+				item: "tconstruct:blood_slime_ball"
+			}]
+			rewards: [{
+				id: "58E07A76F21CD10B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "The \"All in One\" Book"
+			description: [
+				"Looking for a complete list of Materials, Upgrades, and more?"
+				""
+				"Make you one of these. It's better than having to flip through 4 different TC books."
+			]
+			dependencies: ["71409AA6F3C56CCC"]
+			optional: true
+			id: "3CEC4B07D209B7AD"
+			tasks: [{
+				id: "377B7F651B40C0F6"
+				type: "item"
+				item: "tconstruct:encyclopedia"
+			}]
+			rewards: [{
+				id: "39F210080C2C6FDC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Nether Grout"
+			x: 15.0d
+			y: -0.5d
+			subtitle: "I am Nether Grout."
+			description: [
+				"If we want to make a TC Foundry, we'll need something stronger than Seared Bricks."
+				""
+				"Head to the Nether for Magma Cream and Soul Sand. You'll need these to craft you some &9Nether Grout&r."
+			]
+			dependencies: ["1E35D97AF9B2A0C8"]
+			id: "085239E88B85820C"
+			tasks: [{
+				id: "7E9F548868BEB2FA"
+				type: "item"
+				item: "tconstruct:nether_grout"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "26561404443098F2"
+					type: "item"
+					item: "tconstruct:nether_grout"
+					count: 6
+					random_bonus: 6
+				}
+				{
+					id: "6C21856552B78399"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: -0.5d
+			subtitle: "How-To Foundry"
+			description: ["This book contains all of the information needed to create and use a Foundry, as well as a list of Tier 4 Materials and how to create Plate Armor."]
+			dependencies: ["085239E88B85820C"]
+			optional: true
+			id: "7675F195F6D5F8B4"
+			tasks: [{
+				id: "42232A516F1FD4F6"
+				type: "item"
+				item: "tconstruct:fantastic_foundry"
+			}]
+			rewards: [{
+				id: "7C58D43BD65FE70F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Creating a Foundry Controller"
+			icon: "tconstruct:scorched_bricks"
+			x: 15.0d
+			y: 2.5d
+			description: [
+				"To create the Foundry, we'll need the &6Foundry Controller&r."
+				""
+				"To get this, place a Scorched Brick in a Casting Basin, then pour at least 1 block's worth of Obsidian over it."
+			]
+			dependencies: ["5F6D253B5D900724"]
+			id: "5FAFAEC103BE62DD"
+			tasks: [
+				{
+					id: "78B14C96E2FCE9BA"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+				}
+				{
+					id: "636F5BF28DB30A27"
+					type: "item"
+					item: "minecraft:obsidian"
+				}
+				{
+					id: "4FC9AD1C3A09F27F"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "3648F56E2A4CBED5"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "5AC46217F06A5C61"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Nether Smelting"
+			x: 15.0d
+			y: 1.0d
+			description: ["Smelting Nether Grout will give us &6Scorched Bricks&r, which is what we'll use to create our Foundry."]
+			dependencies: ["085239E88B85820C"]
+			id: "5F6D253B5D900724"
+			tasks: [{
+				id: "319C6349A20B7C7A"
+				type: "item"
+				item: "tconstruct:scorched_brick"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "56A8465D58C6D65F"
+					type: "item"
+					item: "tconstruct:scorched_brick"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "67758A26C5EF748E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Creating the Foundry"
+			icon: "tconstruct:foundry_controller"
+			x: 15.0d
+			y: 4.5d
+			shape: "square"
+			description: [
+				"The &6Foundry&r is just like the Smeltery, but doesn't create alloys. No more worrying about mixing materials!"
+				""
+				"The Foundry also creates &9Byproducts&r from items smelted. For example, Copper can give Gold as a byproduct."
+				""
+				"To create the Foundry, you'll need to build it like the Smeltery using Scorched items instead of Seared. The Foundry also needs corners to function."
+				""
+				"Here is an example of a complete Foundry:"
+				""
+				"{image:atm:textures/basic_foundry.png width:200 height:150 align:1}"
+			]
+			dependencies: ["5FAFAEC103BE62DD"]
+			size: 1.5d
+			id: "073B3F17C6110A73"
+			tasks: [
+				{
+					id: "0D85D26357A4519B"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 16L
+				}
+				{
+					id: "135F9155412A324E"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+				{
+					id: "4F6FEC6577607A4B"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+				{
+					id: "04A2A3EAF99526E3"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "4CF07DE3D1810B0A"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "2D5888945AE1A6DE"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "0007AA5AED9C0FD1"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "0C5D7E4308EFBBA0"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Customizing the Foundry"
+			x: 13.0d
+			y: 4.5d
+			description: ["Just like the Smeltery, there are many blocks you can use that function as Foundry blocks when creating your Foundry."]
+			dependencies: ["073B3F17C6110A73"]
+			optional: true
+			id: "2FCE10E2126AB563"
+			tasks: [
+				{
+					id: "780AADB9124502A9"
+					type: "item"
+					item: "tconstruct:scorched_glass"
+				}
+				{
+					id: "78D90B46E670817A"
+					type: "item"
+					item: "tconstruct:scorched_duct"
+				}
+				{
+					id: "739B99391BF1C2CB"
+					type: "item"
+					item: "tconstruct:scorched_chute"
+				}
+			]
+			rewards: [
+				{
+					id: "25923BD4F23BEE66"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 4
+				}
+				{
+					id: "3D04A5A554AD9D55"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 15.0d
+			y: 6.5d
+			subtitle: "For Those That Need Alloys"
+			description: [
+				"For those that want to create alloys, this block will do exactly that."
+				""
+				"It will need either a heater or fuel tank beneath it, and will need Ingot tanks adjacent to the Alloyer to create the alloys."
+				""
+				"Insert the molten ingots into each of the Ingot Tanks, and the Alloyer will create the alloy."
+				""
+				"{image:atm:textures/basic_alloyer.png width:200 height:125 align:1}"
+			]
+			dependencies: ["073B3F17C6110A73"]
+			optional: true
+			id: "7AA0E88863D30B5D"
+			tasks: [
+				{
+					id: "7EF6A858AEB29DA8"
+					type: "item"
+					item: "tconstruct:scorched_alloyer"
+				}
+				{
+					id: "0CDC73E8DBA50FA7"
+					type: "item"
+					item: "tconstruct:scorched_ingot_tank"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "570DFB8FD01BEA9A"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 16
+				}
+				{
+					id: "027996FB738F9863"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "&6Blazing Blood&r"
+			x: 17.0d
+			y: 4.5d
+			subtitle: "What in the Blazes"
+			description: [
+				"Lava will not cut it for smelting down ores like &6Allthemodium&r. For this you'll need something hotter."
+				""
+				"Stacy's Mo- I mean &6Blazing Blood&r."
+				""
+				"There are several ways to get this. You can smelt Blaze Heads in the Foundry, OR... smelt the Blazes directly."
+				""
+				"Tip: Use &9Mekanism's &eCardboard Box&r to pick up a Blaze Spawner in the Nether. Bring the Blazes to your Foundry!!!!"
+			]
+			dependencies: ["073B3F17C6110A73"]
+			id: "2B7EFB6A2605BEFD"
+			tasks: [{
+				id: "46420D96D907C511"
+				type: "item"
+				item: "tconstruct:blaze_head"
+			}]
+			rewards: [
+				{
+					id: "177560D67E95D1DD"
+					type: "item"
+					item: "tconstruct:blazing_blood_bucket"
+				}
+				{
+					id: "4EA2AF67FEA31605"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Melting Tool Ability"
+			x: 17.0d
+			y: 6.5d
+			description: [
+				"Want to melt entities by hand?"
+				""
+				"Adding the &6Melter&r ability to your tool allows you to melt the enemies directly into your tool."
+				""
+				"Note: The Tool will require a &9Tank Upgrade&r to store liquids."
+			]
+			dependencies: ["2B7EFB6A2605BEFD"]
+			optional: true
+			id: "729B02AE3CDD52AD"
+			tasks: [
+				{
+					id: "6CBF02F660781BEB"
+					type: "item"
+					item: "minecraft:blaze_rod"
+					count: 2L
+				}
+				{
+					id: "3EF210DD4581E94F"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "1DE67536C429D4EF"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "6BCA350317D8DB4B"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+			rewards: [
+				{
+					id: "18A7AB1B620B2E07"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1015DAE6FDD73726"
+					type: "item"
+					item: "minecraft:blaze_rod"
+					count: 2
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: -1.5d
+			shape: "square"
+			description: [""]
+			hide_dependency_lines: true
+			dependencies: ["7D87F961B76246CA"]
+			id: "47036143F1C1ACBF"
+			tasks: [{
+				id: "54D194010E11D42A"
+				type: "item"
+				item: {
+					id: "tconstruct:plate_helmet"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:durability": 330.0f
+							"tconstruct:armor": 2.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 4
+							upgrades: 1
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "79A447E0D666AAE3"
+					type: "item"
+					item: "tconstruct:cobalt_ingot"
+					count: 2
+				}
+				{
+					id: "3435D8453EDE3FF6"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: -0.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7D87F961B76246CA"]
+			id: "1A1FC33BF6FA46D0"
+			tasks: [{
+				id: "09F3B5DFA9F04C81"
+				type: "item"
+				item: {
+					id: "tconstruct:plate_chestplate"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:durability": 480.0f
+							"tconstruct:armor": 7.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 4
+							upgrades: 1
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0F91754ABCE08DC6"
+					type: "item"
+					item: "tconstruct:cobalt_ingot"
+					count: 2
+				}
+				{
+					id: "7E02FA1499953328"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 1.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7D87F961B76246CA"]
+			id: "7A915BE0EB750D10"
+			tasks: [{
+				id: "3252DBE061633FAE"
+				type: "item"
+				item: {
+					id: "tconstruct:plate_leggings"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:durability": 450.0f
+							"tconstruct:armor": 5.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 4
+							upgrades: 1
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "349787C18996CE25"
+					type: "item"
+					item: "tconstruct:cobalt_ingot"
+					count: 2
+				}
+				{
+					id: "419C93B2BDA259FB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 2.5d
+			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["7D87F961B76246CA"]
+			id: "3AA240330D9BCC13"
+			tasks: [{
+				id: "4B146B86BEE3404C"
+				type: "item"
+				item: {
+					id: "tconstruct:plate_boots"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:armor_toughness": 2.0f
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:durability": 390.0f
+							"tconstruct:armor": 2.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [ ]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							defense: 4
+							upgrades: 1
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "67A0C096209E5691"
+					type: "item"
+					item: "tconstruct:cobalt_ingot"
+					count: 2
+				}
+				{
+					id: "3480693D24A93EE7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Cleaver"
+			x: 15.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "Heavy Hitter"
+			description: ["High Damage weapon that also decapitates. "]
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "4284DC447ED43032"
+			tasks: [{
+				id: "5F6A0DAD14C22789"
+				type: "item"
+				item: {
+					id: "tconstruct:cleaver"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.25f
+							"tconstruct:attack_damage": 1.5f
+							"tconstruct:durability": 3.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.0f
+							"tconstruct:mining_speed": 1.5f
+							"tconstruct:attack_damage": 7.5f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1540.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:severing"
+								level: 2s
+							}
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+							{
+								name: "tconstruct:silky_aoe_shears"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "70EC3A03C84168B3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Excavator"
+			x: 14.5d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "3x3 Digging"
+			description: [""]
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "7FF7E8F009D21285"
+			tasks: [{
+				id: "55CD41E6BCDD8924"
+				type: "item"
+				item: {
+					id: "tconstruct:excavator"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.2f
+							"tconstruct:durability": 3.75f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.0f
+							"tconstruct:mining_speed": 1.8000001f
+							"tconstruct:attack_damage": 4.2000003f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1650.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:knockback"
+								level: 2s
+							}
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+							{
+								name: "tconstruct:shovel_flatten"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2D7BECFB14E67900"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Vein Hammer"
+			x: 15.0d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "Kinda useless with Ultimine"
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "7C518B3A86E4869F"
+			tasks: [{
+				id: "7F17C4A012A6EF0D"
+				type: "item"
+				item: {
+					id: "tconstruct:vein_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.25f
+							"tconstruct:durability": 5.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.85f
+							"tconstruct:mining_speed": 1.8000001f
+							"tconstruct:attack_damage": 5.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 2200.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing"
+								level: 2s
+							}
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2019775866C688BC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Sledge Hammer"
+			x: 14.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "3x3 Mining"
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "35BA7E1421AADE3A"
+			tasks: [{
+				id: "467762FC002733D1"
+				type: "item"
+				item: {
+					id: "tconstruct:sledge_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:mining_speed": 2.4f
+							"tconstruct:attack_damage": 6.75f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1760.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:smite"
+								level: 2s
+							}
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C6008A3A2A8FEE1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "Cuts down entire trees - Also useless with Ultimine"
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "2E73CA4D82AB10E0"
+			tasks: [{
+				id: "3BB4A6D3ADBB14F2"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_axe"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.3f
+							"tconstruct:attack_damage": 1.65f
+							"tconstruct:durability": 4.25f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.6f
+							"tconstruct:mining_speed": 1.8000001f
+							"tconstruct:attack_damage": 11.55f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1870.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+							{
+								name: "tconstruct:axe_strip"
+								level: 1s
+							}
+							{
+								name: "tconstruct:axe_scrape"
+								level: 1s
+							}
+							{
+								name: "tconstruct:axe_wax_off"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "110F2DDD5639ED99"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.5d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "Reaping Tool for Farming"
+			dependencies: ["1E35D97AF9B2A0C8"]
+			optional: true
+			id: "0A2BC58800819C15"
+			tasks: [{
+				id: "155A9D8D5E9E5589"
+				type: "item"
+				item: {
+					id: "tconstruct:scythe"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.45f
+							"tconstruct:durability": 2.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.7f
+							"tconstruct:mining_speed": 2.6999998f
+							"tconstruct:attack_damage": 3.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1100.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:sturdy"
+								level: 4s
+							}
+							{
+								name: "tconstruct:silky_aoe_shears"
+								level: 1s
+							}
+							{
+								name: "tconstruct:harvest"
+								level: 1s
+							}
+							{
+								name: "tconstruct:hoe_till"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1E164BAE30AD659F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "tconstruct:pick_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:iron"
+				}
+			}
+			x: 1.0d
+			y: 1.0d
+			shape: "diamond"
+			description: [
+				"Tools can be repaired by placing them in a Tinker Station with the material they are made out of."
+				""
+				"You can also make repair kits (from Tinkers' Construct, not Silent Gear) to repair them on the go."
+				""
+				"Tools can also be upgraded by combining the new tool part with the tool in the Tinker Station."
+			]
+			dependencies: ["4D580C89653F69AA"]
+			optional: true
+			id: "748F70BEEAAE2AF9"
+			tasks: [{
+				id: "13CA35CA6EC15987"
+				type: "checkmark"
+				title: "Repairing and Upgrading Tools"
+			}]
+			rewards: [{
+				id: "2BABD291D5576987"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "&6Soul Lava"
+			x: 18.5d
+			y: 4.5d
+			subtitle: "So hot it can melt anything, except an Iron Bucket."
+			description: [
+				"Deep in The Other, you will find a Volcano filled with the hottest liquid in all of Minecraft."
+				""
+				"&6Soul Lava&r is used to make the Allthemodium alloys. You'll need this to make the ATM Star!"
+				""
+				"{image:atm:textures/soul_lava.png width:200 height:175 align:1}"
+			]
+			dependencies: ["2B7EFB6A2605BEFD"]
+			id: "0858E8E6363138B8"
+			tasks: [{
+				id: "77A52F974A768434"
+				type: "item"
+				item: "allthemodium:soul_lava_bucket"
+			}]
+			rewards: [
+				{
+					id: "4C016BEDE92D8EDC"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+					random_bonus: 1
+				}
+				{
+					id: "0D563339CE61E1B2"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "The ATM Alloys"
+			x: 21.0d
+			y: 4.5d
+			shape: "octagon"
+			description: [
+				"With Soul Lava, you'll be able to create the Allthemodium alloys."
+				""
+				"Note: You will need to use either an Alloyer or the Smeltery to combine the ingots, as the Foundry does not make alloys."
+			]
+			dependencies: ["0858E8E6363138B8"]
+			size: 2.0d
+			id: "09E556E4EDDCDD2E"
+			tasks: [
+				{
+					id: "2791A85BEB9EA266"
+					type: "item"
+					item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+				}
+				{
+					id: "5F1462947C125699"
+					type: "item"
+					item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+				}
+				{
+					id: "3E0AE3F55767AFEE"
+					type: "item"
+					item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "5A32B340365ACC24"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "6C2507450A16E07D"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "0367196F6814D84C"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "6950E9DCCBEE0806"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			description: [
+				"If you're just starting out, you can make yourself some &9Traveler's Gear&r."
+				""
+				"These gear pieces all boast several upgrade slots, defense slots, and an ability slot."
+				""
+				"While it isn't the greatest for protection, it allows you to customize your armor."
+			]
+			hide_dependency_lines: true
+			dependencies: ["681E777B4C8E19CF"]
+			id: "3E9618EEC90169C3"
+			tasks: [{
+				id: "428B3A5FD5E4796F"
+				type: "checkmark"
+				title: "Traveler's Gear"
+			}]
+			rewards: [
+				{
+					id: "34A717C853280A3B"
+					type: "item"
+					item: "minecraft:leather"
+					count: 2
+				}
+				{
+					id: "672A5B8298F1871E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 0.5d
+			description: [
+				"Using Cobalt from the Nether, you can create yourself a customizable set of &9Plate Armor&r."
+				""
+				"This is basically an upgrade from the Traveler's Gear."
+				""
+				"Each piece of Plate Armor has high durability and armor, and they all come with:"
+				""
+				"1 Upgrade Slot"
+				"4 Defense Slots"
+				"1 Ability Slot"
+			]
+			id: "7D87F961B76246CA"
+			tasks: [{
+				id: "58647E9ACAD9FDB9"
+				type: "checkmark"
+				title: "Plate Armor"
+			}]
+			rewards: [{
+				id: "6FC67A906BE61358"
+				type: "xp"
+				xp: 10
+			}]
+		}
+	]
+}

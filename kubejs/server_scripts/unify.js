@@ -368,6 +368,133 @@ onEvent('recipes', e => {
     nickel: "copper",
     gold: "thermal:cinnabar",
   }
+  
+  let thermalSmelterRawSecondaryChanceOverrides = {
+    tin: 0.2
+  }
+
+  let thermalSmelterOreSecondaryChanceOverrides = {
+    tin: 0.8,
+    gold: 0.1
+  }
+  
+  function thermalUnifySmelterDustRecipe(metal) {
+    if (vanillaMetals.includes(metal)) {
+      return;
+    }
+
+    if (thermalMetals.includes(metal) || thermalAlloys.includes(metal)) {
+      e.remove({type: "thermal:smelter", id: `/smelter_${metal}_dust/`});
+    }
+
+    let id = `kubejs:thermal/smelter/${metal}_dust`;
+    let ingredient = Ingredient.of(`#forge:dusts/${metal}`);
+    let outputs = [];
+
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "count": 1};
+    outputs.push(mainResult)
+
+    e.custom({
+      "type": "thermal:smelter",
+      "ingredient": ingredient,
+      "result": outputs,
+      "energy_mod": 0.5
+    }).id(id);
+  }
+
+  function thermalUnifySmelterRawRecipe(metal) {
+    if (vanillaMetals.includes(metal) || thermalMetals.includes(metal)) {
+      e.remove({type: "thermal:smelter", id: `/raw_${metal}/`});
+    }
+
+    let id = `kubejs:thermal/smelter/raw_${metal}`;
+    let ingredient = Ingredient.of(`#forge:raw_materials/${metal}`)
+    let outputs = [];
+
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.5, "locked": true};
+    outputs.push(mainResult);
+
+    if (metal in thermalSecondaries) {
+      let extraItemName = thermalSecondaries[metal]
+      let extraItem;
+      let chance = 1;
+
+      if (metal in thermalSmelterRawSecondaryChanceOverrides) {
+        chance = thermalSmelterRawSecondaryChanceOverrides[metal];
+      }
+
+      if (extraItemName.includes('thermal')) {
+        extraItem = Item.of(extraItemName)
+      } else if (extraItemName === 'iron' || extraItemName === 'gold') {
+        extraItem = Item.of(`minecraft:${extraItemName}_nugget`)
+      } else {
+        extraItem = Item.of(`${craftOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_nugget`)
+      }
+      
+      outputs.push(extraItem.withChance(chance))
+    }
+
+    e.custom({
+      "type": "thermal:smelter",
+      "ingredient": ingredient,
+      "result": outputs,
+      "experience": 0.1
+    }).id(id);
+  }
+
+  function thermalUnifySmelterOreRecipe(metal) {
+    if (vanillaMetals.includes(metal) || thermalMetals.includes(metal)) {
+      e.remove({type: "thermal:smelter", id: `/${metal}_ore/`});
+    }
+
+    let id = `kubejs:thermal/smelter/${metal}_ore`;
+    let ingredient = Ingredient.of(`#forge:ores/${metal}`);
+    let outputs = [];
+
+    let mainResult = {"item": `${oreOverride[metal] ?? 'alltheores'}:${metal}_ingot`, "chance": 1.0};
+    outputs.push(mainResult);
+
+    if (metal in thermalSecondaries) {
+      let extraItemName = thermalSecondaries[metal];
+      let chance = 0.2;
+
+      if (metal in thermalSmelterOreSecondaryChanceOverrides) {
+        chance = thermalSmelterRawSecondaryChanceOverrides[metal];
+      }
+
+      if (extraItemName.includes('thermal')) {
+        outputs.push({"item": extraItemName, "chance": chance})
+      } else {
+        outputs.push({"item": `${oreOverride[extraItemName] ?? 'alltheores'}:${extraItemName}_ingot`, "chance": chance})
+      }
+    }
+
+    outputs.push(Item.of("thermal:rich_slag").withChance(0.2));
+
+    e.custom({
+      "type": "thermal:smelter",
+      "ingredient": ingredient,
+      "result": outputs,
+      "experience": 0.2
+    }).id(id);
+  }
+
+  function thermalUnifySmelterAlloyRecipe(metal) {
+    if (thermalAlloys.includes(metal)) {
+      e.remove({type: "thermal:smelter", id: `/alloy_${metal}/`})
+    }
+  }
+
+  function thermalUnifySmelterMetalAll(metal) {
+    thermalUnifySmelterDustRecipe(metal);
+    thermalUnifySmelterRawRecipe(metal);
+    thermalUnifySmelterOreRecipe(metal);
+  }
+
+  function thermalUnifySmelterAlloyAll(metal) {
+    thermalUnifySmelterDustRecipe(metal);
+    thermalUnifySmelterAlloyRecipe(metal);
+  }
 
   function thermalUnifyPulverizer(metal, type) {
     let outputs = []
@@ -541,6 +668,7 @@ onEvent('recipes', e => {
     ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing'].forEach(type => thermalUnifyPress(ore, type));
     createPressing(ore);
     blastingUnifyOres(ore);
+    thermalUnifySmelterMetalAll(ore);
     // remove combiner recipes
     e.remove({ type: "mekanism:combining", id: `/${ore}\/ore/` });
   });
@@ -551,6 +679,7 @@ onEvent('recipes', e => {
     ['plate', 'gear', 'unpacking', 'packing'].forEach(type => thermalUnifyPress(alloy, type));
     ftbicUnifyOres(alloy, 'ingot');
     thermalUnifyPulverizer(alloy, 'ingot');
+    thermalUnifySmelterAlloyAll(alloy);
     mekUnifyOres(alloy, 'ingot');
     createPressing(alloy);
   })

@@ -956,7 +956,7 @@
 			tasks: [{
 				id: "0D3424958668A9C9"
 				type: "item"
-				item: "allthemodium:piglich_heart"
+				item: "allthemodium:ancient_stone"
 			}]
 			rewards: [{
 				id: "428A522A0F1DD707"
@@ -1055,7 +1055,7 @@
 			description: [
 				"With these items, you can now make yourself DiamondSight potions!"
 				""
-				"When consumed, you will be able to see diamond ore through blocks."
+				"Use these to make a Charm of Diamondsight!"
 			]
 			dependencies: ["424202C5D36CC1C2"]
 			id: "339FCC2A29AF2383"
@@ -1170,7 +1170,7 @@
 			rewards: [{
 				id: "5307F77C5EC37567"
 				type: "xp"
-				xp: 10
+				xp: 100
 			}]
 		}
 		{
@@ -1867,7 +1867,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 4.0d
 			y: 3.5d
 			dependencies: ["201143A8D039A543"]
 			id: "36BF9C4CB26090CA"

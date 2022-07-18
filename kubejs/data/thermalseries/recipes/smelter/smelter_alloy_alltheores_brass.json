@@ -1,0 +1,37 @@
+{
+  "type": "thermal:smelter",
+
+  "input": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/copper"
+        },
+        {
+          "tag": "forge:dusts/copper"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/zinc"
+        },
+        {
+          "tag": "forge:dusts/zinc"
+        }
+      ],
+      "count": 1
+    }
+  ],
+
+  "result": [
+    {
+      "item": "alltheores:brass_ingot",
+      "count": 4
+    }
+  ],
+
+  "energy": 6400
+}

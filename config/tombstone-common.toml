@@ -2,7 +2,7 @@
 #Options related to player's death
 [player_death]
 	#Whether to unlock access to a grave if the player has been killed by another player [false/true|default:true]
-	pvp_unlock_grave = true
+	pvp_unlock_grave = false
 	#Whether to handle player death [false/true|default:true]
 	handle_player_death = true
 	#Whether to restore beneficial effects after a player dies [false/true|default:true]
@@ -205,6 +205,9 @@
 	undead_boss_life_for_drop = 200
 	#Entities that can't found as loot in a Familiar Receptacle
 	unhandled_tameable_entities = []
+	#Maximum xp rewarded with a Lost Page of ErdÃ¶s [1..200000|default:2000]
+	#Range: 1 ~ 200000
+	max_xp_lost_page = 2000
 
 #Allows to enable some features related to others mods
 [compatibility]
