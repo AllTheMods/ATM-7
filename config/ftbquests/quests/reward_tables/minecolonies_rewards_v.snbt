@@ -1,0 +1,18 @@
+{
+	id: "53354C2E457774A1"
+	order_index: 11
+	title: "Minecolonies Animal Rewards"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:chicken_spawn_egg" }
+		{ item: "minecraft:cow_spawn_egg" }
+		{ item: "minecraft:goat_spawn_egg" }
+		{ item: "minecraft:horse_spawn_egg" }
+		{ item: "minecraft:pig_spawn_egg" }
+		{ item: "minecraft:llama_spawn_egg" }
+		{ item: "minecraft:rabbit_spawn_egg" }
+		{ item: "minecraft:sheep_spawn_egg" }
+	]
+}

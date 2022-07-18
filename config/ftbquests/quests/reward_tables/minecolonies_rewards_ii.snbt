@@ -1,0 +1,21 @@
+{
+	id: "12F42941B7B83920"
+	order_index: 7
+	title: "Minecolonies Building Block Rewards"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:stone", count: 32 }
+		{ item: "minecraft:sand", count: 128 }
+		{ item: "minecraft:gravel", count: 128 }
+		{ item: "minecraft:oak_log", count: 64 }
+		{ item: "minecraft:spruce_log", count: 64 }
+		{ item: "minecraft:birch_log", count: 64 }
+		{ item: "minecraft:jungle_log", count: 64 }
+		{ item: "minecraft:acacia_log", count: 64 }
+		{ item: "minecraft:dark_oak_log", count: 64 }
+		{ item: "minecraft:clay", count: 32 }
+		{ item: "minecraft:cobblestone", count: 64 }
+	]
+}

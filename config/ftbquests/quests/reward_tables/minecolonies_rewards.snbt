@@ -1,0 +1,13 @@
+{
+	id: "5F812480E28BFA04"
+	order_index: 5
+	title: "Minecolonies Intro Reward"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:parrot_spawn_egg", count: 3 }
+		{ item: "minecraft:cat_spawn_egg" }
+		{ item: "minecraft:wolf_spawn_egg" }
+	]
+}
