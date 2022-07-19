@@ -628,7 +628,6 @@
 			x: 5.5d
 			y: 0.0d
 			subtitle: "Breaks down items into their components."
-			description: [""]
 			dependencies: ["15DE3BF0CBD8E0B4"]
 			id: "2EB96FF06627FD9A"
 			tasks: [{
