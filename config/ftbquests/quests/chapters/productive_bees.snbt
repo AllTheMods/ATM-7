@@ -552,7 +552,6 @@
 			x: 1.0d
 			y: 9.5d
 			subtitle: "Ashy Mining + Crystalline"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "114D668C691A2BDF"
@@ -664,7 +663,7 @@
 			x: 2.0d
 			y: 11.0d
 			subtitle: "Crystalline + Ashy Mining"
-			description: [""]
+			
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "75CD4EE6A542D687"
@@ -746,7 +745,6 @@
 			x: -1.0d
 			y: 12.5d
 			subtitle: "Crystalline + Ashy Mining Bee"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "0D5D76B3551CD5A7"
@@ -787,7 +785,6 @@
 			x: 0.0d
 			y: 10.0d
 			subtitle: "Crystalline + Mason"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			hide: false
@@ -2031,7 +2028,6 @@
 			x: 1.0d
 			y: 12.5d
 			subtitle: "Iron + Sweat"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "7EAFF64FFE8B5378"
@@ -2232,7 +2228,6 @@
 			x: -1.0d
 			y: 10.5d
 			subtitle: "Magmatic + Nomad"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "0072C4F028C327CB"
@@ -2676,7 +2671,6 @@
 			x: 2.0d
 			y: 14.0d
 			subtitle: "Copper + Nickel"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "52B22C07818981D0"
@@ -4076,7 +4070,6 @@
 			x: 7.0d
 			y: 12.5d
 			subtitle: "Feed a Shroombee a Crimson Fungus!"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["17419401147B5C02"]
 			id: "176ACC61DC206E55"
