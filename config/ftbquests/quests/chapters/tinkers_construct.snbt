@@ -1713,7 +1713,6 @@
 			x: 13.0d
 			y: -1.5d
 			shape: "square"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["7D87F961B76246CA"]
 			id: "47036143F1C1ACBF"
@@ -1969,7 +1968,6 @@
 			y: -5.5d
 			shape: "diamond"
 			subtitle: "3x3 Digging"
-			description: [""]
 			dependencies: ["1E35D97AF9B2A0C8"]
 			optional: true
 			id: "7FF7E8F009D21285"
