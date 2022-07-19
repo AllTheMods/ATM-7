@@ -262,7 +262,6 @@
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "Generates Power using Enchanted Items!"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["2C50B0E024C3D92E"]
 			id: "2EAE9EDE6EFA59F0"
