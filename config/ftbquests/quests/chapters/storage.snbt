@@ -1649,7 +1649,6 @@
 			y: -8.0d
 			shape: "diamond"
 			subtitle: "Enables Pushing to Inventories"
-			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["009A4AA36AA30F7D"]
 			id: "3AF1F2E096C10240"
