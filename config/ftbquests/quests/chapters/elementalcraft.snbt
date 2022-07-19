@@ -1560,7 +1560,6 @@
 			title: "Speed Runes"
 			x: 8.0d
 			y: -3.0d
-			description: [""]
 			dependencies: ["437F160DA20BFCD3"]
 			hide_text_until_complete: true
 			id: "09A85BC5D3DA51CE"
