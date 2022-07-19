@@ -495,7 +495,6 @@
 			y: 0.0d
 			shape: "diamond"
 			subtitle: "Just wait until you get machines for this."
-			description: [""]
 			size: 1.25d
 			id: "43021923E220CF68"
 			tasks: [{
