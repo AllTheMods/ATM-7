@@ -731,7 +731,6 @@
 			y: 4.0d
 			shape: "diamond"
 			subtitle: "For Transferring Power"
-			description: [""]
 			dependencies: ["1B6DDF50D00CBB31"]
 			size: 1.5d
 			id: "23F165DEAD225B10"
