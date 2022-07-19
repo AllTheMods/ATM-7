@@ -403,7 +403,6 @@
 			x: -2.0d
 			y: -8.5d
 			shape: "rsquare"
-			description: [""]
 			dependencies: ["63DD7F5A4441ACE7"]
 			id: "36183375DAA54408"
 			tasks: [{
