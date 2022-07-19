@@ -83,7 +83,7 @@
 		{
 			x: -2.5d
 			y: 2.0d
-			description: ["t is recommended to craft this potion with your first ingot."]
+			description: ["It is recommended to craft this potion with your first ingot."]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "04AB01C841CD3E3F"
 			tasks: [{
@@ -131,7 +131,6 @@
 		{
 			x: 1.0d
 			y: 2.0d
-			description: [""]
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "7496DB58411060AE"
 			tasks: [{
@@ -160,7 +159,6 @@
 		{
 			x: 4.5d
 			y: 2.0d
-			description: [""]
 			dependencies: ["44760B819EB3CA68"]
 			id: "76016E5C8C9397D2"
 			tasks: [{
@@ -316,7 +314,6 @@
 		{
 			x: 4.5d
 			y: 3.0d
-			description: [""]
 			dependencies: ["76016E5C8C9397D2"]
 			id: "2D76BDEC76B0C788"
 			tasks: [{
