@@ -12,7 +12,11 @@
 			title: "Allthemodium Ore"
 			x: -3.5d
 			y: 1.5d
-			description: ["Found in Mountainous biomes inside cave ceilings and walls, with additional deposits in peaks above Y170."]
+			description: [
+				"Found in Mountainous biomes inside cave ceilings and walls, with additional deposits in peaks above Y170."
+				""
+				"It is also found in the Mining dimension, between Y0 and Y20."
+			]
 			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			hide: false
@@ -83,7 +87,7 @@
 		{
 			x: -2.5d
 			y: 2.0d
-			description: ["t is recommended to craft this potion with your first ingot."]
+			description: ["It is recommended to craft this potion with your first ingot."]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "04AB01C841CD3E3F"
 			tasks: [{

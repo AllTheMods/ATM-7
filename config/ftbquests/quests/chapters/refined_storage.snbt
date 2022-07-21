@@ -883,7 +883,7 @@
 		{
 			x: 1.5d
 			y: -6.0d
-			description: ["Lets you access your storage but with a craftin table."]
+			description: ["Lets you access your storage but with a crafting table."]
 			dependencies: ["43E8912CB307E421"]
 			id: "0F00BBDF3618B3BA"
 			tasks: [{
