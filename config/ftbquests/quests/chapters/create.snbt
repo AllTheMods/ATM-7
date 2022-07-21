@@ -136,11 +136,7 @@
 		{
 			x: 7.0d
 			y: 1.5d
-			description: [
-				"The &n&5Encased Fan&r has multiple uses. It can be used to generate a low amount of rotational energy if it's placed above a heat source, like Lava."
-				""
-				"It can also be used to pull/push items and entities if you spin it. The arrow will show you the direction it's facing and the rotation direction will determine if it pushes or pulls."
-			]
+			description: ["The &n&5Encased Fan&r is used to pull/push items and entities if you spin it. The arrow will show you the direction it's facing and the rotation direction will determine if it pushes or pulls."]
 			dependencies: ["17885C2DE986F1BD"]
 			id: "1E9B2D814F50A265"
 			tasks: [{

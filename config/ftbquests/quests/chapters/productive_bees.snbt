@@ -2448,21 +2448,9 @@
 			dependencies: ["131EC039435B8878"]
 			id: "40E4F1172A164DD1"
 			tasks: [{
-				id: "0862F3D9068E3F99"
+				id: "49F452C12DF14873"
 				type: "item"
-				title: "Sugarbag Comb"
-				icon: "productivebees:sugarbag_honeycomb"
-				item: {
-					id: "itemfilters:strong_nbt"
-					Count: 1b
-					tag: {
-						value: {
-							EntityTag: {
-								type: "productivebees:sugarbag"
-							}
-						}
-					}
-				}
+				item: "productivebees:sugarbag_honeycomb"
 			}]
 			rewards: [{
 				id: "69806B463D43C9FD"
@@ -3743,21 +3731,9 @@
 			dependencies: ["131EC039435B8878"]
 			id: "5F080CFA1DC7F435"
 			tasks: [{
-				id: "72BFED86EF405F1C"
+				id: "281AD60CC0AB054F"
 				type: "item"
-				title: "Ghostly Comb"
-				icon: "productivebees:honeycomb_ghostly"
-				item: {
-					id: "itemfilters:strong_nbt"
-					Count: 1b
-					tag: {
-						value: {
-							EntityTag: {
-								type: "productivebees:ghostly"
-							}
-						}
-					}
-				}
+				item: "productivebees:honeycomb_ghostly"
 			}]
 			rewards: [{
 				id: "340488322E26DDE0"
@@ -3775,7 +3751,7 @@
 			dependencies: ["131EC039435B8878"]
 			id: "614937A2F5823F3E"
 			tasks: [{
-				id: "125458372C51EAF7"
+				id: "3202568944BCBF77"
 				type: "item"
 				title: "Magmatic Comb"
 				icon: {
@@ -3788,7 +3764,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
