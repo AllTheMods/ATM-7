@@ -21,4 +21,8 @@ onEvent('jei.information', e => {
     'Otherwise acts as an expensive energy trash can.',
   ])
   
+    e.add('pylons:infusion_pylon',[ 
+    'Chunkloads a single chunk. Only one pylon per player will load at a time, and only while the player is online.',
+  ])
+  
 })
