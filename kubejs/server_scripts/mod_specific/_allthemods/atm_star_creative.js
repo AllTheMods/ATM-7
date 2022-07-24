@@ -69,6 +69,50 @@ onEvent('recipes', e => {
     'integrateddynamics:energy_battery'
   ], 'integrateddynamics:energy_battery_creative', 2147483647)
 
+  ///# IronJetpacks
+  e.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:creative"}'), [
+    ' A ',
+    'BCB',
+    ' A '
+  ], {
+    A: '#forge:storage_blocks/redstone',
+    B: 'allthemodium:unobtainium_block',
+    C: 'powah:battery_nitro'
+  })
+  e.shaped(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}'), [
+    'ABA',
+    'BCB',
+    'ADA'
+  ], {
+    A: 'allthemodium:unobtainium_block',
+    B: 'powah:nitro_crystal_block',
+    C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:creative"}'),
+    D: 'ironfurnaces:unobtainium_furnace'
+  })
+  e.shaped(Item.of('ironjetpacks:capacitor', '{Id:"ironjetpacks:creative"}'), [
+   'ACA',
+   'BDB',
+   'AEA'
+  ], {
+   A: 'allthemodium:unobtainium_block',
+   B: 'mekanism:sps_casing',
+   C: 'industrialforegoing:mycelial_reactor',
+   D: 'mekanism:ultimate_induction_cell',
+   E: 'powah:reactor_nitro'
+  })
+  e.shaped(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}'), [
+    'ACA',
+    'BFB',
+    'DED'
+  ], {
+    A: 'mysticalagradditions:creative_essence',
+    B: 'allthemodium:vibranium_allthemodium_alloy_block',
+    C: Item.of('ironjetpacks:capacitor', '{Id:"ironjetpacks:creative"}'),
+    D: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}'),
+    E: 'allthetweaks:atm_star',
+    F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:unobtainium"}')
+  })
+  
 ///#Mekanism
   e.shaped('mekanism:creative_energy_cube', ['ATA', 'UCU', 'ATA'], {
     A: 'mekanism:alloy_atomic',
