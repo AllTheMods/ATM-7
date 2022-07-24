@@ -1,7 +1,7 @@
 {
 	id: "6AEDA2F9BEB57759"
 	group: "02FE661031A105D8"
-	order_index: 1
+	order_index: 0
 	filename: "ars_nouveau"
 	title: "Ars Nouveau"
 	icon: "ars_nouveau:creative_spell_book"
@@ -1517,9 +1517,9 @@
 			description: [
 				"The &9Enchanting Apparatus&r is used to craft various items within the mod. It requires Source to work."
 				""
-				"It is also a multiblock structure that utilizes Arcane Pedastals to craft."
+				"It is also a multiblock structure that utilizes Arcane Pedestals to craft."
 				""
-				"Start by placing an Arcane Core in the ground, then place the Enchanting Apparatus on top of it. Surround the Apparatus with Arcane Pedastals, like shown in the image."
+				"Start by placing an Arcane Core in the ground, then place the Enchanting Apparatus on top of it. Surround the Apparatus with Arcane Pedestals, like shown in the image."
 				""
 				"{image:atm:textures/enchanting_app.png width:200 height:200 align:1}"
 			]
@@ -1551,7 +1551,7 @@
 			shape: "square"
 			subtitle: "Fancy Tables"
 			description: [
-				"Arcane Pedastals are needed for the Ritual Brazier and crafting items with an Enchanting Apparatus."
+				"Arcane Pedestals are needed for the Ritual Brazier and crafting items with an Enchanting Apparatus."
 				""
 				"Go ahead and make yourself 8 of them!"
 			]
@@ -2061,7 +2061,7 @@
 			description: [
 				"The &9Ritual Brazier&r is used to cast rituals. It can also be used for decoration. If you want to light the Brazier, use a Light spell on it."
 				""
-				"To perform rituals, you'll need Arcane Pedastals as well. As there are so many rituals to cast, make sure to check out each of them using the &6Worn Notebook&r!"
+				"To perform rituals, you'll need Arcane Pedestals as well. As there are so many rituals to cast, make sure to check out each of them using the &6Worn Notebook&r!"
 				""
 				"This can be done by holding Ctrl on the Ritual Table while the book is in your inventory."
 			]
@@ -2118,7 +2118,7 @@
 				""
 				"The Imbuement Chamber requires Source to imbue items. It produces a small amount of Source by itself, but can also use Source Jars as a power source."
 				""
-				"Several recipes also require Arcane Pedastals to be placed around it as well."
+				"Several recipes also require Arcane Pedestals to be placed around it as well."
 				""
 				""
 				"{image:atm:textures/imbuement.png width:200 height:150 align:1}"
@@ -3003,6 +3003,7 @@
 		{
 			x: 14.5d
 			y: 1.0d
+			description: ["Used to inscribe spells on with the Scribe's Table."]
 			dependencies: ["542C6D76B579886C"]
 			id: "0E2AD156E5EF263A"
 			tasks: [{
@@ -3014,6 +3015,23 @@
 					tag: { }
 				}
 			}]
+			rewards: [
+				{
+					id: "19F2CD6C0B18C66F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:spell_parchment"
+						Count: 1b
+						tag: { }
+					}
+					random_bonus: 1
+				}
+				{
+					id: "31B61E81E7B4F0A6"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			title: "Summoning Help!"

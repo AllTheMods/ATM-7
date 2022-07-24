@@ -186,6 +186,8 @@
 				""
 				"It has a bucket mode which can be toggled to scoop up liquids with it. Very useful for lava in the beginning!"
 			]
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "6DB1AAAD926486BC"
 			tasks: [{
@@ -2063,6 +2065,8 @@
 			shape: "diamond"
 			subtitle: "Storing All That Gas"
 			description: ["This block stores gases."]
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "41EB0C570FC54F43"
 			tasks: [{
@@ -2446,6 +2450,8 @@
 			x: 16.0d
 			y: -1.9500000000000002d
 			shape: "diamond"
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "1C86908F5A1FABC0"
 			tasks: [{
@@ -2470,6 +2476,8 @@
 			x: 14.5d
 			y: -4.199999999999999d
 			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "03CAD4948ECF0B0F"
 			tasks: [{
@@ -2499,6 +2507,8 @@
 			x: 14.5d
 			y: -2.7d
 			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "5EC325720523801E"
 			tasks: [{
@@ -2528,6 +2538,8 @@
 			x: 14.5d
 			y: -1.2000000000000002d
 			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "544B230E7DC944CA"
 			tasks: [{
@@ -2557,6 +2569,8 @@
 			x: 14.5d
 			y: 0.30000000000000004d
 			shape: "square"
+			hide_dependency_lines: true
+			dependencies: ["58B125BD4876054C"]
 			size: 1.5d
 			id: "77235CDC61136465"
 			tasks: [{

@@ -621,7 +621,7 @@
 		}
 		{
 			x: -9.5d
-			y: -3.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "21F654C968722841"
@@ -728,8 +728,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -1.0d
+			x: -10.0d
+			y: -3.5d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "0AF5FB1B5AA5AA11"
@@ -860,8 +860,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: -2.5d
+			x: -12.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "06A7A3FC8634D2DA"
@@ -872,10 +872,10 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -2.0d
+			x: -10.0d
+			y: -2.5d
 			shape: "diamond"
-			dependencies: ["48BF71269DEA1AB1"]
+			dependencies: ["5BC4250E4C9F803C"]
 			id: "4E7990AEBCCC3C95"
 			tasks: [{
 				id: "275EBE6C08104C69"

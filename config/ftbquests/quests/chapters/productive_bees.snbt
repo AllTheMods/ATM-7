@@ -470,7 +470,7 @@
 				""
 				"The easiest way to get a quartz block is by mining it with a Silk Touch pick."
 				""
-				"Tip: Bronze has the Silk Touch trait when making a Silent Gear tool."
+				"Tip: Brass has the Silk Touch trait when making a Silent Gear tool."
 			]
 			hide_dependency_lines: true
 			dependencies: ["120BDCB70AD352AC"]
@@ -2896,14 +2896,26 @@
 			dependencies: ["17419401147B5C02"]
 			id: "734A72A4C898BDFB"
 			tasks: [{
-				id: "321207B0F38D8AAA"
+				id: "0C0D6A9D01FED776"
 				type: "item"
-				item: {
-					id: "productivebees:spawn_egg_configurable_bee"
+				title: "Invar Comb"
+				icon: {
+					id: "productivebees:configurable_honeycomb"
 					Count: 1b
 					tag: {
 						EntityTag: {
 							type: "productivebees:invar"
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:strong_nbt"
+					Count: 1b
+					tag: {
+						value: {
+							EntityTag: {
+								type: "productivebees:invar"
+							}
 						}
 					}
 				}
