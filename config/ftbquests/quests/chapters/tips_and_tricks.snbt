@@ -345,7 +345,7 @@
 			description: [
 				"Can be helpful for building."
 				""
-				"The consruction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
+				"The construction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
 			]
 			id: "2A2E3D020B1F5126"
 			tasks: [{
