@@ -7,8 +7,8 @@ JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mr
 
 to make editing this file much easier.
 Appearing on terrain below sea level, here is the "ocean_biomes" layout:
-[ SHALLOW-ICY, SHALLOW-COLD, SHALLOW-NEUTRAL, SHALLOW-WARM, SHALLOW-HOT ],
 [ DEEP-ICY, DEEP-COLD, DEEP-NEUTRAL, DEEP-WARM, DEEP-HOT ]
+[ SHALLOW-ICY, SHALLOW-COLD, SHALLOW-NEUTRAL, SHALLOW-WARM, SHALLOW-HOT ],
 
 All keys passed in must be valid in the biome registry!
 "minecraft:the_void" is invalid as it represents a value of "NULL(nothing)" internally.
