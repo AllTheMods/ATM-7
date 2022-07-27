@@ -15,4 +15,14 @@ onEvent('jei.information', e => {
     'Sneak + right-click with a diamond to switch to private channel.',
     'Sneak + right-click with an ender pearl or eye of ender to increase tank size.',
   ])
+  
+    e.add('mekanism:creative_energy_cube',[
+    'Needs to be energized in a Powah energizing rod with a ATM star.',
+    'Otherwise acts as an expensive energy trash can.',
+  ])
+  
+    e.add('pylons:infusion_pylon',[ 
+    'Chunkloads a single chunk. Only one pylon per player will load at a time, and only while the player is online.',
+  ])
+  
 })
