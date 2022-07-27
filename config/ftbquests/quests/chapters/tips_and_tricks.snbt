@@ -243,7 +243,7 @@
 			title: "Compact Machines"
 			x: -1.0d
 			y: 5.0d
-			description: ["This item is serves as the guide for Compact Machines, as well as the tool needed to teleport into your tiny machine worlds."]
+			description: ["This item serves as the guide for Compact Machines, as well as the tool needed to teleport into your tiny machine worlds."]
 			id: "73F91BF3D424B269"
 			tasks: [{
 				id: "3B227EED4B839733"
@@ -345,7 +345,7 @@
 			description: [
 				"Can be helpful for building."
 				""
-				"The consruction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
+				"The construction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
 			]
 			id: "2A2E3D020B1F5126"
 			tasks: [{
@@ -498,7 +498,7 @@
 			description: [
 				"If you've used this before, you know this is OP."
 				""
-				"Time in a Bottle stores \"time\" while it is in your inventory. With the stored time, you and shift-right click on a machine or item, and increase the tick speed. It goes up to x256 speed."
+				"Time in a Bottle stores \"time\" while it is in your inventory. With the stored time, you can shift-right click on a machine or item, and increase the tick speed. It goes up to x256 speed."
 			]
 			id: "445CFBFE882716D1"
 			tasks: [{
