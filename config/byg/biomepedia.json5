@@ -9,5 +9,5 @@ to make editing this file much easier.
 */
 {
 	// Whether the biomepedia button is enabled or not in the player inventory for all users connected to this host.
-	"inventory_enabled": true
+	"inventory_enabled": false
 }
