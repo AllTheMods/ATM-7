@@ -16,5 +16,5 @@ to make editing this file much easier.
 	/* Whether the biomepedia button is visible in the player inventory.
 	   Servers can disable this button from functioning regardless of this value.
 	*/
-	"visible": true
+	"visible": false
 }
