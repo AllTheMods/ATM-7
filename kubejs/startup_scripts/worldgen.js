@@ -76,4 +76,75 @@ onEvent('worldgen.add', event => {
     ore.squared()
     ore.triangleHeight(-34, 36)
   })
+  
+    event.addOre((ore) => {
+    ore.id = "kubejs:mining_iridium" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:iridium_slate_ore')
+    ore.size(7)
+    ore.count([4, 10])
+    ore.squared()
+    ore.triangleHeight(-64, -50)
+  })
+  
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_aluminum_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:aluminum_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_lead_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:lead_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_osmium_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:osmium_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_silver_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:silver_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_tin_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:tin_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+
+  event.addOre((ore) => {
+    ore.id = "kubejs:mining_zinc_slate" // optional
+    ore.biomes = ['allthemodium:mining']
+    ore.addTarget('minecraft:deepslate', 'alltheores:zinc_slate_ore')
+    ore.size(7)
+    ore.count([15,20])
+    ore.squared()
+    ore.triangleHeight(-64, 10)
+  })
+  
 })
