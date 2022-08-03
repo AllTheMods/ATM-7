@@ -1,6 +1,6 @@
 onEvent('recipes', e=> {
-    //e.remove({id: 'industrialforegoing:ore_laser_base'})
-    //e.remove({id: 'industrialforegoing:laser_drill'})
+    e.remove({id: 'industrialforegoing:ore_laser_base'})
+    e.remove({id: 'industrialforegoing:laser_drill'})
     e.shaped('industrialforegoing:ore_laser_base', ['PTP','OFO','GRG'],{
         P: 'industrialforegoing:plastic',
         T: 'allthemodium:unobtainium_pickaxe',
