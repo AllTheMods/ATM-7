@@ -864,26 +864,6 @@ onEvent('recipes', e => {
 
   ieUnifyPress('compressed_iron', 'gear');
 
-  // temporary fix to allow using any alloy dust
-  atoAlloys.forEach(metal => {
-    e.smelting(`alltheores:${metal}_ingot`, `#forge:dusts/${metal}`);
-    e.remove({ id: `alltheores:${metal}_ingot_from_dust` })
-    e.blasting(`alltheores:${metal}_ingot`, `#forge:dusts/${metal}`);
-    e.remove({ id: `alltheores:${metal}_ingot_from_dust_blasting` })
-  })
-
-  e.remove({ id: `alltheores:bronze_dust_from_alloy_blending` })
-  e.shapeless('4x alltheores:bronze_dust', ['3x #forge:dusts/copper', '#forge:dusts/tin'])
-
-  e.remove({ id: `alltheores:invar_dust_from_alloy_blending` })
-  e.shapeless('3x alltheores:invar_dust', ['2x #forge:dusts/iron', '#forge:dusts/nickel'])
-
-  e.remove({ id: `alltheores:lumium_dust_from_alloy_blending` })
-  e.shapeless('4x alltheores:lumium_dust', ['4x #forge:dusts/glowstone', '#forge:dusts/silver', '3x #forge:dusts/tin'])
-
-  e.remove({ id: `alltheores:enderium_dust_from_alloy_blending` })
-  e.shapeless('4x alltheores:enderium_dust', ['3x #forge:dusts/lead', '#forge:dusts/platinum', '4x #forge:ender_pearls'])
-
   // temporary for missing recipes
   e.shapeless('2x kubejs:cobalt_dust',['#forge:raw_ores/cobalt','#alltheores:ore_hammers'])
   e.shapeless('9x alltheores:brass_ingot', '#forge:storage_blocks/brass')
