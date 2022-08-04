@@ -579,7 +579,7 @@ onEvent('recipes', e => {
       }, {
         item: 'thermal:press_unpacking_die'
       }]
-      outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_nugget`, 9)]
+      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_nugget`, 9)]
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'raw_unpacking') {
       e.remove({ type: `thermal:press`, id: `/press_raw_${metal}_unpacking/` })
@@ -675,6 +675,15 @@ onEvent('recipes', e => {
     e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/raw/` })
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:raw_materials/${ore}`).xp(0.7).id(`kubejs:smelting/${ore}_ingot_from_raw`)
   }
+
+  vanillaMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `bloodmagic:smelting/ingot_${metal}`,
+      `bloodmagic:smelting/blasting_ingot_${metal}`,
+      `ftbic:blasting/dusts/${metal}_to_${metal}_ingot`,
+      `ftbic:smelting/dusts/${metal}_to_${metal}_ingot`,
+    ])
+  })
 
   atoMetals.concat(vanillaMetals, atmMetals).forEach(ore => {
     ['ore', 'raw_ore', 'raw_block', 'ingot', 'dust'].forEach(type => ieUnifyOres(ore, type));
@@ -887,6 +896,8 @@ onEvent('recipes', e => {
     'immersiveengineering:crafting/ingot_steel_to_storage_steel',
     'immersiveengineering:crafting/nugget_copper_to_copper_ingot',
     'immersiveengineering:crafting/copper_ingot_to_nugget_copper',
+    'thermal:smelting/netherite_ingot_from_dust_smelting',
+    'thermal:smelting/netherite_ingot_from_dust_blasting',
     'industrialforegoing:iron_gear',
     'industrialforegoing:gold_gear',
     'industrialforegoing:diamond_gear',
