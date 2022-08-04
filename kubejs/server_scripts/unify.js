@@ -789,10 +789,19 @@ onEvent('recipes', e => {
       `thermal:storage/raw_${metal}_from_block`,
       `thermal:smelting/${metal}_ingot_from_raw_blasting`,
       `thermal:smelting/${metal}_ingot_from_raw_smelting`,
+      `thermal:smelting/${metal}_ingot_from_ore_blasting`,
+      `thermal:smelting/${metal}_ingot_from_ore_smelting`,
+      `thermal:smelting/${metal}_ingot_from_deepslate_ore_blasting`,
+      `thermal:smelting/${metal}_ingot_from_deepslate_ore_smelting`,
+      `thermal:smelting/${metal}_ingot_from_dust_blasting`,
+      `thermal:smelting/${metal}_ingot_from_dust_smelting`,
+      `create:smelting/${metal}_ingot_compat_thermal`,
+      `create:blasting/${metal}_ingot_compat_thermal`,
+      `create:splashing/thermal/crushed_${metal}_ore`,
     ])
   });
 
-  thermalAlloys.forEach(metal => {
+  thermalMetals.concat(thermalAlloys).forEach(metal => {
     removeRecipeByID(e, [
       `thermal:storage/${metal}_block`,
       `thermal:storage/${metal}_ingot_from_block`,
@@ -804,12 +813,16 @@ onEvent('recipes', e => {
   });
 
   removeRecipeByID(e, [
+    'thermal:electrum_dust_2',
+    'thermal:fire_charge/electrum_ingot_2',
     'thermal:constantan_dust_2',
     'thermal:fire_charge/constantan_ingot_2',
     'thermal:enderium_dust_2',
     'thermal:fire_charge/enderium_ingot_2',
     'thermal:lumium_dust_4',
     'thermal:fire_charge/lumium_ingot_4',
+    'thermal:signalum_dust_4',
+    'thermal:fire_charge/signalum_ingot_4',
     'thermal:invar_dust_3',
     'thermal:fire_charge/invar_ingot_3',
     'thermal:bronze_dust_4',
