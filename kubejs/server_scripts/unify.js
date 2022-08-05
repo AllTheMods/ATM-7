@@ -579,7 +579,11 @@ onEvent('recipes', e => {
       }, {
         item: 'thermal:press_unpacking_die'
       }]
-      outputs = [Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_nugget`, 9)]
+      if (metal == 'copper') {
+        outputs = [Item.of(`alltheores:${metal}_nugget`, 9)]
+      } else {
+        outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_nugget`, 9)]
+      }      
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'raw_unpacking') {
       e.remove({ type: `thermal:press`, id: `/press_raw_${metal}_unpacking/` })
