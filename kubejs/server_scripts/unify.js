@@ -641,19 +641,19 @@ onEvent('recipes', e => {
 
   function blastingUnifyOres(ore) {
     //find all dust to ingot recipes, remove, and replace with a single one
-    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_dust/` })
+    e.remove({ type: "minecraft:blasting", output: `#forge:ingots/${ore}`, input:`#forge:dusts/${ore}`})
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:blasting/${ore}_ingot_from_dust`)
-    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_dust/` })
+    e.remove({ type: "minecraft:smelting", output: `#forge:ingots/${ore}`, input:`#forge:dusts/${ore}`})
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:dusts/${ore}`).xp(0.2).id(`kubejs:smelting/${ore}_ingot_from_dust`)
     //find all ore to ingot recipes, remove, and replace with a single one
-    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_ore/` })
+    e.remove({ type: "minecraft:blasting", output: `#forge:ingots/${ore}`, input:`#forge:ores/${ore}`})
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:blasting/${ore}_ingot_from_ore`)
-    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/_ore/` })
+    e.remove({ type: "minecraft:smelting", output: `#forge:ingots/${ore}`, input:`#forge:ores/${ore}`})
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:ores/${ore}`).xp(1.0).id(`kubejs:smelting/${ore}_ingot_from_ore`)
     // find all raw ore to ingot recipes, remove, and replace with a single one
-    e.remove({ type: "minecraft:blasting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/raw/` })
+    e.remove({ type: "minecraft:blasting", output: `#forge:ingots/${ore}`, input:`#forge:raw_materials/${ore}`})
     e.blasting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:raw_materials/${ore}`).xp(0.7).id(`kubejs:blasting/${ore}_ingot_from_raw`)
-    e.remove({ type: "minecraft:smelting", output: `${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, id: `/raw/` })
+    e.remove({ type: "minecraft:smelting", output: `#forge:ingots/${ore}`, input:`#forge:raw_materials/${ore}`})
     e.smelting(`${oreOverride[ore] ?? 'alltheores'}:${ore}_ingot`, `#forge:raw_materials/${ore}`).xp(0.7).id(`kubejs:smelting/${ore}_ingot_from_raw`)
   }
 
