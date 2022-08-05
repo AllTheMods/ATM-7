@@ -1,7 +1,8 @@
 //priority: 1000
 onEvent('tags.blocks', e => {
-  e.add('allthemodium:other_te_whitelist', ['mekanism:teleporter', 'waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone', '#waystones:sharestones'])
   e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
+  e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
+  e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
 })
 
 onEvent('tags.items', e => {
@@ -47,8 +48,7 @@ onEvent('tags.items', e => {
 
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
 })
-onEvent('tags.blocks', e => {
-  e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
+
 })
 onEvent('tags.entity_types', e => {
   e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
