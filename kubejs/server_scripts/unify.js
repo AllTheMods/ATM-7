@@ -693,7 +693,7 @@ onEvent('recipes', e => {
     ['ore', 'raw_ore', 'ingot'].forEach(type => occultismUnifyCrusher(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ieUnifyPress(ore, type));
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(ore, type));
-    ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing', 'nugget_unpacking', 'nugget_packing'].forEach(type => thermalUnifyPress(ore, type));
+    ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing', /'nugget_unpacking', 'nugget_packing'/].forEach(type => thermalUnifyPress(ore, type));
     createPressing(ore);
     blastingUnifyOres(ore);
     thermalUnifySmelterMetalAll(ore);
