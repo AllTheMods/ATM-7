@@ -50,7 +50,6 @@ onEvent('tags.items', e => {
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
 })
 
-})
 onEvent('tags.entity_types', e => {
   e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
   e.add('pneumaticcraft:vacuum_trap_blacklisted', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
