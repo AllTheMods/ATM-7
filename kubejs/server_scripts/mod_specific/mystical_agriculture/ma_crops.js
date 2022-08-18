@@ -111,7 +111,8 @@ onEvent('recipes', e => {
     'zombie',
     'crimson_iron',
     'azure_silver',
-    'sky_stone'
+    'sky_stone',
+    'amethyst_bronze'
   ], 2500, '#misctags:farmland/tier3', 2)
   //Tier 4 Crops
   tier([
