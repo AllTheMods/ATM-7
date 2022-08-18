@@ -217,7 +217,7 @@
 	#Stack Upgrade Settings
 	[common.stackUpgrade]
 		#List of items that are not supposed to stack in storage even when stack upgrade is inserted. Item registry names are expected here.
-		nonStackableItems = []
+		nonStackableItems = ["minecraft:bundle","tombstone:enchanted_bundle"]
 
 	#Smelting Upgrade Settings
 	[common.smeltingUpgrade]
