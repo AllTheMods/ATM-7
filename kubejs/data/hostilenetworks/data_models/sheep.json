@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:sheep",
+	"name": "entity.minecraft.sheep",
+	"name_color": "0xf8f5f5",
+	"gui_scale": 0.95,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 128,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.sheep",
+	"fabricator_drops": [
+		{
+			"optional": true,
+			"item": "silentgear:sinew",
+			"count": 2
+		},
+		{
+			"item": "minecraft:mutton",
+			"count": 16
+		},
+		{
+			"item": "minecraft:white_wool",
+			"count": 8
+		}
+	]
+}
