@@ -1,7 +1,8 @@
 //priority: 1000
 onEvent('tags.blocks', e => {
-  e.add('allthemodium:other_te_whitelist', ['mekanism:teleporter', 'waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone', '#waystones:sharestones'])
   e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
+  e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
+  e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
 })
 
 onEvent('tags.items', e => {
@@ -28,13 +29,14 @@ onEvent('tags.items', e => {
   e.add('forge:dusts/azure_silver', 'silentgear:azure_silver_dust');
   e.add('forge:raw_ores/cobalt', 'tconstruct:raw_cobalt');
   e.add('forge:dusts/cobalt', 'kubejs:cobalt_dust');
+  e.add('forge:dusts/netherite', 'alltheores:netherite_dust');
 
   e.add('forge:raw_ores/iridium', 'ftbic:iridium_chunk');
   e.remove('forge:silicon', 'ftbic:silicon')
 
   e.add('forge:melons','minecraft:melon_slice')
   e.add('forbidden_arcanus:modifier/eternal_incompatible',['#alltheores:ore_hammers','@ftbic','#tconstruct:modifiable','minecraft:nether_star','mythicbotany:faded_nether_star'])
- 
+
   // fix raw block crafting for other mods
   e.add('forge:raw_ores/zinc', 'create:raw_zinc')
   mekanismMetals.forEach(metal => e.add(`forge:raw_ores/${metal}`, `mekanism:raw_${metal}`))
@@ -47,9 +49,7 @@ onEvent('tags.items', e => {
 
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
 })
-onEvent('tags.blocks', e => {
-  e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
-})
+
 onEvent('tags.entity_types', e => {
   e.add('mob_grinding_utils:noswab', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])
   e.add('pneumaticcraft:vacuum_trap_blacklisted', [/productivebees:.+/, 'artifacts:mimic','botania:doppleganger','allthemodium:piglich',])

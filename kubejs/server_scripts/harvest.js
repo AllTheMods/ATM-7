@@ -7,7 +7,7 @@ onEvent('block.right_click', event => {
     let mcBlock = blockState.block
     if (mcBlock instanceof CROP) {
         let mcPlayer = event.player.minecraftPlayer
-        if (mcBlock.isMaxAge(blockState)) {
+        if (mcBlock.isMaxAge(blockState) && !event.player.isFake()) {
             let loot = CROP.getDrops(blockState, mcLevel, block.pos, null, mcPlayer, mcPlayer.getMainHandItem())
             let seedYeeted = false
             for (let i in loot) {
