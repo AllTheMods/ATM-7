@@ -8,6 +8,9 @@
         "enable_profiles_ui": false,
         "continuous_crafting_saved_value": false
     },
+      "LockedSlotsSettings": {
+        "locked_slots_empty_hotbar_as_semi_locked": false
+    },
     "AutoRefillSettings": {
         "tool_damage_threshold": 2,
         "visual_durability_notification": false,
