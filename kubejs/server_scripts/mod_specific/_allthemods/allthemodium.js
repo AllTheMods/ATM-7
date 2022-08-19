@@ -45,22 +45,4 @@ onEvent('recipes', e => {
   e.smelting('allthemodium:unobtainium_allthemodium_alloy_ingot', 'allthemodium:unobtainium_allthemodium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_allthemodium_alloy_dust')
   e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')
 
-  e.custom({
-    "output": "{FluidName:\"allthemodium:soul_lava\",Amount:10}",
-    "rarity": [
-      {
-        "whitelist": {},
-        "blacklist": {},
-        "depth_min": 5,
-        "depth_max": 20,
-        "weight": 8
-      }
-    ],
-    "pointer": 0,
-    "catalyst": {
-      "item": "industrialforegoing:laser_lens11"
-    },
-    "entity": "minecraft:empty",
-    "type": "industrialforegoing:laser_drill_fluid"
-  })
 })
