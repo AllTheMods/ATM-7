@@ -188,7 +188,7 @@
 			description: [
 				"With the vanilla Beehive, we'll use this to craft an &eAdvanced Beehive&r. It can be Oak or any kind of wood."
 				""
-				"Bees will fly in and out of these, and drop off Honeycombs in the inventory. You can also insert glass bottles to get Honey Bottles, or pump out the fluid if you want."
+				"Bees will fly in and out of these, and drop off Honeycombs in the inventory. You can also insert glass bottles to get Honey Bottles."
 				""
 				"We'll need plenty of Honeycombs for treats!"
 			]
@@ -641,7 +641,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -682,7 +682,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -723,7 +723,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -764,7 +764,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -806,7 +806,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1207,7 +1207,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1263,7 +1263,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1320,7 +1320,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1377,7 +1377,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1433,7 +1433,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1531,7 +1531,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1587,7 +1587,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1642,7 +1642,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1697,7 +1697,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1756,7 +1756,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1813,7 +1813,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1870,7 +1870,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1929,7 +1929,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1992,7 +1992,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2049,7 +2049,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2089,7 +2089,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2169,7 +2169,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2209,7 +2209,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2250,7 +2250,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2290,7 +2290,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2561,7 +2561,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2601,7 +2601,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -2641,7 +2641,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3095,7 +3095,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3135,7 +3135,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3175,7 +3175,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3223,7 +3223,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3263,7 +3263,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3336,7 +3336,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3396,7 +3396,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3436,7 +3436,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3476,7 +3476,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3516,7 +3516,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3556,7 +3556,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3596,7 +3596,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3636,7 +3636,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3676,7 +3676,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3716,7 +3716,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3876,7 +3876,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3916,7 +3916,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3956,7 +3956,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -3996,7 +3996,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4082,7 +4082,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4122,7 +4122,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4162,7 +4162,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4202,7 +4202,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4263,7 +4263,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4303,7 +4303,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4343,7 +4343,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4383,7 +4383,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4423,7 +4423,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4463,7 +4463,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4503,7 +4503,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -4543,7 +4543,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:strong_nbt"
 					Count: 1b
 					tag: {
 						value: {

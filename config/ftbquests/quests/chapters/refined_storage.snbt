@@ -1050,7 +1050,7 @@
 		{
 			x: 0.0d
 			y: -9.0d
-			description: ["Used to tell crafters how to carft items for auto-crafting."]
+			description: ["Used to tell crafters how to craft items for auto-crafting."]
 			dependencies: ["01F18150EC923482"]
 			id: "59F5ED931FD70C55"
 			tasks: [{
