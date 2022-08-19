@@ -164,4 +164,20 @@ onEvent('recipes', e => {
   }).id('kubejs:allthetweaks/atm_star')
   //#endregion
   //#endregion
+
+  e.recipes.create.mechanical_crafting('allthetweaks:atm_star',[
+    '    S    ',
+    '   SSS   ',
+    'SSSSSSSSS',
+    'SSSSSSSSS',
+    ' SSSPSSS ',
+    '  SSSSS  ',
+    ' SSSSSSS ',
+    'SSSS SSSS',
+    'SSS   SSS'
+  ], {
+    S: 'allthetweaks:atm_star_shard',
+    P: 'allthetweaks:patrick_star',
+  }).id('kubejs:allthetweaks/atm_shard_star')
+
 })
