@@ -3,7 +3,7 @@ onEvent('tags.blocks', e => {
   e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
   e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
-  e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,'botania:spark'])
+  e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,/botania:.+/])
 })
 
 onEvent('tags.items', e => {
