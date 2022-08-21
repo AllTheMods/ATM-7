@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:cow",
+	"name": "entity.minecraft.cow",
+	"name_color": "0x9a6537",
+	"gui_scale": 0.95,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 128,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.cow",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:beef",
+			"count": 16
+		},
+		{
+			"item": "minecraft:leather",
+			"count": 8
+		}
+	]
+}
