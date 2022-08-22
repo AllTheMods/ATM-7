@@ -367,18 +367,31 @@
 				"This is the first Jetpack we'll make. It doesn't hold a charge for very long though."
 				""
 				"Make sure to upgrade it quickly!"
+				""
+				"Note: Because of NBT issues, you'll need to look the recipe up in JEI rather than clicking the item. "
 			]
 			dependencies: ["19FBD3C65A96B311"]
 			id: "201143A8D039A543"
 			tasks: [{
-				id: "4A5D85046D46C7A6"
+				id: "11CB32BF85D7AE51"
 				type: "item"
-				item: {
+				title: "Wood Jetpack"
+				icon: {
 					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
 						Id: "ironjetpacks:wood"
 						Throttle: 1.0d
+					}
+				}
+				item: {
+					id: "itemfilters:strong_nbt"
+					Count: 1b
+					tag: {
+						value: {
+							Id: "ironjetpacks:wood"
+							Throttle: 1.0d
+						}
 					}
 				}
 			}]
@@ -1060,13 +1073,23 @@
 			dependencies: ["424202C5D36CC1C2"]
 			id: "339FCC2A29AF2383"
 			tasks: [{
-				id: "7D280336B99F6A2D"
+				id: "1CA7ECF061E9E18B"
 				type: "item"
-				item: {
+				title: "DiamondSight Potions"
+				icon: {
 					id: "minecraft:potion"
 					Count: 1b
 					tag: {
 						Potion: "potionsmaster:diamond_sight"
+					}
+				}
+				item: {
+					id: "itemfilters:strong_nbt"
+					Count: 1b
+					tag: {
+						value: {
+							Potion: "potionsmaster:diamond_sight"
+						}
 					}
 				}
 				count: 3L
@@ -1872,14 +1895,25 @@
 			dependencies: ["201143A8D039A543"]
 			id: "36BF9C4CB26090CA"
 			tasks: [{
-				id: "2DDAC9CCB14302B9"
+				id: "7FCCE503589CFB82"
 				type: "item"
-				item: {
+				title: "Stone Jetpack"
+				icon: {
 					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
 						Id: "ironjetpacks:stone"
 						Throttle: 1.0d
+					}
+				}
+				item: {
+					id: "itemfilters:strong_nbt"
+					Count: 1b
+					tag: {
+						value: {
+							Id: "ironjetpacks:stone"
+							Throttle: 1.0d
+						}
 					}
 				}
 			}]

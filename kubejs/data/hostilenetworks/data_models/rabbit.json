@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:rabbit",
+	"name": "entity.minecraft.rabbit",
+	"name_color": "0xdd9348",
+	"gui_scale": 1.1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 196,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "hostilenetworks.trivia.rabbit",
+	"fabricator_drops": [
+		{
+			"item": "minecraft:rabbit_hide",
+			"count": 48
+		},
+		{
+			"item": "minecraft:rabbit",
+			"count": 16
+		},
+		{
+			"item": "minecraft:rabbit_foot",
+			"count": 1
+		}
+	]
+}

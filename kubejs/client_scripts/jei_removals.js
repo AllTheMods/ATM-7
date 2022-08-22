@@ -42,6 +42,7 @@ onEvent('jei.hide.items', e => {
     'ftbic:silicon',
     'twilightforest:uncrafting_table',
     'mysticalagradditions:nitro_crystal_crux',
+    'createaddition:zinc_sheet',
     'thermal:raw_tin',
     'thermal:raw_lead',
     'thermal:raw_silver',
@@ -102,6 +103,7 @@ onEvent('jei.hide.items', e => {
   hideStuff('alltheores', 'clump', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('appliedenergistics2', 'dust', ['nether_quartz', 'ender', 'iron', 'gold'])
   hideStuff('create', 'sheet', ['iron', 'golden', 'copper', 'brass'])
+  hideStuff('createaddition', 'rod', ['iron', 'gold', 'copper', 'brass'])
   hideStuff('iceandfire', 'ore', ['silver', 'copper'])
   hideStuff('tmechworks', 'ore', ['aluminum', 'copper'])
   hideStuff('solarflux', 'sp', [6, 7, 8])

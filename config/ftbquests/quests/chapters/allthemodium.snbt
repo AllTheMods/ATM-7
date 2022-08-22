@@ -861,9 +861,9 @@
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "1A5E414C9D25703A"
 			tasks: [{
-				id: "2212DFCF11CE8D69"
-				type: "dimension"
-				dimension: "allthemodium:the_other"
+				id: "001D21A77391485F"
+				type: "item"
+				item: "allthemodium:ancient_stone"
 			}]
 		}
 		{

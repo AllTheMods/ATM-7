@@ -1,10 +1,17 @@
 
 onEvent('item.tooltip', e => { 
+  //AllTheModium
+  e.add('allthemodium:teleport_pad',[
+    Text.of('Place the pad down in the specified Dimension'), 
+    Text.of('Sneak Right Click with both hands empty to teleport'),
+    Text.of('§aOverworld TO Mining Dimension').red(),
+    Text.of('§cThe Nether TO The Other').red()
+  ])
 
   //Mekanism
     e.add('mekanism:creative_energy_cube', [ [Text.of('Needs to be Energized').darkPurple()],])
 
-    //Mystical agriculture
+  //Mystical agriculture
     e.add('mysticalagriculture:watering_can',[ [Text.of('Players Only').green()],[Text.of('Not Automatable').darkGreen()]])
     e.add('mysticalagriculture:inferium_watering_can',[ [Text.of('Players Only').green()],[Text.of('Not Automatable').darkGreen()]])
     e.add('mysticalagriculture:prudentium_watering_can',[ [Text.of('Players Only').green()],[Text.of('Not Automatable').darkGreen()]])

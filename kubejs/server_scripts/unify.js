@@ -176,6 +176,19 @@ onEvent('recipes', e => {
     }).id(`kubejs:pressing/${metal}_ingot`)
   }
 
+  function createAdditionsUnifyRolling(metal) {
+    let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_rod`;
+
+    e.remove({ id: `createaddition:rolling/${metal}_ingot` });
+    e.custom({
+      "type": "createaddition:rolling",
+      "input": {
+        "tag": `forge:ingots/${metal}`
+      },
+      "result": Ingredient.of(output)
+    }).id(`kubejs:createaddition/rolling/${metal}_rod`)
+  }
+
   function ieUnifyOres(input, type) {
     let furnaceTime = 100;
     let furnaceEnergy = 51200;
@@ -699,6 +712,7 @@ onEvent('recipes', e => {
     ['plate', 'gear', 'rod'].forEach(type => ftbicUnifyPress(ore, type));
     ['plate', 'gear', 'unpacking', 'packing', 'raw_unpacking', 'raw_packing', 'nugget_unpacking', 'nugget_packing'].forEach(type => thermalUnifyPress(ore, type));
     createPressing(ore);
+    createAdditionsUnifyRolling(ore);
     blastingUnifyOres(ore);
     thermalUnifySmelterMetalAll(ore);
     e.remove({ id: `thermal:parts/${ore}_gear` });
@@ -715,6 +729,7 @@ onEvent('recipes', e => {
     thermalUnifySmelterAlloyAll(alloy);
     mekUnifyOres(alloy, 'ingot');
     createPressing(alloy);
+    createAdditionsUnifyRolling(alloy);
     e.remove({ id: `thermal:parts/${alloy}_gear` });
   });
 
