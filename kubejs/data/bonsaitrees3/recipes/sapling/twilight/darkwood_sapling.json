@@ -17,7 +17,7 @@
         "rolls": 1,
         "chance": 0.75,
         "result": {
-          "item": "twilightforest:darkwood_log"
+          "item": "twilightforest:dark_log"
         },
         "requiresSilkTouch": false,
         "requiresBees": false
@@ -35,7 +35,7 @@
         "rolls": 2,
         "chance": 0.2,
         "result": {
-          "item": "twilightforest:darkwood_leaves"
+          "item": "twilightforest:dark_leaves"
         },
         "requiresSilkTouch": true,
         "requiresBees": false
