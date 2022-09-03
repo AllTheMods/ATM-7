@@ -1,0 +1,34 @@
+{
+  "dontChangeMe": "RandomString",
+  "printWarningMessage": true,
+  "enableDebugLog": false,
+  "whitelistLoggersTypes": [
+    "DebugFile"
+  ],
+  "loggers": [
+    "configured",
+    "ObservableNet",
+    "ModdingLegacy/structure_gel",
+    "mods.waterstrainer.WaterStrainer",
+    "com.davenonymous.bonsaitrees3.registry.RecipeEvents",
+    "mezz.jei.load.PluginCaller",
+    "mezz.jei.ingredients.IngredientManager",
+    "dev.architectury.networking.forge.NetworkManagerImpl",
+    "net.minecraft.Util",
+    "net.minecraft.commands.Commands",
+    "net.minecraftforge.registries.GameData",
+    "net.minecraftforge.common.ForgeConfigSpec",
+    "net.minecraftforge.fml.VersionChecker",
+    "net.minecraft.world.entity.EntityType",
+    "net.minecraft.client.ClientRecipeBook",
+    "net.minecraft.client.resources.model.ModelBakery",
+    "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService",
+    "net.minecraft.world.level.chunk.storage.ChunkSerializer",
+    "net.minecraft.client.renderer.block.model.BlockModel",
+    "net.minecraft.client.renderer.texture.TextureAtlas",
+    "net.minecraft.world.level.storage.loot.LootTable"
+  ],
+  "ignoredExceptions": [
+    "com.mojang.authlib.exceptions.AuthenticationUnavailableException"
+  ]
+}
