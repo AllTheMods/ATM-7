@@ -4,6 +4,8 @@ onEvent('tags.blocks', e => {
   e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
   e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,/botania:.+/])
+  e.add('minecraft:mineable/axe', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped'])
+  e.add('minecraft:logs', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped', 'evilcraft:undead_log_stripped', 'evilcraft:undead_wood_stripped', /allthemodium:stripped_\w+_log/])
 })
 
 onEvent('tags.items', e => {
@@ -49,6 +51,10 @@ onEvent('tags.items', e => {
   e.add('forge:rods/all_metal', '#forge:rods/metal');
 
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
+
+  e.add('minecraft:logs', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped', 'evilcraft:undead_log_stripped', 'evilcraft:undead_wood_stripped', /allthemodium:stripped_\w+_log/, 'hexerei:stripped_willow_log', /hexerei:stripped_\w+_wood/])
+  e.add('forge:stripped_logs', [/hexerei:stripped_\w+_log/, 'evilcraft:undead_log_stripped', /allthemodium:stripped_\w+_log/])
+  e.add('forge:stripped_wood', [/hexerei:stripped_\w+_wood/, 'evilcraft:undead_wood_stripped'])
 })
 
 onEvent('tags.entity_types', e => {
