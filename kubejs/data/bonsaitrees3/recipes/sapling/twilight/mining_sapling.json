@@ -6,15 +6,6 @@
     "drops": [
       {
         "rolls": 1,
-        "chance": 0.05,
-        "result": {
-          "item": "twilightforest:mining_sapling"
-        },
-        "requiresSilkTouch": false,
-        "requiresBees": false
-      },
-      {
-        "rolls": 1,
         "chance": 0.75,
         "result": {
           "item": "twilightforest:mining_log"
