@@ -13,7 +13,14 @@
       "count": 3
     },
     {
-      "tag": "forge:dusts/diamond",
+      "value": [
+        {
+          "tag": "forge:ingots/platinum"
+        },
+        {
+          "tag": "forge:dusts/platinum"
+        }
+      ],
       "count": 1
     },
     {
