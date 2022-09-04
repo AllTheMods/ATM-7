@@ -27,8 +27,8 @@ e.recipes.mekanismCrushing('thermal:quartz_dust', 'minecraft:quartz')
 e.recipes.immersiveengineeringCrusher('thermal:quartz_dust', 'minecraft:quartz')
 e.recipes.createCrushing('thermal:quartz_dust', 'minecraft:quartz')
 e.recipes.ftbic.macerating('thermal:quartz_dust', 'minecraft:quartz')
-e.smelting('ae2:silicon','thermal:quartz_dust').xp(0.35)
-e.blasting('ae2:silicon','thermal:quartz_dust').xp(0.35)
+e.smelting('ae2:silicon','#forge:dusts/quartz').xp(0.35)
+e.blasting('ae2:silicon','#forge:dusts/quartz').xp(0.35)
 
   
 })

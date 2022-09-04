@@ -1,0 +1,39 @@
+{
+    "type": "bonsaitrees3:sapling",
+    "sapling": {
+      "item": "twilightforest:sorting_sapling"
+    },
+    "drops": [
+      {
+        "rolls": 1,
+        "chance": 0.75,
+        "result": {
+          "item": "twilightforest:sorting_log"
+        },
+        "requiresSilkTouch": false,
+        "requiresBees": false
+      },
+      {
+        "rolls": 3,
+        "chance": 0.2,
+        "result": {
+          "item": "minecraft:stick"
+        },
+        "requiresSilkTouch": false,
+        "requiresBees": false
+      },
+      {
+        "rolls": 2,
+        "chance": 0.2,
+        "result": {
+          "item": "twilightforest:sorting_leaves"
+        },
+        "requiresSilkTouch": true,
+        "requiresBees": false
+      }
+    ],
+    "compatibleSoilTags": [
+      "grass",
+      "dirt"
+    ]
+  }
