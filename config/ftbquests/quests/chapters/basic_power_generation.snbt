@@ -385,7 +385,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:strong_nbt"
+					id: "itemfilters:weak_nbt"
 					Count: 1b
 					tag: {
 						value: {
@@ -1907,7 +1907,7 @@
 					}
 				}
 				item: {
-					id: "itemfilters:strong_nbt"
+					id: "itemfilters:weak_nbt"
 					Count: 1b
 					tag: {
 						value: {
