@@ -63,5 +63,14 @@
     },
     "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenPartSettings": {
         "ignore": true
+    },
+    "mcjty.rftoolsutility.modules.crafter.client.GuiCrafter": {
+        "ignore": true
+    },
+    "cofh.thermal.core.client.gui.device.DeviceComposterScreen": {
+        "ignore": true
+    },
+    "com.legacy.blue_skies.client.gui.screen.BagOfSpoilsScreen": {
+        "ignore": true
     }
 }

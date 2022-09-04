@@ -596,7 +596,7 @@ onEvent('recipes', e => {
         outputs = [Item.of(`alltheores:${metal}_nugget`, 9)]
       } else {
         outputs = [Item.of(`${oreOverride[metal] ?? 'alltheores'}:${metal}_nugget`, 9)]
-      }      
+      }
       id = `kubejs:thermal/press/press_${metal}_${type}`
     } else if (type === 'raw_unpacking') {
       e.remove({ type: `thermal:press`, id: `/press_raw_${metal}_unpacking/` })
@@ -898,9 +898,9 @@ onEvent('recipes', e => {
 
   // temporary for missing recipes
   e.shapeless('2x kubejs:cobalt_dust',['#forge:raw_ores/cobalt','#alltheores:ore_hammers'])
-  e.shapeless('9x alltheores:brass_ingot', '#forge:storage_blocks/brass')
-  e.shapeless('allthemodium:unobtainium_ingot', '9x #forge:nuggets/unobtainium');
-  e.remove({ id: 'allthemodium:main/unobtainium_nugget_from_unobtainium_ingot' })
+
+  // recipe fixes
+  e.replaceInput({id:'littlecontraptions:contraption_barge'}, 'create:brass_ingot', '#forge:ingots/brass')
 
   removeRecipeByID(e, [
     'immersiveengineering:crusher/nether_gold',
