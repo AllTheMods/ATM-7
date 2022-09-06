@@ -1,24 +1,42 @@
 {
     "ModSettings": {
-        "highlight_foused_items": false,
+        "highlight_foused_items": {
+            "value": false
+        },
         "enable_updates_check": false,
         "first_run": false
     },
     "GuiSettings": {
-        "enable_profiles_ui": false,
+        "enable_profiles_ui": {
+            "value": false
+        },
         "continuous_crafting_saved_value": false
     },
-      "LockedSlotsSettings": {
-        "locked_slots_empty_hotbar_as_semi_locked": false
+    "LockedSlotsSettings": {
+        "locked_slots_empty_hotbar_as_semi_locked": {
+            "value": false
+        }
     },
     "AutoRefillSettings": {
         "tool_damage_threshold": 2,
-        "visual_durability_notification": false,
-        "audio_durability_notification": false,
-        "visual_replace_success_notification": false,
-        "audio_replace_success_notification": false,
-        "visual_replace_failed_notification": false,
-        "audio_replace_failed_notification": false
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "audio_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
+            "value": false
+        }
     },
     "Hotkeys": {
         "sort_inventory": {

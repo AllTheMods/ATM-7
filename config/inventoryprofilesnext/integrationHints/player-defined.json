@@ -29,15 +29,48 @@
         "ignore": true
     },
     "net.permutated.pylons.client.gui.ExpulsionPylonScreen": {
-      "ignore": true
+        "ignore": true
     },
     "net.permutated.pylons.client.gui.InfusionPylonScreen": {
-      "ignore": true
+        "ignore": true
     },
     "net.permutated.pylons.client.gui.HarvesterPylonScreen": {
-      "ignore": true
+        "ignore": true
     },
     "net.permutated.pylons.client.gui.InterdictionPylonScreen": {
-      "ignore": true
+        "ignore": true
+    },
+    "com.direwolf20.laserio.client.screens.FilterBasicScreen": {
+        "ignore": true
+    },
+    "me.desht.pneumaticcraft.client.gui.semiblock.LogisticsStorageScreen": {
+        "playerSideOnly": true
+    },
+    "net.geforcemods.securitycraft.screen.DisguiseModuleScreen": {
+        "ignore": true
+    },
+    "cy.jdkdigital.productivebees.container.gui.BreedingChamberScreen": {
+        "ignore": true
+    },
+    "com.almostreliable.lazierae2.gui.RequesterScreen": {
+        "ignore": true
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenAspectSettings": {
+        "ignore": true
+    },
+    "com.direwolf20.laserio.client.screens.LaserNodeScreen": {
+        "ignore": true
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenPartSettings": {
+        "ignore": true
+    },
+    "mcjty.rftoolsutility.modules.crafter.client.GuiCrafter": {
+        "ignore": true
+    },
+    "cofh.thermal.core.client.gui.device.DeviceComposterScreen": {
+        "ignore": true
+    },
+    "com.legacy.blue_skies.client.gui.screen.BagOfSpoilsScreen": {
+        "ignore": true
     }
 }
