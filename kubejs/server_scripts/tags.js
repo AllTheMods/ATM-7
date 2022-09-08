@@ -1,5 +1,6 @@
 //priority: 1000
 onEvent('tags.blocks', e => {
+  e.add('create:passive_boiler_heaters', 'allthemodium:soul_lava_block')
   e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
   e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
