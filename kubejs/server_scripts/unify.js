@@ -524,7 +524,7 @@ onEvent('recipes', e => {
       e.remove({ type: 'thermal:pulverizer', id: `/${metal}_ore/` })
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(2.0))
       if (metal in thermalSecondaries) {
-        extraItem = thermalSecondaries[metal]
+        let extraItem = thermalSecondaries[metal]
         if (extraItem.includes('thermal')) {
           outputs.push(Item.of(extraItem).withChance(0.1))
         } else {
@@ -537,7 +537,7 @@ onEvent('recipes', e => {
       e.remove({ type: 'thermal:pulverizer', id: `/raw_${metal}/` })
       outputs.push(Item.of(`${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`).withChance(1.25))
       if (metal in thermalSecondaries) {
-        extraItem = thermalSecondaries[metal]
+        let extraItem = thermalSecondaries[metal]
         if (extraItem.includes('thermal')) {
           outputs.push(Item.of(extraItem).withChance(0.05))
         } else {

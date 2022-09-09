@@ -25,7 +25,7 @@ onEvent('recipes', event => {
     ]
     for (var i in xpFluid) {
         if (Platform.isLoaded('thermal_expansion')) {
-            recipe = {
+            let recipe = {
                 type: "thermal:brewer",
                 ingredients: [
                     { fluid_tag: "forge:experience", amount: 250 },
@@ -36,7 +36,7 @@ onEvent('recipes', event => {
             event.custom(recipe).id(`kubejs:thermal/brewer/xp_conv_${i}`)
         }
         if (Platform.isLoaded('create')) {
-            recipe = {
+            let recipe = {
                 type: "create:mixing",
                 ingredients: [
                     { fluidTag: "forge:experience", amount: 250 },
@@ -47,7 +47,7 @@ onEvent('recipes', event => {
             event.custom(recipe).id(`kubejs:create/mixing/xp_conv_${i}`)
         }
         if (Platform.isLoaded('pneumaticcraft')) {
-            recipe = {
+            let recipe = {
                 type: "pneumaticcraft:thermo_plant",
                 item_input: { item: woolOrder[i] },
                 fluid_input: {

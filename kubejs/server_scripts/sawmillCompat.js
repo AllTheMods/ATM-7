@@ -26,21 +26,20 @@ onEvent('recipes', e => {
     let Thermal_KubeJS = Platform.isLoaded('kubejs_thermal')
 
     function processInfo(input) {
-        inTag = input.tag.toString().split(":")
-        inMod = inTag[0]
+        let inTag = input.tag.toString().split(":")
+        let inMod = inTag[0]
         if (inMod == 'forge') {
-            inLogs = Ingredient.of(input).stacks
+            let inLogs = Ingredient.of(input).stacks
             inMod = inLogs[0].mod
         }
-        inLog = inTag[1].split('_')
+        let inLog = inTag[1].split('_')
+        let prefix = "null"
         if (inLog.length == 2) {
             prefix = inLog[0]
         } else if (inLog.length > 2) {
             prefix = inLog.slice(0, -1).join('_')
         } else if (inLog[0].contains('logs/')) {
             prefix = inLog[0].split("/")[1]
-        } else {
-            prefix = "null"
         }
         return [inMod, prefix];
     }
@@ -71,11 +70,11 @@ onEvent('recipes', e => {
         if (e.countRecipes({ type: "corail_woodcutter:woodcutting", input: input }) > 3) {
             return;
         }
-        parsed = processInfo(input)
-        outMod = output.mod
-        outPrefix = output.item.toString().slice(0, -7);
+        let parsed = processInfo(input)
+        let outMod = output.mod
+        let outPrefix = output.item.toString().slice(0, -7);
         ['boat', 'button', 'door', 'fence', 'fence_gate', 'planks', 'pressure_plate', 'slab', 'stairs', 'trapdoor'].forEach(item => {
-            outItem = `${outMod}:${outPrefix}_${item}`
+            let outItem = `${outMod}:${outPrefix}_${item}`
             if (Item.of(outItem).isEmpty()) {
                 if (outMod == 'allthemodium') {
                     if (item == 'slab') {
@@ -90,7 +89,7 @@ onEvent('recipes', e => {
                     return;
                 }
             }
-            outCount = corail[item].logs * (output.count / 4)
+            let outCount = corail[item].logs * (output.count / 4)
             if (outCount < 1) { return; }
             addRecipeCorailWoodCutting(input, outItem, outCount, `kubejs:woodcutting/${parsed[0]}/${outPrefix}_${item}_from_${parsed[1]}_log`)
             outCount = corail[item].planks * (output.count / 4)
@@ -101,10 +100,10 @@ onEvent('recipes', e => {
     }
 
     function addMekanismSawing(input, output) {
-        mekoutput = output.copy()
+        let mekoutput = output.copy()
         mekoutput.count = 1.5 * mekoutput.count
-        parsed = processInfo(input)
-        id = `kubejs:sawing/${parsed[0]}/log/${parsed[1]}`
+        let parsed = processInfo(input)
+        let id = `kubejs:sawing/${parsed[0]}/log/${parsed[1]}`
         if (Mek_KubeJS) {
             if (e.countRecipes({ type: 'mekanism:sawing', input: input }) > 0) {
                 return;
@@ -154,24 +153,24 @@ onEvent('recipes', e => {
     }
 
     function addImmersiveEngineeringSawing(input, output) {
-        ieoutput = output.copy()
+        let ieoutput = output.copy()
         ieoutput.count = 1.5 * ieoutput.count
-        parsed = processInfo(input)
+        let parsed = processInfo(input)
         if (IE_KubeJS) {
             if (e.countRecipes({ type: 'immersiveengineering:sawmill', input: input }) > 0) { return; }
         } else {
             if (e.countRecipes({ type: 'immersiveengineering:sawmill', id: `/sawmill\/${parsed[1]}_log/` }) > 0) { return; }
         }
-        id1 = `kubejs:sawmill/${parsed[0]}/${parsed[1]}_log`
-        id2 = `kubejs:sawmill/${parsed[0]}/stripped_${parsed[1]}_log`
-        secondary1 = [
+        let id1 = `kubejs:sawmill/${parsed[0]}/${parsed[1]}_log`
+        let id2 = `kubejs:sawmill/${parsed[0]}/stripped_${parsed[1]}_log`
+        let secondary1 = [
             { "output": { "tag": "forge:dusts/wood" }, "stripping": false },
             { "output": { "tag": "forge:dusts/wood" }, "stripping": true }
         ]
-        secondary2 = [{ "output": { "tag": "forge:dusts/wood" }, "stripping": false }]
-        tag = Ingredient.of(input).stacks
-        logs = []
-        stripped = []
+        let secondary2 = [{ "output": { "tag": "forge:dusts/wood" }, "stripping": false }]
+        let tag = Ingredient.of(input).stacks
+        let logs = []
+        let stripped = []
         tag.forEach(wood => {
             if (wood.toString().contains('stripped')) {
                 stripped.push(wood)
@@ -187,16 +186,16 @@ onEvent('recipes', e => {
             }
         } else if (parsed[0] == 'ars_nouveau') {
             ['red', 'blue', 'purple', 'green'].forEach(color => {
-                logs2 = []
+                let logs2 = []
                 logs.forEach(log => {
                     if (log.toString().contains(color)) { logs2.push(log) }
                 })
-                stripped2 = []
+                let stripped2 = []
                 stripped.forEach(log => {
                     if (log.toString().contains(color)) { stripped2.push(log) }
                 })
-                id1 = `kubejs:sawmill/${parsed[0]}/${color}_${parsed[1]}_log`
-                id2 = `kubejs:sawmill/${parsed[0]}/stripped_${color}_${parsed[1]}_log`
+                let id1 = `kubejs:sawmill/${parsed[0]}/${color}_${parsed[1]}_log`
+                let id2 = `kubejs:sawmill/${parsed[0]}/stripped_${color}_${parsed[1]}_log`
                 if (IE_KubeJS) {
                     e.recipes.immersiveengineeringSawmill(ieoutput, logs2, secondary1, stripped2[0]).energy(1600).id(id1)
                     e.recipes.immersiveengineeringSawmill(ieoutput, stripped2, secondary2).energy(800).id(id2)
@@ -226,19 +225,19 @@ onEvent('recipes', e => {
     }
 
     function addCreateCutting(input, output) {
-        createOutput = output.copy()
+        let createOutput = output.copy()
         createOutput.count = 1.5 * createOutput.count
-        parsed = processInfo(input)
-        id1 = `kubejs:cutting/${parsed[0]}/${parsed[1]}_log`
-        id2 = `kubejs:cutting/${parsed[0]}/stripped_${parsed[1]}_log`
+        let parsed = processInfo(input)
+        let id1 = `kubejs:cutting/${parsed[0]}/${parsed[1]}_log`
+        let id2 = `kubejs:cutting/${parsed[0]}/stripped_${parsed[1]}_log`
         if (Create_KubeJS) {
             if (e.countRecipes({ type: 'create:cutting', input: input }) > 0) { return; }
         } else {
             if (e.countRecipes({ type: 'create:cutting', id: `/cutting\/${parsed[1]}_[log|stem]/` }) > 0) { return; }
         }
-        tag = Ingredient.of(input).stacks
-        logs = []
-        stripped = []
+        let tag = Ingredient.of(input).stacks
+        let logs = []
+        let stripped = []
         tag.forEach(wood => {
             if (wood.toString().contains('stripped')) {
                 stripped.push(wood)
@@ -286,15 +285,15 @@ onEvent('recipes', e => {
     }
 
     function addThermalSawing(input, output) {
-        thermalOutput = output.copy()
+        let thermalOutput = output.copy()
         thermalOutput.count = 1.5 * thermalOutput.count
-        parsed = processInfo(input)
-        id = `kubejs:thermal/sawmill/${parsed[0]}/${parsed[1]}_log`
+        let parsed = processInfo(input)
+        let id = `kubejs:thermal/sawmill/${parsed[0]}/${parsed[1]}_log`
         if (Thermal_KubeJS) {
             if (e.countRecipes({ type: 'thermal:sawmill', input: input }) > 0) { return; }
             e.recipes.thermal.sawmill([thermalOutput, Item.of(`#forge:dusts/wood`).withChance(1.25)], input).energy(1000).id(id)
         } else {
-            found = false
+            let found = false
             e.forEachRecipe({type: 'thermal:sawmill'}, recipe => {
                 recipeId = recipe.getId()
                 regex = new RegExp(`${parsed[1]}_[log|stem]`)
@@ -328,11 +327,11 @@ onEvent('recipes', e => {
             return;
         }
         e.forEachRecipe({ type: 'minecraft:crafting_shapeless', output: plank }, recipe => {
-            inputIngredient = recipe.inputItems[0]
+            let inputIngredient = recipe.inputItems[0]
             if (inputIngredient.tag === undefined) {
                 return;
             }
-            outputItem = recipe.outputItems[0]
+            let outputItem = recipe.outputItems[0]
             if (CorailWoodcutterLoaded) {
                 addCorailWoodcutter(inputIngredient, outputItem)
             }
@@ -355,7 +354,7 @@ onEvent('recipes', e => {
         "naturesaura:ancient": 2
     };
     // fix plank recipes we added tags to
-    customWoods = []
+    let customWoods = []
     if (Platform.isLoaded('allthemodium')) {
         customWoods = customWoods.concat(['allthemodium:ancient', 'allthemodium:demonic', 'allthemodium:soul'])
     }
