@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:metallurgic_infusing",
+  "itemInput": {
+    "ingredient": {
+      "item": "allthecompressed:iron_block_1x"
+    }
+  },
+  "chemicalInput": {
+    "amount": 1620,
+    "tag": "mekanism:carbon"
+  },
+  "output": {
+    "item": "allthecompressed:steel_block_1x"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

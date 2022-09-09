@@ -1,0 +1,9 @@
+{
+  "type": "powah:energizing",
+  "conditions": [
+    {
+      "modid": "nonexistent_mod_condition",
+      "type": "forge:mod_loaded"
+    }
+  ]
+}
