@@ -266,9 +266,9 @@ onEvent('recipes', e => {
                 addRecipeCreateCutting(stripped, [createOutput], 50, id2)
             }
             logs.forEach(log => {
-                logitem = log.item.toString()
+                let logitem = log.item.toString()
                 stripped.forEach(strip => {
-                    match = `stripped_${logitem}`
+                    let match = `stripped_${logitem}`
                     if (parsed[0] == 'botania' && logitem.contains('glimmering')) {
                         match = `glimmering_stripped_${logitem.slice(11)}`
                     }
