@@ -228,12 +228,34 @@
 			tasks: [{
 				id: "0F521F7C1D602AAD"
 				type: "item"
-				item: {
+				title: "Unobtainium Jetpack"
+				icon: {
 					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
 						Id: "ironjetpacks:unobtainium"
 						Throttle: 1.0d
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:unobtainium"
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -952,12 +974,34 @@
 			tasks: [{
 				id: "0A16EAB5D9C83810"
 				type: "item"
-				item: {
+				title: "Vibranium Jetpack"
+				icon: {
 					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
 						Id: "ironjetpacks:vibranium"
 						Throttle: 1.0d
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:vibranium"
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -971,12 +1015,34 @@
 			tasks: [{
 				id: "20D7CAE0B1857EB4"
 				type: "item"
-				item: {
+				title: "Allthemodium Jetpack"
+				icon: {
 					id: "ironjetpacks:jetpack"
 					Count: 1b
 					tag: {
 						Id: "ironjetpacks:allthemodium"
 						Throttle: 1.0d
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:allthemodium"
+									}
+								}
+							}
+						]
 					}
 				}
 			}]

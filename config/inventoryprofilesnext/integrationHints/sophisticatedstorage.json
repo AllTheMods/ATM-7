@@ -1,5 +1,6 @@
 {
     "net.p3pp3rf1y.sophisticatedstorage.client.gui.StorageScreen": {
+        "playerSideOnly": true,
         "buttonHints": {
             "MOVE_TO_PLAYER": {
                 "horizontalOffset": 28

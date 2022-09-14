@@ -72,5 +72,8 @@
     },
     "com.legacy.blue_skies.client.gui.screen.BagOfSpoilsScreen": {
         "ignore": true
+    },
+    "dev.latvian.mods.itemfilters.gui.InventoryFilterScreen": {
+        "ignore": true
     }
 }

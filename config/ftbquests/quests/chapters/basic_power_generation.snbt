@@ -385,13 +385,24 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:and"
 					Count: 1b
 					tag: {
-						value: {
-							Id: "ironjetpacks:wood"
-							Throttle: 1.0d
-						}
+						items: [
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:wood"
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -1907,13 +1918,24 @@
 					}
 				}
 				item: {
-					id: "itemfilters:weak_nbt"
+					id: "itemfilters:and"
 					Count: 1b
 					tag: {
-						value: {
-							Id: "ironjetpacks:stone"
-							Throttle: 1.0d
-						}
+						items: [
+							{
+								id: "ironjetpacks:jetpack"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Id: "ironjetpacks:stone"
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
