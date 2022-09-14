@@ -50,6 +50,7 @@ onEvent('tags.items', e => {
   e.add('forge:rods/metal', atoMetals.concat(vanillaMetals, atoAlloys).map(metal => `alltheores:${metal}_rod`));
   e.add('forge:rods/metal', atmMetals.map(metal => `allthemodium:${metal}_rod`));
   e.add('forge:rods/all_metal', '#forge:rods/metal');
+  e.add('forge:plates', atmMetals.map(metal => `allthemodium:${metal}_plate`))
 
   e.remove('forge:storage_blocks/copper', 'minecraft:cut_copper')
 
