@@ -1,0 +1,20 @@
+# FTB Industrial Contraptions config file
+
+{
+	Nuclear: {
+		# The starting radius for a nuclear reactor explosion
+		# Default: 10.0
+		# Range: 1.0 ~ 1000.0
+		"Base Nuclear blast radius": 1.0d
+
+		# The limit of how large an explosion can be
+		# Default: 80.0
+		# Range: 1.0 ~ 10000.0
+		"Nuclear blast limit": 1.0d
+
+		# How many blocks in a circular radius the nuke will effect
+		# Default: 36.0
+		# Range: 1.0 ~ 1000.0
+		"Nuke Radius": 1.0d
+	}
+}
