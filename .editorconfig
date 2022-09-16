@@ -10,7 +10,7 @@ indent_size = 4
 [*.{json,yml,yaml,js}]
 indent_size = 2
 
-[*.toml]
+[*.{toml,snbt}]
 end_of_line = crlf
 indent_style = tab
 tab_width = 4

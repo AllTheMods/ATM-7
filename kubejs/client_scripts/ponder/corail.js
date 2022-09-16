@@ -32,47 +32,31 @@ onEvent("ponder.registry", event => {
         scene.idle(10)
         const zpiglin = scene.world.createEntity("zombified_piglin", pos4top)
         scene.idle(9)
-        scene.world.modifyEntity(zombie, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(zombie)
         scene.idle(1)
         const drowned = scene.world.createEntity("drowned", pos1top)
         scene.idle(9)
-        scene.world.modifyEntity(skellie, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(skellie)
         scene.idle(1)
         const wskellie = scene.world.createEntity("wither_skeleton", pos2top)
         scene.idle(9)
-        scene.world.modifyEntity(stray, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(stray)
         scene.idle(1)
         const husk = scene.world.createEntity("husk", pos3top)
         scene.idle(9)
-        scene.world.modifyEntity(zpiglin, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(zpiglin)
         scene.idle(1)
         const hoglin = scene.world.createEntity("zoglin", pos4top)
         scene.idle(10)
-        scene.world.modifyEntity(drowned, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(drowned)
         scene.idle(10)
-        scene.world.modifyEntity(wskellie, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(wskellie)
         scene.text(60, "This has a rare chance to drop Grave's Dust", [1.5, 1, 1.5]).placeNearTarget()
         scene.world.createItemEntity(centerTop, util.vector.of(-0.06, 0.4, -0.06), "tombstone:grave_dust")
         scene.idle(10)
-        scene.world.modifyEntity(husk, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(husk)
         scene.idle(10)
-        scene.world.modifyEntity(hoglin, (e) => {
-            e.discard();
-        })
+        scene.world.removeEntity(hoglin)
         scene.text(60, "And a rarer chance to drop Essence of Undeath", [3.5, 1, 3.5]).placeNearTarget()
         scene.world.createItemEntity(centerTop, util.vector.of(0.06, 0.4, 0.06), "tombstone:essence_of_undeath")
     })
@@ -115,16 +99,12 @@ onEvent("ponder.registry", event => {
             const blackTop = util.vector.topOf(black)
             const lightning1 = scene.world.createEntity("lightning_bolt", blackTop)
             scene.idle(10)
-            scene.world.modifyEntity(lightning1, (e) => {
-                e.discard();
-            })
+            scene.world.removeEntity(lightning1)
             const white = util.grid.at(3, 0, 2)
             const whiteTop = util.vector.topOf(white)
             const lightning2 = scene.world.createEntity("lightning_bolt", whiteTop)
             scene.idle(10)
-            scene.world.modifyEntity(lightning2, (e) => {
-                e.discard();
-            })
+            scene.world.removeEntity(lightning2)
             scene.particles.rotationIndicator(60, [1, 2, 2], 0.3, 0.3, "Y").rotationSpeed(5).color("#D133ED")
             scene.idle(10)
             scene.particles.rotationIndicator(60, [3, 2, 2], 0.3, 0.3, "Y").rotationSpeed(5).color("#00FFFC")

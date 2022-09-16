@@ -25,7 +25,7 @@ onEvent("ponder.registry", event => {
             scene.world.showSection([4, 1, 4], Facing.down)
             scene.text(20, "Place down a Smithing Table in the center", [4.5, 2, 4.5]).placeNearTarget()
             scene.idle(30)
-            bbox = util.select.fromTo(1, 1, 1, 7, 1, 7)
+            let bbox = util.select.fromTo(1, 1, 1, 7, 1, 7)
             bbox = bbox.add(util.select.fromTo(0, 1, 3, 8, 1, 5))
             bbox = bbox.add(util.select.fromTo(3, 1, 0, 5, 1, 8))
             scene.addKeyframe()
