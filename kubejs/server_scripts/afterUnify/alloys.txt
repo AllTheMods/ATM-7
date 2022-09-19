@@ -1,0 +1,59 @@
+Steel
+IE - Blast Furnace -> Iron to Steel ingot
+ATO - Crafting -> 4 coal, 1 iron dust, ore hammer -> Steel Dust
+Mek - Infuser -> 1 coal, 1 iron -> enriched iron, 1 coal -> steel dust
+
+Invar
+IE - Alloy Kiln -> 2 iron, 1 nickel -> 3 invar ingot 
+ATO/Thermal - Crafting -> 2 iron dust, 1 nickel dust -> 3 invar dust
+Thermal - Induction -> 2 iron, 1 nickel dust -> 3 invar ingot
+Thermal - Crafting -> 2 iron dust, 1 nickel ingot -> 3 invar ingot
+Tinkers - Alloying -> 2 Iron, 1 Nickel -> 3 Invar Ingot
+
+Electrum
+IE - Alloy Kiln -> 1 gold, 1 silver -> 2 electrum ingot
+Thermal - Induction -> 1 gold dust, 1 silver -> 2 electrum ingot
+Thermal - Crafting -> 1 golt dust, 1 silver, 1 fire charge -> 2 electrum ingot
+ATO/IE/Thermal - Crafting -> 1 gold dust, 1 silver dust -> 2 electrum dust
+Tinkers - Alloying -> 1 gold, 1 silver -> 2 electrum ingot
+
+Bronze
+IE - Alloy Kiln -> 3 copper, 1 tin -> 4 bronze ingot
+Mek - Infuser -> 1 tin (infusion), 3 copper -> 4 bronze ingot
+Thermal - Induction -> 1 tin, 3 copper dust -> 4 bronze ingot
+ATO/FTBIC/Thermal - 3 copper dust, 1 tin dust -> 4 bronze dust
+Tinkers - Alloying -> 3 copper, 1 tin -> 4 bronze ingot
+
+Enderium
+Thermal - Induction -> 1 diamond dust, 3 lead ingot, 2 ender pearl dust -> 2 enderium ingot
+FTBIC/Thermal - Crafting -> 3 lead ingot, 1 diamond dust, 2 ender pearl dust, 1 fire charge -> 2 enderium ingot
+FTBIC/Thermal - Crafting -> 3 lead dust, 1 diamond dust, 2 ender pearl dust -> 2 enderium dust
+FTBIC - Crafting -> 3 lead dust, 1 diamond dust, 2 ender pearl -> 2 enderium dust
+ATO - Crafting -> 3 lead dust, 1 platinum dust, 4 ender pearl, ore hammer -> 4 enderium dust
+Tinkers - Alloying -> 1 diamond, 3 lead ingot, 2 ender pearl-> 2 enderium ingot
+
+Lumium
+Thermal - Induction -> 1 silver ingot, 3 tin ingot, 2 glowstone dust -> 4 Lumium Ingot
+Thermal - Crafting -> 3 tin ingot, 1 silver ingot, 2 glowstone dust, 1 fire charge -> 4 lumium ingot
+Thermal - Crafting -> 3 tin dust, 1 silver dust, 2 glowstone dust -> 4 lumium dust
+ATO - Crafting -> 3 tin dust, 1 silver dust, 4 glowstone dust -> 4 lumium dust
+Tinkers - Alloying -> 1 silver ingot, 3 tin ingot, 2 glowstone dust -> 4 Lumium Ingot
+
+Signalum
+Thermal - Induction -> 3 copper dust, 1 silver ingot, 4 redstone dust -> 4 signalum ingot
+Thermal - Crafting -> 3 copper dust, 1 silver ingot, 4 redstone dust, 1 fire charge -> 4 signalum ingot
+ATO/Thermal - Crafting -> 3 copper dust, 1 silver dust, 4 redstone dust -> 4 signalum dust
+Tinkers - Alloying -> 3 copper, 1 silver, 4 redstone dust -> 4 signalum ingot
+
+Constantan
+IE - Alloy Kiln -> 1 copper, 1 nickel -> 2 constantan ingot
+Thermal - Induction -> 1 copper dust, 1 nickel ingot -> 2 constantan ingot
+Thermal - Crafting -> 1 copper dust, 1 nickel ingot, 1 fire charge -> 2 constantan ingot
+IE/ATO/Thermal - Crafting -> 1 copper dust, 1 nickel dust -> 2 constantan dust
+Tinkers - Alloying -> 1 copper, 1 nickel -> 2 constantan ingot
+
+Brass
+IE - Alloy Kiln -> 1 copper, 1 zinc -> 2 brass ingot
+Create - Heated Mixing -> 1 copper ingot, 1 zinc ingot -> 2 brass ingot
+ATO - Crafting -> 3 copper dust, 1 zinc dust -> 4 brass dust
+Tinkers - Alloying -> 1 copper, 1 zinc -> 2 brass ingot
