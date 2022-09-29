@@ -937,7 +937,7 @@
 		}
 		{
 			x: -5.0d
-			y: 0.5d
+			y: 0.2d
 			shape: "hexagon"
 			subtitle: "Increases Bee Productivity by 140%"
 			dependencies: ["66324D7D0C51AEAC"]
@@ -962,7 +962,7 @@
 		}
 		{
 			x: -2.5d
-			y: -0.5d
+			y: -0.6d
 			subtitle: "Sonic Bees"
 			description: [
 				"Can be placed in a hive or centrifuge."
@@ -994,8 +994,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: 2.0d
+			x: -3.0d
+			y: 1.9d
 			shape: "hexagon"
 			subtitle: "Making Babies"
 			description: [
@@ -1027,7 +1027,7 @@
 		}
 		{
 			x: -4.5d
-			y: -0.5d
+			y: -0.6d
 			shape: "hexagon"
 			subtitle: "Lumber and Quarry Bees will give Blocks instead of Chips"
 			dependencies: ["66324D7D0C51AEAC"]
@@ -1077,8 +1077,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: 1.5d
+			x: -2.2d
+			y: 1.3d
 			shape: "hexagon"
 			subtitle: "Increases the Range of a Machine"
 			description: ["Mostly for the Catcher."]
@@ -1103,8 +1103,8 @@
 			]
 		}
 		{
-			x: -4.5d
-			y: 1.5d
+			x: -4.8d
+			y: 1.2d
 			shape: "hexagon"
 			subtitle: "Used to add Bees to a Filter"
 			dependencies: ["66324D7D0C51AEAC"]
@@ -1129,7 +1129,7 @@
 		}
 		{
 			x: -2.0d
-			y: 0.5d
+			y: 0.2d
 			subtitle: "Extracts Genes from Bees in Hives"
 			dependencies: ["66324D7D0C51AEAC"]
 			id: "1DF026030780AE96"
@@ -3219,7 +3219,7 @@
 					Count: 1b
 					tag: {
 						EntityTag: {
-							type: "productivebees:pepto_bismol"
+							type: "productivebees:sugarbag_honeycomb"
 						}
 					}
 				}
@@ -3229,7 +3229,7 @@
 					tag: {
 						value: {
 							EntityTag: {
-								type: "productivebees:pepto_bismol"
+								type: "productivebees:sugarbag_honeycomb"
 							}
 						}
 					}
@@ -4879,6 +4879,32 @@
 				type: "xp"
 				xp: 100
 			}]
+		}
+		{
+			x: -4.0d
+			y: 1.9d
+			subtitle: "Self Contained"
+			description: ["When installed, this upgrade makes your bees permanently stay in the beehive. Because of this, you'll need to place the required flower block directly in front of the hive."]
+			dependencies: ["66324D7D0C51AEAC"]
+			dependency_requirement: "all_started"
+			id: "61AE0ECD03F2AB88"
+			tasks: [{
+				id: "524FB14DE5E8DB8E"
+				type: "item"
+				item: "productivebees:upgrade_simulator"
+			}]
+			rewards: [
+				{
+					id: "21BDE3CBAF62A2C2"
+					type: "item"
+					item: "productivebees:honey_treat"
+				}
+				{
+					id: "65E721E100F6AF24"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 	]
 }
