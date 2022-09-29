@@ -4886,7 +4886,6 @@
 			subtitle: "Self Contained"
 			description: ["When installed, this upgrade makes your bees permanently stay in the beehive. Because of this, you'll need to place the required flower block directly in front of the hive."]
 			dependencies: ["66324D7D0C51AEAC"]
-			dependency_requirement: "all_started"
 			id: "61AE0ECD03F2AB88"
 			tasks: [{
 				id: "524FB14DE5E8DB8E"
