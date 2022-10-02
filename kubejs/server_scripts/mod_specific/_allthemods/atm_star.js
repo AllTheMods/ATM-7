@@ -9,21 +9,21 @@ onEvent('recipes', e => {
     B: 'minecraft:dragon_breath',
     S: 'botania:dragonstone',
     E: 'forbidden_arcanus:golden_dragon_scale',
-    I: Item.of('blue_skies:nature_arc', '{ArcLevel:2}')
+    I: [Item.of('blue_skies:nature_arc', '{ArcLevel:2}'),Item.of('blue_skies:nature_arc', '{ArcLevel:1}')]
   }).id('kubejs:allthetweaks/dragon_soul')
   //#endregion
   
   //#region Dimensional Seed
   maInfusion(e, 'allthetweaks:dimensional_seed',
-      'allthecompressed:emerald_block_6x',
-      'allthecompressed:blackstone_block_7x',
+      'allthecompressed:emerald_block_5x',
+      'allthecompressed:blackstone_block_6x',
       'allthecompressed:end_stone_block_5x',
-      'allthecompressed:netherrack_block_7x',
+      'allthecompressed:netherrack_block_6x',
       'allthecompressed:clay_block_5x',
       'allthecompressed:soul_sand_block_4x',
       'allthecompressed:red_sand_block_4x',
       'allthecompressed:red_sand_block_4x',
-      'allthecompressed:obsidian_block_6x')
+      'allthecompressed:obsidian_block_5x')
   //#endregion
   
   //#region Withers Compass
