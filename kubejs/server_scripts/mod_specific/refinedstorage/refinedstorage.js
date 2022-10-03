@@ -129,7 +129,7 @@
   })
   removeRecipeByID(e, [
     'extradisks:part/1024k_storage_part',
-    'refinedstorage:part/4096k_fluid_storage_part',
+    'refinedstorage:4096k_fluid_storage_part',
     'extradisks:part/4096k_storage_part',
     'extradisks:part/16384k_fluid_storage_part',
     'extradisks:part/16384k_storage_part',
