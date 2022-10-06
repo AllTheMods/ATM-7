@@ -47,6 +47,9 @@ onEvent('jei.hide.items', e => {
     'thermal:raw_lead',
     'thermal:raw_silver',
     'thermal:raw_nickel',
+    'ftbic:diamond_dust',
+    'thermal:diamond_dust',
+    'createaddition:diamond_grit'
   ])
 
   ftbicMetals.forEach(metal => {
