@@ -91,3 +91,5 @@
 	#WIP
 	present = true
 
+[items]
+	shulker_shell = false
