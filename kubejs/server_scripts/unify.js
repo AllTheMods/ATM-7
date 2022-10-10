@@ -899,6 +899,12 @@ onEvent('recipes', e => {
   // temporary for missing recipes
   e.shapeless('2x kubejs:cobalt_dust',['#forge:raw_ores/cobalt','#alltheores:ore_hammers'])
 
+  e.shapeless('4x alltheores:enderium_dust', [
+    '3x #forge:dusts/lead',
+    '#forge:dusts/platinum',
+    '4x #forge:dusts/ender_pearl',
+  ])
+
   // recipe fixes
   e.replaceInput({id:'littlecontraptions:contraption_barge'}, 'create:brass_ingot', '#forge:ingots/brass')
   e.replaceOutput({}, '#forge:dusts/diamond', 'alltheores:diamond_dust')
