@@ -61,6 +61,15 @@ onEvent('recipes', e => {
       e.remove({ id: `mekanism:processing/${metal}/dust/from_raw_ore` })
     }
 
+    if (type === 'raw_block') {
+      input = `#forge:storage_blocks/raw_${metal}`;
+      inputCount = 1;
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      outputCount = 12;
+
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_raw_block` })
+    }
+
     if (type === 'dirty_dust') {
       input = `#mekanism:dirty_dusts/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
@@ -734,7 +743,7 @@ onEvent('recipes', e => {
   });
 
   vanillaMetals.concat(mekanismMetals).forEach(ore => {
-    ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'raw_block', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
   });
 
   mekanismMetals.forEach(metal => {
