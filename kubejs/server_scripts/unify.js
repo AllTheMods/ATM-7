@@ -908,6 +908,7 @@ onEvent('recipes', e => {
   // recipe fixes
   e.replaceInput({id:'littlecontraptions:contraption_barge'}, 'create:brass_ingot', '#forge:ingots/brass')
   e.replaceOutput({}, '#forge:dusts/diamond', 'alltheores:diamond_dust')
+  e.replaceInput('refinedstorage:silicon', '#forge:silicon')
   e.remove({type: 'immersiveengineering:metal_press', output: 'minecraft:blaze_rod'})
 
   removeRecipeByID(e, [
