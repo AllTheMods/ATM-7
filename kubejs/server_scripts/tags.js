@@ -7,6 +7,7 @@ onEvent('tags.blocks', e => {
   e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,/botania:.+/, '@waystones'])
   e.add('minecraft:mineable/axe', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped'])
   e.add('minecraft:logs', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped', 'evilcraft:undead_log_stripped', 'evilcraft:undead_wood_stripped', /allthemodium:stripped_\w+_log/])
+  e.add('buildinggadgets:blacklist/generic', '#forge:relocation_not_supported')
 })
 
 onEvent('tags.items', e => {
@@ -41,8 +42,8 @@ onEvent('tags.items', e => {
   e.add('forge:melons','minecraft:melon_slice')
   e.add('forbidden_arcanus:modifier/eternal_incompatible',[
     '#alltheores:ore_hammers','@ftbic','#tconstruct:modifiable',
-    'minecraft:nether_star','mythicbotany:faded_nether_star', 
-    'bloodmagic:sanguinereverter', 'elementalcraft:receptacle', 'elementalcraft:receptacle_empty', 
+    'minecraft:nether_star','mythicbotany:faded_nether_star',
+    'bloodmagic:sanguinereverter', 'elementalcraft:receptacle', 'elementalcraft:receptacle_empty',
     'elementalcraft:receptacle_improved', 'elementalcraft:receptacle_improved_empty'
   ])
 
