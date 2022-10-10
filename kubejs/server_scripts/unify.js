@@ -339,13 +339,13 @@ onEvent('recipes', e => {
   // unify pressing for FTB Industrial Contraptions
   // supported types: plates, rods, gears
   function ftbicUnifyPress(metal, type) {
-    let recipeType = 'rolling';
+    let recipeType = 'extruding';
     let inputTag = `#forge:ingots/${metal}`;
     let inputCount = 1;
     let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`
 
-    if (type === 'rod') {
-      recipeType = 'extruding';
+    if (type === 'plate') {
+      recipeType = 'rolling';
     }
 
     if (type === 'gear') {
@@ -788,7 +788,7 @@ onEvent('recipes', e => {
     e.remove({ id: `ftbic:shaped/ingots/${metal}_to_${metal}_gear` })
     e.remove({ id: `ftbic:extruding/ingots/${metal}_to_${metal}_rod` })
     e.remove({ id: `ftbic:rolling/ingots/${metal}_to_${metal}_plate` })
-    e.remove({ id: `ftbic:rolling/plates/${metal}_to_${metal}_gear` })
+    e.remove({ id: `ftbic:extruding/plates/${metal}_to_${metal}_gear` })
     e.remove({ id: `ftbic:shapeless/${metal}_block_to_${metal}_ingot` })
     e.remove({ id: `ftbic:shaped/${metal}_ingot_to_${metal}_block` })
     e.remove({ id: `ftbic:shapeless/${metal}_ingot_to_${metal}_nugget` })
