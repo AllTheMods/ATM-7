@@ -558,7 +558,7 @@
 		{
 			title: "The IO"
 			icon: "ae2:interface"
-			x: 23.5d
+			x: 24.0d
 			y: 1.5d
 			shape: "gear"
 			subtitle: "OI, OI, OI!"
@@ -1219,7 +1219,7 @@
 			]
 		}
 		{
-			x: 22.5d
+			x: 23.0d
 			y: 0.5d
 			shape: "rsquare"
 			subtitle: "The I"
@@ -1245,7 +1245,7 @@
 			]
 		}
 		{
-			x: 24.5d
+			x: 25.0d
 			y: 0.5d
 			shape: "rsquare"
 			subtitle: "The O"
@@ -1271,7 +1271,7 @@
 			]
 		}
 		{
-			x: 22.5d
+			x: 23.0d
 			y: -1.5d
 			shape: "rsquare"
 			subtitle: "GET IN"
@@ -1303,7 +1303,7 @@
 			]
 		}
 		{
-			x: 24.5d
+			x: 25.0d
 			y: -1.5d
 			shape: "rsquare"
 			subtitle: "GET OUT"
@@ -1334,7 +1334,7 @@
 		}
 		{
 			title: "P2P Tunnels"
-			x: 25.5d
+			x: 26.0d
 			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Cut out the middleman"
@@ -1366,7 +1366,7 @@
 			]
 		}
 		{
-			x: 23.5d
+			x: 24.0d
 			y: -0.5d
 			shape: "rsquare"
 			subtitle: "The spare chest"
@@ -1396,7 +1396,7 @@
 			]
 		}
 		{
-			x: 25.5d
+			x: 26.0d
 			y: -0.5d
 			shape: "circle"
 			description: [
@@ -1520,7 +1520,7 @@
 			]
 		}
 		{
-			x: 23.5d
+			x: 24.0d
 			y: -2.5d
 			shape: "circle"
 			description: ["The &bCapacity Card&f allows a bus upgraded with it to carry a larger filter. Import and Export buses upgraded with capacity cards can go from supporting only one filtered item each to their maximum nine-slot filter, while Storage buses will go from 18 slots to a maximum of 63."]
@@ -1581,7 +1581,7 @@
 		}
 		{
 			title: "Forgot to Mention"
-			x: 24.5d
+			x: 25.0d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "This has a use outside of crafting cables."
@@ -2104,8 +2104,8 @@
 		}
 		{
 			title: "Spatial IO"
-			x: 21.799999999999997d
-			y: 4.050000000000001d
+			x: 16.5d
+			y: 6.0d
 			shape: "gear"
 			description: [
 				"Aside from the storage of items and fluids, AE2 also provides a native way of storing entire &estructures&f inside of storage cells, not too dissimilarly to the Compact Machines mod."
@@ -2137,7 +2137,7 @@
 		}
 		{
 			title: "Spatial Pylon"
-			x: 20.0d
+			x: 19.5d
 			y: 6.0d
 			description: [
 				"The Spatial Containment Structure (SCS) consists of a cage of &bSpatial Pylons&f covering the volume you wish to enclose in a Spatial IO cell. At the absolute minimum, an SCS requires three lines of spatial pylon blocks, one for each dimension of the space being contained (length, width, height)."
@@ -2168,8 +2168,8 @@
 			]
 		}
 		{
-			x: 22.0d
-			y: 6.0d
+			x: 20.5d
+			y: 5.0d
 			description: ["The &bSpatial Anchor&f is a companion device from the Spatial IO lineage that simply functions as a chunk loader. When connected to an ME network, the Anchor will force-load all the chunks occupied by the ME network across all cables and devices, excluding subnetworks, as long as the network remains powered."]
 			dependencies: ["18DFB25DC48D8BF7"]
 			id: "2897FA291E5A38D8"
@@ -2192,8 +2192,8 @@
 			]
 		}
 		{
-			x: 18.0d
-			y: 6.0d
+			x: 18.5d
+			y: 5.0d
 			description: [
 				"&bSpatial Storage Cells&f are used to hold one defined volume each, and come in three different capacities allowing for a maximum of 2x2x2, 16x16x16 and 128x128x128 blocks' worth of space."
 				""
@@ -2724,7 +2724,7 @@
 		}
 		{
 			title: "Loosely Speaking"
-			x: 25.5d
+			x: 26.0d
 			y: -2.5d
 			shape: "circle"
 			subtitle: "The remaining two IO cards"
@@ -2823,6 +2823,54 @@
 				id: "0608B89F87FECB34"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			title: "Bulk Item Storage"
+			x: 19.5d
+			y: 0.5d
+			subtitle: "Bulk and cut"
+			description: [
+				"Aside from DISKs, you can also use netherite to craft what is effectively the complete opposite of the DISK."
+				""
+				"&dMEGA Cells&f offers the bespoke &bBulk Item Storage Cell&f, which is limited to no more than &oone&r type of item storeable per cell but can store a practically &o&lINFINITE&r* number of that item type. Before it can accept an item type, it must be filtered in advance using a Cell Workbench."
+				""
+				"*&oTechnically \"max long\". If you know then you know.&r"
+			]
+			dependencies: ["17F29706CE9A846E"]
+			id: "0F03E75CF79BADD7"
+			tasks: [{
+				id: "4C2F435902156183"
+				type: "item"
+				item: {
+					id: "megacells:bulk_item_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Waste Storage"
+			x: 21.5d
+			y: 2.5d
+			subtitle: "There's still a catch."
+			description: [
+				"&dMEGA Cells&f blacklists radioactive chemicals the same as regular &dApplied Mekanistics&f does, but still provides something of a compact storage solution for those looking to get into waste reprocessing."
+				""
+				"The &bMEGA Radioactive Chemical Storage Cell&f is a specialised cell made in a similar manner to the Bulk Item Storage Cell, but a fair bit more late-stage and expensive. It is limited to 256 bytes of a single chemical type, equivalent to 2048 buckets or 4 waste barrels' worth of Polonium, Plutonium or Nuclear Waste."
+				""
+				"That being said, they do not store Spent Nuclear Waste. You're not getting off the hook that easily."
+			]
+			dependencies: ["397165BB305A887E"]
+			id: "49EAED3E06FF1C05"
+			tasks: [{
+				id: "2EF66A399634C21D"
+				type: "item"
+				item: {
+					id: "megacells:radioactive_chemical_cell"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
