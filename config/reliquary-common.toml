@@ -389,7 +389,7 @@ mobDropsEnabled = true
 		#Whether entities get angry at player if stealing fails
 		angerOnStealFailure = true
 		#Allows switching stealing from player on and off
-		stealFromPlayers = true
+		stealFromPlayers = false
 
 	#Seeker Shot settings
 	[items.seekerShot]
