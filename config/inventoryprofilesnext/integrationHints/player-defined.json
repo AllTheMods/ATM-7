@@ -75,5 +75,8 @@
     },
     "dev.latvian.mods.itemfilters.gui.InventoryFilterScreen": {
         "ignore": true
+    },
+    "com.hrznstudio.titanium.client.screen.container.BasicAddonScreen": {
+        "ignore": true
     }
 }
