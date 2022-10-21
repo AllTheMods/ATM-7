@@ -230,4 +230,17 @@ onEvent('recipes', event => {
             "item": "kubejs:cobalt_dust"
         }
     }).id('kubejs:processing/cobalt/dust/from_dirty_dust')
+  
+     event.custom({
+        "type": "mekanism:enriching",
+        "input": {
+            "ingredient": {
+                "tag": "forge:storage_blocks/raw_cobalt"
+            }
+        },
+        "output": {
+            "item": "kubejs:cobalt_dust",
+            "count": 12
+        }
+    }).id('kubejs:processing/cobalt/dust/from_raw_block')
 })

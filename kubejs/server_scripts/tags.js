@@ -4,9 +4,10 @@ onEvent('tags.blocks', e => {
   e.add('ae2:blacklisted/spatial','#forge:relocation_not_supported')
   e.add('allthemodium:blocks/blocklist',['alltheores:iridium_slate_ore'])
   e.add('minecraft:climbable', ['minecraft:chain', /additionallanterns:.*_chain/])
-  e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,/botania:.+/])
+  e.add('forge:relocation_not_supported', [/productivebees:.+/, 'minecraft:beehive', 'minecraft:bee_nest', /integrateddynamics:.+/,/botania:.+/, '@waystones'])
   e.add('minecraft:mineable/axe', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped'])
   e.add('minecraft:logs', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped', 'evilcraft:undead_log_stripped', 'evilcraft:undead_wood_stripped', /allthemodium:stripped_\w+_log/])
+  e.add('buildinggadgets:blacklist/generic', '#forge:relocation_not_supported')
 })
 
 onEvent('tags.items', e => {
@@ -39,7 +40,12 @@ onEvent('tags.items', e => {
   e.remove('forge:silicon', 'ftbic:silicon')
 
   e.add('forge:melons','minecraft:melon_slice')
-  e.add('forbidden_arcanus:modifier/eternal_incompatible',['#alltheores:ore_hammers','@ftbic','#tconstruct:modifiable','minecraft:nether_star','mythicbotany:faded_nether_star', 'bloodmagic:sanguinereverter'])
+  e.add('forbidden_arcanus:modifier/eternal_incompatible',[
+    '#alltheores:ore_hammers','@ftbic','#tconstruct:modifiable',
+    'minecraft:nether_star','mythicbotany:faded_nether_star',
+    'bloodmagic:sanguinereverter', 'elementalcraft:receptacle', 'elementalcraft:receptacle_empty',
+    'elementalcraft:receptacle_improved', 'elementalcraft:receptacle_improved_empty'
+  ])
 
   // fix raw block crafting for other mods
   e.add('forge:raw_ores/zinc', 'create:raw_zinc')

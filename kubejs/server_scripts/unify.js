@@ -61,6 +61,15 @@ onEvent('recipes', e => {
       e.remove({ id: `mekanism:processing/${metal}/dust/from_raw_ore` })
     }
 
+    if (type === 'raw_block') {
+      input = `#forge:storage_blocks/raw_${metal}`;
+      inputCount = 1;
+      output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
+      outputCount = 12;
+
+      e.remove({ id: `mekanism:processing/${metal}/dust/from_raw_block` })
+    }
+
     if (type === 'dirty_dust') {
       input = `#mekanism:dirty_dusts/${metal}`;
       output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_dust`;
@@ -339,13 +348,13 @@ onEvent('recipes', e => {
   // unify pressing for FTB Industrial Contraptions
   // supported types: plates, rods, gears
   function ftbicUnifyPress(metal, type) {
-    let recipeType = 'rolling';
+    let recipeType = 'extruding';
     let inputTag = `#forge:ingots/${metal}`;
     let inputCount = 1;
     let output = `${craftOverride[metal] ?? 'alltheores'}:${metal}_${type}`
 
-    if (type === 'rod') {
-      recipeType = 'extruding';
+    if (type === 'plate') {
+      recipeType = 'rolling';
     }
 
     if (type === 'gear') {
@@ -734,7 +743,7 @@ onEvent('recipes', e => {
   });
 
   vanillaMetals.concat(mekanismMetals).forEach(ore => {
-    ['ore', 'raw_ore', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
+    ['ore', 'raw_ore', 'raw_block', 'ingot', 'dirty_dust'].forEach(type => mekUnifyOres(ore, type));
   });
 
   mekanismMetals.forEach(metal => {
@@ -788,7 +797,7 @@ onEvent('recipes', e => {
     e.remove({ id: `ftbic:shaped/ingots/${metal}_to_${metal}_gear` })
     e.remove({ id: `ftbic:extruding/ingots/${metal}_to_${metal}_rod` })
     e.remove({ id: `ftbic:rolling/ingots/${metal}_to_${metal}_plate` })
-    e.remove({ id: `ftbic:rolling/plates/${metal}_to_${metal}_gear` })
+    e.remove({ id: `ftbic:extruding/plates/${metal}_to_${metal}_gear` })
     e.remove({ id: `ftbic:shapeless/${metal}_block_to_${metal}_ingot` })
     e.remove({ id: `ftbic:shaped/${metal}_ingot_to_${metal}_block` })
     e.remove({ id: `ftbic:shapeless/${metal}_ingot_to_${metal}_nugget` })
@@ -899,8 +908,17 @@ onEvent('recipes', e => {
   // temporary for missing recipes
   e.shapeless('2x kubejs:cobalt_dust',['#forge:raw_ores/cobalt','#alltheores:ore_hammers'])
 
+  e.shapeless('4x alltheores:enderium_dust', [
+    '3x #forge:dusts/lead',
+    '#forge:dusts/platinum',
+    '4x #forge:dusts/ender_pearl',
+  ])
+
   // recipe fixes
   e.replaceInput({id:'littlecontraptions:contraption_barge'}, 'create:brass_ingot', '#forge:ingots/brass')
+  e.replaceOutput({}, '#forge:dusts/diamond', 'alltheores:diamond_dust')
+  e.replaceInput('refinedstorage:silicon', '#forge:silicon')
+  e.remove({type: 'immersiveengineering:metal_press', output: 'minecraft:blaze_rod'})
 
   removeRecipeByID(e, [
     'immersiveengineering:crusher/nether_gold',
