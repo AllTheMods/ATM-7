@@ -213,7 +213,7 @@
 			]
 		}
 		{
-			x: -6.5d
+			x: -6.0d
 			y: -4.5d
 			shape: "diamond"
 			subtitle: "Auto-Convert to blocks."
@@ -244,7 +244,7 @@
 			]
 		}
 		{
-			x: -6.0d
+			x: -5.5d
 			y: -5.0d
 			shape: "diamond"
 			subtitle: "The Brain of the Drawers."
@@ -468,7 +468,7 @@
 		}
 		{
 			title: "Ender Drawers!"
-			x: -6.5d
+			x: -6.0d
 			y: -5.5d
 			shape: "diamond"
 			subtitle: "Dimensional Drawer.... if you will."
@@ -1332,7 +1332,7 @@
 			subtitle: "Adds the ability to pump liquids from the tank upgrade."
 			hide_dependency_lines: true
 			dependencies: ["1FE052F643401232"]
-			hide: false
+			hide: true
 			optional: true
 			id: "6E9041744C592573"
 			tasks: [{
@@ -1350,7 +1350,7 @@
 			x: -6.0d
 			y: 4.0d
 			dependencies: ["6E9041744C592573"]
-			hide: false
+			hide: true
 			optional: true
 			id: "56B80A7EBFE21428"
 			tasks: [{
@@ -1723,6 +1723,41 @@
 					id: "34E6939A2878A929"
 					type: "xp"
 					xp: 10
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			shape: "diamond"
+			description: [
+				"The &9Configuration Tool&r allows you to lock Drawers."
+				""
+				"This is useful when you pull and push items to a Drawer. For example, if you want to output your smelted Iron into one but also pull from it to craft, you'll want to lock it so that other items don't get shoved in when empty!"
+			]
+			dependencies: ["072FBEB0F6F1BC48"]
+			id: "56A8F78580B67E1B"
+			tasks: [{
+				id: "6875819EC7F9D664"
+				type: "item"
+				item: {
+					id: "functionalstorage:configuration_tool"
+					Count: 1b
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "38A56B92A7022D9D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7DB60C848278416D"
+					type: "item"
+					item: "functionalstorage:copper_upgrade"
 				}
 			]
 		}

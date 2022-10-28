@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Welcome to &6Ars Nouveau&r!"
 			x: -6.25d
 			y: 0.0d
 			shape: "gear"
@@ -20,10 +21,16 @@
 			size: 1.5d
 			id: "6E0E13806F388D7E"
 			tasks: [{
-				id: "33CEC23CAF6DA6A6"
-				type: "checkmark"
-				title: "Ars Nouveau"
-				icon: "ars_nouveau:creative_spell_book"
+				id: "2F0EFD72E3A6A8D2"
+				type: "item"
+				title: "Any Archwood Log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
 			}]
 			rewards: [{
 				id: "24AA489F2E015748"
@@ -2152,37 +2159,23 @@
 			description: [
 				"To gain further knowledge of spells, we'll need a specific type of magical wood!"
 				""
-				"Unlike ATM6, Archwood Trees can be found in the overworld."
+				"Archwood Trees can be found in the overworld."
 			]
 			dependencies: ["64D0E66CB4FBEC82"]
 			id: "33682F4B44950123"
-			tasks: [
-				{
-					id: "163A6E303D6F419D"
-					type: "item"
-					title: "Archwood Logs"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:logs/archwood"
-						}
+			tasks: [{
+				id: "7508E906C021AB6B"
+				type: "item"
+				title: "Archwood Planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:planks/archwood"
 					}
 				}
-				{
-					id: "7508E906C021AB6B"
-					type: "item"
-					title: "Archwood Planks"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:planks/archwood"
-						}
-					}
-					count: 2L
-				}
-			]
+				count: 2L
+			}]
 			rewards: [
 				{
 					id: "33B8442826203713"

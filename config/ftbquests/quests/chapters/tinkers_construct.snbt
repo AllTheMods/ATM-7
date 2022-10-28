@@ -15,49 +15,27 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -9.0d
-			y: -0.5d
-			shape: "octagon"
-			subtitle: "Custom Tools and Armor!"
-			description: [
-				"Welcome to &9Tinkers' Construct!&r"
-				""
-				"TC is all about creating custom tools and armor by creating individual parts that combine to make bigger and better tools!"
-				""
-				"It also adds new ways to smelt ores with custom multiblock Smelteries for all of your smelting needs."
-			]
-			size: 1.5d
-			id: "681E777B4C8E19CF"
-			tasks: [{
-				id: "34CAB10421425B7F"
-				type: "checkmark"
-				title: "Welcome to Tinkers' Construct!"
-			}]
-			rewards: [{
-				id: "280EE4ECA87B53D1"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "Patterns"
+			title: "Welcome to &9Tinkers' Construct&r"
 			x: -7.0d
 			y: -0.5d
+			shape: "hexagon"
 			subtitle: "The Basic Pattern"
 			description: [
+				"&9Tinkers' Construct&r is all about creating custom tools and armor by creating individual parts that combine to make bigger and better tools! It also adds multiblock Smelteries for all of your smelting needs, including creating the &6Allthemodium Alloys&r."
+				""
 				"To get started in TC, you'll need to create &ePatterns&r."
 				""
 				"These are made out of planks and sticks, so make sure to make plenty of them!"
 				""
 				"These are used to create the basic tables we'll need to create parts, as well as making tool patterns to create new tools!"
 			]
-			dependencies: ["681E777B4C8E19CF"]
+			size: 1.5d
 			id: "63318C8E26E28F58"
 			tasks: [{
 				id: "6E6A9B43E5936FD1"
 				type: "item"
 				item: "tconstruct:pattern"
-				count: 6L
+				count: 2L
 			}]
 			rewards: [
 				{
@@ -272,7 +250,6 @@
 							"tconstruct:durability": 116.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:piercing"
@@ -338,7 +315,6 @@
 							"tconstruct:armor": 1.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -391,7 +367,6 @@
 							"tconstruct:armor": 5.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -444,7 +419,6 @@
 							"tconstruct:armor": 4.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -497,7 +471,6 @@
 							"tconstruct:armor": 1.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -1732,7 +1705,6 @@
 							"tconstruct:armor": 2.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -1779,7 +1751,6 @@
 							"tconstruct:armor": 7.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -1826,7 +1797,6 @@
 							"tconstruct:armor": 5.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -1873,7 +1843,6 @@
 							"tconstruct:armor": 2.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [ ]
 						Damage: 0
 						tic_persistent_data: {
@@ -1928,7 +1897,6 @@
 							"tconstruct:durability": 1540.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:severing"
@@ -1993,7 +1961,6 @@
 							"tconstruct:durability": 1650.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:knockback"
@@ -2057,7 +2024,6 @@
 							"tconstruct:durability": 2200.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:piercing"
@@ -2117,7 +2083,6 @@
 							"tconstruct:durability": 1760.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -2176,7 +2141,6 @@
 							"tconstruct:durability": 1870.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:sturdy"
@@ -2242,7 +2206,6 @@
 							"tconstruct:durability": 1100.0f
 						}
 						tic_broken: 0b
-						HideFlags: 3
 						tic_modifiers: [
 							{
 								name: "tconstruct:sturdy"
@@ -2410,7 +2373,7 @@
 				"While it isn't the greatest for protection, it allows you to customize your armor."
 			]
 			hide_dependency_lines: true
-			dependencies: ["681E777B4C8E19CF"]
+			dependencies: ["63318C8E26E28F58"]
 			id: "3E9618EEC90169C3"
 			tasks: [{
 				id: "428B3A5FD5E4796F"

@@ -21,7 +21,7 @@
 	}]
 	quests: [
 		{
-			x: -7.5d
+			x: -3.0d
 			y: 0.0d
 			shape: "square"
 			subtitle: "Simple Tool Crafting"
@@ -37,46 +37,8 @@
 				type: "checkmark"
 				title: "Silent Gear Weapons, Tools and Armor"
 			}]
-			rewards: [
-				{
-					id: "6FBB64122AC8F84B"
-					type: "item"
-					item: {
-						id: "silentgear:blueprint_package"
-						Count: 1b
-						tag: {
-							silentlib.LootContainer: {
-								LootTable: "silentgear:starter_blueprints"
-							}
-						}
-					}
-				}
-				{
-					id: "383D184AE6F5236A"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			title: "The Guide Book"
-			x: -4.0d
-			y: 0.0d
-			subtitle: "It just sends you to a website, btw."
-			description: [
-				"If you ever get lost in this mod, check out the guidebook."
-				""
-				"It links you to the Silent Gear webpage to help get you started!"
-			]
-			dependencies: ["52EB902E76829EBB"]
-			id: "74AC55C0A3E259E0"
-			tasks: [{
-				id: "2E0D0BBFC2D0BCAC"
-				type: "item"
-				item: "silentgear:guide_book"
-			}]
 			rewards: [{
-				id: "7004B19E09FEE74B"
+				id: "383D184AE6F5236A"
 				type: "xp"
 				xp: 10
 			}]
@@ -85,13 +47,13 @@
 			title: "Blueprint Paper"
 			x: -0.5d
 			y: 0.0d
-			subtitle: "The Schematic Maker"
+			subtitle: "For Those With A Little More Resources"
 			description: [
 				"You can't use template boards forever!!!"
 				""
 				"Blueprint paper is used to make blueprints, which are reusable, unlike template boards."
 			]
-			dependencies: ["74AC55C0A3E259E0"]
+			dependencies: ["52EB902E76829EBB"]
 			size: 1.5d
 			id: "64AB1E133E218173"
 			tasks: [{
@@ -111,6 +73,19 @@
 					id: "5079BE02B6810490"
 					type: "xp"
 					xp: 5
+				}
+				{
+					id: "0413EF79F90449FB"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_package"
+						Count: 1b
+						tag: {
+							silentlib.LootContainer: {
+								LootTable: "silentgear:starter_blueprints"
+							}
+						}
+					}
 				}
 			]
 		}
@@ -1269,6 +1244,136 @@
 				type: "xp"
 				xp: 10
 			}]
+		}
+		{
+			title: "Early Game Tool Creation"
+			x: -5.0d
+			y: 0.0d
+			description: [
+				"If you are in the early game, you'll want to make yourself a &9Crude Stone Knife&r to make yourself some Template Boards."
+				""
+				"The easiest way to do this is by first creating Rough Rods with 2 sticks. With your Rough Rods, combine one with a piece of Cobblestone in the shape of a knife."
+				""
+				"With your knife, you can now combine it with Logs in a crafting grid to give you &9Template Boards&r!"
+			]
+			dependencies: ["52EB902E76829EBB"]
+			optional: true
+			id: "5366399707E55EA0"
+			tasks: [
+				{
+					id: "67C34D33E0BE2737"
+					type: "item"
+					item: "silentgear:template_board"
+				}
+				{
+					id: "589FAFCAEE61EC5B"
+					type: "item"
+					title: "Crude Stone Knife"
+					icon: {
+						id: "silentgear:knife"
+						Count: 1b
+						tag: {
+							SGear_UUID: [I;
+								927787650
+								772754124
+								-1167159735
+								932421059
+							]
+							Damage: 0
+							SGear_Data: {
+								Construction: {
+									Parts: [
+										{
+											Item: {
+												id: "silentgear:knife_blade"
+												Count: 1b
+												tag: {
+													Damage: 0
+													Materials: [{
+														Item: {
+															id: "minecraft:cobblestone"
+															Count: 1b
+														}
+														ID: "silentgear:stone"
+													}]
+												}
+											}
+											ID: "silentgear:knife_blade"
+										}
+										{
+											Item: {
+												id: "silentgear:rod"
+												Count: 1b
+												tag: {
+													Materials: [{
+														Item: {
+															id: "minecraft:air"
+															Count: 1b
+															tag: { }
+														}
+														ID: "silentgear:wood/rough"
+													}]
+												}
+											}
+											ID: "silentgear:rod"
+										}
+									]
+								}
+								Properties: {
+									ModVersion: "2.10.16"
+									Stats: {
+										"silentgear:enchantability": 5.0f
+										"silentgear:chargeability": 0.5f
+										"silentgear:harvest_speed": 4.0f
+										"silentgear:attack_reach": 3.0f
+										"silentgear:harvest_level": 1.0f
+										"silentgear:durability": 127.07f
+										"silentgear:melee_damage": 1.5f
+										"silentgear:magic_damage": 0.0f
+										"silentgear:rarity": 0.0f
+										"silentgear:attack_speed": -1.6f
+										"silentgear:repair_efficiency": 2.0f
+									}
+									LockStats: 0b
+									Traits: [
+										{
+											Level: 1b
+											Name: "silentgear:ancient"
+										}
+										{
+											Level: 3b
+											Name: "silentgear:crude"
+										}
+									]
+								}
+								Rendering: {
+									ModelKey: "knife:knife_blade{stone},rod{wood/rough},"
+								}
+							}
+						}
+					}
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "48A5DB284A0812FB"
+					type: "item"
+					item: "silentgear:template_board"
+					count: 4
+				}
+				{
+					id: "1DE030C7AE05C605"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 	]
 }

@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Welcome to &9Thermal Expansion&r!"
 			icon: "thermal:upgrade_augment_3"
 			x: -4.5d
 			y: 0.0d
@@ -22,9 +23,9 @@
 			size: 1.5d
 			id: "2C50B0E024C3D92E"
 			tasks: [{
-				id: "6E9F3C8EAA84CE3E"
-				type: "checkmark"
-				title: "Thermal Expansion!"
+				id: "37547F63C72EED17"
+				type: "item"
+				item: "alltheores:raw_tin"
 			}]
 			rewards: [
 				{

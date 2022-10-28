@@ -2338,15 +2338,16 @@
 			size: 2.0d
 			id: "58B125BD4876054C"
 			tasks: [{
-				id: "2362792C3ABCDBA5"
-				type: "checkmark"
-				title: "Mekanism"
+				id: "3DAC60CF45C0951F"
+				type: "item"
+				item: "alltheores:raw_osmium"
 			}]
 			rewards: [
 				{
 					id: "7D519C36EA3CF356"
 					type: "item"
 					item: "alltheores:raw_osmium"
+					random_bonus: 2
 				}
 				{
 					id: "1C5A7C0402C237DD"

@@ -68,6 +68,7 @@
 		tasks: [{
 			id: "46E0A1A561E38460"
 			type: "dimension"
+			title: "Successful Launch!"
 			dimension: "minecraft:overworld"
 		}]
 		rewards: [
