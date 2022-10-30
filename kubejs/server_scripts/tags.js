@@ -35,6 +35,11 @@ onEvent('tags.items', e => {
   e.add('forge:raw_ores/cobalt', 'tconstruct:raw_cobalt');
   e.add('forge:dusts/cobalt', 'kubejs:cobalt_dust');
   e.add('forge:dusts/netherite', 'alltheores:netherite_dust');
+  e.add('forge:wires/aluminum', 'ftbic:aluminum_wire');
+  e.add('forge:wires/copper', 'ftbic:copper_wire');
+  e.add('immersiveengineering:circuits/solder', 'ftbic:copper_wire');
+  e.add('forge:wires/enderium', 'ftbic:enderium_wire');
+  e.add('forge:wires/gold', 'ftbic:gold_wire');
 
   e.add('forge:raw_ores/iridium', 'ftbic:iridium_chunk');
   e.remove('forge:silicon', 'ftbic:silicon')
