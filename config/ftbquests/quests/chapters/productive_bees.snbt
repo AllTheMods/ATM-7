@@ -3161,16 +3161,8 @@
 			tasks: [{
 				id: "4C8BCD20A4DF8353"
 				type: "item"
-				title: "Pepto Bismol Comb"
-				icon: {
-					id: "productivebees:configurable_honeycomb"
-					Count: 1b
-					tag: {
-						EntityTag: {
-							type: "productivebees:sugarbag_honeycomb"
-						}
-					}
-				}
+				title: "Sugarbag Comb"
+				icon: "productivebees:sugarbag_honeycomb"
 				item: {
 					id: "itemfilters:strong_nbt"
 					Count: 1b
