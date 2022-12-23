@@ -22,7 +22,7 @@ onEvent('tags.items', e => {
 
   e.add('forge:ores/quartz', ['byg:blue_nether_quartz_ore', 'byg:brimstone_nether_quartz_ore'])
   e.add('forge:ores/gold', ['byg:blue_nether_gold_ore', 'byg:brimstone_nether_gold_ore'])
-  e.add('forge:ores/inferium',['mysticalagradditions:nether_inferium_ore','mysticalagradditions:end_inferium_ore'])
+  e.add('forge:ores/inferium', ['mysticalagradditions:nether_inferium_ore', 'mysticalagradditions:end_inferium_ore'])
 
   e.add('forge:storage_blocks/raw_crimson_iron', 'silentgear:raw_crimson_iron_block');
   e.add('forge:raw_ores/crimson_iron', 'silentgear:raw_crimson_iron');
@@ -45,10 +45,10 @@ onEvent('tags.items', e => {
   e.add('forge:raw_ores/iridium', 'ftbic:iridium_chunk');
   e.remove('forge:silicon', 'ftbic:silicon')
 
-  e.add('forge:melons','minecraft:melon_slice')
-  e.add('forbidden_arcanus:modifier/eternal_incompatible',[
-    '#alltheores:ore_hammers','@ftbic','#tconstruct:modifiable',
-    'minecraft:nether_star','mythicbotany:faded_nether_star',
+  e.add('forge:melons', 'minecraft:melon_slice')
+  e.add('forbidden_arcanus:modifier/eternal_incompatible', [
+    '#alltheores:ore_hammers', '@ftbic', '#tconstruct:modifiable',
+    'minecraft:nether_star', 'mythicbotany:faded_nether_star',
     'bloodmagic:sanguinereverter', 'elementalcraft:receptacle', 'elementalcraft:receptacle_empty',
     'elementalcraft:receptacle_improved', 'elementalcraft:receptacle_improved_empty'
   ])
@@ -71,6 +71,8 @@ onEvent('tags.items', e => {
   e.add('minecraft:logs', ['integrateddynamics:menril_log_stripped', 'integrateddynamics:menril_wood_stripped', 'evilcraft:undead_log_stripped', 'evilcraft:undead_wood_stripped', /allthemodium:stripped_\w+_log/, 'hexerei:stripped_willow_log', /hexerei:stripped_\w+_wood/])
   e.add('forge:stripped_logs', [/hexerei:stripped_\w+_log/, 'evilcraft:undead_log_stripped', /allthemodium:stripped_\w+_log/])
   e.add('forge:stripped_wood', [/hexerei:stripped_\w+_wood/, 'evilcraft:undead_wood_stripped'])
+
+  minecoloniesJobs.forEach(job => e.add(`minecolonies:${job}_ingredient_excluded`, 'integrateddynamics:facade'));
 })
 
 onEvent('tags.entity_types', e => {
