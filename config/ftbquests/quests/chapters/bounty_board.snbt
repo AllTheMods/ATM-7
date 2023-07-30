@@ -413,9 +413,10 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 4.5d
-			size: 1.5d
+			x: 3.0d
+			y: 5.5d
+			shape: "diamond"
+			size: 3.0d
 			id: "728BE1816DA23DC0"
 			tasks: [{
 				id: "1809F1F9A3043683"
@@ -432,9 +433,10 @@
 			}]
 		}
 		{
-			x: 3.0000000000000004d
-			y: 4.5d
-			size: 1.5d
+			x: 1.5d
+			y: 7.5d
+			shape: "diamond"
+			size: 2.0d
 			id: "09C82CDDA800D8C9"
 			tasks: [{
 				id: "171FD27057746E80"
@@ -451,9 +453,19 @@
 			}]
 		}
 		{
+			icon: {
+				id: "hostilenetworks:data_model"
+				Count: 1b
+				tag: {
+					data_model: {
+						id: "hostilenetworks:elder_guardian"
+					}
+				}
+			}
 			x: 4.5d
-			y: 4.5d
-			size: 1.5d
+			y: 7.5d
+			shape: "diamond"
+			size: 2.0d
 			id: "08D1CC753F6B4283"
 			tasks: [{
 				id: "2F28B803C75DA3B2"
@@ -470,10 +482,11 @@
 			}]
 		}
 		{
-			x: 4.550000000000001d
-			y: 6.0d
+			x: 6.5d
+			y: 5.5d
+			shape: "square"
 			subtitle: "This isn't even my final form."
-			size: 1.5d
+			size: 2.0d
 			id: "56DA46DC82F6665D"
 			tasks: [{
 				id: "452B65E139D9E12D"
@@ -498,10 +511,11 @@
 			]
 		}
 		{
-			x: 1.5500000000000003d
-			y: 6.0d
+			x: -0.5d
+			y: 5.5d
+			shape: "square"
 			subtitle: "Not the Guardian of Gaia Online btw"
-			size: 1.5d
+			size: 2.0d
 			id: "5825492F8B874CF2"
 			tasks: [{
 				id: "615EF9B587C0E4F6"
@@ -521,15 +535,24 @@
 					id: "623E6C4256F301A2"
 					type: "item"
 					item: "botania:life_essence"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "15A6C1C0E2F54F2E"
+					type: "item"
+					item: "botania:terrasteel_ingot"
 				}
 			]
 		}
 		{
 			title: "Kill the Trader Villager and His Annoying Llamas"
-			x: 3.0500000000000003d
-			y: 6.0d
+			icon: "nomowanderer:no_soliciting_sign"
+			x: 3.0d
+			y: 9.0d
+			shape: "diamond"
 			subtitle: "\"This is Personal\" - AlfredGG"
-			size: 1.5d
+			size: 2.0d
 			optional: true
 			id: "0F55D0B4D5094EDB"
 			tasks: [

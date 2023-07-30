@@ -54,23 +54,23 @@
 	quests: [
 		{
 			x: 1.0d
-			y: -7.0d
+			y: -6.0d
 			shape: "hexagon"
 			description: [
 				"Welcome to &9Productive Bees&r!"
 				""
 				"Have you ever wanted Bees to produce more than honey? Maybe Iron? Allthemodium?"
 				""
-				"Well now they can! ....somehow."
+				"To get started, you'll need to grab some &6Honeycombs&r and &6Honey Bottles&r. Find yourself a Beehive, but don't break it! Bees will create honey over time. Using shears on a full hive will give you Honeycombs, and using an empty bottle will give you Honey Bottles!"
 				""
 				"&9Important Note&r: With the bee quests requiring combs, the recipes will not be shown. Make sure to look them up in JEI if you need them!"
 			]
 			size: 1.5d
 			id: "13AA91D39A2CABF2"
 			tasks: [{
-				id: "62D8A2341B8C4C3C"
-				type: "checkmark"
-				title: "Welcome to Productive Bees!"
+				id: "2A1E2F42F087EB1F"
+				type: "item"
+				item: "minecraft:honeycomb"
 			}]
 			rewards: [
 				{
@@ -83,43 +83,15 @@
 					type: "xp"
 					xp: 10
 				}
-			]
-		}
-		{
-			title: "The First Step"
-			x: 1.0d
-			y: -5.0d
-			subtitle: "Vanilla Mechanics"
-			description: [
-				"You'll need to grab some &eHoneycombs&r and a few bottles of &6Honey&r to get started with Bees."
-				""
-				"Find yourself a nest, but don't break it! Let the Bees do their thing, and harvest some Honeycombs with Shears, and Honey Bottles with a Glass Bottle. We'll need them!"
-			]
-			dependencies: ["13AA91D39A2CABF2"]
-			hide: true
-			id: "1A0130101413F55F"
-			tasks: [{
-				id: "73C0DA2CE5D4110C"
-				type: "item"
-				item: "minecraft:honeycomb"
-				count: 3L
-			}]
-			rewards: [
 				{
-					id: "2BC48660DA496E3A"
+					id: "3B7DB834B789659D"
 					type: "item"
 					item: "minecraft:honeycomb"
-					count: 2
 				}
 				{
-					id: "29A08F3977208A4F"
+					id: "65531550FB7A849D"
 					type: "item"
 					item: "minecraft:honey_bottle"
-				}
-				{
-					id: "7D7C7BA0CBA0B12F"
-					type: "xp"
-					xp: 10
 				}
 			]
 		}
@@ -159,7 +131,7 @@
 				""
 				"Adventuring can also net you some &6Sturdy Bee Cages&r, so keep an eye out! "
 			]
-			dependencies: ["1A0130101413F55F"]
+			dependencies: ["13AA91D39A2CABF2"]
 			id: "29EE878BC8D3A742"
 			tasks: [{
 				id: "2B86DC6F7E579E0B"
@@ -857,7 +829,7 @@
 				""
 				"Make sure to check out which biome you need to be in to lure in the right bees!"
 			]
-			dependencies: ["7C169A4A39F37FAC"]
+			dependencies: ["47CEFA06392C4211"]
 			size: 3.0d
 			id: "131EC039435B8878"
 			tasks: [{
@@ -913,7 +885,7 @@
 			x: -3.5d
 			y: 0.5d
 			description: ["The Upgrade Base is used to craft the various Upgrades in Productive Bees."]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			dependencies: ["131EC039435B8878"]
 			size: 1.5d
 			id: "66324D7D0C51AEAC"
@@ -937,7 +909,7 @@
 		}
 		{
 			x: -5.0d
-			y: 0.2d
+			y: 0.5d
 			shape: "hexagon"
 			subtitle: "Increases Bee Productivity by 140%"
 			dependencies: ["66324D7D0C51AEAC"]
@@ -962,7 +934,7 @@
 		}
 		{
 			x: -2.5d
-			y: -0.6d
+			y: -0.5d
 			subtitle: "Sonic Bees"
 			description: [
 				"Can be placed in a hive or centrifuge."
@@ -994,8 +966,8 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: 1.9d
+			x: -2.5d
+			y: 1.5d
 			shape: "hexagon"
 			subtitle: "Making Babies"
 			description: [
@@ -1077,8 +1049,8 @@
 			]
 		}
 		{
-			x: -2.2d
-			y: 1.3d
+			x: -4.5d
+			y: 1.5d
 			shape: "hexagon"
 			subtitle: "Increases the Range of a Machine"
 			description: ["Mostly for the Catcher."]
@@ -1103,33 +1075,8 @@
 			]
 		}
 		{
-			x: -4.8d
-			y: 1.2d
-			shape: "hexagon"
-			subtitle: "Used to add Bees to a Filter"
-			dependencies: ["66324D7D0C51AEAC"]
-			id: "57167FE67CFAC255"
-			tasks: [{
-				id: "553DD93D10666049"
-				type: "item"
-				item: "productivebees:upgrade_filter"
-			}]
-			rewards: [
-				{
-					id: "1A390E7C759A0668"
-					type: "item"
-					item: "productivebees:honey_treat"
-				}
-				{
-					id: "7DCEF23469265229"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
 			x: -2.0d
-			y: 0.2d
+			y: 0.5d
 			subtitle: "Extracts Genes from Bees in Hives"
 			dependencies: ["66324D7D0C51AEAC"]
 			id: "1DF026030780AE96"
@@ -1152,14 +1099,15 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: 1.5d
+			x: 5.0d
+			y: 0.5d
 			subtitle: "Processing Honeycombs"
 			description: [
 				"While you can definitely just use a regular &9Centrifuge&r in the beginning, getting a &6Powered Centrifuge&r soon after is a must."
 				""
 				"The Centrifuge is used to process Honeycombs into useful items, honey, and wax."
 			]
+			hide_dependency_lines: true
 			dependencies: ["7C169A4A39F37FAC"]
 			id: "33A0E06FE5CFD8F3"
 			tasks: [{
@@ -3213,16 +3161,8 @@
 			tasks: [{
 				id: "4C8BCD20A4DF8353"
 				type: "item"
-				title: "Pepto Bismol Comb"
-				icon: {
-					id: "productivebees:configurable_honeycomb"
-					Count: 1b
-					tag: {
-						EntityTag: {
-							type: "productivebees:sugarbag_honeycomb"
-						}
-					}
-				}
+				title: "Sugarbag Comb"
+				icon: "productivebees:sugarbag_honeycomb"
 				item: {
 					id: "itemfilters:strong_nbt"
 					Count: 1b
@@ -4613,10 +4553,14 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 1.5d
+			x: 1.0d
+			y: 2.0d
 			subtitle: "Increasing our bee storage"
-			description: ["Expansion boxes are placed on top of your Advanced Beehives to increase the amount of bees that can be in the hive to a total of 5 slots."]
+			description: [
+				"Expansion boxes are placed on top of your Advanced Beehives to increase the amount of bees that can be in the hive to a total of 5 slots."
+				""
+				"This also enables you to upgrade the hive with Upgrades!"
+			]
 			dependencies: ["7C169A4A39F37FAC"]
 			id: "47CEFA06392C4211"
 			tasks: [{
@@ -4701,8 +4645,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: 6.0d
+			y: 0.0d
 			subtitle: "The Gene Combiner and Chest"
 			description: ["When collecting genes, you'll get a percentage of a trait. You can combine them in a crafting table to add them together, or place them in a Gene Indexer to auto-combine."]
 			hide_dependency_lines: true
@@ -4728,8 +4672,8 @@
 			]
 		}
 		{
-			x: 5.0d
-			y: 0.5d
+			x: 4.0d
+			y: 0.0d
 			subtitle: "Honey I Squished The Bees"
 			description: [
 				"The Bottler has two uses: Bottling honey and squshing bees for genes."
@@ -4765,7 +4709,7 @@
 		}
 		{
 			x: 6.0d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "Catches Bees"
 			description: [
 				"Used to catch bees that are flying around it."
@@ -4830,8 +4774,8 @@
 			]
 		}
 		{
-			x: 5.0d
-			y: 1.5d
+			x: 4.0d
+			y: 1.0d
 			subtitle: "Showing Off Bees"
 			description: [
 				"Proud of the bees you have?"
@@ -4881,8 +4825,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 1.9d
+			x: -3.5d
+			y: 2.0d
 			subtitle: "Self Contained"
 			description: ["When installed, this upgrade makes your bees permanently stay in the beehive. Because of this, you'll need to place the required flower block directly in front of the hive."]
 			dependencies: ["66324D7D0C51AEAC"]
@@ -4900,6 +4844,33 @@
 				}
 				{
 					id: "65E721E100F6AF24"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			subtitle: "An Even Faster Centrifuge"
+			description: ["This is an upgraded Powered Centrifuge, and processes combs a lot faster. Can still be upgraded with Speed upgrades."]
+			dependencies: ["33A0E06FE5CFD8F3"]
+			id: "4975544710780C92"
+			tasks: [{
+				id: "1C68D56988B8EF43"
+				type: "item"
+				item: "productivebees:heated_centrifuge"
+			}]
+			rewards: [
+				{
+					id: "74AF370BEBB1C772"
+					type: "item"
+					item: "productivebees:draconic_chunk"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "4F300E54616287C8"
 					type: "xp"
 					xp: 100
 				}

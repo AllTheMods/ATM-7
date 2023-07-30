@@ -10,17 +10,20 @@
 	quests: [
 		{
 			title: "Allthemodium Ore"
-			x: -3.5d
-			y: 1.5d
+			x: -4.5d
+			y: 0.5d
+			shape: "octagon"
 			description: [
+				"This lucrative ore starts your journey to become overpowered!"
+				""
 				"Found in Mountainous biomes inside cave ceilings and walls, with additional deposits in peaks above Y170."
 				""
 				"It is also found in the Mining dimension, between Y0 and Y20."
 			]
 			hide_dependency_lines: false
-			dependencies: ["731686C758AD9A99"]
 			hide: false
 			dependency_requirement: "one_completed"
+			size: 1.5d
 			id: "5BDBE666E604FCAC"
 			tasks: [{
 				id: "75498AE05CC06F8F"
@@ -28,19 +31,28 @@
 				title: "Allthemodium Ore"
 				item: "allthemodium:raw_allthemodium"
 			}]
-			rewards: [{
-				id: "79B9F276D8F8C3F8"
-				type: "item"
-				item: "allthemodium:allthemodium_dust"
-			}]
+			rewards: [
+				{
+					id: "79B9F276D8F8C3F8"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "1821BA97485A6ABB"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: 0.0d
 			y: 1.5d
+			shape: "octagon"
 			description: ["Find this ore in the Nether's Warped Forests and Crimson Forests between Y100 to Y123, or the Other between Y0 to Y20."]
 			hide_dependency_lines: false
-			dependencies: ["731686C758AD9A99"]
+			dependencies: ["5BDBE666E604FCAC"]
 			dependency_requirement: "one_started"
+			size: 1.5d
 			id: "2DF64CB9298E91EA"
 			tasks: [{
 				id: "0F6B68E05B7B43AB"
@@ -48,34 +60,52 @@
 				title: "Vibranium Ore"
 				item: "allthemodium:raw_vibranium"
 			}]
-			rewards: [{
-				id: "2DF58D0443FC347F"
-				type: "item"
-				item: "allthemodium:vibranium_dust"
-			}]
+			rewards: [
+				{
+					id: "01D0E53694BCCF42"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "2CB80BC2883C1250"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 3.5d
-			y: 1.5d
-			description: ["Find this obtainable ore in the End Highlands biome."]
+			x: 4.5d
+			y: 0.5d
+			shape: "octagon"
+			description: ["An extremely rare ore found only in the End Highlands biome."]
 			hide_dependency_lines: false
-			dependencies: ["731686C758AD9A99"]
+			dependencies: ["2DF64CB9298E91EA"]
+			size: 1.5d
 			id: "4F6E6AF1D9E74CB7"
 			tasks: [{
 				id: "52CCB85E5967BF9F"
 				type: "item"
 				item: "allthemodium:raw_unobtainium"
 			}]
-			rewards: [{
-				id: "088E6395809A89F6"
-				type: "item"
-				item: "allthemodium:unobtainium_dust"
-			}]
+			rewards: [
+				{
+					id: "3BA19871CF1ABED1"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "21B737C5340483F6"
+					type: "xp"
+					xp: 1000
+				}
+			]
 		}
 		{
-			x: -3.5d
-			y: 3.5d
-			description: ["Now that is a fast furnace!"]
+			x: -4.5d
+			y: 4.0d
+			shape: "hexagon"
+			description: ["This is an extremely fast furnace. It smelts a quarter of a stack at a time!"]
+			hide_dependency_lines: false
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "2CC97CF32D9C017B"
 			tasks: [{
@@ -83,135 +113,243 @@
 				type: "item"
 				item: "ironfurnaces:allthemodium_furnace"
 			}]
+			rewards: [
+				{
+					id: "7874AC655B43C66D"
+					type: "item"
+					item: "allthemodium:allthemodium_ingot"
+				}
+				{
+					id: "50119286F155FFDA"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -2.5d
-			y: 2.0d
-			description: ["It is recommended to craft this potion with your first ingot."]
+			x: -6.0d
+			y: 2.5d
+			shape: "hexagon"
+			description: ["With your first Allthemodium Ingot, it is recommended that you make the Oresight potions. Since you can make 3 with 1 ingot, make yourself the Charm as well. "]
+			hide_dependency_lines: false
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "04AB01C841CD3E3F"
-			tasks: [{
-				id: "2F97DA30FE1982CF"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:allthemodium_sight"
+			tasks: [
+				{
+					id: "2F97DA30FE1982CF"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:allthemodium_sight"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "0ECCA5C5897A6ADE"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:coal_sight"
+				{
+					id: "3A4F131F2461DA40"
+					type: "item"
+					item: {
+						id: "apotheosis:potion_charm"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:allthemodium_sight"
+						}
 					}
 				}
-			}]
+			]
+			rewards: [
+				{
+					id: "7CCAD278EDC688A8"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					count: 2
+					random_bonus: 4
+				}
+				{
+					id: "3F40FEA5C4D1876F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "09EB84B9D110E39A"
+					type: "item"
+					item: "allthemodium:allthemodium_ingot"
+				}
+			]
 		}
 		{
-			x: -3.5d
+			x: -4.5d
 			y: 2.5d
+			shape: "hexagon"
 			description: ["Don't underestimate my power!"]
 			hide_dependency_lines: false
 			dependencies: ["5BDBE666E604FCAC"]
 			dependency_requirement: "one_completed"
+			size: 1.5d
 			id: "71A43C89EB13E9A0"
 			tasks: [{
 				id: "6A101A8056AC9A3A"
 				type: "item"
 				item: "allthemodium:allthemodium_ingot"
 			}]
-			rewards: [{
-				id: "73C21670B55648AF"
-				type: "item"
-				item: "allthemodium:allthemodium_nugget"
-			}]
+			rewards: [
+				{
+					id: "246C73F02FD6C17E"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "502168AFCFA30CEB"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
+			x: -1.5d
+			y: 3.5d
+			shape: "hexagon"
 			description: [""]
+			hide_dependency_lines: false
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "7496DB58411060AE"
-			tasks: [{
-				id: "0C83388DB2387448"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:vibranium_sight"
+			tasks: [
+				{
+					id: "0C83388DB2387448"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:vibranium_sight"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "012AF629D69BE0A8"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:redstone_sight"
+				{
+					id: "465B546FFFA3CB55"
+					type: "item"
+					item: {
+						id: "apotheosis:potion_charm"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:vibranium_sight"
+						}
 					}
 				}
-			}]
+			]
+			rewards: [
+				{
+					id: "5790159902F99029"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					count: 2
+					random_bonus: 4
+				}
+				{
+					id: "3F2323D7B650C95B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5B0AC31F76E125C7"
+					type: "item"
+					item: "allthemodium:vibranium_ingot"
+				}
+			]
 		}
 		{
-			x: 4.5d
-			y: 2.0d
+			x: 3.0d
+			y: 2.5d
+			shape: "hexagon"
 			description: [""]
+			hide_dependency_lines: false
 			dependencies: ["44760B819EB3CA68"]
 			id: "76016E5C8C9397D2"
-			tasks: [{
-				id: "238E353C6A05F0A3"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:unobtainium_sight"
+			tasks: [
+				{
+					id: "238E353C6A05F0A3"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:unobtainium_sight"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "105EF9E3FD9CF783"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "potionsmaster:iron_sight"
+				{
+					id: "40155ACEEC6CE6C5"
+					type: "item"
+					item: {
+						id: "apotheosis:potion_charm"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Potion: "potionsmaster:unobtainium_sight"
+						}
 					}
 				}
-			}]
+			]
+			rewards: [
+				{
+					id: "649EDEFC7359E9B0"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "1583B9E9EE56A197"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					count: 2
+					random_bonus: 4
+				}
+				{
+					id: "386A8107BCF3D72A"
+					type: "item"
+					item: "allthemodium:unobtainium_ingot"
+				}
+			]
 		}
 		{
 			x: 0.0d
-			y: 2.5d
+			y: 3.5d
+			shape: "hexagon"
 			description: ["With great power comes.. well something."]
 			hide_dependency_lines: false
 			dependencies: ["2DF64CB9298E91EA"]
+			size: 1.5d
 			id: "61FDABF2C7CC1F9D"
 			tasks: [{
 				id: "61761B6C1D1542FD"
 				type: "item"
 				item: "allthemodium:vibranium_ingot"
 			}]
-			rewards: [{
-				id: "44CF4A0D641812F8"
-				type: "item"
-				item: "allthemodium:vibranium_nugget"
-			}]
+			rewards: [
+				{
+					id: "6762CFAC596A9425"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "36B1FFD0C138AB70"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: 0.0d
-			y: 3.5d
-			description: ["How fast can this possibly get!?"]
+			y: 5.0d
+			shape: "hexagon"
+			description: [
+				"How fast can this possibly get!?"
+				""
+				"This furnace smelts half of a stack at a time."
+			]
+			hide_dependency_lines: false
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "5CA0BA27F9C537B2"
 			tasks: [{
@@ -219,10 +357,24 @@
 				type: "item"
 				item: "ironfurnaces:vibranium_furnace"
 			}]
+			rewards: [
+				{
+					id: "60E373405D8B5B0C"
+					type: "item"
+					item: "allthemodium:vibranium_ingot"
+				}
+				{
+					id: "72BD8749F9AFE1C3"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 3.5d
-			y: 4.5d
+			x: 6.0d
+			y: 2.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["44760B819EB3CA68"]
 			id: "4D24742EB7E480FD"
 			tasks: [{
@@ -259,25 +411,43 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "7036B8794E65EF86"
-				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s
-							id: "ensorcellation:soulbound"
-						}]
+			rewards: [
+				{
+					id: "7036B8794E65EF86"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
 					}
 				}
-			}]
+				{
+					id: "6C8DD9B953C0002A"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "6EB8FDC485B6D1C4"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
-			x: 3.5d
-			y: 3.5d
-			description: ["Now you are just showing off."]
+			x: 4.5d
+			y: 4.0d
+			shape: "hexagon"
+			description: [
+				"Now you are just showing off."
+				""
+				"This will smelt a full stack at a time."
+			]
+			hide_dependency_lines: false
 			dependencies: ["44760B819EB3CA68"]
 			id: "1AFDB3AE73E72A33"
 			tasks: [{
@@ -285,88 +455,29 @@
 				type: "item"
 				item: "ironfurnaces:unobtainium_furnace"
 			}]
-			rewards: [{
-				id: "3BE998CE25785795"
-				type: "item"
-				item: "ironfurnaces:rainbow_coal"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 3.0d
-			description: ["Almost cheating at this point."]
-			dependencies: ["04AB01C841CD3E3F"]
-			id: "6CDAE6626ACA1897"
-			tasks: [{
-				id: "0F12B54714A6E502"
-				type: "item"
-				item: {
-					id: "apotheosis:potion_charm"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Potion: "potionsmaster:allthemodium_sight"
-					}
+			rewards: [
+				{
+					id: "3BE998CE25785795"
+					type: "item"
+					item: "ironfurnaces:rainbow_coal"
 				}
-			}]
-			rewards: [{
-				id: "2C51C7F63194A4C1"
-				type: "item"
-				item: "allthemodium:allthemodium_ingot"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 3.0d
-			description: ["My god this stuff is a lot more common then I thought."]
-			dependencies: ["7496DB58411060AE"]
-			id: "479B9579742354E1"
-			tasks: [{
-				id: "52C5601FBBA7966C"
-				type: "item"
-				item: {
-					id: "apotheosis:potion_charm"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Potion: "potionsmaster:vibranium_sight"
-					}
+				{
+					id: "5F61C9D338B8876E"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
 				}
-			}]
-			rewards: [{
-				id: "4B36A1BF1A9B8479"
-				type: "item"
-				item: "allthemodium:vibranium_ingot"
-			}]
-		}
-		{
-			x: 4.5d
-			y: 3.0d
-			description: [""]
-			dependencies: ["76016E5C8C9397D2"]
-			id: "2D76BDEC76B0C788"
-			tasks: [{
-				id: "7EBAE80EDF561AF2"
-				type: "item"
-				item: {
-					id: "apotheosis:potion_charm"
-					Count: 1b
-					tag: {
-						Damage: 0
-						Potion: "potionsmaster:unobtainium_sight"
-					}
+				{
+					id: "6E40D0790F10CC61"
+					type: "xp"
+					xp: 250
 				}
-			}]
-			rewards: [{
-				id: "2380BFFB5BFD8761"
-				type: "item"
-				item: "allthemodium:unobtainium_ingot"
-			}]
+			]
 		}
 		{
-			x: 4.5d
-			y: 4.0d
-			hide_dependency_lines: true
+			x: 5.5d
+			y: 3.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["44760B819EB3CA68"]
 			dependency_requirement: "one_completed"
 			id: "25884CEF41F8AABC"
@@ -383,23 +494,36 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1860AB81C35FFA40"
-				type: "item"
-				item: {
-					id: "productivebees:configurable_honeycomb"
-					Count: 1b
-					tag: {
-						EntityTag: {
-							type: "productivebees:unobtainium"
+			rewards: [
+				{
+					id: "1860AB81C35FFA40"
+					type: "item"
+					item: {
+						id: "productivebees:configurable_honeycomb"
+						Count: 1b
+						tag: {
+							EntityTag: {
+								type: "productivebees:unobtainium"
+							}
 						}
 					}
 				}
-			}]
+				{
+					id: "6B44B8411C13C192"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "7FE6A7FD13B5213F"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: 8.5d
+			x: 4.5d
+			y: 6.0d
+			shape: "octagon"
 			description: ["Looks like candy."]
 			dependencies: [
 				"61761B6C1D1542FD"
@@ -422,11 +546,17 @@
 					type: "item"
 					item: "allthemodium:allthemodium_ingot"
 				}
+				{
+					id: "6C573E70C62018C1"
+					type: "xp"
+					xp: 100
+				}
 			]
 		}
 		{
-			x: 1.0d
-			y: 8.5d
+			x: 4.5d
+			y: 9.0d
+			shape: "octagon"
 			description: ["We are in the endgame now."]
 			dependencies: ["61761B6C1D1542FD"]
 			id: "6459F9A1F845A049"
@@ -446,13 +576,25 @@
 					type: "item"
 					item: "allthemodium:unobtainium_ingot"
 				}
+				{
+					id: "1610D9A13407FC18"
+					type: "xp"
+					xp: 100
+				}
 			]
 		}
 		{
-			x: 0.0d
-			y: 8.5d
-			description: ["Doesn't taste good though."]
+			title: "The Allthemodium Alloys"
+			x: 4.5d
+			y: 7.499999999999998d
+			shape: "rsquare"
+			description: [
+				"The Allthemodium alloys are the toughest materials in the pack. The strongest alloy, the &9Unobtainium-Allthemodium&r alloy, is used to make the ATM Star."
+				""
+				"To make the alloys, you'll need something strong enough to melt them down. Try finding some Soul Lava in the Other, and putting it into a Tinkers' Construct Forge."
+			]
 			dependencies: ["6A101A8056AC9A3A"]
+			size: 1.5d
 			id: "1D3C4B41BD512EF7"
 			tasks: [{
 				id: "0F3803B82A460772"
@@ -470,11 +612,22 @@
 					type: "item"
 					item: "allthemodium:allthemodium_ingot"
 				}
+				{
+					id: "3194AB3758627791"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "7571E4BF3568D752"
+					type: "item"
+					item: "allthemodium:soul_lava_bucket"
+				}
 			]
 		}
 		{
-			x: -4.5d
-			y: 5.0d
+			x: -2.5d
+			y: 9.0d
+			shape: "square"
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "1BF186347C4683B3"
@@ -489,15 +642,23 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "7731A2F9966688C3"
-				type: "item"
-				item: "allthemodium:vibranium_nugget"
-			}]
+			rewards: [
+				{
+					id: "32B316F44CB26055"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "4A397F17A89A7CC9"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -4.5d
-			y: 4.0d
+			x: -2.5d
+			y: 8.0d
+			shape: "square"
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "26296F815ACC04BE"
@@ -512,15 +673,23 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "4CE489C268A83C6B"
-				type: "item"
-				item: "allthemodium:vibranium_nugget"
-			}]
+			rewards: [
+				{
+					id: "5B3D12F42D02219C"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "64BD877569720D44"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -4.5d
-			y: 3.0d
+			x: -2.5d
+			y: 7.0d
+			shape: "square"
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "4C7718982E78D7A2"
 			tasks: [{
@@ -534,15 +703,23 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "33A1923F4A4E76D7"
-				type: "item"
-				item: "allthemodium:vibranium_nugget"
-			}]
+			rewards: [
+				{
+					id: "4B714E06DB138711"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "4EC6D91A438A46DA"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -4.5d
-			y: 2.0d
+			x: -2.5d
+			y: 6.0d
+			shape: "square"
 			dependencies: ["71A43C89EB13E9A0"]
 			dependency_requirement: "one_completed"
 			id: "29637BD992599915"
@@ -557,16 +734,25 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "2FAD18EE60BA9222"
-				type: "item"
-				item: "allthemodium:vibranium_nugget"
-			}]
+			rewards: [
+				{
+					id: "5F5E574B6E309830"
+					type: "item"
+					item: "allthemodium:raw_allthemodium"
+				}
+				{
+					id: "5979A6869598AA65"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: 2.0d
-			dependencies: ["61FDABF2C7CC1F9D"]
+			x: 0.0d
+			y: 7.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["29637BD992599915"]
 			id: "3AD52402D8E8DD26"
 			tasks: [{
 				id: "318FE9EB4C76A8EC"
@@ -579,16 +765,25 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "15020EE01C7BA591"
-				type: "item"
-				item: "allthemodium:unobtainium_nugget"
-			}]
+			rewards: [
+				{
+					id: "6F96B28573F24E0D"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "76A2F333C4240065"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
 			x: 2.5d
-			y: 2.0d
-			dependencies: ["44760B819EB3CA68"]
+			y: 6.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["3AD52402D8E8DD26"]
 			id: "172E838FFEC67A70"
 			tasks: [{
 				id: "6B7216A17814B466"
@@ -601,11 +796,25 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "53B031595B7F20AF"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "1136575990A054DA"
+					type: "xp"
+					xp: 500
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: 3.0d
-			dependencies: ["61FDABF2C7CC1F9D"]
+			x: 0.0d
+			y: 8.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["4C7718982E78D7A2"]
 			id: "7B3AB687F4C93A34"
 			tasks: [{
 				id: "7B3CDD0509D01AAE"
@@ -618,17 +827,25 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "678279C0552BD231"
-				type: "item"
-				item: "allthemodium:unobtainium_nugget"
-			}]
+			rewards: [
+				{
+					id: "4683DDE958B4E3E2"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "3CE24375DEB893C3"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["61FDABF2C7CC1F9D"]
+			x: 0.0d
+			y: 9.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["26296F815ACC04BE"]
 			id: "75739214ED76F5EB"
 			tasks: [{
 				id: "1FC0BDF4415EB2DA"
@@ -641,17 +858,25 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "3ABA74FD8667B9FA"
-				type: "item"
-				item: "allthemodium:unobtainium_nugget"
-			}]
+			rewards: [
+				{
+					id: "5C9FA128033FB90A"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "5566DC7423B78E6A"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["61FDABF2C7CC1F9D"]
+			x: 0.0d
+			y: 10.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["1BF186347C4683B3"]
 			id: "2EB6FFC8ECE83EA5"
 			tasks: [{
 				id: "257AC90DE43522E3"
@@ -664,16 +889,25 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "125729382BB74F17"
-				type: "item"
-				item: "allthemodium:unobtainium_nugget"
-			}]
+			rewards: [
+				{
+					id: "444905B85298BB53"
+					type: "item"
+					item: "allthemodium:raw_vibranium"
+				}
+				{
+					id: "44D8E8310BEB2C70"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
 			x: 2.5d
-			y: 3.0d
-			dependencies: ["44760B819EB3CA68"]
+			y: 7.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["7B3AB687F4C93A34"]
 			id: "20E127419D6C8D4F"
 			tasks: [{
 				id: "6CF03B6572FC417E"
@@ -686,12 +920,25 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "0A7EF2852E271269"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "4CBC35DB3B58AAEF"
+					type: "xp"
+					xp: 500
+				}
+			]
 		}
 		{
 			x: 2.5d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["44760B819EB3CA68"]
+			y: 8.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["75739214ED76F5EB"]
 			id: "0DA107D16D5D56AA"
 			tasks: [{
 				id: "394BBD6916C7E6CF"
@@ -704,12 +951,25 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "3EDC8EEBD89964A8"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "25DB8D26215FC645"
+					type: "xp"
+					xp: 500
+				}
+			]
 		}
 		{
 			x: 2.5d
-			y: 5.0d
-			hide_dependency_lines: true
-			dependencies: ["44760B819EB3CA68"]
+			y: 9.0d
+			shape: "square"
+			hide_dependency_lines: false
+			dependencies: ["2EB6FFC8ECE83EA5"]
 			id: "751C6906C49E6E41"
 			tasks: [{
 				id: "74597E29E1ED9CFF"
@@ -722,11 +982,30 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "46160D6F2DD17A14"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "269A17B2DF75B00B"
+					type: "xp"
+					xp: 500
+				}
+			]
 		}
 		{
+			title: "The Ultimate Guide to &6AllTheModium&r"
 			x: 0.0d
-			y: 0.0d
-			description: ["Detailed Guide to Allthemodium."]
+			y: -1.0d
+			shape: "gear"
+			description: [
+				"Everything you want to know about the AllTheModium mod should be in this book."
+				""
+				"If it isn't, you can find the Discord link inside to come let us know what you think should be added."
+			]
+			size: 2.0d
 			id: "731686C758AD9A99"
 			tasks: [{
 				id: "71D1672A82D08E89"
@@ -746,9 +1025,10 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 5.0d
-			hide_dependency_lines: true
+			x: -5.5d
+			y: 3.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "4DB7AB98161AC064"
 			tasks: [{
@@ -756,16 +1036,24 @@
 				type: "item"
 				item: "mysticalagriculture:allthemodium_seeds"
 			}]
-			rewards: [{
-				id: "54F5FD95C95EE3AA"
-				type: "item"
-				item: "mysticalagriculture:allthemodium_essence"
-			}]
+			rewards: [
+				{
+					id: "1AF1AF847CFE290E"
+					type: "item"
+					item: "allthemodium:allthemodium_ingot"
+				}
+				{
+					id: "33FFF43D969C097A"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 1.0d
-			y: 5.0d
-			hide_dependency_lines: true
+			x: -1.0d
+			y: 4.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "48A776F5F3D35B23"
 			tasks: [{
@@ -773,16 +1061,24 @@
 				type: "item"
 				item: "mysticalagriculture:vibranium_seeds"
 			}]
-			rewards: [{
-				id: "49E1D40F2591FC0C"
-				type: "item"
-				item: "mysticalagriculture:vibranium_essence"
-			}]
+			rewards: [
+				{
+					id: "6853A7D0FA019F7E"
+					type: "item"
+					item: "allthemodium:vibranium_ingot"
+				}
+				{
+					id: "567B42DDA0FF5B50"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 4.5d
-			y: 5.0d
-			hide_dependency_lines: true
+			x: 3.5d
+			y: 3.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["44760B819EB3CA68"]
 			id: "55FC612B6B92629F"
 			tasks: [{
@@ -790,46 +1086,95 @@
 				type: "item"
 				item: "mysticalagriculture:unobtainium_seeds"
 			}]
-			rewards: [{
-				id: "645C635F77769001"
-				type: "item"
-				item: "mysticalagriculture:unobtainium_essence"
-			}]
+			rewards: [
+				{
+					id: "645C635F77769001"
+					type: "item"
+					item: "mysticalagriculture:unobtainium_essence"
+				}
+				{
+					id: "07C93F2D2F3D129B"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "56677A2C10A76551"
+					type: "xp"
+					xp: 250
+				}
+			]
 		}
 		{
-			x: 3.5d
+			x: 4.5d
 			y: 2.5d
+			shape: "hexagon"
 			hide_dependency_lines: false
 			dependencies: ["4F6E6AF1D9E74CB7"]
+			size: 1.25d
 			id: "44760B819EB3CA68"
 			tasks: [{
 				id: "16A8B32CB4B011DA"
 				type: "item"
 				item: "allthemodium:unobtainium_ingot"
 			}]
-			rewards: [{
-				id: "630BAC7F9B93C9D9"
-				type: "item"
-				item: "allthemodium:unobtainium_nugget"
-			}]
+			rewards: [
+				{
+					id: "215687242DF5E34B"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
+				}
+				{
+					id: "13E82D38C67CB7E8"
+					type: "xp"
+					xp: 1000
+				}
+			]
 		}
 		{
-			x: 0.0d
-			y: 9.5d
-			dependencies: ["71A43C89EB13E9A0"]
+			x: -4.5d
+			y: 7.549999999999999d
+			shape: "rsquare"
+			description: [
+				"The Teleport Pad allows you to teleport to the Mining dimension, as well as the Other!"
+				""
+				"To use the pad, place it down and shift right click it with an empty hand."
+				""
+				"If you do this in the Overworld, you'll go to the Mining dimension. If done in the Nether, you'll go to the Other!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5BDBE666E604FCAC"]
+			size: 1.5d
 			id: "5130BBAD5C542EDB"
 			tasks: [{
 				id: "1F28A31269E9EDE8"
 				type: "item"
 				item: "allthemodium:teleport_pad"
 			}]
+			rewards: [
+				{
+					id: "619BE574F88CF4D4"
+					type: "item"
+					item: "allthemodium:allthemodium_nugget"
+					count: 2
+				}
+				{
+					id: "58F42DA16542000F"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			title: "Diggy Diggy Hole!"
-			icon: "minecraft:stone"
-			x: -1.0d
-			y: 9.5d
-			description: ["Besides abundant ore, Archwood can also be found in the mining dimension."]
+			title: "The Mining Dimension"
+			icon: "allthemodium:raw_allthemodium"
+			x: -4.5d
+			y: 6.0d
+			shape: "octagon"
+			description: [
+				"The Mining World has a flat surface and abundant ore."
+				""
+				"It's best for mining, destroying the world with Quarries, testing builds, or just grabbing flowers for Botania! You can also find Archwood trees here from Ars!"
+			]
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "21AC1C7A92CAB0C2"
@@ -842,6 +1187,7 @@
 				{
 					id: "6C4DC9DB97B8881C"
 					type: "item"
+					title: "Archwood Sapling"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
@@ -868,16 +1214,24 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "0523177F07524206"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			title: "Piglin Homeworld"
-			icon: "minecraft:netherrack"
-			x: 1.0d
-			y: 9.5d
+			icon: "allthemodium:raw_vibranium"
+			x: -4.5d
+			y: 9.0d
+			shape: "octagon"
 			description: [
 				"A long time ago, dragons lived in these lands."
 				""
 				"There are no dragons to be found now, but Vibranium is abundant in The Other."
+				""
+				"This is also where you'll find Soul Lava and Pigliches. "
 			]
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
@@ -887,10 +1241,24 @@
 				type: "item"
 				item: "allthemodium:ancient_stone"
 			}]
+			rewards: [
+				{
+					id: "2B6EBEC2B1D582E6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "13EA54D38BB04FEA"
+					type: "item"
+					item: "allthemodium:ancient_soulberries"
+					count: 16
+				}
+			]
 		}
 		{
-			x: 0.5d
-			y: 7.5d
+			x: 1.5d
+			y: 10.5d
+			shape: "heart"
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "7F3B96033AB7A21E"
@@ -899,10 +1267,16 @@
 				type: "item"
 				item: "allthemodium:allthemodium_apple"
 			}]
+			rewards: [{
+				id: "754493495E53C0E3"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
-			x: -0.5d
-			y: 7.5d
+			x: -1.5d
+			y: 10.5d
+			shape: "heart"
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "15D56588634665FA"
@@ -911,10 +1285,17 @@
 				type: "item"
 				item: "allthemodium:allthemodium_carrot"
 			}]
+			rewards: [{
+				id: "29BF7BC06001F976"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: 1.0d
-			y: 4.0d
+			y: 4.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["61FDABF2C7CC1F9D"]
 			dependency_requirement: "one_started"
 			id: "0C0572DF959A28F1"
@@ -931,10 +1312,24 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "2E2B017BC9BA79C2"
+					type: "item"
+					item: "allthemodium:vibranium_ingot"
+				}
+				{
+					id: "0C5C380D81F6A9FF"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -2.5d
-			y: 4.0d
+			x: -3.5d
+			y: 3.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["71A43C89EB13E9A0"]
 			dependency_requirement: "one_started"
 			id: "74C5660C5D230091"
@@ -951,23 +1346,24 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1EB227E4B1D4CBC7"
-				type: "item"
-				item: {
-					id: "productivebees:configurable_honeycomb"
-					Count: 1b
-					tag: {
-						EntityTag: {
-							type: "productivebees:allthemodium"
-						}
-					}
+			rewards: [
+				{
+					id: "5B06F04020C6D612"
+					type: "item"
+					item: "allthemodium:allthemodium_ingot"
 				}
-			}]
+				{
+					id: "5B625749DF7D5658"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: 0.0d
-			y: 4.5d
+			x: 1.5d
+			y: 3.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["61FDABF2C7CC1F9D"]
 			dependency_requirement: "one_completed"
 			id: "7BCBB65EB6EA8F12"
@@ -1005,10 +1401,24 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "51362AB055CB27A0"
+					type: "item"
+					item: "allthemodium:vibranium_ingot"
+				}
+				{
+					id: "1AAB5AB135C18391"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
-			x: -3.5d
-			y: 4.5d
+			x: -3.0d
+			y: 2.5d
+			shape: "hexagon"
+			hide_dependency_lines: false
 			dependencies: ["71A43C89EB13E9A0"]
 			dependency_requirement: "one_completed"
 			id: "5F4B250E91B22C5B"
@@ -1046,6 +1456,18 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "0472C7EBA09B9F4C"
+					type: "item"
+					item: "allthemodium:allthemodium_ingot"
+				}
+				{
+					id: "56AB2DED81B0F2D4"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 	]
 }

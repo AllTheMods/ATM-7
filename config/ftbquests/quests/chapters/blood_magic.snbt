@@ -431,20 +431,20 @@
 			}]
 			rewards: [
 				{
-					id: "2586A2DC190EE8B7"
+					id: "3C98676E7D871A75"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "45042EA2E4701064"
 					type: "item"
 					item: {
 						id: "bloodmagic:basemonstersoul"
 						Count: 1b
 						tag: {
-							souls: 1.0d
+							souls: 25.0d
 						}
 					}
-				}
-				{
-					id: "3C98676E7D871A75"
-					type: "xp"
-					xp: 100
 				}
 			]
 		}
@@ -472,7 +472,7 @@
 						id: "bloodmagic:basemonstersoul"
 						Count: 1b
 						tag: {
-							souls: 5.0d
+							souls: 50.0d
 						}
 					}
 				}
@@ -501,11 +501,24 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0B2775EDC84F8DBC"
-				type: "xp"
-				xp: 500
-			}]
+			rewards: [
+				{
+					id: "0B2775EDC84F8DBC"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "64F49B9DED750B30"
+					type: "item"
+					item: {
+						id: "bloodmagic:basemonstersoul"
+						Count: 1b
+						tag: {
+							souls: 50.0d
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -27.0d
@@ -525,11 +538,24 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "706507A5BDE8CAF5"
-				type: "xp"
-				xp: 1000
-			}]
+			rewards: [
+				{
+					id: "706507A5BDE8CAF5"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "564206062445C91E"
+					type: "item"
+					item: {
+						id: "bloodmagic:basemonstersoul"
+						Count: 1b
+						tag: {
+							souls: 100.0d
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -18.0d
@@ -879,7 +905,14 @@
 		{
 			x: -14.0d
 			y: 0.5d
-			description: ["With our Saturated Tau and our Alchemical Reaction Chamber, we can make the required materials to upgrade our Altar and Blood Orb, the &4Weak Blood Shard&r."]
+			description: [
+				"Hopefully by this point, you've been stocking up on some Demon Will with a Sentient Sword. If not, make sure to go and grab that part of the questline!"
+				""
+				"With our Saturated Tau and our Alchemical Reaction Chamber, we can make the required materials to upgrade our Altar and Blood Orb, the &4Weak Blood Shard&r."
+				""
+				"This does require the Sanguine Reverter, which takes a couple of upgrades to your Tartaric Gem."
+				""
+			]
 			dependencies: [
 				"5E2D15E4A410B5DA"
 				"308581359FEF32E9"
@@ -895,6 +928,17 @@
 					id: "04EAE604D8B668B3"
 					type: "item"
 					item: "bloodmagic:largebloodstonebrick"
+				}
+				{
+					id: "6C20FD13B73935A7"
+					type: "item"
+					item: {
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 			rewards: [{
