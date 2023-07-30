@@ -35,6 +35,12 @@ onEvent('tags.items', e => {
   e.add('forge:raw_ores/cobalt', 'tconstruct:raw_cobalt');
   e.add('forge:dusts/cobalt', 'kubejs:cobalt_dust');
   e.add('forge:dusts/netherite', 'alltheores:netherite_dust');
+  e.add('forge:wires/aluminum', 'ftbic:aluminum_wire');
+  e.add('forge:wires/copper', 'ftbic:copper_wire');
+  e.add('immersiveengineering:circuits/solder', 'ftbic:copper_wire');
+  e.add('forge:wires/enderium', 'ftbic:enderium_wire');
+  e.add('forge:wires/gold', 'ftbic:gold_wire');
+  e.add('forge:dusts/ender_pearl', [ 'ftbic:ender_dust','potionsmaster:ender_powder']);
 
   e.add('forge:raw_ores/iridium', 'ftbic:iridium_chunk');
   e.remove('forge:silicon', 'ftbic:silicon')
@@ -46,6 +52,8 @@ onEvent('tags.items', e => {
     'bloodmagic:sanguinereverter', 'elementalcraft:receptacle', 'elementalcraft:receptacle_empty',
     'elementalcraft:receptacle_improved', 'elementalcraft:receptacle_improved_empty'
   ])
+
+  e.add('forge:cheese',['croptopia:cheese','thermal:cheese_wedge']);
 
   // fix raw block crafting for other mods
   e.add('forge:raw_ores/zinc', 'create:raw_zinc')
