@@ -55,6 +55,14 @@ onEvent('tags.items', e => {
 
   e.add('forge:cheese',['croptopia:cheese','thermal:cheese_wedge']);
 
+  e.add('mysticalagriculture:seeds', [
+    'mysticalagriculture:azure_silver_seeds',
+    'mysticalagriculture:crimson_iron_seeds',
+    'mysticalagriculture:allthemodium_seeds',
+    'mysticalagriculture:vibranium_seeds',
+    'mysticalagriculture:unobtainium_seeds',
+  ])
+
   // fix raw block crafting for other mods
   e.add('forge:raw_ores/zinc', 'create:raw_zinc')
   mekanismMetals.forEach(metal => e.add(`forge:raw_ores/${metal}`, `mekanism:raw_${metal}`))
