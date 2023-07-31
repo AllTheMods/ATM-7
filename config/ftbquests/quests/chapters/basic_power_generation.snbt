@@ -948,9 +948,9 @@
 			y: -1.5d
 			shape: "square"
 			description: [
-				"The Mining World is a flat area that is best for testing builds, and destroying the world with Mining tools."
+				"The Mining World is a flat area that is best for destroying the world with Mining tools. It also contains AllTheModium ore."
 				""
-				"This is also the only place you can get Archwood!"
+				"The Mining World is also a great place for testing builds, grabbing flowers for Botania, and even getting Archwood trees for Ars!"
 			]
 			dependencies: ["746D39907C15027A"]
 			id: "70465EA531B068E8"

@@ -13,6 +13,7 @@ let ftbicMetals = ['tin', 'lead', 'uranium', 'iridium', 'aluminum']
 let ftbicAlloys = ['enderium', 'bronze']
 let thermalMetals = ['tin', 'lead', 'silver', 'nickel']
 let thermalAlloys = ['bronze', 'electrum', 'invar', 'constantan', 'signalum', 'lumium', 'enderium']
+let minecoloniesJobs = ['baker', 'blacksmith', 'cook', 'dyer', 'farmer', 'fletcher', 'glassblower', 'mechanic', 'plantation', 'sawmill', 'stonemason', 'stonesmeltery']
 
 let modifyShaped = (e, result, count, pattern, ingredients) => {
   e.remove({ output: result, type: 'minecraft:crafting_shaped' })

@@ -10,7 +10,7 @@
 	images: [
 		{
 			x: -6.0d
-			y: -2.5d
+			y: -2.0d
 			width: 1.5d
 			height: 1.5d
 			rotation: 45.0d
@@ -22,7 +22,7 @@
 		}
 		{
 			x: -6.0d
-			y: 2.5d
+			y: 2.0d
 			width: 1.5d
 			height: 1.5d
 			rotation: 45.0d
@@ -37,7 +37,7 @@
 		{
 			title: "&9Getting Started!"
 			icon: "minecraft:crafting_table"
-			x: -8.0d
+			x: -5.0d
 			y: 0.0d
 			shape: "hexagon"
 			subtitle: "Welcome to All The Mods 7"
@@ -49,9 +49,9 @@
 			size: 2.0d
 			id: "22C568A17B5D1B46"
 			tasks: [{
-				id: "3E051AF322DF9BEF"
-				type: "checkmark"
-				title: "Getting Started"
+				id: "34E4526C99F00DFB"
+				type: "item"
+				item: "minecraft:crafting_table"
 			}]
 			rewards: [{
 				id: "4B7A57FC6018E1C7"
@@ -61,101 +61,10 @@
 			}]
 		}
 		{
-			title: "Getting Wood"
-			icon: "minecraft:oak_log"
-			x: -6.0d
-			y: 0.0d
-			subtitle: "The Start of Everyone's Journey"
-			description: [
-				"Chop down a tree."
-				""
-				"*Note: Any logs/planks will complete the quest."
-			]
-			dependencies: ["22C568A17B5D1B46"]
-			dependency_requirement: "one_completed"
-			id: "3001B2EEE5C6C9AB"
-			tasks: [
-				{
-					id: "1BB08F6BC4167067"
-					type: "item"
-					title: "Any #minecraft:logs"
-					icon: "minecraft:oak_log"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:logs"
-						}
-					}
-					count: 8L
-				}
-				{
-					id: "63E6BD713B5AF4AE"
-					type: "item"
-					title: "Any #minecraft:planks"
-					icon: "minecraft:oak_planks"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:planks"
-						}
-					}
-					count: 16L
-				}
-			]
-			rewards: [
-				{
-					id: "18AF6D629BECC09D"
-					type: "item"
-					item: "minecraft:stick"
-					count: 4
-				}
-				{
-					id: "249A2C2859276487"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			title: "The (Just to get Stone) Starter Tool"
-			x: -4.5d
-			y: 0.0d
-			subtitle: "&a\"What am I even good for?\" &9\"To get 3 pieces of stone and delete.\""
-			description: ["Get yourself a crafting table and craft this to get yourself some stone."]
-			dependencies: ["3001B2EEE5C6C9AB"]
-			dependency_requirement: "one_completed"
-			id: "34632E58F226ED0B"
-			tasks: [
-				{
-					id: "6AD281F857300748"
-					type: "item"
-					item: {
-						id: "minecraft:wooden_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "1F77F00653C5D948"
-					type: "item"
-					item: "minecraft:crafting_table"
-				}
-			]
-			rewards: [{
-				id: "05F5DDA4B9AC2DAB"
-				type: "xp"
-				xp: 5
-			}]
-		}
-		{
 			x: -3.0d
 			y: 0.0d
 			description: ["Get some stone, then craft yourself the vanilla stone tools."]
-			dependencies: ["34632E58F226ED0B"]
+			dependencies: ["22C568A17B5D1B46"]
 			id: "48CCBB5C39A4ABE7"
 			tasks: [
 				{
@@ -163,7 +72,7 @@
 					type: "item"
 					title: "Stone Age"
 					item: "minecraft:cobblestone"
-					count: 32L
+					count: 16L
 				}
 				{
 					id: "075BB84D26281DF0"
@@ -638,6 +547,11 @@
 				type: "checkmark"
 				title: "Storage Chapter"
 			}]
+			rewards: [{
+				id: "3B5ADFC1081D9B64"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Tools and Armor Chapter"
@@ -773,14 +687,40 @@
 			description: [
 				"There are plenty of ways to generate your first bits of power."
 				""
-				"The RFTools Coal Generator is one of the easiest."
+				"The RFTools Coal Generator is one of the easiest, but you can make any of the starter generators from other mods if you wish."
+				""
+				"To check to see which Generators will complete the quest, click on the required item on the left of this quest page."
 			]
 			dependencies: ["500BA2C1177DA724"]
 			id: "25D1363D8890E7C3"
 			tasks: [{
-				id: "39565EF66F300895"
+				id: "2D5BDCC0232C5ABE"
 				type: "item"
-				item: "rftoolspower:coalgenerator"
+				title: "Any Starter Generator for FE"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "integrateddynamics:coal_generator"
+								Count: 1b
+							}
+							{
+								id: "thermal:dynamo_stirling"
+								Count: 1b
+							}
+							{
+								id: "rftoolspower:coalgenerator"
+								Count: 1b
+							}
+							{
+								id: "mekanismgenerators:heat_generator"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -1017,7 +957,11 @@
 			icon: "minecraft:chest"
 			x: -3.0d
 			y: 1.5d
-			description: ["Make your first chest."]
+			description: [
+				"Make your first chest."
+				""
+				"In this modpack, there are plenty of storage options to upgrade from vanilla chests. Make sure to check it all out by checking the &9Basic Storage&r section of the questbook!"
+			]
 			dependencies: ["48CCBB5C39A4ABE7"]
 			id: "13C46BACD0A36080"
 			tasks: [{
@@ -1095,10 +1039,12 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 1.5d
+			x: -7.0d
+			y: 0.0d
+			shape: "square"
 			subtitle: "Portable Crafting!"
-			dependencies: ["34632E58F226ED0B"]
+			dependencies: ["22C568A17B5D1B46"]
+			hide: true
 			optional: true
 			id: "7DBCD01ABA2D029C"
 			tasks: [{

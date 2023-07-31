@@ -11,17 +11,17 @@
 [packversionmaj]
 	#Pack Release Version Format : X
 	#Range: 0 ~ 32768
-	major = 0
+	major = 1
 
 [packversionmin]
 	#Pack Minor Version : X
 	#Range: 0 ~ 32768
-	minor = 4
+	minor = 0
 
 [packversionminrev]
 	#Pack Minor Version Revision : X
 	#Range: 0 ~ 32768
-	minorrev = 34
+	minorrev = 0
 
 [tweaks]
 	#Chickens randomly shed feathers

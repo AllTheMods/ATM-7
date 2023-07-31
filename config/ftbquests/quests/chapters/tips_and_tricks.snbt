@@ -125,6 +125,8 @@
 				"The hammock lets you sleep during the day."
 				""
 				"Neither will reset your spawn-point."
+				""
+				"Note: You will need to craft this in a crafting table that allows you to click the \"change recipe output\" button beneath the result of the craft. Vanilla tables will allow this!"
 			]
 			id: "14C8FC3F19190054"
 			tasks: [
@@ -187,11 +189,7 @@
 			x: 3.5d
 			y: 5.5d
 			subtitle: "The Akashic Tome's Distant Relative!"
-			description: [
-				"Stores all of the guidebooks you'll ever need!"
-				""
-				""
-			]
+			description: ["Stores all of the guidebooks you'll ever need!"]
 			id: "5718EEFE4F50BB73"
 			tasks: [{
 				id: "523C1E77663E2287"
@@ -332,11 +330,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "2087EBA230655A8C"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "2087EBA230655A8C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "12B055BB6C43B853"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 16
+				}
+			]
 		}
 		{
 			title: "Building Wands"
@@ -345,7 +351,7 @@
 			description: [
 				"Can be helpful for building."
 				""
-				"The construction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
+				"The Construction Wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
 			]
 			id: "2A2E3D020B1F5126"
 			tasks: [{
@@ -481,7 +487,7 @@
 				{
 					id: "259A40A2BD1763AA"
 					type: "item"
-					item: "minecraft:raw_copper"
+					item: "minecraft:raw_iron"
 				}
 				{
 					id: "4ACA4C826FB02CE1"
@@ -512,15 +518,20 @@
 			}]
 			rewards: [
 				{
-					id: "40CAE83425A4BB93"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 3
-				}
-				{
 					id: "6D0D5202EF1F98D9"
 					type: "xp"
 					xp: 100
+				}
+				{
+					id: "21B6643E2FDFD068"
+					type: "item"
+					item: "botania:mana_diamond"
+					random_bonus: 2
+				}
+				{
+					id: "42A111BD79C35D55"
+					type: "item"
+					item: "allthemodium:raw_unobtainium"
 				}
 			]
 		}
@@ -539,11 +550,18 @@
 				type: "item"
 				item: "bonsaitrees3:bonsaipot"
 			}]
-			rewards: [{
-				id: "7D97C6358E827878"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7D97C6358E827878"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "77B9DE0032110A0E"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+			]
 		}
 		{
 			x: -2.5d

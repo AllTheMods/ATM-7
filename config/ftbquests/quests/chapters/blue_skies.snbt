@@ -249,6 +249,13 @@
 		}
 		{
 			title: "Getting an Upgrade"
+			icon: {
+				id: "blue_skies:turquoise_stone_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: 7.5d
 			y: 0.5d
 			subtitle: "First Wood, then Stone... then.. what?"
@@ -260,13 +267,14 @@
 			dependencies: ["4365BCF6B7A91D24"]
 			id: "3E1A86A6D2155B53"
 			tasks: [{
-				id: "7B30D0C5D767EA0C"
+				id: "778772E61C171C0F"
 				type: "item"
+				title: "Stone from Blue Skies"
 				item: {
-					id: "blue_skies:turquoise_stone_pickaxe"
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						Damage: 0
+						value: "blue_skies:stone"
 					}
 				}
 			}]
