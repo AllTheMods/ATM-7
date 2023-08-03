@@ -21,7 +21,7 @@
 [packversionminrev]
 	#Pack Minor Version Revision : X
 	#Range: 0 ~ 32768
-	minorrev = 0
+	minorrev = 1
 
 [tweaks]
 	#Chickens randomly shed feathers
